@@ -4,6 +4,7 @@ using UnityEngine;
 
 public enum Room
 {
+	Garden,
     Entrance,
     Hall,
     LivingRoom,
