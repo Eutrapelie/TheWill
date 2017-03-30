@@ -20,6 +20,7 @@ public class GoToSceneButton : MonoBehaviour
 
     private void GoToRoom(Room room)
     {
+        Game.Current.SaveGameFromManager();
         SceneManager.LoadScene(room.ToString());
     }
 }

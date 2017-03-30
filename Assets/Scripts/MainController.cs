@@ -9,6 +9,12 @@ using NodeCanvas.DialogueTrees;
 public class MainController : MonoBehaviour
 {
     [SerializeField]
+    private int _acteNumber = 1;
+
+    [SerializeField]
+    private int _dayNumber = 1;
+
+    [SerializeField]
     private Room _room;
 
     [SerializeField]
@@ -19,18 +25,13 @@ public class MainController : MonoBehaviour
 
     [SerializeField]
     private BehaviourTreeOwner _behaviourTree;
-
-    //[SerializeField]
-    //private bool _cheatMode;
-
-    //[SerializeField]
-    //private CodeLine _cheatCodeLine;
+    
     
     private List<GameObject> _charactersInScene;
 
     void Awake()
     {
-        //Game.Current.Test();
+        Game.Current.LoadStartLevel(_acteNumber, _dayNumber);
         LoadBehaviourTree();
     }
 
@@ -43,16 +44,15 @@ public class MainController : MonoBehaviour
 
         _charactersInScene = new List<GameObject>();
 
-        LoadCharactersInvolved();
+        LoadCharactersObjectInvolved();
         LoadBlackBoard();
-        LoadPlayerInfo();
     }
 
     private void LoadBehaviourTree()
     {
         string level = _room.ToString() + "Act" + Game.Current.acteNumber.ToString() + "Day" + Game.Current.dayNumber.ToString();
         Debug.Log("[MainController] Loading level : " + level);
-        BehaviourTree tree = ((BehaviourTree) Resources.Load("Tree/" + level));
+        BehaviourTree tree = ((BehaviourTree) Resources.Load("Tree/SallesBehavior/" + level));
         if(tree == null)
         {
             Debug.Log("[MainController] Resources load failed");
@@ -62,17 +62,6 @@ public class MainController : MonoBehaviour
             Debug.Log("[MainController] Resources load succeed");
         }
         _behaviourTree.behaviour = tree;
-        GameManager.Instance.ActeNumber = Game.Current.acteNumber;
-        GameManager.Instance.DayNumber = Game.Current.dayNumber;
-    }
-
-    private void LoadPlayerInfo()
-    {
-        GameManager.Instance.PlayerController.PlayerChoices = Game.Current.player.codeLines;
-        if (GameManager.Instance.PlayerController.PlayerCard != null)
-        {
-            GameManager.Instance.PlayerController.PlayerCard.Player = Game.Current.player;
-        }
     }
 
     private void LoadBlackBoard()
@@ -98,27 +87,28 @@ public class MainController : MonoBehaviour
         }
     }
 
-    public void LoadCharactersInvolved()
-    {            
-        foreach (CharacterInfo characterInfo in Game.Current.charactersInfos)
+    public void LoadCharactersObjectInvolved()
+    {
+        GameManager.Instance.MyCharacterController.Characters.Clear();
+        foreach (CharacterInfo info in Game.Current.charactersInfos)
         {
-            if (characterInfo.currentRoom == _room)
+            if (info.currentRoom == _room)
             {
-                GameObject characterObject = ((GameObject)Instantiate(Resources.Load("Characters/" + characterInfo.characterName)));
+                GameObject characterObject = ((GameObject)Instantiate(Resources.Load("Characters/" + info.characterName)));
                 if (characterObject)
                 {
                     _charactersInScene.Add(characterObject);
-
                     CharacterCard characterCard = characterObject.GetComponent<CharacterCard>();
-                    characterCard.CharacterInfo = characterInfo;
+                    characterCard.CharacterInfo = info;
 
                     GameManager.Instance.MyCharacterController.Characters.Add(characterCard);
                     GameManager.Instance.MyCharacterController.AddCharacterCardToGlobalBB(characterCard);
+
 
                     characterObject.transform.parent = _charactersGameobject.transform;
                     characterObject.transform.localScale = new Vector3(1f, 1f);
                 }
             }
-        }        
+        }      
     }
 }

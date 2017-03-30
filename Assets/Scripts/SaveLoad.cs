@@ -28,9 +28,10 @@ public static class SaveLoad
             file.Close();;
             Game.Current.LoadGame(savedGames[0]);
         }
-        else
-        {
-            Game.Current.Test();
-        }
+    }
+
+    public static void StartNewGame()
+    {
+        Game.Current.LoadStartLevel(1, 1);
     }
 }

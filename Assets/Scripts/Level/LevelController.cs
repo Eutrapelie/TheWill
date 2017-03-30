@@ -6,52 +6,82 @@ using UnityEngine;
 public class LevelController : ScriptableObject
 {
     [SerializeField]
-    private int _levelNumber;
+    private int _acteNumber;
 
     [SerializeField]
-    private Room _room;
+    private int _dayNumber;
 
     [SerializeField]
-    private List<Character> _charactersInvolved;
+    private Room _startRoom;
 
-    
+    [SerializeField]
+    private Player _kim;
 
-    public int LevelNumber
+    [SerializeField]
+    private List<CharacterInfo> _characters;    
+
+    public List<CharacterInfo> Characters
     {
         get
         {
-            return _levelNumber;
+            return _characters;
         }
 
         set
         {
-            _levelNumber = value;
+            _characters = value;
         }
     }
 
-    public Room Room
+    public int ActeNumber
     {
         get
         {
-            return _room;
+            return _acteNumber;
         }
 
         set
         {
-            _room = value;
+            _acteNumber = value;
         }
     }
 
-    public List<Character> CharactersInvolved
+    public int DayNumber
     {
         get
         {
-            return _charactersInvolved;
+            return _dayNumber;
         }
 
         set
         {
-            _charactersInvolved = value;
+            _dayNumber = value;
+        }
+    }
+
+    public Player Kim
+    {
+        get
+        {
+            return _kim;
+        }
+
+        set
+        {
+            _kim = value;
+        }
+    }
+
+    public Room StartRoom
+    {
+        get
+        {
+            return _startRoom;
+        }
+
+        set
+        {
+            _startRoom = value;
         }
     }
 }

@@ -6,7 +6,6 @@ using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
-
     private MyCharacterController myCharacterController;
     private PlayerController playerController;
     private int acteNumber;
@@ -23,9 +22,21 @@ public class GameManager : MonoBehaviour
                 if (go != null)
                 {
                     instance = go.gameObject.AddComponent<GameManager>();
+                    Instance.ActeNumber = Game.Current.acteNumber;
+                    Instance.DayNumber = Game.Current.dayNumber;
+                    Instance.LoadPlayerInfo();
                 }
             }
             return instance;
+        }
+    }
+
+    private void LoadPlayerInfo()
+    {
+        Instance.PlayerController.PlayerChoices = Game.Current.player.codeLines;
+        if (Instance.PlayerController.PlayerCard != null)
+        {
+            Instance.PlayerController.PlayerCard.Player = Game.Current.player;
         }
     }
 

@@ -16,8 +16,13 @@ public class MainMenuView : MonoBehaviour
 
     void StartGame()
     {
-        SaveLoad.Load();
-        SceneManager.LoadScene(Room.LivingRoom.ToString());
+        SaveLoad.StartNewGame();
+        SceneManager.LoadScene(Game.Current.currentRoom.ToString());
         SceneManager.LoadScene("InGameMenu", LoadSceneMode.Additive);
+    }
+
+    void Load()
+    {
+
     }
 }

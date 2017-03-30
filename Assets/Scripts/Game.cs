@@ -25,35 +25,29 @@ public class Game
     public List<CharacterInfo> charactersInfos;
     public Room currentRoom;
     public List<Room> roomVisited;
-    public int acteNumber;
-    public int dayNumber;
+    public int acteNumber = 1;
+    public int dayNumber = 1;
 
-    public void Test()
+    public void LoadStartLevel(int acte, int day)
     {
         // FOR TEST PURPOSE ONLY
-        charactersInfos = new List<CharacterInfo>();
-        CharacterInfo c1 = new CharacterInfo(Character.Abigail, Emotion.Neutral, Room.LivingRoom, Gauge.Courtesy, 0);
-        charactersInfos.Add(c1);
-        CharacterInfo c2 = new CharacterInfo(Character.Geoffroy, Emotion.Neutral, Room.LivingRoom, Gauge.Courtesy, 0);
-        charactersInfos.Add(c2);
-        CharacterInfo c3 = new CharacterInfo(Character.Ernest, Emotion.Neutral, Room.LivingRoom, Gauge.Frustration, 0);
-        charactersInfos.Add(c3);
-        CharacterInfo c4 = new CharacterInfo(Character.Hippolyte, Emotion.Neutral, Room.LivingRoom, Gauge.Irritation, 0);
-        charactersInfos.Add(c4);
-        CharacterInfo c5 = new CharacterInfo(Character.Leontine, Emotion.Neutral, Room.LivingRoom, Gauge.Courtesy, 0);
-        charactersInfos.Add(c5);
-        CharacterInfo c6 = new CharacterInfo(Character.Ophelie, Emotion.Neutral, Room.LivingRoom, Gauge.Depression, 0);
-        charactersInfos.Add(c6);
-        CharacterInfo c7 = new CharacterInfo(Character.Tayla, Emotion.Neutral, Room.None, Gauge.Frustration, 0);
-        charactersInfos.Add(c7);
+        string level = "LevelAct" + acte + "Day" + day;
+        Debug.Log("[LevelController] Loading level : " + level);
+        LevelController levelController = ((LevelController)Resources.Load("Levels/" + level));
+        if (levelController == null)
+        {
+            Debug.Log("[LevelController] Resources load failed");
+        }
+        else
+        {
+            Debug.Log("[LevelController] Resources load succeed");
+        }
 
-        List<CodeLine> codeLine = new List<CodeLine>();
-        //codeLine.Add(CodeLine.DoNotMatterAbigail0000);
-        //codeLine.Add(CodeLine.DoNotMatterGeoffroy0000);
-        player = new Player("Kim", codeLine, new List<int>(), Genre.Man);
-
-        acteNumber = 1;
-        dayNumber = 1;
+        charactersInfos = levelController.Characters;
+        player = levelController.Kim;
+        currentRoom = levelController.StartRoom;
+        acteNumber = acte;
+        dayNumber = day;
 
         // FOR TEST PURPOSE ONLY
     }
