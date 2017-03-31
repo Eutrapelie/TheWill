@@ -5,5 +5,6 @@ using UnityEngine;
 public enum Emotion {
     Neutral,
     Happy,
-    Sad
+    Sad,
+    Angry
 }
