@@ -20,4 +20,17 @@ public enum CodeLine
     DoNotMatterHippo0000,//Première fois qu'on parle à Hippo - Jour 1
     DoNotMatterHippo0001,//
     DoNotMatterHippo0002,//
+
+
+
+    DoNotMatterErnest0000,//Première fois qu'on parle à Ernest - Jour 1
+    DoNotMatterErnest0001,//Choix 1
+    DoNotMatterErnest0002,//Choix 2
+    DoNotMatterErnest0003,//Choix 3
+    DoNotMatterErnest0004,//Dial supp "Abi?"
+
+    DoNotMatterOphelie0000,//Première fois qu'on parle à Ernest - Jour 1
+    DoNotMatterOphelie0001,//Choix 1
+    DoNotMatterOphelie0002,//Choix 2
+    DoNotMatterOphelie0003,//
 }
