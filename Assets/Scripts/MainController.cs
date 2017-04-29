@@ -18,7 +18,7 @@ public class MainController : MonoBehaviour
     private Room _room;
 
     [SerializeField]
-    private GameObject _charactersGameobject;
+    private List<RoomSpotView> _characterSpotsGameObject;
 
     [SerializeField]
     private Blackboard _blackBoard;
@@ -89,6 +89,12 @@ public class MainController : MonoBehaviour
 
     public void LoadCharactersObjectInvolved()
     {
+        if(_characterSpotsGameObject.Count < Game.Current.charactersInfos.Count)
+        {
+            Debug.LogError("[MainController] There's more characters than spots on the scene.");
+            return;
+        }
+
         GameManager.Instance.MyCharacterController.Characters.Clear();
         foreach (CharacterInfo info in Game.Current.charactersInfos)
         {
@@ -104,11 +110,35 @@ public class MainController : MonoBehaviour
                     GameManager.Instance.MyCharacterController.Characters.Add(characterCard);
                     GameManager.Instance.MyCharacterController.AddCharacterCardToGlobalBB(characterCard);
 
-
-                    characterObject.transform.parent = _charactersGameobject.transform;
-                    characterObject.transform.localScale = new Vector3(1f, 1f);
+                    RoomSpotView newSpot = GetRoomSpotForCharacter(info);
+                    if (newSpot)
+                    {
+                        characterObject.transform.parent = newSpot.gameObject.transform;
+                        characterObject.transform.localPosition = Vector3.zero;
+                        characterObject.transform.localScale = Vector3.one;
+                    }
                 }
             }
         }      
+    }
+
+    public RoomSpotView GetRoomSpotForCharacter(CharacterInfo info)
+    {
+        RoomSpotView newSpot = null;
+        foreach(RoomSpotView spotControl in _characterSpotsGameObject)
+        {
+            if(info.currentRoomSpot.Equals(spotControl.RoomSpots))
+            {
+                if(spotControl.SpotAvailable == false)
+                {
+                    Debug.LogError("[MainController] Spot your aiming for " + info.characterName + " is already occupied.");
+                    return null;
+                }
+                spotControl.SpotAvailable = false;
+                newSpot = spotControl;
+                break;
+            }
+        }
+        return newSpot;
     }
 }

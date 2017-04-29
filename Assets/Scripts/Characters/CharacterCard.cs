@@ -81,6 +81,11 @@ public class CharacterCard : MonoBehaviour
         CharacterInfo.currentRoom = newRoom;
     }
 
+    public void ChangeRoomSpot(RoomSpot newSpot)
+    {
+        CharacterInfo.currentRoomSpot = newSpot;
+    }
+
     public void SetGauge(int value)
     {
         CharacterInfo.valueGauge += value;

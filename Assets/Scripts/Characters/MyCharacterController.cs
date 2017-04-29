@@ -19,6 +19,11 @@ public class CharacterChangeRoomEvent : UnityEvent<Character, Room>
 }
 
 [System.Serializable]
+public class CharacterChangeRoomSpotEvent : UnityEvent<Character, RoomSpot>
+{
+}
+
+[System.Serializable]
 public class CharacterChangeEmotionEvent : UnityEvent<Character, Emotion>
 {
 }
@@ -41,6 +46,8 @@ public class MyCharacterController : MonoBehaviour
     public CharacterTalkingEvent characterTalkingEvent;
 
     public CharacterChangeRoomEvent characterChangeRoomEvent;
+
+    public CharacterChangeRoomSpotEvent characterChangeRoomSpotEvent;
 
     public CharacterChangeEmotionEvent characterChangeEmotionEvent;
 
@@ -81,6 +88,12 @@ public class MyCharacterController : MonoBehaviour
             characterChangeRoomEvent = new CharacterChangeRoomEvent();
         }
         characterChangeRoomEvent.AddListener(CharacterChangeRoom);
+
+        if (characterChangeRoomSpotEvent == null)
+        {
+            characterChangeRoomSpotEvent = new CharacterChangeRoomSpotEvent();
+        }
+        characterChangeRoomSpotEvent.AddListener(CharacterChangeRoomSpot);
 
         if (characterChangeEmotionEvent == null)
         {
@@ -148,6 +161,18 @@ public class MyCharacterController : MonoBehaviour
             if (item.CharacterInfo.characterName.Equals(arg0))
             {
                 item.ChangeRoom(arg1);
+                break;
+            }
+        }
+    }
+
+    private void CharacterChangeRoomSpot(Character arg0, RoomSpot arg1)
+    {
+        foreach (CharacterCard item in Characters)
+        {
+            if (item.CharacterInfo.characterName.Equals(arg0))
+            {
+                item.ChangeRoomSpot(arg1);
                 break;
             }
         }

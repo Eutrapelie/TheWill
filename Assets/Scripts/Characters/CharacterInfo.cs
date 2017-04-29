@@ -11,6 +11,8 @@ public class CharacterInfo
 
     public Room currentRoom;
 
+    public RoomSpot currentRoomSpot;
+
     public Gauge typeGauge;
 
     public int valueGauge;
@@ -20,15 +22,17 @@ public class CharacterInfo
         characterName = Character.Abigail;
         currentEmotion = Emotion.Neutral;
         currentRoom = Room.Hall;
+        currentRoomSpot = RoomSpot.LivingRoomSpot1;
         typeGauge = Gauge.Courtesy;
         valueGauge = 0;
     }
 
-    public CharacterInfo(Character character, Emotion emotion, Room room, Gauge gauge, int vg)
+    public CharacterInfo(Character character, Emotion emotion, Room room, RoomSpot roomSpot, Gauge gauge, int vg)
     {
         characterName = character;
         currentEmotion = emotion;
         currentRoom = room;
+        currentRoomSpot = roomSpot;
         typeGauge = gauge;
         valueGauge = vg;
     }
@@ -38,6 +42,7 @@ public class CharacterInfo
         characterName = cI.characterName;
         currentEmotion = cI.currentEmotion;
         currentRoom = cI.currentRoom;
+        currentRoomSpot = cI.currentRoomSpot;
         typeGauge = cI.typeGauge;
         valueGauge = cI.valueGauge;
     }
