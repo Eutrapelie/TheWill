@@ -11,5 +11,11 @@ public enum RoomSpot {
     LivingRoomSpot6,
 
     GardenSpot1,
-    GardenSpot2
+    GardenSpot2,
+
+    EntranceSpot1,
+    EntranceSpot2,
+
+    HallSpot1,
+    HallSpot2
 }

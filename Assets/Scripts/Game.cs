@@ -36,11 +36,11 @@ public class Game
         LevelController levelController = ((LevelController)Resources.Load("Levels/" + level));
         if (levelController == null)
         {
-            Debug.Log("[LevelController] Resources load failed");
+            Debug.Log("[LevelController] Level load failed");
         }
         else
         {
-            Debug.Log("[LevelController] Resources load succeed");
+            Debug.Log("[LevelController] Level load succeed");
         }
 
         charactersInfos = levelController.Characters;

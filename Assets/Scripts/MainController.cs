@@ -55,11 +55,11 @@ public class MainController : MonoBehaviour
         BehaviourTree tree = ((BehaviourTree) Resources.Load("Tree/SallesBehavior/" + level));
         if(tree == null)
         {
-            Debug.Log("[MainController] Resources load failed");
+            Debug.Log("[MainController] Tree load failed");
         }
         else
         {
-            Debug.Log("[MainController] Resources load succeed");
+            Debug.Log("[MainController] Tree load succeed");
         }
         _behaviourTree.behaviour = tree;
     }
@@ -89,35 +89,37 @@ public class MainController : MonoBehaviour
 
     public void LoadCharactersObjectInvolved()
     {
-        if(_characterSpotsGameObject.Count < Game.Current.charactersInfos.Count)
-        {
-            Debug.LogError("[MainController] There's more characters than spots on the scene.");
-            return;
-        }
-
+        int cptSpot = 0;
         GameManager.Instance.MyCharacterController.Characters.Clear();
         foreach (CharacterInfo info in Game.Current.charactersInfos)
         {
             if (info.currentRoom == _room)
             {
-                GameObject characterObject = ((GameObject)Instantiate(Resources.Load("Characters/" + info.characterName)));
-                if (characterObject)
+                if (cptSpot >= _characterSpotsGameObject.Count)
                 {
-                    _charactersInScene.Add(characterObject);
-                    CharacterCard characterCard = characterObject.GetComponent<CharacterCard>();
-                    characterCard.CharacterInfo = info;
+                    Debug.Log("[MainController] Not enough spots in the scene.");
+                    return;
+                }
 
-                    GameManager.Instance.MyCharacterController.Characters.Add(characterCard);
-                    GameManager.Instance.MyCharacterController.AddCharacterCardToGlobalBB(characterCard);
-
-                    RoomSpotView newSpot = GetRoomSpotForCharacter(info);
-                    if (newSpot)
+                RoomSpotView newSpot = GetRoomSpotForCharacter(info);
+                if (newSpot)
+                {
+                    GameObject characterObject = ((GameObject)Instantiate(Resources.Load("Characters/" + info.characterName)));
+                    if (characterObject)
                     {
+                        _charactersInScene.Add(characterObject);
+                        CharacterCard characterCard = characterObject.GetComponent<CharacterCard>();
+                        characterCard.CharacterInfo = info;
+
+                        GameManager.Instance.MyCharacterController.Characters.Add(characterCard);
+                        GameManager.Instance.MyCharacterController.AddCharacterCardToGlobalBB(characterCard);
                         characterObject.transform.parent = newSpot.gameObject.transform;
                         characterObject.transform.localPosition = Vector3.zero;
                         characterObject.transform.localScale = Vector3.one;
                     }
-                }
+                    cptSpot++;
+                    Debug.Log("[MainController] Character " + info.characterName + " is in the scene.");
+                }            
             }
         }      
     }

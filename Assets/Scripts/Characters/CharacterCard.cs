@@ -4,6 +4,7 @@ using UnityEngine;
 using NodeCanvas.BehaviourTrees;
 using System;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class CharacterCard : MonoBehaviour
 {
@@ -48,6 +49,11 @@ public class CharacterCard : MonoBehaviour
     public CharacterCard(CharacterInfo characterInfo)
     {
         CharacterInfo = characterInfo;
+    }
+
+    public void OnMouseUp()
+    {
+        Debug.Log("on mouse up");
     }
 
     public void ChangeSprite()
