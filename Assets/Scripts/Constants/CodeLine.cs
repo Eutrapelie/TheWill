@@ -33,4 +33,13 @@ public enum CodeLine
     DoNotMatterOphelie0001,//Choix 1
     DoNotMatterOphelie0002,//Choix 2
     DoNotMatterOphelie0003,//
+	
+	
+    DoNotMatterLeontine0000,//Première fois qu'on parle à Leontine - Jour 1
+    DoNotMatterLeontine0001,//
+    DoNotMatterLeontine0002,//
+    DoNotMatterLeontine0003,//
+    DoNotMatterLeontine0004,//
+    DoNotMatterLeontine0005,//
+    DoNotMatterLeontine0006,//
 }
