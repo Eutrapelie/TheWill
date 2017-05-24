@@ -38,7 +38,10 @@ public enum CodeLine
     OphelieD1000,//Première fois qu'on parle à Ernest - Jour 1
     OphelieD1001,//Choix 1
     OphelieD1002,//Choix 2
-    OphelieD1003,//
+    OphelieD1003,//Inutilisé
+    OphelieD2000,//Parler de la piste -> Débloquer Dialogue Hippo
+	OphelieD2001,//Journal partie Abi lue
+	OphelieD2002,//
 	
 	
     LeontineD1000,//Première fois qu'on parle à Leontine - Jour 1
@@ -50,4 +53,11 @@ public enum CodeLine
     LeontineD1006,//
 	
 	KimD2001,//Première entrée cuisine
+	
+	ObjetJournalC0001,// Si Journal Chambre de Celeste a ete vu
+	
+	HippOpheD2000,//Enigme en cours
+	HippOpheD2001,//Enigme Succes
+	HippOpheD2002,//Enigme Echec
+	
 }
