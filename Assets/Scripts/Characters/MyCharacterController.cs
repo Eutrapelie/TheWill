@@ -33,6 +33,7 @@ public class CharacterSetGaugeEvent : UnityEvent<Character, int>
 {
 }
 
+
 public class MyCharacterController : MonoBehaviour
 {
     [SerializeField]

@@ -6,7 +6,7 @@ using System;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class CharacterCard : MonoBehaviour
+public class CharacterCard : InteractibleObject
 {
     [SerializeField]
     private CharacterInfo _characterInfo;
@@ -19,6 +19,8 @@ public class CharacterCard : MonoBehaviour
 
     [SerializeField]
     private bool _isTalking;
+
+    public event System.Action<Character> OnClickCharacterValue;
 
     public CharacterInfo CharacterInfo
     {
@@ -51,9 +53,38 @@ public class CharacterCard : MonoBehaviour
         CharacterInfo = characterInfo;
     }
 
-    public void OnMouseUp()
+    void Update()
     {
-        Debug.Log("on mouse up");
+       /* if(Input.GetKeyUp(KeyCode.A))
+        {
+            if (OnClickCharacterValue != null)
+            {
+                OnClickCharacterValue(_characterInfo.characterName);
+            }
+        }*/
+    }
+
+    void Awake()
+    {
+        Sprite = _spriteRenderer;
+
+        EventManager.StartListening(CharacterInfo.characterName.ToString(), () => { OnClickObject(); });
+
+        OnClickCharacterValue += DoStuff;
+
+    }
+
+    private void OnClickObject()
+    {
+        if (OnClickCharacterValue != null)
+        {
+            OnClickCharacterValue(_characterInfo.characterName);
+        }
+    }
+
+    void DoStuff(Character name)
+    {
+        Debug.Log("[DoStuff] name is " + name);
     }
 
     public void ChangeSprite()
