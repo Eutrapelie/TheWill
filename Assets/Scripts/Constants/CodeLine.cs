@@ -11,6 +11,9 @@ public enum CodeLine
 	GeoffroyD2001, // Avoir son contrat
 	GeoffroyD2002,
 	GeoffroyD2003, //Suite quête après contrat
+	GeoffroyD2004, //Chemin Ernest - Assassinat
+	GeoffroyD2005, //Chemin Ernest - Incendie
+	GeoffroyD2006, //Chemin Ernest - Autre
 
 
     AbigailD1000,//Première fois qu'on parle à Aby - Jour 1
@@ -31,9 +34,19 @@ public enum CodeLine
     ErnestD1002,//Choix 2
     ErnestD1003,//Choix 3
     ErnestD1004,//Dial supp "Abi?"
+    ErnestD1003a,//Choix 3 - Aide
+    ErnestD1003b,//Choix 3 - Neutre
+    ErnestD1003c,//Choix 3 - Refus
 	ErnestD2001,//Premier Dialogue J2
 	ErnestD2002,//Premier echec à l'ouverture du Phone
-	ErnestD2003,//
+	ErnestD2003,//Succes ouverture Phone
+	ErnestD2004,//Revelation Tel - secret gardé
+	ErnestD2005,//Revelation Tel - fin autres
+	ErnestD2006,//Revelation Tel - fin aide drague Abi
+	ErnestD2007,//Revelation Tel - fin laisse faire
+	ErnestD2008,//Incendie - Allumage
+	ErnestD2009,//Incendie - Bras baissé
+	ErnestD2010,//Incendie - Incendie Évité
 
     OphelieD1000,//Première fois qu'on parle à Ernest - Jour 1
     OphelieD1001,//Choix 1

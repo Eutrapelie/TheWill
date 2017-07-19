@@ -1,0 +1,1517 @@
+{
+    "version": 2.6,
+    "type": "NodeCanvas.DialogueTrees.DialogueTree",
+    "name": "OphelieDialogAct1D2002",
+    "comments": "Que faire si on a pas parl\u00e9 ",
+    "translation": {
+        "x": -1167.0,
+        "y": -920.0
+    },
+    "zoomFactor": 0.2710996,
+    "nodes": [
+        {
+            "statement": {
+                "_text": "B-Bonjour Kim\u00a0! Avez-vous t-trouv\u00e9 comment acc\u00e9der au j-journal intime\u00a0?"
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 5646.719,
+                "y": 4874.854
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "2"
+        },
+        {
+            "saySelection": true,
+            "availableChoices": [
+                {
+                    "statement": {
+                        "_text": "En partie..."
+                    },
+                    "condition": {
+                        "conditions": [
+                            {
+                                "playerList": {
+                                    "_value": [],
+                                    "_name": "GlobalVN/playerCodeLines",
+                                    "_targetVariableID": "925f33ad-7d3e-4179-8fe9-82e6d073de39"
+                                },
+                                "codeLine": "HippOpheD2000",
+                                "$type": "HasCodeLine"
+                            },
+                            {
+                                "playerList": {
+                                    "_value": [],
+                                    "_name": ""
+                                },
+                                "codeLine": "HippOpheD2002",
+                                "_invert": true,
+                                "$type": "HasCodeLine"
+                            },
+                            {
+                                "playerList": {
+                                    "_value": [],
+                                    "_name": "GlobalVN/playerCodeLines",
+                                    "_targetVariableID": "925f33ad-7d3e-4179-8fe9-82e6d073de39"
+                                },
+                                "codeLine": "HippOpheD2001",
+                                "_invert": true,
+                                "$type": "HasCodeLine"
+                            }
+                        ],
+                        "$type": "NodeCanvas.Framework.ConditionList"
+                    }
+                },
+                {
+                    "statement": {
+                        "_text": "Oui."
+                    },
+                    "condition": {
+                        "playerList": {
+                            "_value": [],
+                            "_name": "GlobalVN/playerCodeLines",
+                            "_targetVariableID": "925f33ad-7d3e-4179-8fe9-82e6d073de39"
+                        },
+                        "codeLine": "HippOpheD2001",
+                        "$type": "HasCodeLine"
+                    }
+                },
+                {
+                    "statement": {
+                        "_text": "Non."
+                    },
+                    "condition": {
+                        "playerList": {
+                            "_value": [],
+                            "_name": "GlobalVN/playerCodeLines",
+                            "_targetVariableID": "925f33ad-7d3e-4179-8fe9-82e6d073de39"
+                        },
+                        "codeLine": "HippOpheD2002",
+                        "$type": "HasCodeLine"
+                    }
+                },
+                {
+                    "statement": {
+                        "_text": "Pas encore."
+                    }
+                }
+            ],
+            "_position": {
+                "x": 5777.064,
+                "y": 4991.525
+            },
+            "$type": "NodeCanvas.DialogueTrees.MultipleChoiceNode",
+            "$id": "4"
+        },
+        {
+            "statement": {
+                "_text": "La vitrine est ouverte, mais Hippolyte refuse de me laisser le journal si je ne prouve pas \u00eatre capable de l\u2019ouvrir, d\u2019un coup."
+            },
+            "_position": {
+                "x": 5335.266,
+                "y": 5278.051
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "31"
+        },
+        {
+            "statement": {
+                "_text": "V-vous savez comment f-faire\u00a0?"
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 5336.269,
+                "y": 5389.432
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "33"
+        },
+        {
+            "statement": {
+                "_text": "J\u2019y r\u00e9fl\u00e9chis\u2026 Il y a plusieurs boutons qui font des sons, avec des symboles \u00e9tranges dessus."
+            },
+            "_position": {
+                "x": 5344.296,
+                "y": 5487.769
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "35"
+        },
+        {
+            "statement": {
+                "_text": "P-Peut-\u00eatre faut-il t-trouver quelque chose dans le M-Manoir en rapport avec la m-musique\u2026"
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 5235.41,
+                "y": 5577.061
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "37"
+        },
+        {
+            "_position": {
+                "x": 5337.0,
+                "y": 5678.0
+            },
+            "$type": "NodeCanvas.DialogueTrees.FinishNode",
+            "$id": "39"
+        },
+        {
+            "statement": {
+                "_text": "J\u2019ai pu r\u00e9cup\u00e9rer la clef gr\u00e2ce \u00e0 Hippolyte\u00a0!"
+            },
+            "_position": {
+                "x": 5782.795,
+                "y": 5288.086
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "40"
+        },
+        {
+            "statement": {
+                "_text": "F-F-F\u00e9licitations\u00a0! Alors, que dit le j-journal de ma m-m\u00e8re\u00a0?"
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 5792.83,
+                "y": 5382.409
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "42"
+        },
+        {
+            "statement": {
+                "_text": "Lisons-le donc ensemble. Voyons voir\u2026 Je devrai pouvoir reconna\u00eetre les noms, et partir de l\u00e0."
+            },
+            "_position": {
+                "x": 5827.004,
+                "y": 5473.766
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "44"
+        },
+        {
+            "statement": {
+                "_text": "Il y a l\u2019air d\u2019y avoir plusieurs parties int\u00e9ressantes\u2026 Je peux les lire maintenant, ou les lire plus tard, je garderai le journal avec moi."
+            },
+            "_position": {
+                "x": 5824.461,
+                "y": 5574.4
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "46"
+        },
+        {
+            "availableChoices": [
+                {
+                    "statement": {
+                        "_text": "\u2026Oph\u00e9lie\u2026"
+                    }
+                },
+                {
+                    "statement": {
+                        "_text": "\u2026Abigail\u2026"
+                    },
+                    "condition": {
+                        "playerList": {
+                            "_value": [],
+                            "_name": "GlobalVN/playerCodeLines",
+                            "_targetVariableID": "925f33ad-7d3e-4179-8fe9-82e6d073de39"
+                        },
+                        "codeLine": "OphelieD2001",
+                        "_invert": true,
+                        "$type": "HasCodeLine"
+                    }
+                }
+            ],
+            "_position": {
+                "x": 5906.769,
+                "y": 5697.123
+            },
+            "$type": "NodeCanvas.DialogueTrees.MultipleChoiceNode",
+            "$id": "48"
+        },
+        {
+            "statement": {
+                "_text": "Comme les doutes et les regrets resurgissent quand la nuit est reine\u00a0! Oh ma petite Oph\u00e9lie\u00a0! Comme je regrette de ne pas te voir grandir\u00a0! Comme j\u2019aimerai te conna\u00eetre et t\u2019\u00e9pauler\u00a0! Tu seras toujours ma fille, mais je n\u2019ai jamais vraiment \u00e9t\u00e9 la m\u00e8re que tu m\u00e9ritais. Je trouve du confort \u00e0 savoir que ton p\u00e8re s\u2019occupera bien de toi. Je ne vous m\u00e9rite pas. Quelque part je ne regrette pas, je sais que ma d\u00e9cision \u2013 notre d\u00e9cision \u2013 \u00e9tait la meilleure \u00e0 prendre pour nous tous, mais je regrette tous ces moments qui n\u2019existeront jamais, tous ces souvenirs que nous n\u2019aurons pas ensemble. Pourtant il le faut. Pour que tu puisses avoir une vie normale, et \u00e9viter le sort des Castheran. Ton p\u00e8re a eu raison de vouloir t\u2019en prot\u00e9ger."
+            },
+            "_position": {
+                "x": 5478.0,
+                "y": 5880.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "57"
+        },
+        {
+            "statement": {
+                "_text": "Je ne comprends pas tout\u2026 Mais une chose est s\u00fbre, Oph\u00e9lie n\u2019a rien invent\u00e9 en arrivant ici."
+            },
+            "_position": {
+                "x": 5436.0,
+                "y": 6014.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "59"
+        },
+        {
+            "statement": {
+                "_text": "Je-je suis tellement heureuse de lire \u00e7a."
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 5462.0,
+                "y": 6123.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "61"
+        },
+        {
+            "statement": {
+                "_text": "Vous \u00eates donc bien sa fille. Vous avez autant droit au Manoir que les autres.\r"
+            },
+            "_position": {
+                "x": 5495.0,
+                "y": 6234.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "63"
+        },
+        {
+            "statement": {
+                "_text": "Oh, ce qui m-m\u2019importe, c\u2019est surtout de savoir qui est ma m-m\u00e8re b-biologique. Je ne savais plus qui c-croire. Mais vous vouliez me laisser le M-Manoir, alors que j-je n\u2019y ai j-jamais v\u00e9cu\u00a0?"
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 5436.0,
+                "y": 6348.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "65"
+        },
+        {
+            "statement": {
+                "_text": "Je ferai mieux de donner une r\u00e9ponse vague pour le moment\u2026 Je n\u2019en sais pas assez sur la volont\u00e9 des Castheran."
+            },
+            "_position": {
+                "x": 5397.0,
+                "y": 6444.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "67"
+        },
+        {
+            "saySelection": true,
+            "availableChoices": [
+                {
+                    "statement": {
+                        "_text": "Je ne sais pas encore."
+                    }
+                },
+                {
+                    "statement": {
+                        "_text": "Je ferai tout pour pouvoir justifier que vous le r\u00e9cup\u00e9riez, oui."
+                    }
+                }
+            ],
+            "_position": {
+                "x": 5358.0,
+                "y": 6543.0
+            },
+            "$type": "NodeCanvas.DialogueTrees.MultipleChoiceNode",
+            "$id": "69"
+        },
+        {
+            "statement": {
+                "_text": "J-je vais p-profiter du temps que j-j\u2019ai encore ici. M-Merci pour votre aide."
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 5232.0,
+                "y": 6720.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "75"
+        },
+        {
+            "_position": {
+                "x": 5570.0,
+                "y": 7042.0
+            },
+            "$type": "NodeCanvas.DialogueTrees.FinishNode",
+            "$id": "77"
+        },
+        {
+            "statement": {
+                "_text": "Oh."
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 5682.0,
+                "y": 6682.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "78"
+        },
+        {
+            "statement": {
+                "_text": "J-j-je\u2026"
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 5704.0,
+                "y": 6771.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "80"
+        },
+        {
+            "statement": {
+                "_text": "Merci."
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 5752.0,
+                "y": 6859.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "82"
+        },
+        {
+            "statement": {
+                "_text": "Je m\u2019inqui\u00e8te pour l\u2019avenir d\u2019Abigail. Elle termine le lyc\u00e9e, et j\u2019esp\u00e9rais qu\u2019elle choisirait une voie qui la rendrait heureuse. Il y a tant d\u2019universit\u00e9s, d\u2019\u00e9coles et de formations en France, elle pourrait faire tellement de choses diff\u00e9rentes\u00a0! Mais non\u00a0: elle refuse tout et insiste qu\u2019elle d\u00e9p\u00e9rirait si Augustin et moi la forcions \u00e0 quitter le Manoir. Elle dit que c\u2019est ici son chez elle, qu\u2019elle ne veut pas suivre d\u2019autre chemin que celui que j\u2019ai trac\u00e9 de mes pas. J\u2019esp\u00e8re qu\u2019elle ne regrettera pas."
+            },
+            "_position": {
+                "x": 6024.0,
+                "y": 5892.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "84"
+        },
+        {
+            "statement": {
+                "_text": "Abigail aime tant que \u00e7a cet endroit\u00a0?"
+            },
+            "_position": {
+                "x": 6062.0,
+                "y": 6002.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "86"
+        },
+        {
+            "_action": {
+                "playerList": {
+                    "_value": [],
+                    "_name": "GlobalVN/playerCodeLines",
+                    "_targetVariableID": "925f33ad-7d3e-4179-8fe9-82e6d073de39"
+                },
+                "codeLine": "OphelieD2001",
+                "$type": "AddCodeLine"
+            },
+            "_position": {
+                "x": 6125.0,
+                "y": 6114.0
+            },
+            "$type": "NodeCanvas.DialogueTrees.ActionNode",
+            "$id": "88"
+        },
+        {
+            "_targetNode": {
+                "$ref": "48"
+            },
+            "_nodeColor": {
+                "g": 0.7254902,
+                "b": 0.9098039,
+                "a": 1.0
+            },
+            "_position": {
+                "x": 6114.0,
+                "y": 6239.0
+            },
+            "$type": "NodeCanvas.DialogueTrees.GoToNode",
+            "$id": "92"
+        },
+        {
+            "statement": {
+                "_text": "Je suis d\u00e9sol\u00e9#e||-e#, Oph\u00e9lie, mais je n\u2019ai pas pu r\u00e9cup\u00e9rer le journal intime. Je vais continuer \u00e0 chercher, mais j\u2019ai d\u00e9j\u00e0 fouill\u00e9, je ne vois pas o\u00f9 je pourrais trouver une preuve que vous \u00eates la fille l\u00e9gitime de C\u00e9leste Castheran."
+            },
+            "_position": {
+                "x": 6285.453,
+                "y": 5350.782
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "93"
+        },
+        {
+            "statement": {
+                "_text": "Oh\u2026 J-je comprends\u2026 Excusez-moi, j-je vais, euh, b-boire un v-verre d\u2019eau."
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 6399.375,
+                "y": 5451.64
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "95"
+        },
+        {
+            "availableChoices": [
+                {
+                    "statement": {
+                        "_text": "La retenir"
+                    }
+                },
+                {
+                    "statement": {
+                        "_text": "La laisser partir"
+                    }
+                }
+            ],
+            "_position": {
+                "x": 6541.375,
+                "y": 5548.64
+            },
+            "$type": "NodeCanvas.DialogueTrees.MultipleChoiceNode",
+            "$id": "97"
+        },
+        {
+            "statement": {
+                "_text": "Attendez\u00a0!"
+            },
+            "_position": {
+                "x": 6468.375,
+                "y": 5699.64
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "103"
+        },
+        {
+            "_action": {
+                "gauge": "Depression",
+                "value": 1,
+                "character": "Ophelie",
+                "$type": "SetGauge"
+            },
+            "_position": {
+                "x": 6332.047,
+                "y": 5787.968
+            },
+            "$type": "NodeCanvas.DialogueTrees.ActionNode",
+            "$id": "105"
+        },
+        {
+            "statement": {
+                "_text": "Elle semble surprise."
+            },
+            "_position": {
+                "x": 6463.0,
+                "y": 5890.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "107"
+        },
+        {
+            "statement": {
+                "_text": "Oui\u00a0?"
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 6451.0,
+                "y": 5971.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "109"
+        },
+        {
+            "statement": {
+                "_text": "Est-ce que \u00e7a va\u00a0? J\u2019imagine que \u00e7a ne doit pas \u00eatre facile \u00e0 entendre."
+            },
+            "_position": {
+                "x": 6404.0,
+                "y": 6071.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "111"
+        },
+        {
+            "statement": {
+                "_text": "Elle rit nerveusement."
+            },
+            "_position": {
+                "x": 6468.0,
+                "y": 6170.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "113"
+        },
+        {
+            "statement": {
+                "_text": "P-pas facile\u2026"
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 6438.0,
+                "y": 6280.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "115"
+        },
+        {
+            "statement": {
+                "_text": "\u2026"
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 6419.0,
+                "y": 6360.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "117"
+        },
+        {
+            "statement": {
+                "_text": "J-j\u2019ai fait des heures de t-trajet en train pour apprendre qui \u00e9tait ma m-m\u00e8re. Pour avoir la r\u00e9ponse \u00e0 des questions que j-je me p-pose depuis des ann\u00e9es."
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 6283.0,
+                "y": 6448.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "119"
+        },
+        {
+            "statement": {
+                "_text": "Je sais."
+            },
+            "_position": {
+                "x": 6315.0,
+                "y": 6526.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "121"
+        },
+        {
+            "statement": {
+                "_text": "Elle n\u2019a pas l\u2019air d\u2019appr\u00e9cier que je la coupe. Elle inspire, reprend."
+            },
+            "_position": {
+                "x": 6276.0,
+                "y": 6614.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "123"
+        },
+        {
+            "statement": {
+                "_text": "Quand j-je pense enfin avoir trouv\u00e9\u2026 c\u2019est j-juste un faux espoir. Je n\u2019ai t-toujours aucune certitude. Est-ce que vous s-savez \u00e0 quel point c\u2019est d-dur, de ne p-pas savoir qui on est\u00a0? De ne p-pas savoir p-pourquoi sa m-m\u00e8re est p-partie\u00a0? Est-ce que v-vous savez, \u00e0 quel p-point, c\u2019est d-dur\u2026"
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 6308.0,
+                "y": 6704.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "125"
+        },
+        {
+            "statement": {
+                "_text": "\u2026"
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 6402.0,
+                "y": 6802.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "127"
+        },
+        {
+            "statement": {
+                "_text": "Elle inspire, essaie de se calmer, et me fait signe de ne pas l\u2019interrompre."
+            },
+            "_position": {
+                "x": 6260.0,
+                "y": 6876.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "129"
+        },
+        {
+            "availableChoices": [
+                {
+                    "statement": {
+                        "_text": "Prenez votre temps\u2026 "
+                    }
+                },
+                {
+                    "statement": {
+                        "_text": "\u2026"
+                    }
+                }
+            ],
+            "_position": {
+                "x": 6337.0,
+                "y": 6984.0
+            },
+            "$type": "NodeCanvas.DialogueTrees.MultipleChoiceNode",
+            "$id": "131"
+        },
+        {
+            "_action": {
+                "gauge": "Depression",
+                "value": -1,
+                "character": "Ophelie",
+                "$type": "SetGauge"
+            },
+            "_position": {
+                "x": 5930.58,
+                "y": 7169.718
+            },
+            "$type": "NodeCanvas.DialogueTrees.ActionNode",
+            "$id": "137"
+        },
+        {
+            "statement": {
+                "_text": "Elle fronce les sourcils, mais reprend."
+            },
+            "_position": {
+                "x": 6082.139,
+                "y": 7279.724
+            },
+            "_comment": "Changement de pose ?",
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "139"
+        },
+        {
+            "statement": {
+                "_text": "C\u2019est d-dur de trouver des gens assez p-patients pour m\u2019\u00e9couter, parce que je b-b\u00e9gaie. D-dur de me faire des amis. D-dur de ne pas \u00eatre p-prise pour une p-petite fille v-vuln\u00e9rable qui p-pense plus lentement que les autres. D-dur d\u2019\u00eatre p-pris au s\u00e9rieux. D-dur d\u2019\u00eatre \u00e9cout\u00e9. Mon p-p\u00e8re refuse de me r\u00e9pondre, ma m-m\u00e8re est p-partie. Je dois me b-battre seule. Et c\u2019est f-fatiguant. Bien, bien trop fatiguant."
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 6212.0,
+                "y": 7427.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "141"
+        },
+        {
+            "statement": {
+                "_text": "Je suis d\u00e9sol\u00e9#e||-e#."
+            },
+            "_position": {
+                "x": 6280.0,
+                "y": 7538.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "143"
+        },
+        {
+            "statement": {
+                "_text": "Non, c\u2019est m-moi. J-je ne devrai pas dire t-tout \u00e7a, je suis toujours un p-poids, je ne fais que r\u00e9clamer de l\u2019aide et me p-plaindre et\u2026 Laissez-moi, Kim."
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 6280.0,
+                "y": 7633.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "145"
+        },
+        {
+            "statement": {
+                "_text": "Cette fois, elle fuit vraiment, quitte la salle en tremblant, ne pouvant clairement plus parler."
+            },
+            "_position": {
+                "x": 6258.0,
+                "y": 7724.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "147"
+        },
+        {
+            "_position": {
+                "x": 6357.0,
+                "y": 7830.0
+            },
+            "$type": "NodeCanvas.DialogueTrees.FinishNode",
+            "$id": "149"
+        },
+        {
+            "_action": {
+                "gauge": "Depression",
+                "value": 1,
+                "character": "Ophelie",
+                "$type": "SetGauge"
+            },
+            "_position": {
+                "x": 6414.065,
+                "y": 7168.421
+            },
+            "$type": "NodeCanvas.DialogueTrees.ActionNode",
+            "$id": "150"
+        },
+        {
+            "statement": {
+                "_text": "Elle sourit un court instant et reprend."
+            },
+            "_position": {
+                "x": 6407.139,
+                "y": 7277.724
+            },
+            "_comment": "Changement de pose ?",
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "152"
+        },
+        {
+            "statement": {
+                "_text": "D\u2019accord, \u00e0 plus tard."
+            },
+            "_position": {
+                "x": 6939.932,
+                "y": 5778.817
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "154"
+        },
+        {
+            "_action": {
+                "gauge": "Depression",
+                "value": -1,
+                "character": "Ophelie",
+                "$type": "SetGauge"
+            },
+            "_position": {
+                "x": 6909.957,
+                "y": 5898.107
+            },
+            "$type": "NodeCanvas.DialogueTrees.ActionNode",
+            "$id": "156"
+        },
+        {
+            "statement": {
+                "_text": "Elle semble surprise par mes mots."
+            },
+            "_position": {
+                "x": 7019.028,
+                "y": 5993.471
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "158"
+        },
+        {
+            "statement": {
+                "_text": "P-plus tard\u00a0?"
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 7093.977,
+                "y": 6074.666
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "160"
+        },
+        {
+            "statement": {
+                "_text": "\u2026"
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 7105.22,
+                "y": 6183.343
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "162"
+        },
+        {
+            "statement": {
+                "_text": "J-je vous souhaite bon courage, Kim. J-je sais qu\u2019il en faut\u2026"
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 7029.021,
+                "y": 6290.771
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "164"
+        },
+        {
+            "statement": {
+                "_text": "Elle se d\u00e9tourne, et quitte la salle. Que voulait-elle dire\u00a0?"
+            },
+            "_position": {
+                "x": 7133.95,
+                "y": 6385.707
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "166"
+        },
+        {
+            "_position": {
+                "x": 7225.139,
+                "y": 6523.114
+            },
+            "$type": "NodeCanvas.DialogueTrees.FinishNode",
+            "$id": "168"
+        },
+        {
+            "statement": {
+                "_text": "A plus tard."
+            },
+            "_actorName": "Oph\u00e9lie",
+            "_actorParameterID": "21939636-9cb4-41cb-9a65-e68222f878de",
+            "_position": {
+                "x": 6482.0,
+                "y": 5217.0
+            },
+            "$type": "VN.Dialog.StatmentNodeVN",
+            "$id": "169"
+        },
+        {
+            "_position": {
+                "x": 6731.0,
+                "y": 5315.0
+            },
+            "$type": "NodeCanvas.DialogueTrees.FinishNode",
+            "$id": "171"
+        }
+    ],
+    "connections": [
+        {
+            "_sourceNode": {
+                "$ref": "2"
+            },
+            "_targetNode": {
+                "$ref": "4"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "4"
+            },
+            "_targetNode": {
+                "$ref": "31"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "4"
+            },
+            "_targetNode": {
+                "$ref": "40"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "4"
+            },
+            "_targetNode": {
+                "$ref": "93"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "4"
+            },
+            "_targetNode": {
+                "$ref": "169"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "31"
+            },
+            "_targetNode": {
+                "$ref": "33"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "33"
+            },
+            "_targetNode": {
+                "$ref": "35"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "35"
+            },
+            "_targetNode": {
+                "$ref": "37"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "37"
+            },
+            "_targetNode": {
+                "$ref": "39"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "40"
+            },
+            "_targetNode": {
+                "$ref": "42"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "42"
+            },
+            "_targetNode": {
+                "$ref": "44"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "44"
+            },
+            "_targetNode": {
+                "$ref": "46"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "46"
+            },
+            "_targetNode": {
+                "$ref": "48"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "48"
+            },
+            "_targetNode": {
+                "$ref": "57"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "48"
+            },
+            "_targetNode": {
+                "$ref": "84"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "57"
+            },
+            "_targetNode": {
+                "$ref": "59"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "59"
+            },
+            "_targetNode": {
+                "$ref": "61"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "61"
+            },
+            "_targetNode": {
+                "$ref": "63"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "63"
+            },
+            "_targetNode": {
+                "$ref": "65"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "65"
+            },
+            "_targetNode": {
+                "$ref": "67"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "67"
+            },
+            "_targetNode": {
+                "$ref": "69"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "69"
+            },
+            "_targetNode": {
+                "$ref": "75"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "69"
+            },
+            "_targetNode": {
+                "$ref": "78"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "75"
+            },
+            "_targetNode": {
+                "$ref": "77"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "78"
+            },
+            "_targetNode": {
+                "$ref": "80"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "80"
+            },
+            "_targetNode": {
+                "$ref": "82"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "82"
+            },
+            "_targetNode": {
+                "$ref": "77"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "84"
+            },
+            "_targetNode": {
+                "$ref": "86"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "86"
+            },
+            "_targetNode": {
+                "$ref": "88"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "88"
+            },
+            "_targetNode": {
+                "$ref": "92"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "93"
+            },
+            "_targetNode": {
+                "$ref": "95"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "95"
+            },
+            "_targetNode": {
+                "$ref": "97"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "97"
+            },
+            "_targetNode": {
+                "$ref": "103"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "97"
+            },
+            "_targetNode": {
+                "$ref": "154"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "103"
+            },
+            "_targetNode": {
+                "$ref": "105"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "105"
+            },
+            "_targetNode": {
+                "$ref": "107"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "107"
+            },
+            "_targetNode": {
+                "$ref": "109"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "109"
+            },
+            "_targetNode": {
+                "$ref": "111"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "111"
+            },
+            "_targetNode": {
+                "$ref": "113"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "113"
+            },
+            "_targetNode": {
+                "$ref": "115"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "115"
+            },
+            "_targetNode": {
+                "$ref": "117"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "117"
+            },
+            "_targetNode": {
+                "$ref": "119"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "119"
+            },
+            "_targetNode": {
+                "$ref": "121"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "121"
+            },
+            "_targetNode": {
+                "$ref": "123"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "123"
+            },
+            "_targetNode": {
+                "$ref": "125"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "125"
+            },
+            "_targetNode": {
+                "$ref": "127"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "127"
+            },
+            "_targetNode": {
+                "$ref": "129"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "129"
+            },
+            "_targetNode": {
+                "$ref": "131"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "131"
+            },
+            "_targetNode": {
+                "$ref": "137"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "131"
+            },
+            "_targetNode": {
+                "$ref": "150"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "137"
+            },
+            "_targetNode": {
+                "$ref": "139"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "139"
+            },
+            "_targetNode": {
+                "$ref": "141"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "141"
+            },
+            "_targetNode": {
+                "$ref": "143"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "143"
+            },
+            "_targetNode": {
+                "$ref": "145"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "145"
+            },
+            "_targetNode": {
+                "$ref": "147"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "147"
+            },
+            "_targetNode": {
+                "$ref": "149"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "150"
+            },
+            "_targetNode": {
+                "$ref": "152"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "152"
+            },
+            "_targetNode": {
+                "$ref": "141"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "154"
+            },
+            "_targetNode": {
+                "$ref": "156"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "156"
+            },
+            "_targetNode": {
+                "$ref": "158"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "158"
+            },
+            "_targetNode": {
+                "$ref": "160"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "160"
+            },
+            "_targetNode": {
+                "$ref": "162"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "162"
+            },
+            "_targetNode": {
+                "$ref": "164"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "164"
+            },
+            "_targetNode": {
+                "$ref": "166"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "166"
+            },
+            "_targetNode": {
+                "$ref": "168"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "169"
+            },
+            "_targetNode": {
+                "$ref": "171"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        }
+    ],
+    "primeNode": {
+        "$ref": "2"
+    },
+    "localBlackboard": {
+        "_name": "Local Blackboard",
+        "_variables": {
+
+        }
+    },
+    "derivedData": {
+        "actorParameters": [
+            {
+                "_keyName": "Oph\u00e9lie",
+                "_id": "21939636-9cb4-41cb-9a65-e68222f878de",
+                "_actorObject": 1
+            }
+        ],
+        "$type": "NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"
+    }
+}
