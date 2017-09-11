@@ -14,6 +14,10 @@ public enum CodeLine
 	GeoffroyD2004, //Chemin Ernest - Assassinat
 	GeoffroyD2005, //Chemin Ernest - Incendie
 	GeoffroyD2006, //Chemin Ernest - Autre
+	GeoffroyD2007, //Chemin Ernest - Assassinat - Choix +1a
+	GeoffroyD2008, //Chemin Ernest - Assassinat - Choix +1b
+	GeoffroyD2009, //Chemin Ernest - Assassinat - Choix -1a
+	GeoffroyD2010, //Chemin Ernest - Assassinat - Choix -1b
 
 
     AbigailD1000,//Première fois qu'on parle à Aby - Jour 1
