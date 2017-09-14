@@ -59,6 +59,9 @@ public enum CodeLine
     OphelieD2000,//Parler de la piste -> Débloquer Dialogue Hippo
 	OphelieD2001,//Journal partie Abi lue
 	OphelieD2002,//
+	OphelieD2003,//Ophelie reste
+	OphelieD2004,//Ophelie reste ++
+	OphelieD2005,//Ophelie part
 	
 	
     LeontineD1000,//Première fois qu'on parle à Leontine - Jour 1
