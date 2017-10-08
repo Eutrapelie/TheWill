@@ -64,36 +64,38 @@ public class CharacterCard : InteractibleObject
         }*/
     }
 
+
     void Awake()
     {
         Sprite = _spriteRenderer;
 
-        EventManager.StartListening(CharacterInfo.characterName.ToString(), () => { OnClickObject(); });
+        EventManager.StartListening(CharacterInfo.characterName.ToString() + "OnClick",  OnClickObject);
 
         OnClickCharacterValue += DoStuff;
-
     }
 
-    private void OnClickObject()
+    private void OnClickObject(object value)
     {
         if (OnClickCharacterValue != null)
         {
-            OnClickCharacterValue(_characterInfo.characterName);
+            OnClickCharacterValue(CharacterInfo.characterName);
         }
     }
 
     void DoStuff(Character name)
     {
         Debug.Log("[DoStuff] name is " + name);
+        Debug.Log("[DoStuff] GameManager.Instance.MyCharacterController " + GameManager.Instance.MyCharacterController);
+        //GameManager.Instance.MyCharacterController.toggleAllCharactersEvent.Invoke(false);
     }
 
     public void ChangeSprite()
     {
-        string sprite = _characterInfo.characterName.ToString() + _characterInfo.currentEmotion.ToString() + (_isTalking ? "Talking" : "");
+        string sprite = CharacterInfo.characterName.ToString() + CharacterInfo.currentEmotion.ToString() + (_isTalking ? "Talking" : "");
 
         foreach (CharacterSprite item in _characterSprites)
         {
-            string spriteItem = _characterInfo.characterName.ToString() + item.Emotion + (item.Talking ? "Talking" : "");
+            string spriteItem = CharacterInfo.characterName.ToString() + item.Emotion + (item.Talking ? "Talking" : "");
             if(spriteItem.Equals(sprite))
             {
                 _spriteRenderer.sprite = item.Sprite;
@@ -108,9 +110,9 @@ public class CharacterCard : InteractibleObject
         ChangeSprite();
     }
 
-    public void ToggleSprite(bool visible)
+    public void ToggleVisibility(bool visible)
     {
-        _spriteRenderer.gameObject.SetActive(visible);
+        gameObject.SetActive(visible);
     }
 
     public void ChangeRoom(Room newRoom)

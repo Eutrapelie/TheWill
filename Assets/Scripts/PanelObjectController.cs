@@ -15,10 +15,10 @@ public class PanelObjectController : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
         this.gameObject.SetActive(false);
-        EventManager.StartListening("ShowObject", () => { ShowObject(); });
+        EventManager.StartListening("ShowObject", ShowObject);
 	}
 
-    private void ShowObject()
+    private void ShowObject(object value)
     {
         this.gameObject.SetActive(true);
         InteractibleObject selectedObject = _interactibleObjectsController.SelectedObject;

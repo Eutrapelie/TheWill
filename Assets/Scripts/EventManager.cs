@@ -3,10 +3,16 @@ using UnityEngine.Events;
 using System.Collections;
 using System.Collections.Generic;
 
+[System.Serializable]
+public class ThisEvent : UnityEvent<object>
+{
+
+}
+
 public class EventManager : MonoBehaviour
 {
 
-    private Dictionary<string, UnityEvent> eventDictionary;
+    private Dictionary<string, ThisEvent> eventDictionary;
 
     private static EventManager eventManager;
 
@@ -36,41 +42,57 @@ public class EventManager : MonoBehaviour
     {
         if (eventDictionary == null)
         {
-            eventDictionary = new Dictionary<string, UnityEvent>();
+            eventDictionary = new Dictionary<string, ThisEvent>();
         }
     }
 
-    public static void StartListening(string eventName, UnityAction listener)
+    public static void StartListening(string eventName, UnityAction<object> listener)
     {
-        UnityEvent thisEvent = null;
+        ThisEvent thisEvent = null;
         if (instance.eventDictionary.TryGetValue(eventName, out thisEvent))
         {
             thisEvent.AddListener(listener);
         }
         else
         {
-            thisEvent = new UnityEvent();
+            thisEvent = new ThisEvent();
             thisEvent.AddListener(listener);
             instance.eventDictionary.Add(eventName, thisEvent);
         }
     }
-
-    public static void StopListening(string eventName, UnityAction listener)
+    
+    public static void StopListening(string eventName, UnityAction<object> listener)
     {
         if (eventManager == null) return;
-        UnityEvent thisEvent = null;
+        ThisEvent thisEvent = null;
         if (instance.eventDictionary.TryGetValue(eventName, out thisEvent))
         {
             thisEvent.RemoveListener(listener);
         }
     }
 
-    public static void TriggerEvent(string eventName)
+    public static void TriggerEvent(string eventName, object value)
     {
-        UnityEvent thisEvent = null;
+        ThisEvent thisEvent = null;
         if (instance.eventDictionary.TryGetValue(eventName, out thisEvent))
         {
-            thisEvent.Invoke();
+            thisEvent.Invoke(value);
+        } else
+        {
+            Debug.LogError("[EventManager] Event trying to trigger " + eventName + " is not listed. Do you start listening ?");
+        }
+    }
+
+    public static void TriggerEvent(string eventName, List<object> value)
+    {
+        ThisEvent thisEvent = null;
+        if (instance.eventDictionary.TryGetValue(eventName, out thisEvent))
+        {
+            thisEvent.Invoke(value);
+        }
+        else
+        {
+            Debug.LogError("[EventManager] Event trying to trigger " + eventName + " is not listed. Do you start listening ?");
         }
     }
 }

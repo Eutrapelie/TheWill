@@ -1,38 +1,8 @@
 ﻿using NodeCanvas.Framework;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-
-[System.Serializable]
-public class CharacterTalkingEvent : UnityEvent<Character>
-{
-}
-
-[System.Serializable]
-public class CharacterTogglingEvent : UnityEvent<Character, bool>
-{
-}
-
-[System.Serializable]
-public class CharacterChangeRoomEvent : UnityEvent<Character, Room>
-{
-}
-
-[System.Serializable]
-public class CharacterChangeRoomSpotEvent : UnityEvent<Character, RoomSpot>
-{
-}
-
-[System.Serializable]
-public class CharacterChangeEmotionEvent : UnityEvent<Character, Emotion>
-{
-}
-
-[System.Serializable]
-public class CharacterSetGaugeEvent : UnityEvent<Character, int>
-{
-}
-
 
 public class MyCharacterController : MonoBehaviour
 {
@@ -41,18 +11,6 @@ public class MyCharacterController : MonoBehaviour
 
     [SerializeField]
     private GlobalBlackboard _globalBlackboard;
-
-    public CharacterTogglingEvent characterTogglingEvent;
-
-    public CharacterTalkingEvent characterTalkingEvent;
-
-    public CharacterChangeRoomEvent characterChangeRoomEvent;
-
-    public CharacterChangeRoomSpotEvent characterChangeRoomSpotEvent;
-
-    public CharacterChangeEmotionEvent characterChangeEmotionEvent;
-
-    public CharacterSetGaugeEvent characterSetGaugeEvent;
 
     private CharacterCard talkingCharacter;
 
@@ -72,41 +30,65 @@ public class MyCharacterController : MonoBehaviour
     void Awake()
     {
         talkingCharacter = null;
-        if (characterTalkingEvent == null)
-        {
-            characterTalkingEvent = new CharacterTalkingEvent();
-        }
-        characterTalkingEvent.AddListener(CharacterIsTalking);
 
-        if(characterTogglingEvent == null)
+        foreach (Character character in Enum.GetValues(typeof(Character)))
         {
-            characterTogglingEvent = new CharacterTogglingEvent();
+            EventManager.StartListening(character.ToString() + "OnClick", HideAllCharacters);
         }
-        characterTogglingEvent.AddListener(CharacterApparition);
 
-        if (characterChangeRoomEvent == null)
-        {
-            characterChangeRoomEvent = new CharacterChangeRoomEvent();
-        }
-        characterChangeRoomEvent.AddListener(CharacterChangeRoom);
+        EventManager.StartListening(VNFinishNode.EVT_FINISH_DIALOG, ShowAllCharacters);
+        EventManager.StartListening(ToggleCharacterApparition.EVT_TOGGLE_CHARACTER_APPARITION, CharacterApparition);
+        EventManager.StartListening(VN.Dialog.StatmentNodeVN.EVT_CHARACTER_TALKING, CharacterIsTalking);
 
-        if (characterChangeRoomSpotEvent == null)
-        {
-            characterChangeRoomSpotEvent = new CharacterChangeRoomSpotEvent();
-        }
-        characterChangeRoomSpotEvent.AddListener(CharacterChangeRoomSpot);
+        EventManager.StartListening(ChangeRoomForCharacter.EVT_CHARACTER_CHANGE_ROOM, CharacterChangeRoom);
+        EventManager.StartListening(ChangeRoomForCharacter.EVT_CHARACTER_CHANGE_ROOM_SPOT, CharacterChangeRoomSpot);
+        EventManager.StartListening(ChangeEmotionForCharacter.EVT_CHARACTER_CHANGE_EMOTION, CharacterChangeEmotion);
+        EventManager.StartListening(SetGauge.EVT_CHARACTER_SET_GAUGE, CharacterSetGauge);
+    }
 
-        if (characterChangeEmotionEvent == null)
+    public CharacterCard GetCharacterCardGameObject(Character character)
+    {
+        foreach (CharacterCard card in _characters)
         {
-            characterChangeEmotionEvent = new CharacterChangeEmotionEvent();
+            if (card.CharacterInfo.characterName.Equals(character))
+            {
+                return card;
+            }
         }
-        characterChangeEmotionEvent.AddListener(CharacterChangeEmotion);
+        return null;
+    }
 
-        if (characterSetGaugeEvent == null)
+    public void HideAllCharacters (object value)
+    {
+        CharacterCard card = (CharacterCard)value;
+        if (!card)
         {
-            characterSetGaugeEvent = new CharacterSetGaugeEvent();
+            Debug.LogError("[MyCharacterController]Error from event to hide all characters");
+            return;
         }
-        characterSetGaugeEvent.AddListener(CharacterSetGauge);
+        
+        /*Character character = (Character)Enum.Parse(typeof(Character), ((string)characterName), true);
+        CharacterCard talkingCard = GetCharacterCardGameObject(character);
+        RoomSpot spot = (RoomSpot)Enum.Parse(typeof(RoomSpot), (talkingCard.CharacterInfo.currentRoom.ToString() + "UpSpot1"), true);
+        GetCharacterToUpSpot(talkingCard, spot);*/
+
+        EventManager.TriggerEvent(MainController.EVT_UPSPOT_CHARACTER, card);
+
+        foreach (CharacterCard character in _characters)
+        {
+            character.ToggleVisibility(false);
+        }
+        
+    }
+
+    public void ShowAllCharacters(object value)
+    {
+        Debug.Log("[MyCharacterController] ShowAllCharacters");
+        foreach (CharacterCard character in _characters)
+        {
+            character.ToggleVisibility(true);
+        }
+
     }
 
     public void AddCharacterCardToGlobalBB(CharacterCard card)
@@ -118,8 +100,9 @@ public class MyCharacterController : MonoBehaviour
         }
     }
 
-    private void CharacterIsTalking(Character arg0)
+    private void CharacterIsTalking(object arg0)
     {
+        Character character = (Character)arg0;
         if(talkingCharacter != null && talkingCharacter.CharacterInfo.characterName.Equals(arg0))
         {
             return;
@@ -144,19 +127,25 @@ public class MyCharacterController : MonoBehaviour
         }
     }
 
-    private void CharacterApparition(Character character, bool visible)
+    private void CharacterApparition(object args)
     {
+        List <object> list = (List<object>)args;
+        Character character = (Character)list[0];
+        bool visible = (bool)list[1];
         foreach (CharacterCard item in Characters)
         {
             if(item.CharacterInfo.characterName.Equals(character))
             {
-                item.ToggleSprite(visible);
+                item.ToggleVisibility(visible);
             }
         }
     }
 
-    private void CharacterChangeRoom(Character arg0, Room arg1)
+    private void CharacterChangeRoom(object args)
     {
+        List<object> list = (List<object>)args;
+        Character arg0 = (Character) list[0];
+        Room arg1 = (Room)list[1];
         foreach (CharacterCard item in Characters)
         {
             if (item.CharacterInfo.characterName.Equals(arg0))
@@ -165,6 +154,15 @@ public class MyCharacterController : MonoBehaviour
                 break;
             }
         }
+    }
+
+    private void CharacterChangeRoomSpot(object args)
+    {
+        List<object> list = (List<object>)args;
+        Character arg0 = (Character)list[0];
+        RoomSpot arg1 = (RoomSpot)list[1];
+        //RoomSpot room = (RoomSpot)Enum.Parse(typeof(RoomSpot), arg1, true);
+        CharacterChangeRoomSpot(arg0, arg1);
     }
 
     private void CharacterChangeRoomSpot(Character arg0, RoomSpot arg1)
@@ -179,8 +177,11 @@ public class MyCharacterController : MonoBehaviour
         }
     }
 
-    private void CharacterChangeEmotion(Character arg0, Emotion arg1)
+    private void CharacterChangeEmotion(object args)
     {
+        List<object> list = (List<object>)args;
+        Character arg0 = (Character)list[0];
+        Emotion arg1 = (Emotion)list[1];
         foreach (CharacterCard item in Characters)
         {
             if (item.CharacterInfo.characterName.Equals(arg0))
@@ -191,8 +192,11 @@ public class MyCharacterController : MonoBehaviour
         }
     }
 
-    private void CharacterSetGauge(Character arg0, int arg1)
+    private void CharacterSetGauge(object args)
     {
+        List<object> list = (List<object>)args;
+        Character arg0 = (Character)list[0];
+        int arg1 = (int)list[1];
         foreach (CharacterCard item in Characters)
         {
             if (item.CharacterInfo.characterName.Equals(arg0))

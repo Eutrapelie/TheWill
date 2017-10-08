@@ -12,6 +12,7 @@ namespace VN.Dialog
     [Description("DIALOG VN : Make the selected Dialogue Actor talk. You can make the text more dynamic by using variable names in square brackets\ne.g. [myVarName] or [Global/myVarName]")]
     public class StatmentNodeVN : StatementNode
     {
+        public static string EVT_CHARACTER_TALKING = "StatmentNodeVN.EVT_CHARACTER_TALKING";
         protected override Status OnExecute(Component agent, IBlackboard bb)
         {
             MyCharacterController mCC = GameManager.Instance.MyCharacterController;
@@ -26,8 +27,8 @@ namespace VN.Dialog
                 {
                     Debug.Log(actorName + " is not a member of the Character enumeration.");
                 }
-                if(charEnum != null)
-                    mCC.characterTalkingEvent.Invoke(charEnum.Value);
+                if(charEnum != null)                    
+                    EventManager.TriggerEvent(EVT_CHARACTER_TALKING, charEnum.Value);
             }
             statement = GenreReplace(statement);
 

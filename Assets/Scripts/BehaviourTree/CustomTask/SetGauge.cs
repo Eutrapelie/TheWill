@@ -1,8 +1,10 @@
 ﻿using NodeCanvas.Framework;
 using ParadoxNotion.Design;
+using System.Collections.Generic;
 
 public class SetGauge : ActionTask
 {
+    public static string EVT_CHARACTER_SET_GAUGE = "SetGauge.EVT_CHARACTER_SET_GAUGE";
     public Gauge gauge;
     public int value = 0;
     public Character character;
@@ -17,7 +19,11 @@ public class SetGauge : ActionTask
 
     protected override void OnExecute()
     {
-        GameManager.Instance.MyCharacterController.characterSetGaugeEvent.Invoke(character, value);
+        List<object> args = new List<object>();
+        args.Add(character);
+        args.Add(value);
+
+        EventManager.TriggerEvent(EVT_CHARACTER_SET_GAUGE, args);
         EndAction(true);
     }
 }

@@ -9,6 +9,7 @@ public enum RoomSpot {
     LivingRoomSpot4,
     LivingRoomSpot5,
     LivingRoomSpot6,
+    LivingRoomUpSpot1,
 
     GardenSpot1,
     GardenSpot2,

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ChangeRoomForCharacter : ActionTask
 {
+    public static string EVT_CHARACTER_CHANGE_ROOM = "ChangeRoomForCharacter.EVT_CHARACTER_CHANGE_ROOM";
+    public static string EVT_CHARACTER_CHANGE_ROOM_SPOT = "ChangeRoomForCharacter.EVT_CHARACTER_CHANGE_ROOM_SPOT";
     public Character character;
     public Room newRoom;
     public RoomSpot newSpot;
@@ -19,8 +21,16 @@ public class ChangeRoomForCharacter : ActionTask
 
     protected override void OnExecute()
     {
-        GameManager.Instance.MyCharacterController.characterChangeRoomEvent.Invoke(character, newRoom);
-        GameManager.Instance.MyCharacterController.characterChangeRoomSpotEvent.Invoke(character, newSpot);
+        List<object> argsRoom = new List<object>();
+        List<object> argsRoomSpot = new List<object>();
+        argsRoom.Add(character);
+        argsRoom.Add(newRoom);
+        argsRoomSpot.Add(character);
+        argsRoomSpot.Add(newSpot);
+
+        EventManager.TriggerEvent(EVT_CHARACTER_CHANGE_ROOM, argsRoom);
+        EventManager.TriggerEvent(EVT_CHARACTER_CHANGE_ROOM_SPOT, argsRoomSpot);
+        
         EndAction(true);
     }
 }

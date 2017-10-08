@@ -8,6 +8,8 @@ using NodeCanvas.DialogueTrees;
 
 public class MainController : MonoBehaviour
 {
+    public static string EVT_UPSPOT_CHARACTER = "MainController.EVT_UPSPOT_CHARACTER";
+
     [SerializeField]
     private int _acteNumber = 1;
 
@@ -19,6 +21,9 @@ public class MainController : MonoBehaviour
 
     [SerializeField]
     private List<RoomSpotView> _characterSpotsGameObject;
+
+    [SerializeField]
+    private RoomSpotView _upSpot;
 
     [SerializeField]
     private Blackboard _blackBoard;
@@ -33,6 +38,9 @@ public class MainController : MonoBehaviour
     {
         Game.Current.LoadStartLevel(_acteNumber, _dayNumber);
         LoadBehaviourTree();
+
+        EventManager.StartListening(EVT_UPSPOT_CHARACTER, UpdateUpspotWithCharacter);
+        EventManager.StartListening(VNFinishNode.EVT_FINISH_DIALOG, UpdateUpspotWithCharacter);
     }
 
     void Start()
@@ -142,5 +150,29 @@ public class MainController : MonoBehaviour
             }
         }
         return newSpot;
+    }
+
+    public void UpdateUpspotWithCharacter(object value)
+    {
+        CharacterCard card = (CharacterCard)value;
+        if (card)
+        {
+            Debug.Log("[MainController] UpdateUpspotWithCharacter " + card.CharacterInfo.characterName.ToString());
+            SpriteRenderer renderer = _upSpot.GetComponentInChildren<SpriteRenderer>();
+            if (renderer)
+            {
+                Debug.Log("[MainController] UpdateUpspotWithCharacter has renderer and sprite " + card.Sprite.sprite.ToString());
+                renderer.sprite = card.Sprite.sprite;
+            }
+        } 
+        else
+        {
+            Debug.Log("[MainController] UpdateUpspotWithCharacter hide sprite upspot");
+            SpriteRenderer renderer = _upSpot.GetComponentInChildren<SpriteRenderer>();
+            if (renderer)
+            {                
+                renderer.sprite = null;
+            }
+        }
     }
 }

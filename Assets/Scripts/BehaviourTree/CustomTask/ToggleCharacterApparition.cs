@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ToggleCharacterApparition : ActionTask
 {
+    public static string EVT_TOGGLE_CHARACTER_APPARITION = "ToggleCharacterApparition.EVT_TOGGLE_CHARACTER_APPARITION";
     public Character character;
     public bool isHere;
 
@@ -22,7 +23,10 @@ public class ToggleCharacterApparition : ActionTask
 
     protected override void OnExecute()
     {
-        GameManager.Instance.MyCharacterController.characterTogglingEvent.Invoke(character, isHere);
+        List<object> args = new List<object>();
+        args.Add(character);
+        args.Add(isHere);
+        EventManager.TriggerEvent(EVT_TOGGLE_CHARACTER_APPARITION, args);
         EndAction(true);
     }
 }

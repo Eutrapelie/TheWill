@@ -1,9 +1,11 @@
 ﻿using NodeCanvas;
 using NodeCanvas.Framework;
 using ParadoxNotion.Design;
+using System.Collections.Generic;
 
 public class ChangeEmotionForCharacter : ActionTask
 {
+    public static string EVT_CHARACTER_CHANGE_EMOTION = "ChangeEmotionForCharacter.EVT_CHARACTER_CHANGE_EMOTION";
     public Character character;
     public Emotion newEmotion;
 
@@ -17,7 +19,11 @@ public class ChangeEmotionForCharacter : ActionTask
 
     protected override void OnExecute()
     {
-        GameManager.Instance.MyCharacterController.characterChangeEmotionEvent.Invoke(character, newEmotion);
+        List<object> args = new List<object>();
+        args.Add(character);
+        args.Add(newEmotion);
+
+        EventManager.TriggerEvent(EVT_CHARACTER_CHANGE_EMOTION, args);        
         EndAction(true);
     }
 }

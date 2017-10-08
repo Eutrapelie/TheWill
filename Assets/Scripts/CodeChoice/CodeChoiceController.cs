@@ -11,7 +11,6 @@ public class CodeChoiceController : MonoBehaviour
 
     public void OnEnable()
     {
-        Debug.Log("hello");
         if(_codeChoiceManager != null)
         {
             _codeChoice = new List<string>();
