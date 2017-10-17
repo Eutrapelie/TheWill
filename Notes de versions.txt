@@ -1,0 +1,15 @@
+Notes de versions
+
+Versions 0.0.2 (à venir)
+Modifications :
+ - Mise en ancre de l'UI des dialogues et des choix.
+ - Changement de l'UI pour les dialogues et les choix.
+
+
+/****************************** RAPPELS *******************************/
+Numéro de version :
+Chaque build que l'on partage au reste de l'équipe pour tester l'avancement correspond à une version micro 0.0.x, chaque ajout conséquent à une version mineure 0.x.0 et chaque release accompagnée de gros changements à une version majeure x.0.0. Ça marche bien si on se concerte bien pour l'upgrade des versions.
+
+Notes de versions : 
+En gros, à chaque fois qu'on fait un push via SourceTree, on ajoute ce qu'on a fait comme changement dans les notes de versions (un fichier .txt à push) Cela permet de mieux communiquer sur ce qui a été réellement fait. On y répertorie les ajouts de contenus, les modifications de contenus et les corrections de bugs principalement.
+Au début, c'est pas forcément utile (et encore vu qu'on n'est pas tous sur Unity) mais genre, à partir de Décembre/Mars, ça va devenir super important pour montrer que "sisi, le jeu continue d'être amélioré et d'ailleurs pouf : voici la liste des changements."
