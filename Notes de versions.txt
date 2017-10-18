@@ -4,6 +4,9 @@ Versions 0.0.2 (à venir)
 Modifications :
  - Mise en ancre de l'UI des dialogues et des choix.
  - Changement de l'UI pour les dialogues et les choix.
+ - Création d'une grille pour le hall et le changement de scènes
+ - Création d'animation de fondues pour les transitions entre les scènes
+ - Création d'un bouton dans LivingRoom pour retourner dans le Hall
 
 
 /****************************** RAPPELS *******************************/
