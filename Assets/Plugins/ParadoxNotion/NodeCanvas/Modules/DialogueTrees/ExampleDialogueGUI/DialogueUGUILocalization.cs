@@ -185,7 +185,24 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
                     else
                     {
                         tempColorText += text[i];
-                        // TempColorText contains "<c" -> "<color=COLOR>"
+                        if (tempColorText.StartsWith("<color=") && tempColorText.Contains(">") && tempColorText.Contains("</") == false)
+                        {
+                            if (text[i] != '<' && text[i] != '/' && text[i] != '>')
+                            {
+                                // Write tempColorText with color
+                                tempText += "<color=red>" + text[i].ToString() + "</color>";
+                                yield return StartCoroutine(DelayPrint(subtitleDelays.characterDelay));
+                                actorSpeech.text = tempText;
+                            }
+                        }
+                        else if (tempColorText.StartsWith("<color=") && tempColorText.EndsWith("</color>"))
+                        {
+                            // Reset tempColorText
+                            tempColorText = "";
+                        }
+
+
+                        /*// TempColorText contains "<c" -> "<color=COLOR>"
                         if (tempColorText.Contains("<color=") == false && tempColorText.Contains(">") == false)
                         {
                             // Do nothing, add color code
@@ -216,7 +233,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
                         {
                             // Not used ?
                             Debug.Log("Not used ? Lol. - " + tempColorText);
-                        }
+                        }*/
                     }
 
 				}
