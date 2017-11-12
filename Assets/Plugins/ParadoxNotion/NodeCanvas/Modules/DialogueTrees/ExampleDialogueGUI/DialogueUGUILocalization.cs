@@ -23,6 +23,8 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 		[Header("Input Options")]
 		public bool skipOnInput;
 		public bool waitForInput;
+        [SerializeField]
+        Utils.Lang _lang;
 
 		//Group...
 		[Header("Subtitles")]
@@ -71,7 +73,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			originalSubsPosition = subtitlesGroup.transform.position;
             
             // test de localization
-            Utils.Localization.InitializeLangDictionaries();
+            Utils.Localization.InitializeLangDictionaries(_lang);
 
         }
 
@@ -101,6 +103,8 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 		void OnSubtitlesRequest(SubtitlesRequestInfo info){
 			StartCoroutine(Internal_OnSubtitlesRequestInfo(info));
 		}
+
+        string tempColorText = "";
 
 		IEnumerator Internal_OnSubtitlesRequestInfo(SubtitlesRequestInfo info){
 
@@ -153,18 +157,68 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 					if (subtitlesGroup.gameObject.activeSelf == false){
 						yield break;
 					}
+                    
+                    if (string.IsNullOrEmpty(tempColorText))
+                    {
+                        if (text[i] == '<')
+                        {
+                            tempColorText = "<";
+                        }
+                        else
+                        {
+                            tempText += text[i];
 
-					tempText += text[i];
-					yield return StartCoroutine(DelayPrint(subtitleDelays.characterDelay));
-					char c = text[i];
-					if (c == '.' || c == '!' || c == '?'){
-						yield return StartCoroutine(DelayPrint(subtitleDelays.sentenceDelay));
-					}
-					if (c == ','){
-						yield return StartCoroutine(DelayPrint(subtitleDelays.commaDelay));
-					}
+                            yield return StartCoroutine(DelayPrint(subtitleDelays.characterDelay));
+                            char c = text[i];
+                            if (c == '.' || c == '!' || c == '?')
+                            {
+                                yield return StartCoroutine(DelayPrint(subtitleDelays.sentenceDelay));
+                            }
+                            if (c == ',')
+                            {
+                                yield return StartCoroutine(DelayPrint(subtitleDelays.commaDelay));
+                            }
 
-					actorSpeech.text = tempText;
+                            actorSpeech.text = tempText;
+                        }
+                    }
+                    else
+                    {
+                        tempColorText += text[i];
+                        // TempColorText contains "<c" -> "<color=COLOR>"
+                        if (tempColorText.Contains("<color=") == false && tempColorText.Contains(">") == false)
+                        {
+                            // Do nothing, add color code
+                        }
+                        // TempColorText contains "<color=COLOR>" -> "<color=COLOR>TEXT<"
+                        else if (tempColorText.Contains("<color=") && tempColorText.Contains(">") && tempColorText.Contains("</") == false)
+                        {
+                            if (text[i] != '<' && text[i] != '/' && text[i] != '>')
+                            {
+                                // Write tempColorText with color
+                                tempText += "<color=red>" + text[i].ToString() + "</color>";
+                                yield return StartCoroutine(DelayPrint(subtitleDelays.characterDelay));
+                                actorSpeech.text = tempText;
+                            }
+                        }
+                        // TempColorText contains "<color=" -> "<color=COLOR>TEXT</color"
+                        else if (tempColorText.Contains("<color=") && tempColorText.Contains("</color>") == false)
+                        {
+                            // Do nothing, add end of color balise
+                        }
+                        // TempColorText contains "<color=COLOR>TEXT</color>"
+                        else if (tempColorText.Contains("<color=") && tempColorText.Contains("</color>"))
+                        {
+                            // Reset tempColorText
+                            tempColorText = "";
+                        }
+                        else
+                        {
+                            // Not used ?
+                            Debug.Log("Not used ? Lol. - " + tempColorText);
+                        }
+                    }
+
 				}
 
 				if (!waitForInput){

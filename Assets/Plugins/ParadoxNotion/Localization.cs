@@ -4,19 +4,18 @@ using UnityEngine;
 
 namespace Utils
 {
+    public enum Lang { fr, en }
+
     public static class Localization
     {
-
-        enum Lang { fr, en }
-
         static string _path = Application.streamingAssetsPath + "/Test.csv";
         static Dictionary<Lang, Dictionary<string, string>> _globalLangDictionary = new Dictionary<Lang, Dictionary<string, string>>();
         static Dictionary<string, string> _currentLangDictionary;
 
-        public static void InitializeLangDictionaries()
+        public static void InitializeLangDictionaries(Lang a_lang = Lang.fr)
         {
             ParseCSV();
-            _currentLangDictionary = _globalLangDictionary[Lang.en];
+            _currentLangDictionary = _globalLangDictionary[a_lang];
         }
 
         static void ParseCSV()
