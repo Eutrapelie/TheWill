@@ -1,12 +1,28 @@
 Notes de versions
 
-Versions 0.0.2 (à venir)
+Version 0.0.3 (2017/11/26)
+Modifications :
+ - Écrire des textes en couleurs
+
+Ajouts :
+ - Système de localisation des textes du dialogue
+ - Sprites du sac-à-dos
+ - UI du sac-à-dos
+ - Anims du sac-à-dos
+ - Panel pour l'inventaire
+/**********************************************/
+
+
+Version 0.0.2 (2017/10/19)
 Modifications :
  - Mise en ancre de l'UI des dialogues et des choix.
  - Changement de l'UI pour les dialogues et les choix.
+
+Ajouts :
  - Création d'une grille pour le hall et le changement de scènes
  - Création d'animation de fondues pour les transitions entre les scènes
  - Création d'un bouton dans LivingRoom pour retourner dans le Hall
+/**********************************************/
 
 
 /****************************** RAPPELS *******************************/

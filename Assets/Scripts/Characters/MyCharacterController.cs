@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class MyCharacterController : MonoBehaviour
 {
@@ -44,6 +45,8 @@ public class MyCharacterController : MonoBehaviour
         EventManager.StartListening(ChangeRoomForCharacter.EVT_CHARACTER_CHANGE_ROOM_SPOT, CharacterChangeRoomSpot);
         EventManager.StartListening(ChangeEmotionForCharacter.EVT_CHARACTER_CHANGE_EMOTION, CharacterChangeEmotion);
         EventManager.StartListening(SetGauge.EVT_CHARACTER_SET_GAUGE, CharacterSetGauge);
+
+        EventManager.StartListening(ChangeRoomForKim.EVT_KIM_CHANGE_ROOM, KimChangeRoom);
     }
 
     public CharacterCard GetCharacterCardGameObject(Character character)
@@ -138,6 +141,30 @@ public class MyCharacterController : MonoBehaviour
             {
                 item.ToggleVisibility(visible);
             }
+        }
+    }
+
+    void KimChangeRoom(object arg0)
+    {
+        Room newRoom = (Room)arg0;
+        switch (newRoom)
+        {
+            case Room.None:
+                break;
+            case Room.Entrance:
+                SceneManager.LoadScene("Entrance");
+                break;
+            case Room.LivingRoom:
+                SceneManager.LoadScene("LivingRoom");
+                break;
+            case Room.Garden:
+                SceneManager.LoadScene("Garden");
+                break;
+            case Room.Hall:
+                SceneManager.LoadScene("Hall");
+                break;
+            default:
+                break;
         }
     }
 
