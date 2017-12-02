@@ -24,7 +24,7 @@ namespace Utils
             //fileData = fileData.Replace(',', '.');
 
             string[] lines = fileData.Split("\n"[0]);
-            Debug.Log(lines.Length);
+           // Debug.Log(lines.Length);
 
             Dictionary<string, string> frenchData = new Dictionary<string, string>();
             Dictionary<string, string> englishData = new Dictionary<string, string>();
@@ -41,7 +41,7 @@ namespace Utils
 
                     frenchData.Add(id, frValue);
                     englishData.Add(id, enValue);
-                    Debug.Log("[" + id + "] French: " + frenchData[id] + " // Enlish: " + englishData[id]);
+                   // Debug.Log("[" + id + "] French: " + frenchData[id] + " // Enlish: " + englishData[id]);
                 }
             }
             _globalLangDictionary.Add(Lang.fr, frenchData);

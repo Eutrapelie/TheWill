@@ -4,6 +4,12 @@ Version 0.0.4 (à venir)
 Modifications :
  - Ouverture du panel Inventaire/objectifs en cliquant sur le livre et non sur le sac
  - Intégration de l'ouverture/fermeture du panel de choix de salle dans le Hall
+ - Mise en place d'une scroll verticale dans le panel d'inventaire
+
+Ajouts :
+ - Mode exploration (mais pas les objets sélectionnables)
+ - Font Roboto
+ - Menu principal
 /**********************************************/
 
 

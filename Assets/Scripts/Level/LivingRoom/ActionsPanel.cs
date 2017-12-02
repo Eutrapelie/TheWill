@@ -11,14 +11,22 @@ namespace TheWill
     public class ActionsPanel : MonoBehaviour, IPointerExitHandler
     {
         Animator _animator;
+        [Header("Backpack")]
         [SerializeField] Backpack _backpack;
         [SerializeField] BackpackPanel _backpackPanel;
 
+        [Header("Change of room")]
         [SerializeField] Canvas _fadeCanvas;
         [SerializeField] AnimationClip _closingAnim;
         
         [Tooltip("Let 'None' if the current room isn't 'Hall'")]
         [SerializeField] RoomsChoice _roomsChoice;
+
+        [Header("Explore")]
+        [SerializeField] CanvasGroup _vnDialogCanvasGroup;
+        [SerializeField] ChangeSpriteHierarchyVisibility _spriteHierarchyVisibility;
+        [SerializeField] Animator _exploreAnimator;
+        bool _isExploreMode;
 
         
     ///////////////////////////////////////////////////////////////
@@ -35,11 +43,16 @@ namespace TheWill
 
             if (SceneManager.GetActiveScene().name == "Hall")
                 Debug.Assert(_roomsChoice != null, "_roomsChoice cannot be null.");
+
+            Debug.Assert(_vnDialogCanvasGroup != null, "_vnDialogCanvasGroup cannot be null.");
+            Debug.Assert(_spriteHierarchyVisibility != null, "_spriteHierarchyVisibility cannot be null.");
+            Debug.Assert(_exploreAnimator != null, "_exploreAnimator cannot be null.");
         }
         /*********************************************************/
 
         void Start()
         {
+            _isExploreMode = false;
             _backpack.OnMouseEnter += OnMouseEnterBackpack;
         }
         /*********************************************************/
@@ -66,9 +79,21 @@ namespace TheWill
     ///////////////////////////////////////////////////////////////
     /// PUBLIC FUNCTIONS //////////////////////////////////////////
     ///////////////////////////////////////////////////////////////
-        public void Btn_ClickOnBackpack()
+        public void Btn_OpenBackpack()
         {
             _backpackPanel.SetVisibility(true);
+        }
+        /*********************************************************/
+
+        public void Btn_SetExploreMode(bool a_show)
+        {
+            _isExploreMode = a_show;
+            _vnDialogCanvasGroup.alpha = _isExploreMode ? 0 : 1;
+            _vnDialogCanvasGroup.blocksRaycasts = _isExploreMode;
+            _vnDialogCanvasGroup.interactable = _isExploreMode;
+            _spriteHierarchyVisibility.SetSpritesVisibility(!_isExploreMode);
+            _exploreAnimator.SetBool("Show", _isExploreMode);
+            _animator.SetBool("HideActions", _isExploreMode);
         }
         /*********************************************************/
 
