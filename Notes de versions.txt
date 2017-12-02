@@ -1,5 +1,12 @@
 Notes de versions
 
+Version 0.0.4 (à venir)
+Modifications :
+ - Ouverture du panel Inventaire/objectifs en cliquant sur le livre et non sur le sac
+ - Intégration de l'ouverture/fermeture du panel de choix de salle dans le Hall
+/**********************************************/
+
+
 Version 0.0.3 (2017/11/26)
 Modifications :
  - Écrire des textes en couleurs
