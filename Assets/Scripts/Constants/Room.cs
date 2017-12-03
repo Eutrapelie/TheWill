@@ -8,5 +8,6 @@ public enum Room
     Entrance,
     Hall,
     LivingRoom,
+	LivingRoomIntegration,
     None
 }

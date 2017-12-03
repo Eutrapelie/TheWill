@@ -155,7 +155,7 @@ public class MyCharacterController : MonoBehaviour
                 SceneManager.LoadScene("Entrance");
                 break;
             case Room.LivingRoom:
-                SceneManager.LoadScene("LivingRoom");
+                SceneManager.LoadScene("LivingRoomIntegration");
                 break;
             case Room.Garden:
                 SceneManager.LoadScene("Garden");
