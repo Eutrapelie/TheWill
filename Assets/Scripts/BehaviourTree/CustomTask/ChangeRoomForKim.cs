@@ -12,7 +12,7 @@ public class ChangeRoomForKim : ActionTask
     {
         get
         {
-            return string.Format("{Kim is leaving the room to go {0}", newRoom.ToString());
+            return string.Format("Kim is leaving the room to go {0}", newRoom.ToString());
         }
     }
 
