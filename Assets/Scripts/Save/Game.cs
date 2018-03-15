@@ -69,8 +69,24 @@ public class Game
         }
     }
 
-    public void LoadGame(Game game)
+    public string DebugGameData()
     {
-        current = game;
+        string gameData = "";
+        gameData = "{Codeline: " + player.codeLines.Count + " -- Gender: " + player.genre +"\n" +
+            "Room: " + currentRoom + " -- Acte: " + acteNumber + " -- Day: " + dayNumber + "}";
+        return gameData;
+    }
+
+    public void LoadGame(Game a_game)
+    {
+        current = a_game;
+        //GameManager.Instance.PlayerController.PlayerChoices = current.player.codeLines;
+        //GameManager.Instance.PlayerController.PlayerCard.Player.genre = current.player.genre;
+        
+        /*charactersInfos = new List<CharacterInfo>();
+        foreach (CharacterCard card in GameManager.Instance.MyCharacterController.Characters)
+        {
+            charactersInfos.Add(card.CharacterInfo);
+        }*/
     }
 }

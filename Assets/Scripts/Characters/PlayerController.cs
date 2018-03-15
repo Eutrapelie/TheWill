@@ -5,13 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
-    private List<CodeLine> _playerChoices;
+    List<CodeLine> _playerChoices;
 
     [SerializeField]
-    private PlayerCard _playerCard;
+    PlayerCard _playerCard;
 
     [SerializeField]
-    private Room _currentRoom;
+    Room _currentRoom;
 
     public List<CodeLine> PlayerChoices
     {

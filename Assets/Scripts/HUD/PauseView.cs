@@ -6,18 +6,19 @@ using UnityEngine.UI;
 public class PauseView : MonoBehaviour
 {
     [SerializeField]
-    private Button _buttonClose;
+    Button _buttonClose;
 
     [SerializeField]
-    private Button _buttonSave;
+    Button _buttonSave;
 
     [SerializeField]
-    private Text _actDayText;
+    Text _actDayText;
 
     [SerializeField]
-    private List<HUDView> _hudView;
+    List<HUDView> _hudView;
 
-    private GameObject activePanel;
+    GameObject activePanel;
+
 
     void Awake()
     {
@@ -28,10 +29,10 @@ public class PauseView : MonoBehaviour
         _buttonClose.onClick.AddListener(ClosePanel);
         _buttonClose.gameObject.SetActive(false);
 
-        _buttonSave.onClick.AddListener(Save);
+        _buttonSave.onClick.AddListener(Btn_Save);
     }
 
-    private void OpenPanel(GameObject panel)
+    void OpenPanel(GameObject panel)
     {
         activePanel = panel;
         panel.SetActive(true);
@@ -39,7 +40,7 @@ public class PauseView : MonoBehaviour
         ToggleHUDView(false);
     }
 
-    private void ToggleHUDView(bool show)
+    void ToggleHUDView(bool show)
     {
         foreach (HUDView view in _hudView)
         {
@@ -47,7 +48,7 @@ public class PauseView : MonoBehaviour
         }
     }
 
-    private void ClosePanel()
+    void ClosePanel()
     {
         activePanel.SetActive(false);
         activePanel = null;
@@ -55,9 +56,8 @@ public class PauseView : MonoBehaviour
         ToggleHUDView(true);
     }
 
-    private void Save()
+    void Btn_Save()
     {
         SaveLoad.Save();
     }
-
 }

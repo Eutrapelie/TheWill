@@ -4,25 +4,50 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MainMenuView : MonoBehaviour
+namespace TheWill
 {
-    [SerializeField]
-    private Button _startButton;
-
-    void Awake()
+    public class MainMenuView : MonoBehaviour
     {
-        _startButton.onClick.AddListener(() => StartGame());
-    }
+        [SerializeField]
+        Button _startButton;
 
-    void StartGame()
-    {
-        SaveLoad.StartNewGame();
-        SceneManager.LoadScene(Game.Current.currentRoom.ToString());
-        SceneManager.LoadScene("InGameMenu", LoadSceneMode.Additive);
-    }
 
-    void Load()
-    {
+    ///////////////////////////////////////////////////////////////
+    /// GENERAL FUNCTIONS /////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
+        void Awake()
+        {
+            _startButton.onClick.AddListener(() => StartGame());
+        }
+        /*********************************************************/
 
+    ///////////////////////////////////////////////////////////////
+    /// PRIVATE FUNCTIONS /////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
+        void StartGame()
+        {
+            SaveLoad.StartNewGame();
+            SceneManager.LoadScene(Game.Current.currentRoom.ToString());
+            SceneManager.LoadScene("InGameMenu", LoadSceneMode.Additive);
+        }
+        /*********************************************************/
+
+        void Load()
+        {
+
+        }
+        /*********************************************************/
+        
+    ///////////////////////////////////////////////////////////////
+    /// PRIVATE FUNCTIONS /////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
+        // Called by "Charger une partie" Button
+        public void Btn_LoadFirstGame()
+        {
+            SaveLoad.Load(0);
+            SceneManager.LoadScene(Game.Current.currentRoom.ToString());
+            SceneManager.LoadScene("InGameMenu", LoadSceneMode.Additive);
+        }
+        /*********************************************************/
     }
 }
