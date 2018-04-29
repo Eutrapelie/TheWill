@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class GoToSceneButton : MonoBehaviour
 {
-    [SerializeField]
-    private Room _room;
+    [SerializeField] Room _room;
+
 
     void Start()
     {
@@ -18,7 +18,7 @@ public class GoToSceneButton : MonoBehaviour
         }
     }
 
-    private void GoToRoom(Room room)
+    void GoToRoom(Room room)
     {
         Game.Current.SaveGameFromManager();
         SceneManager.LoadScene(room.ToString());

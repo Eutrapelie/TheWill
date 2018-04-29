@@ -1,6 +1,15 @@
 Notes de versions
 
-Version 0.0.4 (à venir)
+Version 0.0.5 (2018/04/29)
+Modifications :
+ - Scène du joueur (goto/save) => Actions/Pause panels
+
+Ajouts :
+ - Panel de pause
+ - Sauvegarde du genre de façon pérenne
+/**********************************************/
+
+Version 0.0.4 (2018/04/07)
 Modifications :
  - Ouverture du panel Inventaire/objectifs en cliquant sur le livre et non sur le sac
  - Intégration de l'ouverture/fermeture du panel de choix de salle dans le Hall
@@ -10,6 +19,11 @@ Ajouts :
  - Mode exploration (mais pas les objets sélectionnables)
  - Font Roboto
  - Menu principal
+ - Sauvegarde du genre
+ - Sauvegarde de la salle
+
+Debug :
+ - Correction du problème de passage de scène
 /**********************************************/
 
 

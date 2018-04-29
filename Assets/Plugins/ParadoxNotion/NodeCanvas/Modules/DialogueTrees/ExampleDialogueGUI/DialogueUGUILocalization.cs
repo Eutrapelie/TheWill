@@ -23,6 +23,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 		[Header("Input Options")]
 		public bool skipOnInput;
 		public bool waitForInput;
+        List<KeyCode> _keyToIgnored = new List<KeyCode>();
         [SerializeField]
         Utils.Lang _lang;
 
@@ -75,6 +76,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
             // test de localization
             Utils.Localization.InitializeLangDictionaries(_lang);
 
+            _keyToIgnored.Add(KeyCode.Escape);
         }
 
 		void OnDialogueStarted(DialogueTree dlg){
@@ -129,8 +131,12 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 				playSource.Play();
 				actorSpeech.text = text;
 				var timer = 0f;
-				while (timer < audio.length){
-					if (skipOnInput && Input.anyKeyDown){
+				while (timer < audio.length)
+                {
+                    bool isKeyAllowed = false;
+                    isKeyAllowed = !Input.GetKeyDown(_keyToIgnored[0]);
+                    if (skipOnInput && Input.anyKeyDown && isKeyAllowed)
+                    {
 						playSource.Stop();
 						break;
 					}
@@ -146,9 +152,12 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 					StartCoroutine(CheckInput( ()=>{ inputDown = true; } ));
 				}
 
-				for (int i= 0; i < text.Length; i++){
+                bool isKeyAllowed = false;
+                isKeyAllowed = !Input.GetKeyDown(_keyToIgnored[0]);
+                for (int i= 0; i < text.Length; i++){
 
-					if (skipOnInput && inputDown){
+					if (skipOnInput && inputDown && isKeyAllowed)
+                    {
 						actorSpeech.text = text;
 						yield return null;
 						break;
@@ -238,14 +247,20 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 
 				}
 
-				if (!waitForInput){
+				if (!waitForInput)
+                {
 					yield return StartCoroutine(DelayPrint(subtitleDelays.finalDelay));
 				}
 			}
 
-			if (waitForInput){
+			if (waitForInput)
+            {
 				waitInputIndicator.gameObject.SetActive(true);
-				while(!Input.anyKeyDown){
+
+                bool isKeyAllowed = false;
+                isKeyAllowed = !Input.GetKeyDown(_keyToIgnored[0]);
+				while(!Input.anyKeyDown && !isKeyAllowed)
+                {
 					yield return null;
 				}
 				waitInputIndicator.gameObject.SetActive(false);

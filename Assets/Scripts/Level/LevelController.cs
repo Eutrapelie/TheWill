@@ -5,34 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "LevelController", menuName = "InGameControllers/LevelController", order = 1)]
 public class LevelController : ScriptableObject
 {
-    [SerializeField]
-    private int _acteNumber;
-
-    [SerializeField]
-    private int _dayNumber;
-
-    [SerializeField]
-    private Room _startRoom;
-
-    [SerializeField]
-    private Player _kim;
-
-    [SerializeField]
-    private List<CharacterInfo> _characters;    
-
-    public List<CharacterInfo> Characters
-    {
-        get
-        {
-            return _characters;
-        }
-
-        set
-        {
-            _characters = value;
-        }
-    }
-
+    [SerializeField] int _acteNumber;
     public int ActeNumber
     {
         get
@@ -45,7 +18,7 @@ public class LevelController : ScriptableObject
             _acteNumber = value;
         }
     }
-
+    [SerializeField] int _dayNumber;
     public int DayNumber
     {
         get
@@ -59,6 +32,20 @@ public class LevelController : ScriptableObject
         }
     }
 
+    [SerializeField] Room _startRoom;
+    public Room StartRoom
+    {
+        get
+        {
+            return _startRoom;
+        }
+
+        set
+        {
+            _startRoom = value;
+        }
+    }
+    [SerializeField] Player _kim;
     public Player Kim
     {
         get
@@ -72,16 +59,17 @@ public class LevelController : ScriptableObject
         }
     }
 
-    public Room StartRoom
+    [SerializeField] List<CharacterInfo> _characters;    
+    public List<CharacterInfo> Characters
     {
         get
         {
-            return _startRoom;
+            return _characters;
         }
 
         set
         {
-            _startRoom = value;
+            _characters = value;
         }
     }
 }

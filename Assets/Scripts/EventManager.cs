@@ -12,9 +12,9 @@ public class ThisEvent : UnityEvent<object>
 public class EventManager : MonoBehaviour
 {
 
-    private Dictionary<string, ThisEvent> eventDictionary;
+    Dictionary<string, ThisEvent> eventDictionary;
 
-    private static EventManager eventManager;
+    static EventManager eventManager;
 
     public static EventManager instance
     {
@@ -88,6 +88,7 @@ public class EventManager : MonoBehaviour
         ThisEvent thisEvent = null;
         if (instance.eventDictionary.TryGetValue(eventName, out thisEvent))
         {
+            Debug.Log("[EventManager] event.Invoke: " + eventName);
             thisEvent.Invoke(value);
         }
         else

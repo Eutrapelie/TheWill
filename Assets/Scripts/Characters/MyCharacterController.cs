@@ -49,6 +49,24 @@ public class MyCharacterController : MonoBehaviour
         EventManager.StartListening(ChangeRoomForKim.EVT_KIM_CHANGE_ROOM, KimChangeRoom);
     }
 
+    void OnDestroy()
+    {
+        foreach (Character character in Enum.GetValues(typeof(Character)))
+        {
+            EventManager.StopListening(character.ToString() + "OnClick", HideAllCharacters);
+        }
+
+        EventManager.StopListening(VNFinishNode.EVT_FINISH_DIALOG, ShowAllCharacters);
+        EventManager.StopListening(ToggleCharacterApparition.EVT_TOGGLE_CHARACTER_APPARITION, CharacterApparition);
+        EventManager.StopListening(VN.Dialog.StatmentNodeVN.EVT_CHARACTER_TALKING, CharacterIsTalking);
+
+        EventManager.StopListening(ChangeRoomForCharacter.EVT_CHARACTER_CHANGE_ROOM, CharacterChangeRoom);
+        EventManager.StopListening(ChangeRoomForCharacter.EVT_CHARACTER_CHANGE_ROOM_SPOT, CharacterChangeRoomSpot);
+        EventManager.StopListening(ChangeEmotionForCharacter.EVT_CHARACTER_CHANGE_EMOTION, CharacterChangeEmotion);
+        EventManager.StopListening(SetGauge.EVT_CHARACTER_SET_GAUGE, CharacterSetGauge);
+        EventManager.StopListening(ChangeRoomForKim.EVT_KIM_CHANGE_ROOM, KimChangeRoom);
+    }
+
     public CharacterCard GetCharacterCardGameObject(Character character)
     {
         foreach (CharacterCard card in _characters)
@@ -103,7 +121,7 @@ public class MyCharacterController : MonoBehaviour
         }
     }
 
-    private void CharacterIsTalking(object arg0)
+    void CharacterIsTalking(object arg0)
     {
         Character character = (Character)arg0;
         if(talkingCharacter != null && talkingCharacter.CharacterInfo.characterName.Equals(arg0))
@@ -130,7 +148,7 @@ public class MyCharacterController : MonoBehaviour
         }
     }
 
-    private void CharacterApparition(object args)
+    void CharacterApparition(object args)
     {
         List <object> list = (List<object>)args;
         Character character = (Character)list[0];
@@ -166,9 +184,16 @@ public class MyCharacterController : MonoBehaviour
             default:
                 break;
         }
+        SceneManager.LoadScene("InGameMenu", LoadSceneMode.Additive);
+
+        if (newRoom != Room.None)
+        {
+            Destroy(gameObject);
+            Game.Current.currentRoom = newRoom;
+        }
     }
 
-    private void CharacterChangeRoom(object args)
+    void CharacterChangeRoom(object args)
     {
         List<object> list = (List<object>)args;
         Character arg0 = (Character) list[0];
@@ -183,7 +208,7 @@ public class MyCharacterController : MonoBehaviour
         }
     }
 
-    private void CharacterChangeRoomSpot(object args)
+    void CharacterChangeRoomSpot(object args)
     {
         List<object> list = (List<object>)args;
         Character arg0 = (Character)list[0];
@@ -192,7 +217,7 @@ public class MyCharacterController : MonoBehaviour
         CharacterChangeRoomSpot(arg0, arg1);
     }
 
-    private void CharacterChangeRoomSpot(Character arg0, RoomSpot arg1)
+    void CharacterChangeRoomSpot(Character arg0, RoomSpot arg1)
     {
         foreach (CharacterCard item in Characters)
         {
@@ -204,11 +229,13 @@ public class MyCharacterController : MonoBehaviour
         }
     }
 
-    private void CharacterChangeEmotion(object args)
+    void CharacterChangeEmotion(object args)
     {
         List<object> list = (List<object>)args;
+        Debug.Log("[MyCharacterController] CharacterChangeEmotion -- args.Count: " + list.Count);
         Character arg0 = (Character)list[0];
         Emotion arg1 = (Emotion)list[1];
+        Debug.Log("\tCharacter: " + arg0.ToString() + " - Emotion: " + arg1);
         foreach (CharacterCard item in Characters)
         {
             if (item.CharacterInfo.characterName.Equals(arg0))
@@ -219,7 +246,7 @@ public class MyCharacterController : MonoBehaviour
         }
     }
 
-    private void CharacterSetGauge(object args)
+    void CharacterSetGauge(object args)
     {
         List<object> list = (List<object>)args;
         Character arg0 = (Character)list[0];

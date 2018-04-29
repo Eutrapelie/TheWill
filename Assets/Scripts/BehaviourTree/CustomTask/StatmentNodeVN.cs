@@ -25,7 +25,7 @@ namespace VN.Dialog
                 }
                 catch (ArgumentException)
                 {
-                    Debug.Log(actorName + " is not a member of the Character enumeration.");
+                    //Debug.Log(actorName + " is not a member of the Character enumeration.");
                 }
                 if(charEnum != null)                    
                     EventManager.TriggerEvent(EVT_CHARACTER_TALKING, charEnum.Value);
@@ -35,24 +35,23 @@ namespace VN.Dialog
             return base.OnExecute(agent, bb);
         }
 
-        private Statement GenreReplace(Statement text)
+        Statement GenreReplace(Statement text)
         {
             var s = text.text;
             var i = 0;
             while ((i = s.IndexOf('#', i)) != -1)
             {
-
                 var end = s.Substring(i + 1).IndexOf('#');
                 var input = s.Substring(i + 1, end); //what's in the #
                 var output = s.Substring(i, end + 2); //what should be replaced (includes brackets)
 
                 string o = "";
                 string[] genres = input.Split('|');
-                if(GameManager.Instance.PlayerController.PlayerCard.Player.genre.Equals(Genre.Woman))
+                if(Game.Current.player.genre.Equals(Genre.Woman))
                 {
                     o = genres[0];
                 }
-                else if(GameManager.Instance.PlayerController.PlayerCard.Player.genre.Equals(Genre.Man))
+                else if(Game.Current.player.genre.Equals(Genre.Man))
                 {
                     o = genres[1];
                 }
@@ -61,7 +60,6 @@ namespace VN.Dialog
                     o = genres[2];
                 }
                
-
                 s = s.Replace(output, o != null ? o.ToString() : output);
 
                 i++;
@@ -69,6 +67,5 @@ namespace VN.Dialog
 
             return new Statement(s, text.audio, text.meta);
         }
-
     }
 }

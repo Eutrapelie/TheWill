@@ -6,9 +6,7 @@ using UnityEngine;
 [System.Serializable]
 public class Game
 {
-    private static Game current;
-    private Game() { }
-
+    static Game current;
     public static Game Current
     {
         get
@@ -17,10 +15,16 @@ public class Game
             {
                 current = new Game();
             }
+            if (current.player != null)
+                Debug.Log("[Game] get Current - gender: " + current.player.genre);
+            else
+                Debug.Log("[Game] get Current - not initialized");
             return current;
         }
     }
 
+    Game() { }
+    
     public Player player;
     public List<CharacterInfo> charactersInfos;
     public Room currentRoom;
@@ -44,7 +48,8 @@ public class Game
         }
 
         charactersInfos = levelController.Characters;
-        player = levelController.Kim;
+        if (player == null)
+            player = levelController.Kim;
         currentRoom = levelController.StartRoom;
         acteNumber = acte;
         dayNumber = day;
@@ -55,7 +60,7 @@ public class Game
     public void SaveGameFromManager()
     {
         player.codeLines = GameManager.Instance.PlayerController.PlayerChoices;
-        player.genre = GameManager.Instance.PlayerController.PlayerCard.Player.genre;
+        //player.genre = GameManager.Instance.PlayerController.PlayerCard.Player.genre;
 
         currentRoom = GameManager.Instance.PlayerController.CurrentRoom;
 
@@ -80,9 +85,15 @@ public class Game
     public void LoadGame(Game a_game)
     {
         current = a_game;
+        charactersInfos = current.charactersInfos;
+        player = current.player;
+        currentRoom = current.currentRoom;
+        acteNumber = current.acteNumber;
+        dayNumber = current.dayNumber;
+        Debug.Log("[Game] LoadGame: " + DebugGameData());
         //GameManager.Instance.PlayerController.PlayerChoices = current.player.codeLines;
         //GameManager.Instance.PlayerController.PlayerCard.Player.genre = current.player.genre;
-        
+
         /*charactersInfos = new List<CharacterInfo>();
         foreach (CharacterCard card in GameManager.Instance.MyCharacterController.Characters)
         {
