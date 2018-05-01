@@ -36,6 +36,7 @@ public class MainController : MonoBehaviour
 
     void Awake()
     {
+        SaveLoad.LoadSaves();
         Game.Current.LoadStartLevel(_acteNumber, _dayNumber);
         LoadBehaviourTree();
 

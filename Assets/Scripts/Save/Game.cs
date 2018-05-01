@@ -31,6 +31,8 @@ public class Game
     public List<Room> roomVisited;
     public int acteNumber = 1;
     public int dayNumber = 1;
+    public DateTime realDateTime;
+    public DateTime gameDateTime;
 
     public void LoadStartLevel(int acte, int day)
     {
@@ -59,6 +61,7 @@ public class Game
 
     public void SaveGameFromManager()
     {
+        realDateTime = DateTime.Now;
         player.codeLines = GameManager.Instance.PlayerController.PlayerChoices;
         //player.genre = GameManager.Instance.PlayerController.PlayerCard.Player.genre;
 
@@ -90,6 +93,7 @@ public class Game
         currentRoom = current.currentRoom;
         acteNumber = current.acteNumber;
         dayNumber = current.dayNumber;
+        realDateTime = current.realDateTime;
         Debug.Log("[Game] LoadGame: " + DebugGameData());
         //GameManager.Instance.PlayerController.PlayerChoices = current.player.codeLines;
         //GameManager.Instance.PlayerController.PlayerCard.Player.genre = current.player.genre;

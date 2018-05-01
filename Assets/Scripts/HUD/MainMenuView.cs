@@ -8,8 +8,7 @@ namespace TheWill
 {
     public class MainMenuView : MonoBehaviour
     {
-        [SerializeField]
-        Button _startButton;
+        [SerializeField] Button _startButton;
 
 
     ///////////////////////////////////////////////////////////////
@@ -18,6 +17,7 @@ namespace TheWill
         void Awake()
         {
             _startButton.onClick.AddListener(() => StartGame());
+            SaveLoad.LoadSaves();
         }
         /*********************************************************/
 
@@ -39,9 +39,9 @@ namespace TheWill
         /*********************************************************/
         
     ///////////////////////////////////////////////////////////////
-    /// PRIVATE FUNCTIONS /////////////////////////////////////////
+    /// PUBLIC FUNCTIONS //////////////////////////////////////////
     ///////////////////////////////////////////////////////////////
-        // Called by "Charger une partie" Button
+        // Called by "Reprendre" Button
         public void Btn_LoadFirstGame()
         {
             SaveLoad.Load(0);

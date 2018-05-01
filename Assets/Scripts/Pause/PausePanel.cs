@@ -72,9 +72,8 @@ namespace TheWill
             _dialogueObject.isGamePaused = _isPanelShow;
         }
 
-        public void Btn_Save()
+        public void UpdateDisplayAfterSave()
         {
-            SaveLoad.Save();
             ChangeVisibility(false);
             StartCoroutine(DisplayInfoMessage("Sauvegarde effectuée."));
         }
@@ -86,7 +85,8 @@ namespace TheWill
 
         public void Btn_Quit()
         {
-            Application.Quit();
+            SceneManager.LoadScene("Menu");
+            //Application.Quit();
         }
     }
 }

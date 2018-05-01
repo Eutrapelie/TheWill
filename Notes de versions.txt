@@ -1,8 +1,18 @@
 Notes de versions
 
+Version 0.0.6 (2018/05/01)
+Ajouts :
+ - Possibilité de choisir son slot de sauvegarde
+ - Texte et image des slots de sauvegardes
+
+Debug:
+ - Correction d'un problème de chargement des sauvegardes quand on chargeait une scène
+/**********************************************/
+
 Version 0.0.5 (2018/04/29)
 Modifications :
  - Scène du joueur (goto/save) => Actions/Pause panels
+ - Quelques dialogues qui ne prenaient pas en compte le genre
 
 Ajouts :
  - Panel de pause

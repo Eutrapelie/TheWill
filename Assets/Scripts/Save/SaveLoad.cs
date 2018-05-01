@@ -7,6 +7,7 @@ using UnityEngine;
 public static class SaveLoad
 {
     public static Game[] savedGames = new Game[81];
+    static bool _areSaveLoaded;
 
 
     public static void Save(int a_index = 0)
@@ -24,14 +25,26 @@ public static class SaveLoad
 
     public static void Load(int a_index = 0)
     {
+        if (_areSaveLoaded == false)
+        {
+            LoadSaves();
+        }
+
+        Debug.Log("Load " + a_index + ": ");
+        Debug.Log("Load " + a_index + ": " + savedGames[a_index].DebugGameData());
+        Game.Current.LoadGame(savedGames[a_index]);
+    }
+
+    public static void LoadSaves()
+    {
         if (File.Exists(Application.persistentDataPath + "/savedGames.gd"))
         {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/savedGames.gd", FileMode.Open);
             SaveLoad.savedGames = (Game[])bf.Deserialize(file);
             file.Close();
-            Debug.Log("Load: " + savedGames[a_index].DebugGameData());
-            Game.Current.LoadGame(savedGames[a_index]);
+            _areSaveLoaded = true;
+            Debug.Log("LoadSaves");
         }
     }
 
