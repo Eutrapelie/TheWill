@@ -1,3 +1,555 @@
-id;franÃ§ais;english
-firstLine;Câ€™est <color=red>une premiÃ¨re</color> ligneÂ !;Itâ€™s aâ€¦ first line.
-secondLine;Ceci est la deuxiÃ¨me ligne.;Itâ€™s the second line.
+LINE;NUM;ROOM;CHAR;Acte;TEXT_FR;TEXT_EN
+A01N03_Kim_GAR_00010;10;GARDEN;Kim;A01N03;Parler du contrat de Geoffroy;Talk about Geoffroy’s contract
+A01N03_Kim_GAR_00020;20;GARDEN;Kim;A01N03;J’ai appris que vos parents avaient promis le Manoir à Geoffroy s’il servait bien votre famille. Qu’en pensez-vous ?;I learned that your parents promised the Manor to Geoffroy if he served you well. What do you think about that?
+A01N03_Abi_GAR_00030;30;GARDEN;Abigail;A01N03;J’en pense que vivre dans un tel Manoir implique des dépenses. <color=#787981ff>Geoffroy est peut-être efficace dans son travail, mais j’ai bien peur qu’il ne soit pas très doué avec les comptes. </color> C’est moi qui m’en occupe, et s’il devait prendre cette tâche, ne plus recevoir les ordres mais les donner… J’ai bien peur qu’il n’amène le Manoir à sa ruine en un rien de temps.;I think living in this Manor implies expenditures. <color=#9d4184ff>Geoffroy may be efficient at work, but I’m afraid he isn’t gifted with numbers</color>. I’m the one taking care of that, and if he took over I’m afraid the Manor would be ruined pretty fast.
+A01N03_Kim_GAR_00040;40;GARDEN;Kim;A01N03;Vous me déconseillez donc de le choisir ?;Do you advise me not to choose him?
+A01N03_Abi_GAR_00050;50;GARDEN;Abigail;A01N03;Très clairement. Et puis, ce contrat a été écrit il y a des dizaines d’années.;Clearly I do. If I have to add anything, his contract has been written decades ago.
+A01N03_Kim_GAR_00060;60;GARDEN;Kim;A01N03;En effet. Mais vous ne dites pas ça pour récupérer vous-même le Manoir ?;That’s true. But are you only saying that to have the Manor for yourself?
+A01N03_Abi_GAR_00070;70;GARDEN;Abigail;A01N03;Ne m’insultez pas. Je pense sincèrement être celle qui le mérite le mieux. Mais si vous avez besoin d’une preuve de mes dires, cherchez. Vous trouverez bien que <color=#9d4184ff>Geoffroy a déjà été amplement remercié par mes parents.</color>;Don’t insult me. I sincerely believe I am the worthiest. But if you need proof rather than words, look for it. <color=#9d4184ff>Geoffroy was already thanked a lot by my parents.</color>
+A01N03_NAR_GAR_00080;80;GARDEN;NARRATEUR;A01N03;Abigail hausse les épaules, elle a l’air totalement indifférent à mes questions…;Abigail shrugs, totally indifferent to my question.
+A01N03_Abi_GAR_00090;90;GARDEN;Abigail;A01N03;<color=#787981ff>C’est un bon majordome.</color>;<color=#787981ff>He’s a good butler.</color>
+A01N03_Kim_GAR_00100;100;GARDEN;Kim;A01N03;C’est tout ?;Is that all?
+A01N03_Abi_GAR_00110;110;GARDEN;Abigail;A01N03;Que voulez-vous que je vous dise de plus ?;What else do you want me to say?
+A01N03_Kim_GAR_00120;120;GARDEN;Kim;A01N03;Vous êtes prête à témoigner qu’il est un bon majordome, même si cela vous empêche d’avoir le Manoir pour vous-même ?;Are you really ready to testify he’s a good butler, even though you may not get the Manor for yourself?
+A01N03_Abi_GAR_00130;130;GARDEN;Abigail;A01N03;Je ne vais pas non plus faire votre travail, #Mme|M.|Mx# Luong.;I am not going to do your work, #Mrs.|Mr.|Mx.# Luong.
+A01N03_NAR_GAR_00140;140;GARDEN;NARRATEUR;A01N03;Etrange. Je ne pensais pas qu’elle témoignerait en sa faveur si facilement.;Weird. I didn’t think she’d tell nice things about him so easily.
+A01N03_Kim_GAR_00150;150;GARDEN;Kim;A01N03;Parler de la lettre compromettant de Célestia sur Abigail;Talk about Célestia’s compromising letter on Abigail
+A01N03_Kim_GAR_00160;160;GARDEN;Kim;A01N03;J’ai trouvé des papiers dérangeants à votre sujet.;I found an unpleasant letter about you.
+A01N03_Abi_GAR_00170;170;GARDEN;Abigail;A01N03;Ah ? Quoi donc ?;Ah? What about?
+A01N03_Kim_GAR_00180;180;GARDEN;Kim;A01N03;Apparemment, vous avez poussé Léontine et Geoffroy dans leurs retranchements. Léontine voulait quitter le Manoir tellement vous étiez odieuse avec elle, et Geoffroy a fait un burn-out ?;Apparently, you pushed Léontine and Geoffroy to the limits of their capacities. Léontine wanted to leave the Manor because of how odious you were with her, and Geoffroy even had a burn-out. Is that right?
+A01N03_Abi_GAR_00190;190;GARDEN;Abigail;A01N03;J’imagine que c’est Hippolyte qui vous a poussé à faire attention à ça ?;I imagine it is Hippolyte who led you to take notice of this?
+A01N03_Kim_GAR_00200;200;GARDEN;Kim;A01N03;Ça ne change pas grand-chose. Si je dois choisir la personne la plus apte à s’occuper du Manoir, cela me porte à croire que ce n’est pas vous…;That doesn’t change much. If I need to choose the most capable person to take care of the Manor, I don’t lean towards you after reading this.
+A01N03_Abi_GAR_00210;210;GARDEN;Abigail;A01N03;…Vraiment ?;Really?
+A01N03_Kim_GAR_00220;220;GARDEN;Kim;A01N03;Mais je suis prêt à écouter votre défense avant de faire mon choix.;That said, I’m ready to listen to what you have to say about it.
+A01N03_Abi_GAR_00230;230;GARDEN;Abigail;A01N03;Quelle magnanimité.;How magnanimous of you.
+A01N03_Kim_GAR_00240;240;GARDEN;Kim;A01N03;…;…
+A01N03_Abi_GAR_00250;250;GARDEN;Abigail;A01N03;"Je suis peinée de voir que vous préférez vous appuyer sur les agissements d’une adolescente qui a grandi depuis plutôt que sur la réalité actuelle. Ma « défense » se trouve dans la <color=#425d97ff>boîte aux lettres.</color> Je vous en donne la clef ; faites-en ce que vous voulez.";"I’m saddened to see you prefer to base your decision on the acts of a teenage girl who do not resemble the adult me anymore rather than on today’s reality. What I have to say about it though you will find in the <color=#425d97ff>mailbox</color>. Here is the key; do what you will with it."
+A01N03_Kim_GAR_00260;260;GARDEN;Kim;A01N03;Parler d’Ophélie;Talk about Ophélie
+A01N03_Kim_GAR_00270;270;GARDEN;Kim;A01N03;Ophélie est votre sœur.;Ophélie is your sister.
+A01N03_Kim_GAR_00280;280;GARDEN;Kim;A01N03;J’en ai trouvé la preuve dans le journal de Célestia, j’ai pu y accéder avec l’aide d’Hippolyte.;I found proof in Célestia’s diary. I got access thanks to Hippolyte.
+A01N03_Abi_GAR_00290;290;GARDEN;Abigail;A01N03;Et alors ?;So what?
+A01N03_Kim_GAR_00300;300;GARDEN;Kim;A01N03;Comment ça, et alors ?;What do you mean, so what?
+A01N03_Abi_GAR_00310;310;GARDEN;Abigail;A01N03;Que voulez-vous que je fasse de cette information ?;What do you wish me to do with this piece of information?
+A01N03_Kim_GAR_00320;320;GARDEN;Kim;A01N03;Cela signifie qu’elle aussi peut prétendre au Manoir.;It means she can also ask for the Manor.
+A01N03_Abi_GAR_00330;330;GARDEN;Abigail;A01N03;Dois-je vraiment m’inquiéter ? Même si elle est ma demi-sœur biologique, elle n'a pas vécu ici, n'a aucun lien à nous et à cet endroit. <color=#9d4184ff>Pourquoi lui donner quelque chose qui n’a pour elle aucune valeur sentimentale, vide d’histoire et de souvenirs ? </color>;Should I really worry about it? Even if she is my biological half-sister, she never lived here and has no emotional link to this place or to us. Why give her something that has no meaning for her and is empty of memories?
+A01N03_Kim_GAR_00340;340;GARDEN;Kim;A01N03;C’est un moyen pour elle de retrouver ses racines.;It would be a way for her to find her roots.
+A01N03_Abi_GAR_00350;350;GARDEN;Abigail;A01N03;C’est à vous de faire votre choix, #Mme|M.|Mx# Luong.;The choice is yours, #Mrs.|Mr.|Mx.# Luong.
+A01N03_Abi_GAR_00360;360;GARDEN;Abigail;A01N03;Et alors ?;So what?
+A01N03_Kim_GAR_00370;370;GARDEN;Kim;A01N03;Comment ça, et alors ?;What do you mean, so what?
+A01N03_Abi_GAR_00380;380;GARDEN;Abigail;A01N03;Que voulez-vous que je fasse de cette information ?;What do you wish me to do with this piece of information?
+A01N03_Kim_GAR_00390;390;GARDEN;Kim;A01N03;Cela signifie qu’elle aussi peut prétendre au Manoir.;It means she can also ask for the Manor.
+A01N03_Abi_GAR_00400;400;GARDEN;Abigail;A01N03;Qu’elle y prétende. Quel rapport avec moi ?;Let her do so. Why should it matter to me?
+A01N03_Kim_GAR_00410;410;GARDEN;Kim;A01N03;Aucun, vous avez raison. A moi de faire mon choix.;It shouldn’t, you’re right. The choice is mine. [Politesse +1]
+A01N03_NAR_GAR_00420;420;GARDEN;NARRATEUR;A01N03;Abigail hoche la tête, la discussion close de son côté.;Abigail nods, discussion closed on her side.
+A01N03_Kim_GAR_00430;430;GARDEN;Kim;A01N03;Vous pourriez au moins avoir la décence d’être polie envers votre sœur.;You could have the decency to be polite towards your sister . [Politesse -1]
+A01N03_Abi_GAR_00440;440;GARDEN;Abigail;A01N03;La décence ? Etes-vous en train de me donner des conseils de politesse dans mon propre manoir ?;The decency? Are you giving me courtesy advice in my own Manor?
+A01N03_Kim_GAR_00450;450;GARDEN;Kim;A01N03;La tutoyer insolemment;Be insolent
+A01N03_Kim_GAR_00460;460;GARDEN;Kim;A01N03;Lâcher l’affaire;Back down
+A01N03_Kim_GAR_00470;470;GARDEN;Kim;A01N03;Non, ce n’était pas mon intention. Mais Ophélie ne se sent pas la bienvenue ici, c’est un fait.;No, that’s not what I meant. Ophélie just doesn’t feel welcomed here, it’s a fact.
+A01N03_Abi_GAR_00480;480;GARDEN;Abigail;A01N03;Qui n’est aucunement lié à moi. Vous n’avez aucune idée de ce qu’est notre relation. Laissez-moi.;A fact that has nothing to do with me. You have no idea what my relationship to her is. Leave me be.
+A01N03_Kim_GAR_00490;490;GARDEN;Kim;A01N03;…;…
+A01N03_Kim_GAR_00500;500;GARDEN;Kim;A01N03;Parler du plan d’Ernest;Talk about Ernest’s plan
+A01N03_Kim_GAR_00510;510;GARDEN;Kim;A01N03;Abigail… J’ai quelque chose de préoccupant à partager avec vous.;Abigail… I have some preoccupying thoughts to share with you.
+A01N03_Abi_GAR_00520;520;GARDEN;Abigail;A01N03;Partagez donc.;Please share, then.
+A01N03_Kim_GAR_00530;530;GARDEN;Kim;A01N03;C’est à propos d’Ernest. J’ai appris qu’il souhaitait vous faire croire qu’il vous aimait, pour pouvoir récupérer votre héritage.;It’s about Ernest. I’ve learned he wants you to believe he is in love with you, so he can get your inheritance.
+A01N03_Abi_GAR_00540;540;GARDEN;Abigail;A01N03;…;…
+A01N03_Kim_GAR_00550;550;GARDEN;Kim;A01N03;J’ai pensé qu’il valait mieux vous prévenir.;I thought it was better to warn you.
+A01N03_Abi_GAR_00560;560;GARDEN;Abigail;A01N03;Je suis prévenue. N’en parlons plus.;I am warned. Let’s not speak about it again.
+A01N03_NAR_GAR_00570;570;GARDEN;NARRATEUR;A01N03;"Son regard passa au-dessus de mon épaule ; en me retournant, je vis Ernest qui s’éloignait vers l’intérieur du Manoir. Avait-il entendu ?";"Her gaze went past my shoulder; turning around, I noticed Ernest going away inside the Manor. Did he hear us?"
+A01N03_Abi_GAR_00580;580;GARDEN;Abigail;A01N03;Vous pensez mal, #Mme|M.|Mx# Luong. Votre avertissement est puéril. Je suis très bien capable de discerner seule les intentions des autres à mon égard, et c’est à moi de choisir comment agir en conséquence. Mais si votre intention était simplement de semer le doute et la colère, vous avez réussi.;You think wrong, #Mrs.|Mr.|Mx.# Luong. Your warning is childish. I am very well capable of understanding people’s intentions towards me by myself, and I alone choose how to act as a result. That said, if you only meant to spread doubt and anger, congratulations, you have won.
+A01N03_NAR_GAR_00590;590;GARDEN;NARRATEUR;A01N03;"Elle fit un signe du menton pour m’inviter à regarder derrière moi ; en me retournant, je vis Ernest qui s’éloignait vers l’intérieur du Manoir. Avait-il entendu ?";She nodded to invite me to look behind me, and as I turned around, I noticed Ernest going away inside the Manor. Did he hear us?
+A01N03_Geo_GAR_00600;600;GARDEN;Geoffroy;A01N03;#Mme|M.|Mx# Luong, si je puis prendre une minute de votre temps…;#Mrs.|Mr.|Mx.# Luong, if I may take a minute of your time…
+A01N03_Kim_GAR_00610;610;GARDEN;Kim;A01N03;Oui ?;What can I do for you?
+A01N03_Geo_GAR_00620;620;GARDEN;Geoffroy;A01N03;Pardonnez-moi pour mes excès un peu plus tôt. J’aurais dû vous faire confiance. Evidemment que vous n’alliez pas aider Ernest, où avais-je donc la tête… En tout cas, je me tiens tout à votre disposition.;Please forgive my outburst earlier. I should have trusted you. Of course you didn’t mean to help Ernest, how could I think that… Please know that I am entirely at your disposal.
+A01N03_Kim_GAR_00630;630;GARDEN;Kim;A01N03;Oh, merci.;Um, thanks.
+A01N03_Geo_GAR_00640;640;GARDEN;Geoffroy;A01N03;Bon séjour parmi nous.;Have a nice stay among us.
+A01N03_NAR_GAR_00650;650;GARDEN;NARRATEUR;A01N03;Il s’éloigne, maladroit et gêné, et je le laisse partir.;He leaves awkwardly and I let him be.
+A01N03_NAR_GAR_00660;660;GARDEN;NARRATEUR;A01N03;J’abandonne Ernest à l’entrée du jardin, et je fais le tour pour qu’Abigail ne me voie pas. Je me cache derrière un arbre, pas loin d’un banc, et j’attends. Ernest arrive bientôt avec Abigail, et ils s’installent tous les deux. Je sors mon portable. Ernest a mis le sien en silencieux et le pose à côté de lui, là où Abigail ne pourra pas voir son écran, pour pouvoir jeter un œil à mes messages lorsqu’il ne sait pas quoi dire. Il a tellement peur de dire des bêtises, il est tout gêné… Enfin, à deux, on devrait assez en savoir sur les goûts d’Abigail pour que ce ne soit pas un fiasco.;I leave Ernest at the garden entrance, and I go around so Abigail won’t see me. I hide behind a tree not too far from the bench, and I wait. Ernest soon comes with Abigail, and they sit down together. I take my cell phone out. Ernest put his next to himself, on silence mode, so that Abigail can’t see his screen but he can still glance quickly to my messages when he doesn’t know what to say. He is so afraid to say something wrong… Well, with both of us combined, we should know enough about Abigail to avoid a complete fiasco.
+A01N03_Ern_GAR_00670;670;GARDEN;Ernest;A01N03;Ah… j’aime ce jardin…;Ah… I love this garden…
+A01N03_NAR_GAR_00680;680;GARDEN;NARRATEUR;A01N03;…;...
+A01N03_NAR_GAR_00690;690;GARDEN;NARRATEUR;A01N03;Quoique.;Or not.
+A01N03_NAR_GAR_00700;700;GARDEN;NARRATEUR;A01N03;J’espère qu’il va trouver un peu plus de répartie que ça sans moi, quand même… Abigail le regarde poliment.;I hope he can find better punchlines than that or it’s going to be hard for me. Abigail is looking at him politely.
+A01N03_Abi_GAR_00710;710;GARDEN;Abigail;A01N03;Qu’est-ce que vous y aimez ?;What do you like about it?
+A01N03_Kim_GAR_00720;720;GARDEN;Kim;A01N03;Voir l’architecture;To see the architecture
+A01N03_Ern_GAR_00730;730;GARDEN;Ernest;A01N03;D’ici on peut voir tout le Manoir… Il est magnifique…;From here we can see the whole Manor… It’s so beautiful.
+A01N03_Abi_GAR_00740;740;GARDEN;Abigail;A01N03;Oui, c’est vrai.;That’s true.
+A01N03_Kim_GAR_00750;750;GARDEN;Kim;A01N03;Se promener;To walk around
+A01N03_Ern_GAR_00760;760;GARDEN;Ernest;A01N03;Me promener.;I like to walk around.
+A01N03_Abi_GAR_00770;770;GARDEN;Abigail;A01N03;…;…
+A01N03_NAR_GAR_00780;780;GARDEN;NARRATEUR;A01N03;Elle s’ennuie.;She is so bored.
+A01N03_Kim_GAR_00790;790;GARDEN;Kim;A01N03;La verdure;The greenery
+A01N03_Ern_GAR_00800;800;GARDEN;Ernest;A01N03;La verdure ! Les fleurs, les arbres, être dehors fait juste beaucoup de bien.;The greenery ! The flowers, the trees, to be outside, it’s so good for me.
+A01N03_NAR_GAR_00810;810;GARDEN;NARRATEUR;A01N03;Abigail hoche poliment la tête.;Abigail nods politely.
+A01N03_Kim_GAR_00820;820;GARDEN;Kim;A01N03;Les fleurs;The flowers
+A01N03_Ern_GAR_00830;830;GARDEN;Ernest;A01N03;Les fleurs ! Les couleurs sont si belles et si bien choisies, elles se marient parfaitement les unes aux autres…;The flowers! Their colors are so beautiful and they are so well chosen. They all blend perfectly with the others.
+A01N03_NAR_GAR_00840;840;GARDEN;NARRATEUR;A01N03;Abigail sourit, c’est gagné ! Je savais que c’était elle qui s’en occupait… Elle n’aime pas mettre en avant ses qualités, alors elle ne le dira pas à Ernest, mais je sais que le compliment la touche.;Abigail smiles. Yes! I knew she was the one taking care of them. She doesn’t like to brag, so she won’t say it to Ernest, but I’m sure his compliment reached her.
+A01N03_Kim_GAR_00850;850;GARDEN;Kim;A01N03;Sentir le vent;To feel the wind
+A01N03_Ern_GAR_00860;860;GARDEN;Ernest;A01N03;J’aime sentir le vent sur mon visage…;I like to feel the wind on my face.
+A01N03_NAR_GAR_00870;870;GARDEN;NARRATEUR;A01N03;Abigail hausse les sourcils, ennuyée. Il va falloir trouver mieux.;Abigail raises her eyebrowns, bored. We’ll need to find something better.
+A01N03_Ern_GAR_00880;880;GARDEN;Ernest;A01N03;Mais vous, quel est votre endroit préféré au Manoir ?;What about you? What’s your favorite place in the Manor?
+A01N03_NAR_GAR_00890;890;GARDEN;NARRATEUR;A01N03;Elle hausse les épaules.;She shrugs.
+A01N03_Abi_GAR_00900;900;GARDEN;Abigail;A01N03;Je l’aime tout entier. J’aime surtout ses détails.;I love it all. I love its details most of all.
+A01N03_Kim_GAR_00910;910;GARDEN;Kim;A01N03;La boîte à musique dans le salon;The music box
+A01N03_NAR_GAR_00920;920;GARDEN;NARRATEUR;A01N03;Elle baisse les yeux. Mince… J’ai dû lui rappeler un mauvais souvenir.;Her gaze lowers. Crumbs… It must be linked to a bad memory.
+A01N03_Kim_GAR_00930;930;GARDEN;Kim;A01N03;La cheminée;The fireplace
+A01N03_NAR_GAR_00940;940;GARDEN;NARRATEUR;A01N03;Elle hoche la tête.;She nods.
+A01N03_Kim_GAR_00950;950;GARDEN;Kim;A01N03;Le portail qui grince;The grinding noise of the gate
+A01N03_Ern_GAR_00960;960;GARDEN;Ernest;A01N03;Comme le portail qui grince…;Like the grinding noise of the gate…
+A01N03_NAR_GAR_00970;970;GARDEN;NARRATEUR;A01N03;Abigail est surprise.;Abigail is surprised.
+A01N03_Abi_GAR_00980;980;GARDEN;Abigail;A01N03;Oui… Vous avez remarqué ?;You’ve noticed!
+A01N03_Ern_GAR_00990;990;GARDEN;Ernest;A01N03;Bien sûr, aha…;O-of course, aha…
+A01N03_NAR_GAR_01000;1000;GARDEN;NARRATEUR;A01N03;Elle avait mentionné ce détail à Ophélie… Heureusement que je m’en suis souvenu !;She mentioned it to Ophélie… I’m so glad I remembered!
+A01N03_Kim_GAR_01010;1010;GARDEN;Kim;A01N03;Le volant par terre;The shuttlecock on the ground
+A01N03_Abi_GAR_01020;1020;GARDEN;Abigail;A01N03;Non, ça, c’est juste Hippolyte qui devrait mieux ranger ses affaires.;No, that’s just Hippolyte’s trash.
+A01N03_Kim_GAR_01030;1030;GARDEN;Kim;A01N03;Les armoiries;The armories
+A01N03_Ern_GAR_01040;1040;GARDEN;Ernest;A01N03;Comme les armoiries dans toutes les salles.;Like the armories in every room.
+A01N03_NAR_GAR_01050;1050;GARDEN;NARRATEUR;A01N03;Elle hoche la tête.;She nods happily.
+A01N03_Abi_GAR_01060;1060;GARDEN;Abigail;A01N03;…;…
+A01N03_Abi_GAR_01070;1070;GARDEN;Abigail;A01N03;Vous vouliez me parler de quelque chose en particulier ?;Did you want to talk about something specific?
+A01N03_Ern_GAR_01080;1080;GARDEN;Ernest;A01N03;Euh, non, pas du tout !;No, not at all!
+A01N03_Abi_GAR_01090;1090;GARDEN;Abigail;A01N03;Ah.;Ah.
+A01N03_Ern_GAR_01100;1100;GARDEN;Ernest;A01N03;C’est juste que ça fait longtemps qu’on ne s’est pas vus, et j’espérais qu’on pouvait se reparler, il y a tellement de choses qui ont dû changer dans nos vies depuis la dernière fois que nous nous sommes vus.;It’s just been so long since we last saw each other, and I hoped we could talk again. There are so many things that must have changed since last time.
+A01N03_Abi_GAR_01110;1110;GARDEN;Abigail;A01N03;Vous voulez juste parler, alors.;You just want to talk, then.
+A01N03_Ern_GAR_01120;1120;GARDEN;Ernest;A01N03;C’est si étrange que ça ?;Is that so weird?
+A01N03_Abi_GAR_01130;1130;GARDEN;Abigail;A01N03;Habituellement, je ne parle aux autres que lorsque c’est nécessaire, et ils ne me parlent que lorsqu’ils ont besoin de quelque chose. Mais je suppose que non, ce n’est pas étrange, de vouloir juste… parler.;Usually, I only talk to others when it’s necessary, and they only talk to me when they need something. But I guess it’s not that weird, usually, to just… want to talk.
+A01N03_Ern_GAR_01140;1140;GARDEN;Ernest;A01N03;Vous n’avez pas beaucoup d’amis, alors ?;You don’t have many friends, do you?
+A01N03_Abi_GAR_01150;1150;GARDEN;Abigail;A01N03;Oh, Tayla revient toujours à la charge, mais généralement, elle fait la conversation toute seule.;Oh, Tayla is always around somehow, but generally, she takes care of the whole conversation by herself.
+A01N03_Ern_GAR_01160;1160;GARDEN;Ernest;A01N03;Aha, c’est vrai qu’elle parle beaucoup… Mais parlons de vous, plutôt !;Aha, it’s true she speaks a lot… But let’s talk about you this time!
+A01N03_NAR_GAR_01170;1170;GARDEN;NARRATEUR;A01N03;…;…
+A01N03_NAR_GAR_01180;1180;GARDEN;NARRATEUR;A01N03;Ça se passait bien, mais je crois qu’il a besoin d’aide… Sur quoi lancer la conversation ?;Things were going well, but I think he needs help… What should he talk about?
+A01N03_Kim_GAR_01190;1190;GARDEN;Kim;A01N03;La couture;Stitching
+A01N03_Ern_GAR_01200;1200;GARDEN;Ernest;A01N03;Est-ce que vous aimez coudre ?;Ernest : Do you like stitching?
+A01N03_Abi_GAR_01210;1210;GARDEN;Abigail;A01N03;…;…
+A01N03_Abi_GAR_01220;1220;GARDEN;Abigail;A01N03;Je n’ai jamais appris.;I never learned.
+A01N03_Ern_GAR_01230;1230;GARDEN;Ernest;A01N03;Ah…;Ah…
+A01N03_NAR_GAR_01240;1240;GARDEN;NARRATEUR;A01N03;Sincèrement… Est-ce que cette conversation aurait pu tourner pire ?;Could this have turned worse?
+A01N03_Kim_GAR_01250;1250;GARDEN;Kim;A01N03;Les maquettes;Mock-up
+A01N03_Ern_GAR_01260;1260;GARDEN;Ernest;A01N03;Je sais que vous aimez l’architecture, est-ce que vous avez déjà fait des maquettes ?;I know you like architecture. Did you ever made a mock-up?
+A01N03_Abi_GAR_01270;1270;GARDEN;Abigail;A01N03;C’est intéressant que vous le mentionniez. J’aimais beaucoup en faire, adolescente, même si je n’ai plus le temps aujourd’hui. Je reconstituais des monuments historiques.;It’s interesting of you to mention it. I loved making models, as a teenager, although I don’t have time anymore. I used to mock up historical monuments.
+A01N03_Ern_GAR_01280;1280;GARDEN;Ernest;A01N03;C’est génial ! Vous pourrez me montrer ?;That’s awesome! Could you show them to me?
+A01N03_Abi_GAR_01290;1290;GARDEN;Abigail;A01N03;J’essaierai de retrouver les moins mauvaises.;I will try to dig up the least bad ones.
+A01N03_Ern_GAR_01300;1300;GARDEN;Ernest;A01N03;Merci.;Thanks.
+A01N03_NAR_GAR_01310;1310;GARDEN;NARRATEUR;A01N03;Je me disais bien… Celle du Manoir dans le grenier a vraiment été construite méticuleusement, elle a dû y passer des heures.;I knew it. The one of the Manor I found in the attic was so meticulously built! She must have spent hours on it.
+A01N03_Kim_GAR_01320;1320;GARDEN;Kim;A01N03;La peinture;Painting
+A01N03_Ern_GAR_01330;1330;GARDEN;Ernest;A01N03;Est-ce que vous aimez peindre ?;Do you like to paint?
+A01N03_Abi_GAR_01340;1340;GARDEN;Abigail;A01N03;Non. Hippolyte a toujours été l’artiste à la maison.;No, I don’t. Hippolyte was always the artist at home.
+A01N03_Kim_GAR_01350;1350;GARDEN;Kim;A01N03;La musique;Music
+A01N03_Ern_GAR_01360;1360;GARDEN;Ernest;A01N03;Qu’est-ce que vous aimez comme musique ?;What kind of music do you like?
+A01N03_Abi_GAR_01370;1370;GARDEN;Abigail;A01N03;Les musiques classiques.;Classical.
+A01N03_Ern_GAR_01380;1380;GARDEN;Ernest;A01N03;Ah oui ? Moi aussi…;Really? Me too…
+A01N03_Abi_GAR_01390;1390;GARDEN;Abigail;A01N03;Oh ! Je suis toujours transportée par la danse macabre de Camille Saint-Saëns, et je peux écouter la Symphonie du Nouveau Monde de Dvorak pendant des heures.;Oh! I’m so moved by Camille Saint-Saëns’s danse macabre, and I can listen to Dvorak’s New World Symphony for hours.
+A01N03_Ern_GAR_01400;1400;GARDEN;Ernest;A01N03;Comme moi !;Just like me!
+A01N03_NAR_GAR_01410;1410;GARDEN;NARRATEUR;A01N03;Ernest, oh Ernest ! C’est bien de lancer les sujets sur ce qui peut plaire à Abigail, mais si tu mens sur tes goûts, tu vas te retrouver coincer…;Ernest, oh Ernest! It’s good to talk about things that Abigail may like, but if you lie on your own tastes, you’ll end up trapped…
+A01N03_Abi_GAR_01420;1420;GARDEN;Abigail;A01N03;Vraiment ? Quel mouvement préférez-vous ?;Really? Which movement do you prefer?
+A01N03_Ern_GAR_01430;1430;GARDEN;Ernest;A01N03;Euh, euh… Le premier.;Um, um… The first one.
+A01N03_Abi_GAR_01440;1440;GARDEN;Abigail;A01N03;Ah.;Ah.
+A01N03_Abi_GAR_01450;1450;GARDEN;Abigail;A01N03;…;…
+A01N03_Abi_GAR_01460;1460;GARDEN;Abigail;A01N03;Est-ce que vous aimez d’autres compositeurs ?;Do you like other composers?
+A01N03_Ern_GAR_01470;1470;GARDEN;Ernest;A01N03;Chopin ?;Chopin?
+A01N03_Abi_GAR_01480;1480;GARDEN;Abigail;A01N03;Il a de très belles mazurkas. Une préférée ?;His mazurkas are very beautiful. Do you have a favorite?
+A01N03_Ern_GAR_01490;1490;GARDEN;Ernest;A01N03;Sincèrement, elles sont toutes belles, je ne saurais pas dire…;Um, well, they are all so nice, it’s hard to say…
+A01N03_NAR_GAR_01500;1500;GARDEN;NARRATEUR;A01N03;Abigail fronce les sourcils – je pense qu’elle se doute de quelque chose. Ou, tout du moins, qu’elle n’apprécie pas le flou et l’à-peu-près, elle s’y connait si bien et ses goûts sont tellement précis…;"Abigail frowns – I think she suspects something. Or at least she doesn’t appreciate his lukewarm answers; she’s so knowledgeable on the subject and her tastes are so precise…"
+A01N03_Kim_GAR_01510;1510;GARDEN;Kim;A01N03;L’équitation;Horse riding
+A01N03_Ern_GAR_01520;1520;GARDEN;Ernest;A01N03;Est-ce que vous aimez l’équitation ?;Do you like horse riding?
+A01N03_Abi_GAR_01530;1530;GARDEN;Abigail;A01N03;…;…
+A01N03_Abi_GAR_01540;1540;GARDEN;Abigail;A01N03;Excusez-moi, je sais que vos intentions sont bonnes, mais je n’ai vraiment pas envie d’avoir cette conversation. Si vous avez besoin de quelque chose, n’hésitez pas à me le faire savoir, mais je ne suis pas taillée pour ces discussions sans but.;Forgive me. I know you mean well, but I really don’t want to have this conversation. If you need anything, do not hesitate to let me know, but I am not made for discussing without purpose.
+A01N03_NAR_GAR_01550;1550;GARDEN;NARRATEUR;A01N03;Mince.;Crumbs.
+A01N03_NAR_GAR_01560;1560;GARDEN;NARRATEUR;A01N03;Qu’est-ce que j’ai fait ?;What did I do?
+A01N03_NAR_GAR_01570;1570;GARDEN;NARRATEUR;A01N03;C’est vrai que sa mère est morte à cheval, je n’aurais jamais dû lui faire parler de ça !;It’s true her mother died horse riding, I should never have told him to talk about that!
+A01N03_Abi_GAR_01580;1580;GARDEN;Abigail;A01N03;…;…
+A01N03_Abi_GAR_01590;1590;GARDEN;Abigail;A01N03;J’aime lire.;I like reading.
+A01N03_NAR_GAR_01600;1600;GARDEN;NARRATEUR;A01N03;Heureusement, c’est elle qui relance !;I’m so glad she’s the one launching the conversation again!
+A01N03_Abi_GAR_01610;1610;GARDEN;Abigail;A01N03;J’aime écrire, aussi, parfois, révéler des mots d’encre sur une page blanche.;I like writing, too, sometimes, and reveal ink words on a blank page.
+A01N03_Ern_GAR_01620;1620;GARDEN;Ernest;A01N03;Ah ?;Ah?
+A01N03_NAR_GAR_01630;1630;GARDEN;NARRATEUR;A01N03;Vite… Qu’est-ce qu’elle peut bien aimer ?;Fast… What could she like?
+A01N03_Kim_GAR_01640;1640;GARDEN;Kim;A01N03;Romans;Novels
+A01N03_Ern_GAR_01650;1650;GARDEN;Ernest;A01N03;Moi j’aime surtout lire des romans…;I mostly read novels…
+A01N03_NAR_GAR_01660;1660;GARDEN;NARRATEUR;A01N03;Abigail hoche poliment la tête, mais ne lance pas la conversation. Bon…;Abigail nods politely, but doesn’t bounce back. Oh well…
+A01N03_Kim_GAR_01670;1670;GARDEN;Kim;A01N03;Pièces de théâtre;Plays
+A01N03_Ern_GAR_01680;1680;GARDEN;Ernest;A01N03;Moi j’aime surtout lire des pièces de théâtre…;I mostly read plays…
+A01N03_Kim_GAR_01690;1690;GARDEN;Kim;A01N03;Nouvelles;Short stories
+A01N03_Ern_GAR_01700;1700;GARDEN;Ernest;A01N03;Moi j’aime surtout lire des nouvelles…;I mostly read short stories…
+A01N03_Kim_GAR_01710;1710;GARDEN;Kim;A01N03;Poésie;Poetry
+A01N03_Ern_GAR_01720;1720;GARDEN;Ernest;A01N03;Moi j’aime surtout lire de la poésie…;I mostly read poems…
+A01N03_Abi_GAR_01730;1730;GARDEN;Abigail;A01N03;Oh ?;Oh?
+A01N03_Kim_GAR_01740;1740;GARDEN;Kim;A01N03;Classiques;Classical
+A01N03_Ern_GAR_01750;1750;GARDEN;Ernest;A01N03;Oui, je lis des poètes classiques parfois… Baudelaire, Rimbaud, tout ça.;Yes, I read classical poets sometimes… Baudelaire, Rimbaud, all that.
+A01N03_Abi_GAR_01760;1760;GARDEN;Abigail;A01N03;Je vois.;I see.
+A01N03_NAR_GAR_01770;1770;GARDEN;NARRATEUR;A01N03;Je crois qu’elle se doute qu’il ne connait que ces deux noms là.;I think she knows he only knows those two.
+A01N03_Kim_GAR_01780;1780;GARDEN;Kim;A01N03;En alexandrins;Alexandrine
+A01N03_Ern_GAR_01790;1790;GARDEN;Ernest;A01N03;Oui, j’aime tellement le rythme des alexandrins.;Yes, I love when the meter is alexandrine.
+A01N03_Abi_GAR_01800;1800;GARDEN;Abigail;A01N03;Oh, vraiment ? Moi aussi, c’est si noble… Leur musique me reste tellement dans la tête ! Parfois je m’amuse à parler à ce rythme, mais je me rends compte que peu sont ceux à le remarquer et à vraiment l’apprécier.;Really? Me too, it is so heroic… The rythm of such poems always stays stuck in my head! Sometimes I have fun talking in sentences of twelve feet, but I have noticed that few notice and fewer can really appreciate it.
+A01N03_NAR_GAR_01810;1810;GARDEN;NARRATEUR;A01N03;Elle lui sourit. Pour elle, il fait partie des peu dont elle parle… Je me suis bien souvenu du type de poème qu’elle écrivait au salon.;She smiles at him. To her, he is one of the few she mentioned… I remembered well the type of poems she was writing in the sitting room.
+A01N03_Kim_GAR_01820;1820;GARDEN;Kim;A01N03;Contemporains;Contemporary
+A01N03_Ern_GAR_01830;1830;GARDEN;Ernest;A01N03;Oui, je lis des poètes contemporains parfois…;Yes, I read contemporary poets.
+A01N03_Abi_GAR_01840;1840;GARDEN;Abigail;A01N03;Ah. Je lis surtout des poètes du dix-neuvième, personnellement. J’ai beaucoup de mal avec l’absurde, les jeux de mots incessants, et les poèmes en prose dont les sonorités sont certes jolies mais qui ne veulent rien dire…;Ah. I mostly read poets from the nineteenth century. I cannot enjoy nonsense, unceasing word games and poems in prose with nice sounds but no meaning…
+A01N03_Ern_GAR_01850;1850;GARDEN;Ernest;A01N03;Aha… Mais il n’y a pas que ça… Les poètes aujourd’hui sont plus libres, il y a un peu de tout…;Aha… That’s not all there is to it, poets today are very free, so there’s a little of everything…
+A01N03_Abi_GAR_01860;1860;GARDEN;Abigail;A01N03;Je vous crois sur parole.;Oh, I believe you.
+A01N03_NAR_GAR_01870;1870;GARDEN;NARRATEUR;A01N03;Mais ça ne l’intéresse pas de découvrir ça… Dommage.;But she doesn’t care to find out for herself… Too bad.
+A01N03_NAR_GAR_01880;1880;GARDEN;NARRATEUR;A01N03;"La conversation meurt ; un oiseau chante. Ernest sourit, essayant de le chercher des yeux.";"They stop talking; a bird sings. Ernest smiles, trying to find it."
+A01N03_Ern_GAR_01890;1890;GARDEN;Ernest;A01N03;Où est-ce qu’il est…;Where could it be…
+A01N03_Abi_GAR_01900;1900;GARDEN;Abigail;A01N03;Là-bas. Sur la pelouse.;Over there, on the grass.
+A01N03_Ern_GAR_01910;1910;GARDEN;Ernest;A01N03;Ah, oui, bien vu.;Right, well seen.
+A01N03_Abi_GAR_01920;1920;GARDEN;Abigail;A01N03;J’aime beaucoup les oiseaux.;I really love birds.
+A01N03_Ern_GAR_01930;1930;GARDEN;Ernest;A01N03;Oui, moi aussi.;Me too.
+A01N03_Kim_GAR_01940;1940;GARDEN;Kim;A01N03;Ils voyagent où ils veulent;They travel where they want
+A01N03_Ern_GAR_01950;1950;GARDEN;Ernest;A01N03;Ils représentent la liberté. Ils peuvent vraiment aller où ils le souhaitent. Moi aussi, j’aimerai pouvoir voyager comme eux.;They symbolize freedom. They can go wherever they want. I’d love to travel like them.
+A01N03_Abi_GAR_01960;1960;GARDEN;Abigail;A01N03;Moi pas. Je suis très bien ici.;I would not. I feel perfectly fine here.
+A01N03_NAR_GAR_01970;1970;GARDEN;NARRATEUR;A01N03;J’aurais dû m’en douter.;I should have known.
+A01N03_Kim_GAR_01980;1980;GARDEN;Kim;A01N03;Ils chantent bien;They sing well
+A01N03_Ern_GAR_01990;1990;GARDEN;Ernest;A01N03;Ils chantent de si jolies mélodies.;They sing such beautiful songs.
+A01N03_Abi_GAR_02000;2000;GARDEN;Abigail;A01N03;C’est vrai.;That is true.
+A01N03_Kim_GAR_02010;2010;GARDEN;Kim;A01N03;Ils amènent le printemps;They come with the spring
+A01N03_Ern_GAR_02020;2020;GARDEN;Ernest;A01N03;Quand ils sont là, on sait que le printemps n’est pas loin, et avec eux le soleil et une nature tellement plus belle.;When we hear them, we know spring is just around the corner, with the sun and beautiful greenery.
+A01N03_Abi_GAR_02030;2030;GARDEN;Abigail;A01N03;C’est vrai.;That is true.
+A01N03_Kim_GAR_02040;2040;GARDEN;Kim;A01N03;Ils volent;They fly
+A01N03_Ern_GAR_02050;2050;GARDEN;Ernest;A01N03;Ils sont si beaux, quand ils volent. Moi aussi, j’aimerai pouvoir planer sur le vent.;They are so beautiful when they fly. I’d love to soar like them.
+A01N03_Abi_GAR_02060;2060;GARDEN;Abigail;A01N03;Je vois.;I see.
+A01N03_Kim_GAR_02070;2070;GARDEN;Kim;A01N03;Vous en aviez un;She had one
+A01N03_Ern_GAR_02080;2080;GARDEN;Ernest;A01N03;Vous en aviez un, avant, non ?;You had a bird before, didn’t you?
+A01N03_Abi_GAR_02090;2090;GARDEN;Abigail;A01N03;Oh, vous vous en souvenez ? Nous ne l’avons pourtant pas gardé longtemps.;Oh, you remember? We did not keep it long.
+A01N03_Ern_GAR_02100;2100;GARDEN;Ernest;A01N03;Mais vous y teniez beaucoup.;But you cared very much about it.
+A01N03_Abi_GAR_02110;2110;GARDEN;Abigail;A01N03;Oui.;I did.
+A01N03_NAR_GAR_02120;2120;GARDEN;NARRATEUR;A01N03;Ernest lui sourit, partageant sa peine. Elle sourit aussi, en le regardant. Heureusement que j’ai remarqué cette cage dans le grenier !;Ernest smiles, sharing her sorrow. She smiles too when she looks at it. I’m glad I saw the cage in the attic!
+A01N03_Ern_GAR_02130;2130;GARDEN;Ernest;A01N03;J’aime aussi…;I also like…
+A01N03_Kim_GAR_02140;2140;GARDEN;Kim;A01N03;Les baleines;Whales
+A01N03_Abi_GAR_02150;2150;GARDEN;Abigail;A01N03;Comme mon père. Il aimait tant l’océan.;Just like my father. He loved the ocean.
+A01N03_Ern_GAR_02160;2160;GARDEN;Ernest;A01N03;Oui, je me souviens.;Yes, I remember.
+A01N03_Kim_GAR_02170;2170;GARDEN;Kim;A01N03;Les éléphants;Elephants
+A01N03_NAR_GAR_02180;2180;GARDEN;NARRATEUR;A01N03;Ah… Elle n’a pas pu retenir son sourire !;Ah… She couldn’t control her smile!
+A01N03_Abi_GAR_02190;2190;GARDEN;Abigail;A01N03;C’est amusant que vous disiez ça, ce n’est pourtant pas un animal habituellement apprécié. Je les aimais beaucoup, enfant.;It is funny you would mention them, it is not an animal that receives much love. I was crazy about them, as a child.
+A01N03_Ern_GAR_02200;2200;GARDEN;Ernest;A01N03;Alors ça nous fait un point commun, aha !;Well, that makes two of us then, aha!
+A01N03_Kim_GAR_02210;2210;GARDEN;Kim;A01N03;Les hippopotames;Hippopotamus
+A01N03_NAR_GAR_02220;2220;GARDEN;NARRATEUR;A01N03;Abigail a l’air perplexe.;Abigail is puzzled.
+A01N03_Abi_GAR_02230;2230;GARDEN;Abigail;A01N03;…Bien ?;…Wonderful?
+A01N03_Kim_GAR_02240;2240;GARDEN;Kim;A01N03;Les chevaux;Horses
+A01N03_NAR_GAR_02250;2250;GARDEN;NARRATEUR;A01N03;Abigail fronce les sourcils et époussette alors sa robe avant de se lever.;Abigail frowns and wipes away the dust on her dress while getting up.
+A01N03_NAR_GAR_02260;2260;GARDEN;NARRATEUR;A01N03;Ils discutent encore un moment. J’aide Ernest du mieux possible, mais il est lancé, maintenant, et se rattrape tout seul comme il peut lorsque quelque chose assombrit le visage d’Abigail. Je commence à avoir des crampes, à rester caché#e||•e#. Finalement, je lui fais savoir que ce serait bien qu’il pense à moi, un peu…;They talk for a while still. I help Ernest the best I can, but he is more fluid now and finds his words by himself when he sees Abigail’s face darkening. I start having cramps as I stay hidden. Finally, I let him know that he should think about me a little…
+A01N03_Ern_GAR_02270;2270;GARDEN;Ernest;A01N03;Abigail…;Abigail…
+A01N03_Abi_GAR_02280;2280;GARDEN;Abigail;A01N03;Oui ?;Yes?
+A01N03_Ern_GAR_02290;2290;GARDEN;Ernest;A01N03;Est-ce que ça vous dirait, de, euh…;Would you like to, um…
+A01N03_Kim_GAR_02300;2300;GARDEN;Kim;A01N03;Visiter une horlogerie;Visit a clockmaker’s shop
+A01N03_Ern_GAR_02310;2310;GARDEN;Ernest;A01N03;De visiter une horlogerie, à l’occasion ?;…to visit a clockmaker’s shop, sometime?
+A01N03_Abi_GAR_02320;2320;GARDEN;Abigail;A01N03;Une horlogerie ?;A clockmaker’s shop?
+A01N03_Ern_GAR_02330;2330;GARDEN;Ernest;A01N03;Oui… J’aime beaucoup les montres, j’en sais un rayon sur leur histoire et leur conception, je pourrai vous apprendre plein de choses, si ça vous intéresse.;Yes… I really love watches, I know a lot about their history and their making, and I could teach you some stuff, if you want.
+A01N03_Abi_GAR_02340;2340;GARDEN;Abigail;A01N03;Pourquoi pas.;Why not.
+A01N03_Kim_GAR_02350;2350;GARDEN;Kim;A01N03;Dîner ensemble;Dine together
+A01N03_Ern_GAR_02360;2360;GARDEN;Ernest;A01N03;De dîner ensemble, à l’occasion ?;…to dine together, sometime?
+A01N03_Abi_GAR_02370;2370;GARDEN;Abigail;A01N03;Nous dînons déjà ensemble.;We already dine together.
+A01N03_Ern_GAR_02380;2380;GARDEN;Ernest;A01N03;Je voulais dire, sans… sans…;I meant, um, without…
+A01N03_Abi_GAR_02390;2390;GARDEN;Abigail;A01N03;Sans ?;Without?
+A01N03_Ern_GAR_02400;2400;GARDEN;Ernest;A01N03;Non, peu importe.;Nah, forget it.
+A01N03_Kim_GAR_02410;2410;GARDEN;Kim;A01N03;Jouer aux échecs;Play chess
+A01N03_Ern_GAR_02420;2420;GARDEN;Ernest;A01N03;De faire une partie d’échecs, à l’occasion ?;…to play chess, sometime?
+A01N03_Abi_GAR_02430;2430;GARDEN;Abigail;A01N03;Voilà bien longtemps que personne n’a osé m’y défier.;It has been a while since anyone dared to challenge me.
+A01N03_Ern_GAR_02440;2440;GARDEN;Ernest;A01N03;Je me débrouille, ça pourrait être sympa.;Well, I play okay, it could be nice.
+A01N03_Abi_GAR_02450;2450;GARDEN;Abigail;A01N03;Très bien. Nous essaierons.;Very well. We’ll try.
+A01N03_Kim_GAR_02460;2460;GARDEN;Kim;A01N03;Faire une promenade en bord de mer;Walk by the seaside
+A01N03_Ern_GAR_02470;2470;GARDEN;Ernest;A01N03;De faire une promenade en bord de mer, à l’occasion ?;…to walk by the seaside together, sometime?
+A01N03_Abi_GAR_02480;2480;GARDEN;Abigail;A01N03;Je n’ai pas vraiment la tête à ce genre de sorties, en ce moment. Peut-être cet été.;I don’t really feel like doing that kind of outings right now. Maybe we can do it this summer.
+A01N03_Ern_GAR_02490;2490;GARDEN;Ernest;A01N03;C’est dans longtemps, nous ne sommes qu’en avril…;That’s in such a long time. It’s only April…
+A01N03_Abi_GAR_02500;2500;GARDEN;Abigail;A01N03;Oui, et ?;Yes, and?
+A01N03_Ern_GAR_02510;2510;GARDEN;Ernest;A01N03;Non, peu importe.;Nothin’.
+A01N03_Abi_GAR_02520;2520;GARDEN;Abigail;A01N03;Je vais vous laisser. Il est certes agréable de prendre un peu de temps pour discuter, mais j’ai quand même des choses à préparer, par rapport à la mort de ma mère.;I will leave you now. It was very nice to take some time to talk together, but I have a lot of things to prepare because of my mother’s death.
+A01N03_Ern_GAR_02530;2530;GARDEN;Ernest;A01N03;Oui, je sais. J’espère que ça vous aura fait du bien, au moins, de… prendre une petite pause par rapport à tout ça.;Yes, I know. I hope you feel better after this… little break with all this.
+A01N03_Abi_GAR_02540;2540;GARDEN;Abigail;A01N03;Oui, merci.;Yes, thank you.
+A01N03_Abi_GAR_02550;2550;GARDEN;Abigail;A01N03;…;…
+A01N03_Abi_GAR_02560;2560;GARDEN;Abigail;A01N03;D’ailleurs.;By the way.
+A01N03_Ern_GAR_02570;2570;GARDEN;Ernest;A01N03;Oui ?;What is it?
+A01N03_Abi_GAR_02580;2580;GARDEN;Abigail;A01N03;Nous pourrions nous tutoyer, à l’avenir, si vous le souhaitez.;You may call me Aby, if you so wish.
+A01N03_Ern_GAR_02590;2590;GARDEN;Ernest;A01N03;Oh ! Oui, bien sûr.;Oh! With pleasure.
+A01N03_Abi_GAR_02600;2600;GARDEN;Abigail;A01N03;A plus tard, Ernest.;See you later, Ernest.
+A01N03_Abi_GAR_02610;2610;GARDEN;Abigail;A01N03;A plus tard, M. Briant.;See you later, Mr. Briant.
+A01N03_NAR_GAR_02620;2620;GARDEN;NARRATEUR;A01N03;Abigail disparaît, rentrant au Manoir. Je sors enfin de ma cachette, tout#e||•e# endolori#e||•e#.;Abigail disappears into the Manor. I get out of my hidden place, aching all over.
+A01N03_Ern_GAR_02630;2630;GARDEN;Ernest;A01N03;Wow. Je ne pensais pas que ce serait aussi stressant !;Wow. I didn’t think it would be so stressful!
+A01N03_Kim_GAR_02640;2640;GARDEN;Kim;A01N03;Moi non plus…;Me neither…
+A01N03_Ern_GAR_02650;2650;GARDEN;Ernest;A01N03;Qu’est-ce que tu en as pensé ?;What did you think?
+A01N03_Kim_GAR_02660;2660;GARDEN;Kim;A01N03;Je pense qu’elle était plutôt contente. Elle t’a quand même proposé de la tutoyer, c’est énorme.;I think she was pretty happy. She asked you to call her Aby, that’s a big step for her.
+A01N03_Ern_GAR_02670;2670;GARDEN;Ernest;A01N03;C’est vrai.;That’s right.
+A01N03_Ern_GAR_02680;2680;GARDEN;Ernest;A01N03;…;…
+A01N03_Ern_GAR_02690;2690;GARDEN;Ernest;A01N03;Je pense que j’ai vraiment mes chances, maintenant, et c’est grâce à toi, Kim. Merci pour ton aide.;I think I have a chance, now, thanks to you, Kim. Thanks again for your help.
+A01N03_Kim_GAR_02700;2700;GARDEN;Kim;A01N03;De rien. Le reste est entre tes mains.;Of course. The rest is in your hands.
+A01N03_Ern_GAR_02710;2710;GARDEN;Ernest;A01N03;Oui, je sais, tu ne vas pas tout faire à ma place non plus. Je voulais juste un coup de pouce au début pour me rassurer… Maintenant que je la comprends un peu mieux, je ferai au mieux pour faire avec elle des choses qu’elle peut apprécier. Allez… Je te laisse pour l’instant, je vais faire un tour pour m’aérer l’esprit, je sais que tu as encore plein de choses à faire d’ici ce soir ! Merci encore d’avoir pris le temps pour moi !;Yes, I know, you aren’t going to do everything for me either. I just wanted a little help at the start to reassure myself. Now that I understand her better, I will do my best to do things she appreciates with her. Well… I’m going for now, I want to take a walk and clear my mind a bit. I know you still have a lot to do before tonight, so thanks again for taking the time to help me!
+A01N03_Ern_GAR_02720;2720;GARDEN;Ernest;A01N03;Qu’est-ce que tu en as pensé ? Elle est toujours tellement froide…;What did you think? She’s always so cold…
+A01N03_Kim_GAR_02730;2730;GARDEN;Kim;A01N03;Je ne sais pas, elle est dure à lire.;I don’t know, she is hard to read.
+A01N03_Ern_GAR_02740;2740;GARDEN;Ernest;A01N03;Tu m’as fait dire pas mal de bêtises, quand même… Ou en tout cas des choses plates et sans intérêt…;You pushed me to say a lot of stupid things though… Or at least uninteresting ones…
+A01N03_Kim_GAR_02750;2750;GARDEN;Kim;A01N03;Tu ne peux pas me le reprocher. Je suis revenue depuis hier, je ne la connais pas mieux que toi, je n’étais pas forcément la personne la mieux placée pour t’aider…;You can’t blame me for that. I came back only yesterday, I don’t know her any more than you do, so I probably wasn’t the best person to help you…
+A01N03_Ern_GAR_02760;2760;GARDEN;Ernest;A01N03;Ouais…;Right…
+A01N03_NAR_GAR_02770;2770;GARDEN;NARRATEUR;A01N03;Il a l’air de mauvaise foi, comme s’il m’en voulait quand même.;He says it in bad faith, as if he is holding a grudge towards me anyway.
+A01N03_Ern_GAR_02780;2780;GARDEN;Ernest;A01N03;Allez… Je te laisse pour l’instant, je vais faire un tour pour m’aérer l’esprit, je sais que tu as encore plein de choses à faire d’ici ce soir.;Well… I’m going for now, I want to take a walk and clear my mind a bit. I know you still have a lot to do before tonight.
+A01N03_Ern_GAR_02790;2790;GARDEN;Ernest;A01N03;Comment tu as pu me faire dire des choses pareilles ? Parler de chevaux, sérieux !;How could you push me to say such things? To talk about horses, seriously!
+A01N03_Kim_GAR_02800;2800;GARDEN;Kim;A01N03;Elle était vraiment vexée…;She was really upset…
+A01N03_Ern_GAR_02810;2810;GARDEN;Ernest;A01N03;Evidemment ! Sa mère vient d’avoir un accident en tombant à cheval…;Of course she was! Her mom just died falling from a horse…
+A01N03_Kim_GAR_02820;2820;GARDEN;Kim;A01N03;Si tu le savais, pourquoi tu en as parlé ?;If you knew, why did you talk about it?
+A01N03_Ern_GAR_02830;2830;GARDEN;Ernest;A01N03;J’ai pas réfléchi, j’ai lu ton message et j’en ai parlé, je te faisais confiance ! Maintenant je n’ai aucune chance !;I didn’t think about it, I just read your text and talked, I was trusting you! Now I’m sure I don’t have a chance!
+A01N03_Kim_GAR_02840;2840;GARDEN;Kim;A01N03;Ce n’est pas la fin du monde.;It’s not the end of the world.
+A01N03_Ern_GAR_02850;2850;GARDEN;Ernest;A01N03;C’est ce que tu dis.;That’s easy for you to say.
+A01N03_Kim_GAR_02860;2860;GARDEN;Kim;A01N03;…;…
+A01N03_Ern_GAR_02870;2870;GARDEN;Ernest;A01N03;Je comptais sur toi, mais je crois que t’as fait exprès, en fait, t’avais juste envie que je me prenne la honte… T’as tout deviné, hein ?;I was counting on you, but I think you did it on purpose, you just wanted me to be ridiculed… You guessed everything, didn’t you?
+A01N03_Kim_GAR_02880;2880;GARDEN;Kim;A01N03;Deviné quoi ?;Guessed what?
+A01N03_Ern_GAR_02890;2890;GARDEN;Ernest;A01N03;Rien. Rien. Juste… Je veux pas te parler, là. A plus tard.;Nothing. Nothing. I… I don’t want to talk to you anymore. Bye.
+A01N03_NAR_GAR_02900;2900;GARDEN;NARRATEUR;A01N03;…;…
+A01N03_NAR_GAR_02910;2910;GARDEN;NARRATEUR;A01N03;C’est vrai que ça ne s’est pas très bien passé… Mais ce n’est pas une raison pour réagir comme ça, si ? Il va finir par se calmer…;Okay, it went badly… But is it a reason to overreact like that? He’s going to calm down, right?
+A01N03_Ern_ENT_02920;2920;ENTRANCE;Ernest;A01N03;Salut Kim ! Alors, tu es prête à m’aider à parler à Abigail ?;Hey, Kim! So, are you ready to help me talk with Abigail?
+A01N03_Kim_ENT_02930;2930;ENTRANCE;Kim;A01N03;Allons-y !;Let’s go!
+A01N03_Ern_ENT_02940;2940;ENTRANCE;Ernest;A01N03;Super. J’ai vu Abigail dans le jardin. Je te laisse te cacher derrière un arbre ou un bosquet pas trop loin, et je te fais confiance pour m’aiguiller du mieux possible.;Awesome. I saw Abigail in the garden. I’ll let you hide behind a tree or bush not too far away, and I trust you to steer me the best you can.
+A01N03_Kim_ENT_02950;2950;ENTRANCE;Kim;A01N03;Pas encore !;Not yet!
+A01N03_Ern_ENT_02960;2960;ENTRANCE;Ernest;A01N03;Je te suis quand tu veux !;I’m following you whenever you are!
+A01N03_Kim_ENT_02970;2970;ENTRANCE;Kim;A01N03;Ernest.;Ernest.
+A01N03_Ern_ENT_02980;2980;ENTRANCE;Ernest;A01N03;Kim.;Kim.
+A01N03_NAR_ENT_02990;2990;ENTRANCE;NARRATEUR;A01N03;Il a l’air gêné…;He is embarrassed.
+A01N03_Ern_ENT_03000;3000;ENTRANCE;Ernest;A01N03;Euh, pour ce qu’il s’est passé… Je voulais dire… Je suis vraiment désolé, je ne sais pas ce qui m’a pris. Le stress fait resurgir de mauvaises choses en moi.;Um, about what happened back there… I wanted to say… I’m really sorry. I don’t know what got into me. I’m stressed and it brings forward bad things in me.
+A01N03_Kim_ENT_03010;3010;ENTRANCE;Kim;A01N03;N’en parlons plus, Ernest. Le principal ait que tu aies compris que ce n’était pas une solution.;We don’t have to talk about it anymore. What matters is you understand it isn’t a solution.
+A01N03_Ern_ENT_03020;3020;ENTRANCE;Ernest;A01N03;Je ne sais pas encore comment je vais m’en sortir…;I don’t know how to get out of this mess.
+A01N03_Kim_ENT_03030;3030;ENTRANCE;Kim;A01N03;Tu trouveras. Monte un plan commercial. Tu aimes clairement parler de tes montres, pourquoi est-ce que tu ne fais pas un tour au village pour en discuter avec les habitants ? Te trouver des partenaires, un nouveau marché de travail, je ne sais pas.;You will find a way. Think up a marketing plan. You clearly love to talk about watches, why don’t you start by going to the village and telling everyone about them? You could find partners, a new market, I don’t know, I’m sure there are opportunities.
+A01N03_Ern_ENT_03040;3040;ENTRANCE;Ernest;A01N03;Tu as raison. Mais parlons d’autre chose… Comment se passent tes recherches ? Tu commences à avoir une idée du choix que tu vas faire ?;You’re right. But let’s talk about something else… How is your investigation going? Are you starting to have an idea of who you’ll choose?
+A01N03_Kim_ENT_03050;3050;ENTRANCE;Kim;A01N03;Je continue à en apprendre plus sur tout le monde.;I’m still learning more about everyone.
+A01N03_Ern_ENT_03060;3060;ENTRANCE;Ernest;A01N03;Alors, comment se passent tes recherches ? Tu commences à avoir une idée du choix que tu vas faire ?;So, how is your investigation going? Are you starting to have an idea of who you’ll choose?
+A01N03_Kim_ENT_03070;3070;ENTRANCE;Kim;A01N03;J’ai retrouvé de vieux jouets au grenier;I found some old toys in the attic
+A01N03_Kim_ENT_03080;3080;ENTRANCE;Kim;A01N03;J’avoue que je ne suis pas seulement concentré sur ma mission. C’est étrange, de revoir ces salles, de retrouver des souvenirs au détour des couloirs. Est-ce que tu es allé au grenier ?;I must say I’m not only concentrating on my task. It’s weird to see all these rooms again, and find memories at every corner. Did you go to the attic?
+A01N03_Ern_ENT_03090;3090;ENTRANCE;Ernest;A01N03;Non, pourquoi ?;No, why?
+A01N03_Kim_ENT_03100;3100;ENTRANCE;Kim;A01N03;C’est rempli des jouets que nous avions enfants. Comme les cannes à pêche…;It’s full of toys we played with as children. There are some fishing rods…
+A01N03_Ern_ENT_03110;3110;ENTRANCE;Ernest;A01N03;Les cannes à pêche ! Augustin nous amenait parfois sur la côte, pas loin. Nous passions l’après-midi dans son bateau, à tenter tant bien que mal de ramener des prises.;Fishing rods! Augustin brought us to the coast, not too far away from here, sometimes. We would spend the afternoon on his boat, trying and trying to catch something.
+A01N03_Kim_ENT_03120;3120;ENTRANCE;Kim;A01N03;C’était toi le plus patient.;You were the most patient one.
+A01N03_Ern_ENT_03130;3130;ENTRANCE;Ernest;A01N03;Tu te souviens de ça ? Hippolyte et toi préfériez les utiliser sur les toits que dans l’eau… Vous y accrochiez des objets bizarres et vous lanciez la ligne devant les gens qui sortaient du Manoir pour leur faire peur !;You remember that? Hippolyte and you preferred to use them from the roof rather than in the water… You would hook weird objects on them and throw the line in front of people leaving the Manor to scare them!
+A01N03_Kim_ENT_03140;3140;ENTRANCE;Kim;A01N03;Ça rendait Léontine folle.;Léontine would get mad at us.
+A01N03_NAR_ENT_03150;3150;ENTRANCE;NARRATEUR;A01N03;Parler de notre enfance a l’air de le rendre heureux. Il rit avec tant de spontanéité !;To talk about our childhood makes him happy. He laughs so easily now!
+A01N03_Ern_ENT_03160;3160;ENTRANCE;Ernest;A01N03;Ça avait de quoi ! C’était une époque tellement plus simple. Je vous suivais dans vos bêtises, rien ne semblait avoir de conséquences, au pire nous étions privés de dessert. Alors que maintenant…;Well I understand her! Everything was so simple back then. I would follow you in your foolishness, and nothing seemed to have any consequences. At worse, we couldn’t eat any dessert. While now…
+A01N03_NAR_ENT_03170;3170;ENTRANCE;NARRATEUR;A01N03;Il s’inquiète à nouveau.;He’s worrying again.
+A01N03_Kim_ENT_03180;3180;ENTRANCE;Kim;A01N03;Le réconforter;Comfort him
+A01N03_Kim_ENT_03190;3190;ENTRANCE;Kim;A01N03;Ne t’inquiète pas, Ernest. Tout se passera bien. Tu as peut-être l’impression que nos actions ont des conséquences plus importantes, que tu risques davantage… mais tu as grandi, aussi, tu es capable de porter davantage de responsabilités, et surtout, nous sommes toujours tous ici pour t’épauler !;Don’t worry, Ernest. It will be alright. Maybe you feel likeyour actions have big consequences now, that you risk more… but you grew up, too, you can deal with more responsibilities, and best of all, we’re still all here to help you out!
+A01N03_Ern_ENT_03200;3200;ENTRANCE;Ernest;A01N03;C’est gentil, Kim… Je ne pensais pas vraiment retrouver ici la même amitié qu’à l’époque, mais j’avais tort.;That’s nice of you, Kim… I didn’t think I’d find here the same friendships as back then, but I was wrong.
+A01N03_Kim_ENT_03210;3210;ENTRANCE;Kim;A01N03;En rire;Laugh about it
+A01N03_Kim_ENT_03220;3220;ENTRANCE;Kim;A01N03;Maintenant comme à l’époque, on ne doit toujours pas mettre le feu à la baraque !;Now is just like back then, we still shouldn’t set fire to the house!
+A01N03_Ern_ENT_03230;3230;ENTRANCE;Ernest;A01N03;Aha… Encore pardon.;Aha… Sorry again.
+A01N03_Kim_ENT_03240;3240;ENTRANCE;Kim;A01N03;Je vais d’ailleurs m’y remettre, il reste peu de temps.;I should get back to it, I don’t have much time left.
+A01N03_Ern_ENT_03250;3250;ENTRANCE;Ernest;A01N03;Je suis occupé, Kim, est-ce qu’on peut parler plus tard ? Merci.;I’m busy, Kim, can we talk again later? Thanks.
+A01N03_Kim_ENT_03260;3260;ENTRANCE;Kim;A01N03;…;…
+A01N03_NAR_ENT_03270;3270;ENTRANCE;NARRATEUR;A01N03;Il me fait vraiment la tête. Je ne pense pas qu’il me laissera lui reparler.;He’s really mad at me. I don’t think he’ll let me talk to him again.
+A01N03_Geo_ATT_03280;3280;ATTIC;Geoffroy;A01N03;A votre service.;At your disposal.
+A01N03_Kim_ATT_03290;3290;ATTIC;Kim;A01N03;J’ai trouvé les preuves de vos bons et loyaux services.;I found proof of your loyal services.
+A01N03_Geo_ATT_03300;3300;ATTIC;Geoffroy;A01N03;Vraiment ? Que j’en suis heureux ! Je n’en doutais pas, bien sûr.;Really? I’m so glad! I didn’t doubt you, of course.
+A01N03_Kim_ATT_03310;3310;ATTIC;Kim;A01N03;Je sais que vous avez déjà été récompensé;I know you were already rewarded
+A01N03_Kim_ATT_03320;3320;ATTIC;Kim;A01N03;J’ai aussi un témoignage me disant que vous avez déjà été largement récompensé par les Castheran.;I also have testimony that you were largely rewarded by the Castheran.
+A01N03_Geo_ATT_03330;3330;ATTIC;Geoffroy;A01N03;Je ne peux pas le nier. Ils ont été très bons avec moi. Non seulement j’ai été logé, nourri, payé pour vivre dans un endroit incroyable, avec une famille que je ne peux que couvrir d’éloges… Mais ils ne m’ont pas oublié dans l’héritage, et même sans le Manoir, j’ai reçu de leur part de quoi ne jamais m’inquiéter dans ma vieillesse.;I can’t deny that. They were very good to me. I was lodged, fed, paid to live in this incredible place, with a family that I can only praise… And they didn’t forget me in the inheritance. Even without the Manor, I’ve received from them enough to never worry in my old age.
+A01N03_Kim_ATT_03340;3340;ATTIC;Kim;A01N03;Vous voulez pourtant recevoir le Manoir ?;Yet you’re still asking for the Manor?
+A01N03_Geo_ATT_03350;3350;ATTIC;Geoffroy;A01N03;Ce n’est pas tant que je le veux pour moi-même, #Mme|M.|Mx# Luong. Mais je comprends l’importance qu’il a, et je préfère encore en être responsable que de le voir tomber entre les mains d’une personne extérieure… Que ce soit Mme Beaumont ou M. Briant. J’ai eu peur, je l’avoue, à leur arrivée. En vérité, je serai très heureux de rester au service des Castheran, si le Manoir revenait à Abigail ou Hippolyte.;It isn’t so much that I want it for myself, #Mrs.|Mr.|Mx.# Luong. But I understand how important it is, and I’d rather be responsible of it than see it fall in the hands of an outsider… Be it Ophélie or Ernest. I was afraid, I was to say, when they arrived. The truth is, I’d be very happy to keep serving the Castheran, if the Manor went to Abigail or Hippolyte.
+A01N03_Kim_ATT_03360;3360;ATTIC;Kim;A01N03;J’ai donc décidé de vous choisir comme héritier.;I choose you as the heir.
+A01N03_Kim_ATT_03370;3370;ATTIC;Kim;A01N03;Allons l’annoncer aux autres.;Let’s announce it to everyone.
+A01N03_Kim_ATT_03380;3380;ATTIC;Kim;A01N03;Mais je ne peux pas vous choisir comme héritier.;But I can’t choose you as the heir.
+A01N03_Kim_ATT_03390;3390;ATTIC;Kim;A01N03;Pas après ce que vous avez tenté de faire.;Not after what you tried to do.
+A01N03_Geo_ATT_03400;3400;ATTIC;Geoffroy;A01N03;C’est clairement compréhensible. Je vous souhaite donc bon courage pour la suite.;That’s very understandable. I wish you luck.
+A01N03_Kim_ATT_03410;3410;ATTIC;Kim;A01N03;Je préfère continuer mon enquête avant de prendre ma décision.;I need to keep investigating before taking a decision.
+A01N03_Geo_ATT_03420;3420;ATTIC;Geoffroy;A01N03;Ce qui est tout à fait compréhensible. Ecoutez… Pour faire preuve de bonne foi, je vais vous faire part d’un secret du Manoir. Vous avez sûrement remarqué les armoiries, dans toutes les salles ? Elles sont argent et azur, argent pour la sagesse, azur pour la loyauté, et vous en trouverez tant chez les Castheran ! Le symbole de la main ouverte représente l’accueil et la bienveillance… Je n’en suis pas digne… Mais peu sont ceux qui savent que, refermée, cette main devient symbole de secret. Touchez donc aux armoiries, fermez les doigts des mains dans tout le Manoir, et revenez ici.;That’s very understandable. Listen… To prove my good faith, I’m going to tell you about one of the Manor’s secrets. You might have noticed the armories in every room. They are silver and blue: silver for wisdom, blue for loyalty, and you can find both in this family! The open hand is a symbol of welcoming and kindness… I am not worth how much I received… But little are those who know that, closed, that hand becomes a symbol of secret. Touch the armories, close the fingers of the hands around the Manor, and come back here.
+A01N03_Kim_ATT_03430;3430;ATTIC;Kim;A01N03;A plus tard.;See you later.
+A01N03_Oph_CEL_03440;3440;CELESTIAS;Ophélie;A01N03;B-Bonjour, Kim !;Hello, K-Kim!
+A01N03_Kim_CEL_03450;3450;CELESTIAS;Kim;A01N03;Vous avez l’air de bonne humeur.;You seem to be in a good mood.
+A01N03_Oph_CEL_03460;3460;CELESTIAS;Ophélie;A01N03;Oui.;Yes.
+A01N03_NAR_CEL_03470;3470;CELESTIAS;NARRATEUR;A01N03;Elle rougit.;She blushes.
+A01N03_Oph_CEL_03480;3480;CELESTIAS;Ophélie;A01N03;C’est g-grâce à v-vous.;It’s thanks to you.
+A01N03_Oph_CEL_03490;3490;CELESTIAS;Ophélie;A01N03;Lire que C-Célestia regrette de ne pas m’avoir vue g-grandir, c’est… ça me touche b-beaucoup. Je me sens plus heureuse, de savoir qu’elle ne me d-détestait pas. Et Abi-bigail a accepté que je v-vois cette chambre. Mais… vous v-vouliez peut-être quelque chose ?;Reading that C-Célestia wishes she’d seen me g-grow, that’s… I’m v-very touched. I’m happier, knowing she didn’t hate m-me. And Abigail t-told me I could see her room n-now. B-but… Did you want something?
+A01N03_Kim_CEL_03500;3500;CELESTIAS;Kim;A01N03;J’ai trouvé un autre morceau de journal.;I found another piece of diary.
+A01N03_Oph_CEL_03510;3510;CELESTIAS;Ophélie;A01N03;Oh ?;Oh?
+A01N03_Kim_CEL_03520;3520;CELESTIAS;Kim;A01N03;Il parle encore de vous, plus précisément. Célestia aurait aimé que vous puissiez grandir sous son toit.;It’s about you again, and more precise. Célestia would have liked to see you grow here, under her roof.
+A01N03_Oph_CEL_03530;3530;CELESTIAS;Ophélie;A01N03;Est-ce que… Est-ce que je p-peux avoir la p-page ?;May I… May I have the p-page?
+A01N03_Kim_CEL_03540;3540;CELESTIAS;Kim;A01N03;Bien sûr. Tenez.;Of course. Here you go.
+A01N03_Oph_CEL_03550;3550;CELESTIAS;Ophélie;A01N03;Merci b-beaucoup. C’est inestimable pour m-moi.;Thank you. It’s unvaluable to m-me.
+A01N03_Kim_CEL_03560;3560;CELESTIAS;Kim;A01N03;Je préfère la garder, c’est une preuve utile.;I’d rather keep it, it’s a useful proof.
+A01N03_Oph_CEL_03570;3570;CELESTIAS;Ophélie;A01N03;J-je comprends.;I unders-s-stand.
+A01N03_Oph_CEL_03580;3580;CELESTIAS;Ophélie;A01N03;Vous allez b-bientôt prendre votre d-décision, n’est-ce pas ? Est-ce que v-vous savez déjà ce que vous allez faire ?;You have to take your d-decision soon, d-don’t you? Do you already know what you’ll do?
+A01N03_Kim_CEL_03590;3590;CELESTIAS;Kim;A01N03;J’ai décidé de vous faire héritière.;I choose you as the heir.
+A01N03_Oph_CEL_03600;3600;CELESTIAS;Ophélie;A01N03;V-Vraiment ? J-je ne s-sais pas qu-quoi dire, j-je ne m’y attendais pas…;R-really? I d-don’t know what t-to say, I didn’t ex… exip… anticip-pate it.
+A01N03_Oph_CEL_03610;3610;CELESTIAS;Ophélie;A01N03;M-Merci, Kim.;Thank you, K-Kim.
+A01N03_Oph_CEL_03620;3620;CELESTIAS;Ophélie;A01N03;M-merci m-mille fois.;Thank you v-very m-much.
+A01N03_Kim_CEL_03630;3630;CELESTIAS;Kim;A01N03;Allons l’annoncer aux autres.;Let’s announce it to everyone.
+A01N03_Kim_CEL_03640;3640;CELESTIAS;Kim;A01N03;J’ai décidé de ne pas vous donner le Manoir.;You will not have the Manor.
+A01N03_Kim_CEL_03650;3650;CELESTIAS;Kim;A01N03;Parce que j’ai des doutes sur vous;Because I doubt you
+A01N03_Kim_CEL_03660;3660;CELESTIAS;Kim;A01N03;Je sais que vous êtes la fille de Célestia, mais vous n’avez jamais vécu ici. S’il y a eu tant de soupçons sur vous à votre arrivée, c’est bien parce que ça arrive, les héritiers prodigues qui ne réapparaissent qu’au moment de grappiller l’argent… Pourquoi serait-ce différent cette fois-ci ? Si c’est vraiment pour connaître votre famille que vous êtes venue jusqu’ici, vous n’avez pas besoin du Manoir pour apprendre à les connaître, et vous ne m’en voudrez pas de ne pas vous choisir.;I know you’re Célestia’s daughter, but you’ve never lived here. If there were so many suspicions about you when you arrived, it’s because there really are extravagant heirs appearing as by magic when it’s time to grasp the money… Why would it be different now? If you really just want to know your family, you don’t need the Manor to learn to know them, and you won’t be sad that I won’t choose you.
+A01N03_Oph_CEL_03670;3670;CELESTIAS;Ophélie;A01N03;Oh… Oui, b-bien sûr, j-je comprends. V-Vous avez raison. Même si…;Oh… Yes, of c-course, I understand. You’re right. Although…
+A01N03_Kim_CEL_03680;3680;CELESTIAS;Kim;A01N03;Même si ?;Although?
+A01N03_Oph_CEL_03690;3690;CELESTIAS;Ophélie;A01N03;Ça m’attriste que v-vous ayez encore des soupçons sur m-moi… J-je ne suis vraiment v-venue que pour en apprendre plus sur ma f-famille.;I’m sad to see you still have suspicions ab-bout m-me… I did come to learn m-more ab-bout my f-family.
+A01N03_Kim_CEL_03700;3700;CELESTIAS;Kim;A01N03;Parce que vous n’êtes pas là pour l’héritage;Because you’re not here for the inheritance
+A01N03_Kim_CEL_03710;3710;CELESTIAS;Kim;A01N03;Je sais que vous êtes la fille de Célestia, et vous auriez le droit à l’héritage au même titre qu’Abigail ou Hippolyte. Mais je sais aussi que vous êtes venue jusqu’ici pour apprendre à connaître votre famille, pas pour récupérer des biens, alors je préfère donner le Manoir à quelqu’un d’autre.;I know you’re Célestia’s daughter, and you have a right to the inheritance as strong as Abigail’s or Hippolyte’s. But I also know you came here to learn about your family, not to get the furniture, so I’d rather give the Manor to someone else.
+A01N03_Oph_CEL_03720;3720;CELESTIAS;Ophélie;A01N03;B-bien sûr. J-je m’y attendais, et j-je pense que v-vous avez raison. J’aurais choisi Abigail ou Hippolyte sans hésitation, p-personnellement…;Of c-course. I ekcip… anticip-pated it, and I think you’re right. I would have chose Abigail or Hippolyte without hesitation… Oh, s-sorry, I didn’t m-mean to influence you. You will do as you wish, there are n-no b-bad choices!
+A01N03_Oph_CEL_03730;3730;CELESTIAS;Ophélie;A01N03;Oh, p-pardon, je ne voulais pas essayer de vous influencer. V-vous ferez comme vous voudrez, il n’y a pas de mauvais choix !;I know that. But you can speak your mind, you know!
+A01N03_Kim_CEL_03740;3740;CELESTIAS;Kim;A01N03;Je sais bien. Vous avez le droit de donner votre avis, vous savez ! Vous devriez même le donner plus souvent.;You should do it more often.
+A01N03_Oph_CEL_03750;3750;CELESTIAS;Ophélie;A01N03;Oh, j-je ne sais pas. J’ai peur qu’il ne soit pas très intéressant…;Oh, I d-don’t know. I’m afraid it’s not that interesting…
+A01N03_Kim_CEL_03760;3760;CELESTIAS;Kim;A01N03;Au contraire.;I think it is.
+A01N03_Oph_CEL_03770;3770;CELESTIAS;Ophélie;A01N03;C’est… gentil.;That’s… nice.
+A01N03_Oph_CEL_03780;3780;CELESTIAS;Ophélie;A01N03;…;…
+A01N03_Oph_CEL_03790;3790;CELESTIAS;Ophélie;A01N03;Par contre, il faut que je vous dise…;Um… I have to t-tell you…
+A01N03_Kim_CEL_03800;3800;CELESTIAS;Kim;A01N03;Oui ?;Yes?
+A01N03_Oph_CEL_03810;3810;CELESTIAS;Ophélie;A01N03;P-puisque la question de l’héritage est réglée… Et que j-je sais maintenant qui je suis… Je pense que je vais quitter le M-Manoir. Je veux dire, il faut qu’Hippolyte et Abigail puissent faire leur d-deuil, ce n’est pas du tout le m-moment de m’accrocher à eux à vouloir qu’ils me p-parlent d’elle, ils ont sûrement b-besoin de temps… Alors je p-pense les recontacter p-plus tard. Pour l’instant, je vais rentrer en N-Normandie.;Since the inheritance stuff is done… And I know who I am… I think I’ll leave the M-Manor. I m-mean, Hippolyte and Abigail n-need to b-be able to grieve. It’s not the right t-time for m-me to cling to them and ask them to t-tell me ab-bout her. They surely need t-time… So I’ll contact them ag-gain, later on. For n-now, I’m g-going b-back to N-Normandy.
+A01N03_Kim_CEL_03820;3820;CELESTIAS;Kim;A01N03;J’espère que vous ferez bon voyage, dans ce cas. Je vais rester encore, pour pouvoir régler les derniers détails.;I hope you will travel well, in that case. I need to stay here for the last details.
+A01N03_Oph_CEL_03830;3830;CELESTIAS;Ophélie;A01N03;Est-ce que…;D-do you…
+A01N03_Kim_CEL_03840;3840;CELESTIAS;Kim;A01N03;Oui ?;Yes?
+A01N03_Oph_CEL_03850;3850;CELESTIAS;Ophélie;A01N03;Est-ce que v-vous voudriez bien qu’on reste en contact ?;Would you like f-for us t-to stay in c-contact?
+A01N03_Kim_CEL_03860;3860;CELESTIAS;Kim;A01N03;Oui;Yes
+A01N03_Kim_CEL_03870;3870;CELESTIAS;Kim;A01N03;Ah ? Oui, bien sûr ! Je vous donne mon numéro.;Um? Yes, sure! Here is my number.
+A01N03_Oph_CEL_03880;3880;CELESTIAS;Ophélie;A01N03;M-Merci. A bientôt, j’espère.;Thanks. S-see you s-soon, I hope.
+A01N03_Kim_CEL_03890;3890;CELESTIAS;Kim;A01N03;Non;No
+A01N03_Kim_CEL_03900;3900;CELESTIAS;Kim;A01N03;Euh, je vais bientôt rentrer aussi, et nous n’aurons sûrement pas l’occasion de nous revoir, alors…;Um, I’m going back home soon too, and we probably won’t see each other again, so…
+A01N03_Oph_CEL_03910;3910;CELESTIAS;Ophélie;A01N03;Oui, p-pardon. V-vous êtes là pour l’héritage, pas pour… Pardon.;Yes, s-sorry. You’re here ab-bout the inherit-tance, not to… s-sorry.
+A01N03_NAR_CEL_03920;3920;CELESTIAS;NARRATEUR;A01N03;Elle part sans me laisser le temps d’ajouter quoique ce soit.;She leaves immediately, and I don’t have time to add anything.
+A01N03_Kim_CEL_03930;3930;CELESTIAS;Kim;A01N03;Puis-je avoir ton avis ?;What do you think?
+A01N03_Kim_CEL_03940;3940;CELESTIAS;Kim;A01N03;Par curiosité, qui auriez-vous choisi, à ma place ?;By curiosity, who would you have chosen?
+A01N03_Oph_CEL_03950;3950;CELESTIAS;Ophélie;A01N03;Oh… Je n’aurais pas su choisir entre Abigail et Hippolyte. Vous avez un temps tellement court pour apprendre à les connaître et prendre une telle décision… Après je sais que vous les connaissiez enfants, mais… C’est quand même très difficile. Je n’aimerai pas être à votre place.;Oh… I c-couldn’t have chosen b-between Abigail and Hippolyte. You have s-so little t-time to learn to know them and to t-take a d-desishion… You knew them as children, b-but still… It’s d-difficult. I wouldn’t want to b-be in your p-place.
+A01N03_Kim_CEL_03960;3960;CELESTIAS;Kim;A01N03;Vous ne vous seriez pas choisie vous-même ?;You wouldn’t have chosen yourself?
+A01N03_NAR_CEL_03970;3970;CELESTIAS;NARRATEUR;A01N03;Elle semble surprise.;She is surprised.
+A01N03_Oph_CEL_03980;3980;CELESTIAS;Ophélie;A01N03;Moi ? Mais je ne veux pas vraiment le Manoir… Je veux juste une occasion d’apprendre à connaître ma famille. Pourquoi me le donner, dans ces conditions ? Je n’ai pas grandi ici.;M-me? B-but I d-don’t really want the M-Manor… I just want to g-get to know my f-family. Why g-give it to m-me, then? I didn’t g-grow up here.
+A01N03_Oph_CEL_03990;3990;CELESTIAS;Ophélie;A01N03;En vérité, recevoir l’héritage ne m’arrangerait sûrement pas. Cela donnerait une raison à ma demi-sœur et à mon demi-frère de me d-détester encore plus, et j’aimerai éviter ça à tout prix…;Actually, g-getting the M-Manor would be t-troublesome. My half-sister and half-b-brother would have another reason to hate m-me, and I d-don’t want that…
+A01N03_Kim_CEL_04000;4000;CELESTIAS;Kim;A01N03;Je comprends. Je ne vous le donnerai pas.;I understand. I won’t give it to you.
+A01N03_Kim_CEL_04010;4010;CELESTIAS;Kim;A01N03;Je préfère vous le donner quand même;I still want to give it to you.
+A01N03_Kim_CEL_04020;4020;CELESTIAS;Kim;A01N03;Je vais encore réfléchir.;I need to think about it some more.
+A01N03_Oph_CEL_04030;4030;CELESTIAS;Ophélie;A01N03;A quoi ?;Ab-bout what?
+A01N03_Kim_CEL_04040;4040;CELESTIAS;Kim;A01N03;Je ne sais pas si quelqu’un le mérite davantage.;I don’t know who is most worthy of inheriting.
+A01N03_Kim_CEL_04050;4050;CELESTIAS;Kim;A01N03;Je dois encore réfléchir;I still need to think about it.
+A01N03_Oph_CEL_04060;4060;CELESTIAS;Ophélie;A01N03;Oh, pardon, je ne voulais pas vous pousser. Je n’ai pas besoin de savoir la réponse, de toute façon, cela ne me regarde pas !;Oh, s-sorry, I didn’t m-mean to p-push you. I don’t n-need to know the answer, it has n-nothing to do with m-me!
+A01N03_Kim_CEL_04070;4070;CELESTIAS;Kim;A01N03;Rien;Nothing
+A01N03_Kim_CEL_04080;4080;CELESTIAS;Kim;A01N03;Non, je voulais juste voir comment tu allais.;No, I just wanted to see how you were.
+A01N03_NAR_CEL_04090;4090;CELESTIAS;NARRATEUR;A01N03;Elle rougit à la moindre attention.;She blushes all the time.
+A01N03_Oph_CEL_04100;4100;CELESTIAS;Ophélie;A01N03;Alors, avez-vous pris votre décision ?;So, did you t-take a d-decision?
+A01N03_Oph_CEL_04110;4110;CELESTIAS;Ophélie;A01N03;P-Pardon, j’insiste trop. C’est important que vous preniez votre temps.;S-Sorry, I p-push t-too m-much. You need to t-take your t-time.
+A01N03_Hip_HIP_04120;4120;HIPPOLYTES;Hippolyte;A01N03;Hé ! Je ne t’ai pas autorisé à fouiller ma chambre ! Tu n’y trouveras rien, de toute façon.;Hé! I didn’t give you the right to go through my stuff! You won’t find anything, anyway.
+A01N03_NAR_HIP_04130;4130;HIPPOLYTES;NARRATEUR;A01N03;Est-ce qu’il cache quelque chose ? Si je veux pouvoir chercher, il va falloir que je trouve un moyen de le faire sortir de sa chambre…;Is he hiding something? If I want to look around, I need to find a way to get him to leave his room…
+A01N03_Kim_HIP_04140;4140;HIPPOLYTES;Kim;A01N03;Ah, Hippolyte, je te cherchais.;Ah, Hippolyte, I was looking for you.
+A01N03_Kim_HIP_04150;4150;HIPPOLYTES;Kim;A01N03;J’ai réfléchi. Je te choisis comme héritier.;I’ve given it a lot of thought: I choose you as heir.
+A01N03_Kim_HIP_04160;4160;HIPPOLYTES;Kim;A01N03;Allons l’annoncer aux autres.;Let’s tell everyone.
+A01N03_Kim_HIP_04170;4170;HIPPOLYTES;Kim;A01N03;J’ai une lettre pour toi.;I have a letter for you.
+A01N03_Hip_HIP_04180;4180;HIPPOLYTES;Hippolyte;A01N03;Tu l’as lue ?;Did you read it?
+A01N03_Kim_HIP_04190;4190;HIPPOLYTES;Kim;A01N03;Oui.;Yes.
+A01N03_Hip_HIP_04200;4200;HIPPOLYTES;Hippolyte;A01N03;Je n’ai rien à te dire. Bonne journée.;I have nothing to tell you. Good day.
+A01N03_Kim_HIP_04210;4210;HIPPOLYTES;Kim;A01N03;J’aimerai que tu l’ouvres et que tu la lises devant moi.;I’d like you to open it and read it here with me.
+A01N03_Hip_HIP_04220;4220;HIPPOLYTES;Hippolyte;A01N03;Quoi ? Mais elle est à moi. Ça ne te regarde pas.;What? But it’s mine, it doesn’t concern you.
+A01N03_Hip_HIP_04230;4230;HIPPOLYTES;Hippolyte;A01N03;J’ai des raisons de croire que si. Si tu n’as rien à cacher, pourquoi ne pas me laisser voir ?;I have reasons to think it does. If you don’t have anything to hide, why won’t you let me look?
+A01N03_Kim_HIP_04240;4240;HIPPOLYTES;Kim;A01N03;…;…
+A01N03_Hip_HIP_04250;4250;HIPPOLYTES;Hippolyte;A01N03;« Cher M. Castheran… »;« Dear Sir Castheran… »
+A01N03_Kim_HIP_04260;4260;HIPPOLYTES;Kim;A01N03;Oui ?;Yes ?
+A01N03_Hip_HIP_04270;4270;HIPPOLYTES;Hippolyte;A01N03;Oh, lis toi-même, de toute façon, tu sais déjà ce qui est dedans !;Oh, read yourself, you already know everything that’s in it anyway!
+A01N03_NAR_HIP_04280;4280;HIPPOLYTES;NARRATEUR;A01N03;C’est une proposition d’achat… Hippolyte a l’intention de vendre le Manoir s’il lui revient !;It’s a purchase offer… Apparently, Hippolyte means to sell the Manor if he gets it for himself!
+A01N03_Kim_HIP_04290;4290;HIPPOLYTES;Kim;A01N03;Si le manoir te revient, tu comptes donc le vendre ?;If you get the Manor, you’re going to sell it, aren’t you?
+A01N03_Hip_HIP_04300;4300;HIPPOLYTES;Hippolyte;A01N03;Et alors ? Je peux en faire ce que je veux, non ?;So what? I can do whatever I want with it, can’t I?
+A01N03_Kim_HIP_04310;4310;HIPPOLYTES;Kim;A01N03;Je n’ai pas envie de donner le Manoir à quelqu’un qui n’en veut pas.;I don’t want to give the Manor to someone who won’t keep it
+A01N03_Hip_HIP_04320;4320;HIPPOLYTES;Hippolyte;A01N03;Ne me le donne pas, alors !;Don’t give it to me, then!
+A01N03_NAR_HIP_04330;4330;HIPPOLYTES;NARRATEUR;A01N03;Il avait l’air tellement énervé…;He seemed so upset…
+A01N03_Kim_HIP_04340;4340;HIPPOLYTES;Kim;A01N03;Je crois savoir pourquoi.;I think I know why.
+A01N03_Hip_HIP_04350;4350;HIPPOLYTES;Hippolyte;A01N03;Tu as des pouvoirs de télépathie maintenant ?;You can read thoughts now?
+A01N03_Kim_HIP_04360;4360;HIPPOLYTES;Kim;A01N03;Non, mais je sais que tu dessines bien. Tu serais mieux dans un studio dans une ville culturelle plutôt qu’ici dans la campagne pour te faire connaître, non ? Tu as besoin d’argent pour lancer ta carrière ?;No, but I know you draw well. You would do better with a studio in a city that pushes culture forward rather than in the countryside to become well-known, wouldn’t you? Do you need money to launch your career?
+A01N03_Hip_HIP_04370;4370;HIPPOLYTES;Hippolyte;A01N03;Comment sais-tu ça ?;How do you know all that?
+A01N03_Kim_HIP_04380;4380;HIPPOLYTES;Kim;A01N03;J’ai vu le tableau signé par toi en bas.;I saw a painting signed by you downstairs.
+A01N03_Hip_HIP_04390;4390;HIPPOLYTES;Hippolyte;A01N03;Ce vieux tableau ? Et tu en déduis tout ça ? Je ne te crois pas.;That old painting? And you guessed all that? I don’t believe you.
+A01N03_Kim_HIP_04400;4400;HIPPOLYTES;Kim;A01N03;Alors disons que j’ai des pouvoirs de télépathie.;Then let’s say I can read thoughts.
+A01N03_Hip_HIP_04410;4410;HIPPOLYTES;Hippolyte;A01N03;Disons ça…;Let’s…
+A01N03_Hip_HIP_04420;4420;HIPPOLYTES;Hippolyte;A01N03;J’ai vu tes dessins de tatouage pendant que je t’attendais.;I saw your tattoo drawings while I was waiting for you.
+A01N03_Hip_HIP_04430;4430;HIPPOLYTES;Hippolyte;A01N03;Ah.;Ah.
+A01N03_Kim_HIP_04440;4440;HIPPOLYTES;Kim;A01N03;Et…;And…
+A01N03_Hip_HIP_04450;4450;HIPPOLYTES;Hippolyte;A01N03;Qu’est-ce que tu en as pensé ?;What did you think?
+A01N03_Kim_HIP_04460;4460;HIPPOLYTES;Kim;A01N03;Tu es talentueux.;You’re talented.
+A01N03_Hip_HIP_04470;4470;HIPPOLYTES;Hippolyte;A01N03;Tu y crois vraiment ? Mais… Comme tu dis, je ne pourrai pas lancer ma carrière sans vendre le Manoir.;You really believe that? But… Like you said, I can’t launch my career without selling the Manor.
+A01N03_Kim_HIP_04480;4480;HIPPOLYTES;Kim;A01N03;Je prendrai ça en compte en faisant mon choix, ne t’en fais pas.;I’ll take it into account when I make my choice, don’t worry.
+A01N03_Hip_HIP_04490;4490;HIPPOLYTES;Hippolyte;A01N03;Merci, je suppose.;Thanks, I guess.
+A01N03_Hip_HIP_04500;4500;HIPPOLYTES;Hippolyte;A01N03;C’est ça, tu dis juste ça pour me faire plaisir. Arrête de te moquer de moi.;Right. You’re only saying that to flatter me. Stop making fun of me.
+A01N03_NAR_HIP_04510;4510;HIPPOLYTES;NARRATEUR;A01N03;Ok… Il s’attend toujours au pire de ma part, c’est vraiment injuste. Mais qui sème le vent récolte la tempête, tant pis pour lui.;Ok… He’s always expecting the worse from me, it’s really unfair. But he who sows the wind, reaps the whirlwind. Too bad for him.
+A01N03_Kim_HIP_04520;4520;HIPPOLYTES;Kim;A01N03;Ce n’est pas vraiment mon style.;It’s not my style.
+A01N03_Hip_HIP_04530;4530;HIPPOLYTES;Hippolyte;A01N03;Ah.;Ah.
+A01N03_Hip_HIP_04540;4540;HIPPOLYTES;Hippolyte;A01N03;Mais… J’aimerai tenter ma chance, quand même, et je ne pourrai jamais le faire si je reste dans ce Manoir, ou que je pars sans rien.;But… I’d like to try my luck, still, and I can’t do that if I stay here, or if I leave with empty pockets.
+A01N03_Kim_HIP_04550;4550;HIPPOLYTES;Kim;A01N03;Je prendrai ça en compte en faisant mon choix, ne t’en fais pas.;I’ll take it into account when I make my choice, don’t worry.
+A01N03_Hip_HIP_04560;4560;HIPPOLYTES;Hippolyte;A01N03;Merci, je suppose.;Thanks, I guess.
+A01N03_Hip_HIP_04570;4570;HIPPOLYTES;Hippolyte;A01N03;Tu n’as aucun goût. Je ne sais même pas pourquoi je te demande. Les filles comme toi ne savent pas apprécier l’art.;You have bad taste. I don’t even know why I asked you. Girls like you can’t appreciate real art.
+A01N03_NAR_HIP_04580;4580;HIPPOLYTES;NARRATEUR;A01N03;Ok… Il s’attend toujours au pire de ma part, c’est vraiment injuste. Mais qui sème le vent récolte la tempête, tant pis pour lui.;Ok… He’s always expecting the worse from me, it’s really unfair. But he who sows the wind, reaps the whirlwind. Too bad for him.
+A01N03_Kim_HIP_04590;4590;HIPPOLYTES;Kim;A01N03;Oui, tu as raison.;Yes, you’re right.
+A01N03_Kim_HIP_04600;4600;HIPPOLYTES;Kim;A01N03;Ce que tu veux en faire ne rentrera pas en compte dans mon choix. Tes raisons ne me regardent pas.;What you want to do with it shouldn’t influence my choice. Your reasons do not matter.
+A01N03_Hip_HIP_04610;4610;HIPPOLYTES;Hippolyte;A01N03;Merci, je suppose.;Thanks, I guess.
+A01N03_Hip_HIP_04620;4620;HIPPOLYTES;Hippolyte;A01N03;Tu ne pourrais pas les comprendre, de toute façon. Tu n’es qu’une fille.;You wouldn’t understand them anyway, you’re just a girl.
+A01N03_Léo_HAL_04630;4630;HALL;Léontine;A01N03;#Mme|M.|Mx# Luong ? Qu’avez-vous dit à mon petit Hippolyte ? Il a l’air hors d’état de lui ! Il est parti vers le jardin, il n’a même pas voulu que je lui prépare son manteau !;#Mrs.|Mr.|Mx.# Luong? What d’ya say to my dear Hippolyte? He was out of himself! He left to the garden, he didn’t even want me to prepare his coat!
+A01N03_NAR_BLA_04640;4640;BLACK_SCREEN;NARRATEUR;A01N03;…;…
+A01N03_NAR_BLA_04650;4650;BLACK_SCREEN;NARRATEUR;A01N03;Je souhaite continuer à déambuler dans le Manoir, mais bientôt, je sens la température baisser d’un coup, et j’en ai des frissons. Le Manoir est froid et soudain inhospitalier. Il se passe alors quelque chose d’étrange – je sens comme une force me pousser de l’arrière, pourtant je vois bien qu’il n’y a personne. Le vent prend une consistance et me pousse si fort que je suis obligé de faire un pas en avant, puis un autre. Je n’ai pas vraiment le choix : je cesse vite de lutter et laisse cette force surnaturelle me faire traverser le jardin, jusqu’à me retrouver de l’autre côté de la grille. Celle-ci claque, violemment, m’enfermant dehors. Je me retourne, et je vois alors Hippolyte à travers les barreaux. Le visage tordu par la colère et la tristesse, il ricane.;I meant to keep wandering in the Manor, but soon, I feel the temperature go down, and I have goose bumps. In a matter of seconds, the Manor becomes cold and unwelcoming. Something strange happens – I feel a force pushing me from behind, yet I cannot see anyone. The wind takes consistence and pushes me so hard that I have to take a step forward, then another. I don’t really have a choice: I soon stop fighting against it and let this supernatural force push me through the garden, until I end up on the other side of the gate. It slams brutally, locking me outside. I look back, and I see Hippolyte through the bars. His face distorted by anger and sadness, he sneers.
+A01N03_Hip_BLA_04660;4660;BLACK_SCREEN;Hippolyte;A01N03;Tu ne comprends tellement rien que même le Manoir ne veut plus de toi. Tu n’as que ce que tu mérites.;You understand so little that even the Manor doesn’t want you anymore. You’ve gotten what you deserve.
+A01N03_NAR_BLA_04670;4670;BLACK_SCREEN;NARRATEUR;A01N03;Il se détourne et s’en va.;He turns around and leaves.
+A01N03_NAR_BLA_04680;4680;BLACK_SCREEN;NARRATEUR;A01N03;J’ai eu beau essayer de rentrer à nouveau, les grilles du jardin sont restées obstinément fermées. Geoffroy, Léontine et Ernest ont tous essayés en vain de me faire rentrer, sans comprendre ce qui posait problème. Abigail, ensuite, s’est déplacée. Elle a laissé planer son regard sur le jardin, puis m’a simplement dit de rentrer chez moi, qu’ils n’avaient plus besoin de moi.;I tried and tried to go back inside, but the gates stayed resolutely closed. Geoffroy, Léontine and Ernest all tried in vain to let me in, unable to understand what was wrong. Abigail then deigned to come. She gazed around the garden, then simply told me to go back home and that they didn’t need me anymore.
+A01N03_NAR_BLA_04690;4690;BLACK_SCREEN;NARRATEUR;A01N03;"J’étais venu#e||•e# chercher des réponses à mes questions ; je pars avec encore plus d’interrogations. Que s’est-il passé ? Qu’est-ce que tout ça peut bien vouloir dire ? Comment est-ce possible ? Tout ce que je sais, c’est que j’ai échoué à ma mission.";"I’d come for answers to my questions; I was leaving with even more interrogations. What happened? What could all this mean? How was it possible? All I know is I failed my mission."
+A01N03_NAR_BLA_04700;4700;BLACK_SCREEN;NARRATEUR;A01N03;Comment revenir à ma vie habituelle, à présent ?;How can I go back to my everyday life now?
+A01N03_NAR_BLA_04710;4710;BLACK_SCREEN;NARRATEUR;A01N03;…;…
+A01N03_Kim_GAR_04720;4720;GARDEN;Kim;A01N03;Hippolyte ! Où vas-tu ?;Hippolyte! Where are you going?
+A01N03_Hip_GAR_04730;4730;GARDEN;Hippolyte;A01N03;Est-ce que ça te regarde ?;What does it matter?
+A01N03_Kim_GAR_04740;4740;GARDEN;Kim;A01N03;Si ça concerne le Manoir, oui !;If it’s about the Manor, it’s important for me!
+A01N03_Hip_GAR_04750;4750;GARDEN;Hippolyte;A01N03;Je te déteste ! Tu viens décider de tout alors que tu nous connais à peine !;I hate you! You come here to decide everything when you don’t even know us!
+A01N03_Kim_GAR_04760;4760;GARDEN;Kim;A01N03;Je ne fais que suivre les demandes de ta mère…;I’m just following your mother’s will.
+A01N03_Hip_GAR_04770;4770;GARDEN;Hippolyte;A01N03;Ma mère !;My mother!
+A01N03_Hip_GAR_04780;4780;GARDEN;Hippolyte;A01N03;Même morte elle contrôle encore ma vie !;Even dead, she keeps controlling my life!
+A01N03_Hip_GAR_04790;4790;GARDEN;Hippolyte;A01N03;Pondre un plan pareil… Je ne m’y attendais pas, mais alors pas du tout… Qu’elle appelle un fantôme du passé, nous empêchent de régler les choses à notre façon !;To come up with such a plan… I didn’t expect it, not at all… That she would call on a ghost from the past, and stop us from taking care of things in our own way!
+A01N03_Kim_GAR_04800;4800;GARDEN;Kim;A01N03;Elle a ses raisons.;She has her reasons.
+A01N03_Hip_GAR_04810;4810;GARDEN;Hippolyte;A01N03;Et moi les miennes. J’ai besoin de l’argent de ce Manoir. C’est hors de question que je le laisse filer. J’ai déjà un acheteur, il pense que j’ai déjà hérité, il n’y a plus qu’à signer.;And I have mine. I need the money this Manor can get me. I won’t let it go. I already found a buyer who thinks I’ve already inherited, we just have to sign the deal.
+A01N03_Kim_GAR_04820;4820;GARDEN;Kim;A01N03;Mais ce n’est pas ce que voulait Célestia !;But that’s not what Célestia wanted!
+A01N03_Hip_GAR_04830;4830;GARDEN;Hippolyte;A01N03;Célestia, Célestia, Célestia ! Est-ce que quelqu’un m’a demandé ce que je voulais moi ?;Célestia, Célestia, Célestia! Did anyone ask what I wanted?
+A01N03_Kim_GAR_04840;4840;GARDEN;Kim;A01N03;Lui demander;Ask him what he wants
+A01N03_Kim_GAR_04850;4850;GARDEN;Kim;A01N03;Soit. Qu’est-ce que tu veux, toi ?;Right. What do you want?
+A01N03_NAR_GAR_04860;4860;GARDEN;NARRATEUR;A01N03;Hippolyte se calme d’un coup.;Hippolyte calms down.
+A01N03_Hip_GAR_04870;4870;GARDEN;Hippolyte;A01N03;Je veux quitter cet endroit. Aller quelque part où personne ne connait les Castheran, où l’héritage de ma mère n’est pas omniprésent, où on ne s’attend pas à ce que je devienne quelqu’un en particulier. Un endroit où je pourrai être moi-même. J’ai envie d’être tatoueur, de montrer mes dessins. Ce Manoir représente tout ce que je hais. Je veux libérer notre lignée, mettre fin aux traditions.;I want to leave this place. I want to go somewhere no one knows about the Castheran, where my mother’s legacy isn’t pervasive, and where there are no expectations on who I should become. I want to go to a place where I can be myself. I want to be a tattoo artist, and show my drawings. This Manor represents everything I hate. I want to free our lineage, and break traditions.
+A01N03_Kim_GAR_04880;4880;GARDEN;Kim;A01N03;Je te comprends;I understand you
+A01N03_Kim_GAR_04890;4890;GARDEN;Kim;A01N03;Tu sais, j’ai vécu entre la culture française et la culture vietnamienne. Et au Vietnam, tout est différent – la famille est tellement importante là-bas, jamais ils ne voudraient détruire le travail de leurs ancêtres.;You know, I’ve lived between the French and the Vietnamese cultures. In Vietnam, everything’s different – family is so important there, and they would never destroy the life work of their ancestors.
+A01N03_Kim_GAR_04900;4900;GARDEN;Kim;A01N03;Mais c’est différent, ici… Ici, on nous apprend que nous ne sommes pas obligés de faire la même chose que vos parents, que chacun est libre de suivre son chemin. Je comprends que tu le veuilles aussi.;But it’s different here. Here, we learn that we do not have to do the same things as our parents, that we are all free to follow our own path. I understand why you would want that too.
+A01N03_Hip_GAR_04910;4910;GARDEN;Hippolyte;A01N03;Alors donne m’en les moyens ! Donne-moi le Manoir !;So give me what I need to do that! Give me the Manor!
+A01N03_NAR_GAR_04920;4920;GARDEN;NARRATEUR;A01N03;"Je secoue la tête ; Célestia a été claire sur sa volonté, je dois pouvoir expliquer aux autres pourquoi la personne que je choisis mérite le plus le Manoir. Comment pourrais-je défendre la cause d’Hippolyte en sachant qu’il veut le vendre, alors que Célestia veut tout faire pour qu’il reste dans la famille et ne soit pas divisé ?";"I shake my head ; Célestia’s been very clear about her will. I need to be able to explain to the others why the one I chose is the most worthy of the Manor. How could I defend Hippolyte’s cause when I know he wants to sell it, and that Célestia wanted to do everything so the Manor would stay in the family and not be divided?"
+A01N03_Kim_GAR_04930;4930;GARDEN;Kim;A01N03;Je ne peux pas, Hippolyte. Je dois respecter les ordres de Célestia.;I can’t, Hippolyte. I have to respect Célestia’s orders.
+A01N03_Hip_GAR_04940;4940;GARDEN;Hippolyte;A01N03;Alors quoi ? Qu’est-ce que je peux faire, moi ?;So what do I do?
+A01N03_Kim_GAR_04950;4950;GARDEN;Kim;A01N03;Tu sais, tu ne veux pas vraiment le Manoir, et tu ne l’auras pas, mais ça ne t’empêche pas de le quitter pour suivre ta propre voie. Il y a d’autres solutions. En plus, tu n’as pas besoin d’autant…;You know, you don’t really want the Manor and you won’t have it, but it doesn’t stop you from leaving this place and going your own way. There are other solutions. You don’t need that much money.
+A01N03_Hip_GAR_04960;4960;GARDEN;Hippolyte;A01N03;…;…
+A01N03_Kim_GAR_04970;4970;GARDEN;Kim;A01N03;Je ne te comprends pas;I don’t understand you
+A01N03_Kim_GAR_04980;4980;GARDEN;Kim;A01N03;Tu sais, j’ai vécu entre la culture française et la culture vietnamienne. Et au Vietnam, tout est différent – la famille est tellement importante pour nous, jamais nous ne voudrions détruire le travail de nos ancêtres.;You know, I’ve lived between the French and the Vietnamese cultures. In Vietnam, everything’s different – family is so important there, and we would never destroy the life work of our ancestors.
+A01N03_Kim_GAR_04990;4990;GARDEN;Kim;A01N03;Je ne te comprends pas. Tu n’as aucun respect pour ce qu’ils ont construit et aucune gratitude pour la vie que tu as pu mener grâce à eux. Aucune conscience de ta chance, non plus. Comment peux-tu vouloir faire une chose pareille ?;I don’t understand you. You have no respect for what your family built and no gratitude for the life you got thanks to them. You’re so blind to your luck, too. How could you want such a thing?
+A01N03_Kim_GAR_05000;5000;GARDEN;Kim;A01N03;Tu n’es pas seul dans l’histoire;You’re not the only one who matters
+A01N03_Kim_GAR_05010;5010;GARDEN;Kim;A01N03;Pourquoi fais-tu comme si tu étais le seul concerné, dans l’histoire ? Est-ce que tu as pensé à ta sœur, à Léontine et Geoffroy qui devraient se trouver une nouvelle situation à leur âge, à Ophélie même qui essaie de comprendre qui elle est ici, à tous les gens de ta famille, tes ancêtres, à tout ce qu’ils ont fait pour que votre famille en arrive là ?;Why do you act as if you were the only one who mattered in this story? Did you think about your sister, about Léontine and Geoffroy who will need to find a new situation despite their age, about Ophélie too who is trying to understand who she is here, about all your ancestors, all the ones who sweat so your family would get to this point?
+A01N03_Hip_GAR_05020;5020;GARDEN;Hippolyte;A01N03;…;…
+A01N03_NAR_GAR_05030;5030;GARDEN;NARRATEUR;A01N03;Il serre les poings, les épaules coincées, les pensées contradictoires se disputant en lui.;He clenches his fists, his shoulders tight, contradictory thoughts fighting within himself.
+A01N03_Hip_GAR_05040;5040;GARDEN;Hippolyte;A01N03;Pourquoi je dois toujours penser aux autres ? Pourquoi est-ce que je ne peux jamais penser à moi, aussi ? Tu crois que je suis heureux, comme ça ?;Why should I always think about everyone else? Why can I never think about myself too? Do you think I’m happy?
+A01N03_Kim_GAR_05050;5050;GARDEN;Kim;A01N03;Tu dois penser à toi aussi. Et tu peux ! Tu peux faire ce qui te rend heureux ! Mais pas au détriment des autres…;Of course you need to think about yourself. And you can! You can do what makes you happy! But not at the cost of everyone else’s happiness…
+A01N03_Kim_GAR_05060;5060;GARDEN;Kim;A01N03;Sincèrement, pour quoi est-ce que tu aurais besoin d’autant d’argent ?;Sincerely, why would you need so much money?
+A01N03_Hip_GAR_05070;5070;GARDEN;Hippolyte;A01N03;…;…
+A01N03_Hip_GAR_05080;5080;GARDEN;Hippolyte;A01N03;J’en ai pas besoin d’autant…;I need that much…
+A01N03_Hip_GAR_05090;5090;GARDEN;Hippolyte;A01N03;Juste… Assez pour partir. Je déteste tellement cet endroit.;Just… To leave. I hate this place.
+A01N03_Kim_GAR_05100;5100;GARDEN;Kim;A01N03;Tu peux partir.;You can leave
+A01N03_Kim_GAR_05110;5110;GARDEN;Kim;A01N03;Et tu n’as pas besoin du Manoir pour ça. Au contraire, pourquoi s’y accrocher ?;You can leave. You don’t need the Manor for that. On the contrary, why would you cling to it?
+A01N03_Kim_GAR_05120;5120;GARDEN;Kim;A01N03;Continuer à défendre les autres;Keep defending the others
+A01N03_Kim_GAR_05130;5130;GARDEN;Kim;A01N03;Peut-être que tu le détestes. Mais pas Célestia, qui voulait tant le voir rester dans la famille sans qu’il soit divisé. Pas Léontine et Geoffroy, qui y vivent depuis des décennies.;Maybe you hate it. But Célestia didn’t, and she wanted so badly to see it stay in the family and not be divided. Léontine and Geoffroy don’t: they’ve spent decades here.
+A01N03_Kim_GAR_05140;5140;GARDEN;Kim;A01N03;Pas Abigail, qui y est très attachée.;Abigail doesn’t. She loves it.
+A01N03_Kim_GAR_05150;5150;GARDEN;Kim;A01N03;Tu ne peux pas penser qu’à toi.;You can’t only think of yourself.
+A01N03_Hip_GAR_05160;5160;GARDEN;Hippolyte;A01N03;Mais…;But…
+A01N03_NAR_GAR_05170;5170;GARDEN;NARRATEUR;A01N03;"Je perds patience ; je sais qu’il va encore vouloir trouver des excuses à son comportement, et je n’en peux plus.";I lose patience. I know he’ll keep finding excuses to his selfish behavior, and I can’t deal with it anymore.
+A01N03_Kim_GAR_05180;5180;GARDEN;Kim;A01N03;Arrête. Le Manoir ne sera pas vendu, c’est tout. Tu es égoïste et malhonnête, tu piques ta crise comme si tu étais la seule personne à avoir des problèmes et tu te moques complètement des sentiments des autres.;Stop it. The Manor won’t be sold, that’s all. You’re selfish and dishonest, you’re throwing a tandrum like if you were the only person with problems and you don’t care at all about other people’s feelings.
+A01N03_Kim_GAR_05190;5190;GARDEN;Kim;A01N03;"Viens avec moi ; on va écrire à ton acheteuse potentielle, lui dire que finalement le Manoir n’est pas à vendre. Si tu pars, ce sera pour septembre, non ? Tu as encore plusieurs mois pour trouver des solutions.";"Come with me; we’re going to write to your potential buyer and tell her that the Manor isn’t for sell. If you leave, it will be in September, won’t it? You still have a few months to find solutions."
+A01N03_Hip_GAR_05200;5200;GARDEN;Hippolyte;A01N03;…;…
+A01N03_Hip_GAR_05210;5210;GARDEN;Hippolyte;A01N03;Soit.;Alright.
+A01N03_Hip_GAR_05220;5220;GARDEN;Hippolyte;A01N03;Je crois que j’ai réagi de manière excessive. La pression… Les funérailles… Je fais comme si tout allait bien, mais en vrai… J’ai perdu ma mère, et je suis complètement paumé.;I guess I overreacted. The pressure… The funerals… I’m acting as if everything is fine, but in reality… I lost my mother and I’m completely lost.
+A01N03_Hip_GAR_05230;5230;GARDEN;Hippolyte;A01N03;…;…
+A01N03_Hip_GAR_05240;5240;GARDEN;Hippolyte;A01N03;T’as pas intérêt à le répéter.;You better not repeat that.
+A01N03_Hip_GAR_05250;5250;GARDEN;Hippolyte;A01N03;Je n’aurai pas besoin de toi, pour la lettre. Je m’en occupe, tu peux me faire confiance. A plus tard.;And I won’t need you, for the letter. I’ll take care of it, you can trust me. See ya.
+A01N03_NAR_GAR_05260;5260;GARDEN;NARRATEUR;A01N03;Je soupire – ces situations sont tellement difficiles à gérer. Et mon travail n’est pas terminé : maintenant, il faut que je choisisse un autre candidat qui mérite le Manoir…;I sigh – these situations are so hard to deal with. And my work here isn’t done : now I need to choose another candidate worthier of the Manor…
+A01N03_NAR_GAR_05270;5270;GARDEN;NARRATEUR;A01N03;Hippolyte s’est enfermé à l’intérieur…;Hippolyte locked himself up…
+A01N03_Kim_GAR_05280;5280;GARDEN;Kim;A01N03;Tu es un monstre.;You’re a monster.
+A01N03_NAR_GAR_05290;5290;GARDEN;NARRATEUR;A01N03;A ces mots, je sens la température se baisser d’un coup, et j’en ai un frisson dans le dos. Hippolyte me fixe rageusement.;As I say these words, I feel the temperature drop, and I have goose bumps. Hippolyte looks at me with rage and hate.
+A01N03_Hip_GAR_05300;5300;GARDEN;Hippolyte;A01N03;Tu ne comprends rien, Kim ! Ça fait dix ans que tu es parti#e||•e#, et tu ne te souviens de rien ! Comment est-ce que tu peux te permettre ce genre de remarques ? Tu ne me connais pas, tu ne connais pas Célestia, tu ne sais pas comment est ma famille, tu fais juste des suppositions bornées en te fiant aux apparences !;You don’t understand anything, Kim! You’ve left for ten years and you don’t remember anything! How could you say such things? You don’t know me, you don’t know Célestia, you don’t know how my family is, you’re just assuming stuff based on appearances!
+A01N03_NAR_GAR_05310;5310;GARDEN;NARRATEUR;A01N03;Il tombe en miettes, alors, visiblement brisé. Qu’est-ce que j’ai raté ?;He falls apart then, completely broken inside. What did I miss?
+A01N03_Kim_GAR_05320;5320;GARDEN;Kim;A01N03;Hippolyte…;Hippolyte…
+A01N03_Hip_GAR_05330;5330;GARDEN;Hippolyte;A01N03;Laisse-moi. Laisse-moi, laisse-moi…;Leave me alone. Leave me alone, leave me alone…
+A01N03_NAR_GRI_05340;5340;GRILLE;NARRATEUR;A01N03;Il se passe alors quelque chose d’étrange – je sens comme une force me pousser de l’arrière, pourtant je vois bien qu’il n’y a personne. Le vent prend une consistance et me pousse si fort que je suis obligé de faire un pas en avant, puis un autre, jusqu’à me retrouver de l’autre côté de la grille. Celle-ci claque, violemment, m’enfermant dehors. Je regarde Hippolyte à travers les barreaux. Il ricane.;Something strange happens then – I feel a force pushing me from behind, yet I cannot see anyone. The wind takes consistence and pushes me so hard that I have to take a step forward, then another, until I end up on the other side of the gate. It slams brutally, locking me outside. I look back, and I see Hippolyte through the bars. His face distorted by anger and sadness, he sneers.
+A01N03_Hip_GRI_05350;5350;GRILLE;Hippolyte;A01N03;Tu ne comprends tellement rien que même le Manoir ne veut plus de toi. Tu n’as que ce que tu mérites.;You understand so little that even the Manor doesn’t want you anymore. You’ve gotten what you deserve.
+A01N03_NAR_GRI_05360;5360;GRILLE;NARRATEUR;A01N03;Il se détourne et s’en va.;He turns around and leaves.
+A01N03_NAR_BLA_05370;5370;BLACK_SCREEN;NARRATEUR;A01N03;J’ai eu beau essayer de rentrer à nouveau, les grilles du jardin sont restées obstinément fermées. Geoffroy, Léontine et Ernest ont tous essayés en vain de me faire rentrer, sans comprendre ce qui posait problème. Abigail, ensuite, s’est déplacée. Elle a laissé planer son regard sur le jardin, puis m’a simplement dit de rentrer chez moi, qu’ils n’avaient plus besoin de moi.;I tried and tried to go back inside, but the gates stayed resolutely closed. Geoffroy, Léontine and Ernest all tried in vain to let me in, unable to understand what was wrong. Abigail then deigned to come. She gazed around the garden, then simply told me to go back home and that they didn’t need me anymore.
+A01N03_NAR_BLA_05380;5380;BLACK_SCREEN;NARRATEUR;A01N03;"J’étais venu#e||•e# chercher des réponses à mes questions ; je pars avec encore plus d’interrogations. Que s’est-il passé ? Qu’est-ce que tout ça peut bien vouloir dire ? Comment est-ce possible ? Tout ce que je sais, c’est que j’ai échoué à ma mission.";"I’d come for answers to my questions; I was leaving with even more interrogations. What happened? What could all this mean? How was it possible? All I know is I failed my mission."
+A01N03_NAR_BLA_05390;5390;BLACK_SCREEN;NARRATEUR;A01N03;Comment revenir à ma vie habituelle, à présent ?;How can I go back to my everyday life now?
+A01N03_NAR_BLA_05400;5400;BLACK_SCREEN;NARRATEUR;A01N03;…;…
+A01N03_Kim_HAL_05410;5410;HALL;Kim;A01N03;J’ai besoin de votre aide.;I need your help.
+A01N03_Léo_HAL_05420;5420;HALL;Léontine;A01N03;Qu’est-ce que vous voulez, encore ?;What do ya want this time?
+A01N03_Kim_HAL_05430;5430;HALL;Kim;A01N03;J’aimerai pouvoir accéder à la chambre d’Hippolyte sans sa présence. Le problème, c’est qu’il ferme à clef dès qu’il en sort.;I’d like to access Hippolyte’s room without him there. The problem is, he locks the door when he leaves.
+A01N03_Léo_HAL_05440;5440;HALL;Léontine;A01N03;Ah ? Et pourquoi donc ? Ce n’est pas bien de fouiner… C’est comme écouter aux portes, ça… Pas bien du tout…;Ah? And why do you wanna do that? It ain’t good to rummage around… It’s like listenin’ to doors… Ain’t good at all…
+A01N03_NAR_HAL_05450;5450;HALL;NARRATEUR;A01N03;Elle regarde en l’air… Je la soupçonne d’en avoir elle-même l’habitude…;She looks up… I suspect she often does it herself, despite what she’s saying…
+A01N03_Kim_HAL_05460;5460;HALL;Kim;A01N03;Et ça ne vous est jamais arrivé ?;And you’ve never done it, maybe?
+A01N03_Léo_HAL_05470;5470;HALL;Léontine;A01N03;Qu’est-ce que c’est que ces accusations ! Bien sûr que non ! Je ne tremperai pas dans une magui… maniga… dans un plan pour tromper un petit garçon que j’ai élevé moi-même ! Débrouillez-vous.;What are those vile accusations! Of course not! I’d never mix up in a scheme to cheat a little boy I raised myself! Don’t count on my help.
+A01N03_NAR_HAL_05480;5480;HALL;NARRATEUR;A01N03;Tant pis…;Too bad.
+A01N03_Kim_HAL_05490;5490;HALL;Kim;A01N03;Pas bien, non… Mais parfois…;It’s not good… But sometimes…
+A01N03_Léo_HAL_05500;5500;HALL;Léontine;A01N03;Parfois ?;Sometimes?
+A01N03_Kim_HAL_05510;5510;HALL;Kim;A01N03;Parfois, on entend quelque chose sans faire exprès, juste parce qu’on passait par là… Ou on jette un regard à une lettre en nettoyant un bureau… Ce n’est pas vraiment de notre faute si on est au courant, et puis, une fois qu’on l’est, si on peut donner un coup de main discret à quelqu’un plutôt que de faire semblant de rien, c’est de notre devoir, n’est-ce pas ? En toute discrétion…;Sometimes, we hear things without meaning to, just because we were going that way, if you know what I mean… Or our eyes fall on a letter while we clean up a desk… It isn’t our fault if we learn things that way, and once we know things, if we can help discreetly here and there for things to go more smoothly, no one’s the wiser, yes? Discreetly…
+A01N03_Léo_HAL_05520;5520;HALL;Léontine;A01N03;C’est possible, c’est possible.;It happens, it does.
+A01N03_Kim_HAL_05530;5530;HALL;Kim;A01N03;Alors, je ne sais pas, mais si je pouvais attendre le retour d’Hippolyte dans sa chambre, parce qu’il faut absolument que je lui parle, et que je remarquais quelque chose, par hasard, bien sûr, qui puisse m’aider à comprendre la volonté des Castheran… Ce ne serait pas mal, n’est-ce pas ?;So, I don’t know, maybe I could just way for Hippolyte’s return in his room, because I really need to talk to him, and I could notice something, by luck of course, that could help me understand the Castheran’s will… It wouldn’t be bad, then, would it?
+A01N03_Léo_HAL_05540;5540;HALL;Léontine;A01N03;Non, bien sûr que non… Oh, je viens de me souvenir, il faut que je demande à Hippolyte de descendre avec moi à la cuisine, pour voir ce qu’il préfère que je cuisine pour ce soir ! Je dois vous laisser, pardonnez-moi.;No, of course not… Oh, I just remembered, I need Hippolyte to come down to the kitchin with me, to see what he wants me to cook tonight! I gotta go, excuse-me.
