@@ -106,7 +106,9 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			StartCoroutine(Internal_OnSubtitlesRequestInfo(info));
 		}
 
-        string tempColorText = "";
+        string tempColorText = string.Empty;
+        string _tempBoldText = string.Empty;
+        bool _isBold = false;
 
 		IEnumerator Internal_OnSubtitlesRequestInfo(SubtitlesRequestInfo info){
 
@@ -167,6 +169,31 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 						yield break;
 					}
                     
+                    if (_isBold == false)
+                    {
+                        if (text[i] == '<' && text[i+1] == 'b' && text[i+2] == '>')
+                        {
+                            _isBold = true;
+                            _tempBoldText = "<b>";
+                            i += 2;
+                        }
+                    } else
+                    {
+                        _tempBoldText += text[i];
+                        if (_tempBoldText.StartsWith("<b>") && _tempBoldText.Contains("</b>") == false)
+                            {
+                                // Write tempColorText with color
+                            tempText += "<b>" + text[i].ToString() + "</b>";
+                            yield return StartCoroutine(DelayPrint(subtitleDelays.characterDelay));
+                            actorSpeech.text = tempText;
+                        }
+                        else if (_tempBoldText.StartsWith("<b>") && _tempBoldText.Contains("</b>"))
+                        {
+                            _tempBoldText = string.Empty;
+                            _isBold = false;
+                        }
+                    }
+
                     if (string.IsNullOrEmpty(tempColorText))
                     {
                         if (text[i] == '<')
@@ -207,44 +234,9 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
                         else if (tempColorText.StartsWith("<color=") && tempColorText.EndsWith("</color>"))
                         {
                             // Reset tempColorText
-                            tempColorText = "";
+                            tempColorText = string.Empty;
                         }
-
-
-                        /*// TempColorText contains "<c" -> "<color=COLOR>"
-                        if (tempColorText.Contains("<color=") == false && tempColorText.Contains(">") == false)
-                        {
-                            // Do nothing, add color code
-                        }
-                        // TempColorText contains "<color=COLOR>" -> "<color=COLOR>TEXT<"
-                        else if (tempColorText.Contains("<color=") && tempColorText.Contains(">") && tempColorText.Contains("</") == false)
-                        {
-                            if (text[i] != '<' && text[i] != '/' && text[i] != '>')
-                            {
-                                // Write tempColorText with color
-                                tempText += "<color=red>" + text[i].ToString() + "</color>";
-                                yield return StartCoroutine(DelayPrint(subtitleDelays.characterDelay));
-                                actorSpeech.text = tempText;
-                            }
-                        }
-                        // TempColorText contains "<color=" -> "<color=COLOR>TEXT</color"
-                        else if (tempColorText.Contains("<color=") && tempColorText.Contains("</color>") == false)
-                        {
-                            // Do nothing, add end of color balise
-                        }
-                        // TempColorText contains "<color=COLOR>TEXT</color>"
-                        else if (tempColorText.Contains("<color=") && tempColorText.Contains("</color>"))
-                        {
-                            // Reset tempColorText
-                            tempColorText = "";
-                        }
-                        else
-                        {
-                            // Not used ?
-                            Debug.Log("Not used ? Lol. - " + tempColorText);
-                        }*/
                     }
-
 				}
 
 				if (!waitForInput)

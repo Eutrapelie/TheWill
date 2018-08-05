@@ -106,7 +106,7 @@ namespace ParadoxNotion{
 		//As such using DebugLog is not possible without this trick.
 		static void LateLog(object logMessage, UnityEngine.LogType logType = UnityEngine.LogType.Log){
 			#if UNITY_EDITOR
-			UnityEditor.EditorApplication.delayCall += ()=> { UnityEngine.Debug.logger.Log(logType, logMessage); };
+			UnityEditor.EditorApplication.delayCall += ()=> { UnityEngine.Debug.unityLogger.Log(logType, logMessage); };
 			#endif
 		}
 

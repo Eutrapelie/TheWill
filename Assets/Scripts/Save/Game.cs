@@ -28,7 +28,7 @@ public class Game
     public Player player;
     public List<CharacterInfo> charactersInfos;
     public Room currentRoom;
-    public List<Room> roomVisited;
+    public List<Room> roomVisited = new List<Room>();
     public int acteNumber = 1;
     public int dayNumber = 1;
     public DateTime realDateTime;
@@ -55,6 +55,7 @@ public class Game
         currentRoom = levelController.StartRoom;
         acteNumber = acte;
         dayNumber = day;
+        roomVisited = new List<Room>();
 
         // FOR TEST PURPOSE ONLY
     }
@@ -94,7 +95,12 @@ public class Game
         acteNumber = current.acteNumber;
         dayNumber = current.dayNumber;
         realDateTime = current.realDateTime;
+        Debug.Log(realDateTime.ToShortDateString() + " " + realDateTime.ToShortTimeString());
         Debug.Log("[Game] LoadGame: " + DebugGameData());
+        roomVisited.Clear();
+        if (current.roomVisited != null)
+            foreach (Room room in current.roomVisited)
+                roomVisited.Add(room);
         //GameManager.Instance.PlayerController.PlayerChoices = current.player.codeLines;
         //GameManager.Instance.PlayerController.PlayerCard.Player.genre = current.player.genre;
 
