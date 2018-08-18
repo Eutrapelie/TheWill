@@ -51,5 +51,11 @@ namespace TheWill
             SceneManager.LoadScene("InGameMenu", LoadSceneMode.Additive);
         }
         /*********************************************************/
+
+        public void Btn_QuitGame()
+        {
+            Application.Quit();
+        }
+        /*********************************************************/
     }
 }

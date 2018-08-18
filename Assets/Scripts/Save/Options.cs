@@ -58,6 +58,16 @@ namespace TheWill
             isFullscreen = a_options.isFullscreen;
             fontSize = a_options.fontSize;
             readingSpeed = a_options.readingSpeed;
+
+            switch (resolution)
+            {
+                case Resolution._1280_720:
+                    Screen.SetResolution(1280, 720, isFullscreen);
+                    return;
+                case Resolution._1920_1080:
+                    Screen.SetResolution(1920, 1080, isFullscreen);
+                    return;
+            }
         }
 
         public string DebugData()
@@ -66,6 +76,76 @@ namespace TheWill
             data = "{Volume: " + volume + " -- language: " + language + " -- readingSpeed: " + readingSpeed + "\n" +
                 "resolution: " + resolution + " -- isFullscreen: " + isFullscreen + " -- fontSize: " + fontSize + "}";
             return data;
+        }
+
+        public int GetFontSizeInPixels()
+        {
+            switch (fontSize)
+            {
+                case FontSize.Petite:
+                    return Constants.FONT_SIZE_LITTLE;
+                case FontSize.Standard:
+                    return Constants.FONT_SIZE_STANDARD;
+                case FontSize.Grande:
+                    return Constants.FONT_SIZE_BIG;
+            }
+            return Constants.FONT_SIZE_STANDARD;
+        }
+
+        public float GetCharacterDelay()
+        {
+            switch (readingSpeed)
+            {
+                case ReadingSpeed.Lente:
+                    return Constants.DIALOGUE_CHARACTER_DELAY_SLOW;
+                case ReadingSpeed.Standard:
+                    return Constants.DIALOGUE_CHARACTER_DELAY_STANDARD;
+                case ReadingSpeed.Rapide:
+                    return Constants.DIALOGUE_CHARACTER_DELAY_FAST;
+            }
+            return Constants.DIALOGUE_CHARACTER_DELAY_STANDARD;
+        }
+
+        public float GetSentenceDelay()
+        {
+            switch (readingSpeed)
+            {
+                case ReadingSpeed.Lente:
+                    return Constants.DIALOGUE_SENTENCE_DELAY_SLOW;
+                case ReadingSpeed.Standard:
+                    return Constants.DIALOGUE_SENTENCE_DELAY_STANDARD;
+                case ReadingSpeed.Rapide:
+                    return Constants.DIALOGUE_SENTENCE_DELAY_FAST;
+            }
+            return Constants.DIALOGUE_SENTENCE_DELAY_STANDARD;
+        }
+
+        public float GetCommaDelay()
+        {
+            switch (readingSpeed)
+            {
+                case ReadingSpeed.Lente:
+                    return Constants.DIALOGUE_COMMA_DELAY_SLOW;
+                case ReadingSpeed.Standard:
+                    return Constants.DIALOGUE_COMMA_DELAY_STANDARD;
+                case ReadingSpeed.Rapide:
+                    return Constants.DIALOGUE_COMMA_DELAY_FAST;
+            }
+            return Constants.DIALOGUE_COMMA_DELAY_STANDARD;
+        }
+
+        public float GetFinalDelay()
+        {
+            switch (readingSpeed)
+            {
+                case ReadingSpeed.Lente:
+                    return Constants.DIALOGUE_FINAL_DELAY_SLOW;
+                case ReadingSpeed.Standard:
+                    return Constants.DIALOGUE_FINAL_DELAY_STANDARD;
+                case ReadingSpeed.Rapide:
+                    return Constants.DIALOGUE_FINAL_DELAY_FAST;
+            }
+            return Constants.DIALOGUE_FINAL_DELAY_STANDARD;
         }
     }
 }
