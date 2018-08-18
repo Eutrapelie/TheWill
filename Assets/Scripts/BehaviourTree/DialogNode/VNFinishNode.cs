@@ -5,19 +5,22 @@ using NodeCanvas.Framework;
 using ParadoxNotion.Design;
 using NodeCanvas;
 
-public class VNFinishNode : NodeCanvas.DialogueTrees.FinishNode
+namespace TheWill
 {
-    public static string EVT_FINISH_DIALOG = "VNFinishNode.EVT_FINISH_DIALOG";
-
-    public override string name
+    public class VNFinishNode : NodeCanvas.DialogueTrees.FinishNode
     {
-        get { return "VNFINISH"; }
-    }
+        public static string EVT_FINISH_DIALOG = "VNFinishNode.EVT_FINISH_DIALOG";
 
-    protected override Status OnExecute(Component agent, IBlackboard bb)
-    {        
-        EventManager.TriggerEvent(EVT_FINISH_DIALOG, new CharacterCard(null));
+        public override string name
+        {
+            get { return "VNFINISH"; }
+        }
 
-        return base.OnExecute(agent, bb);
+        protected override Status OnExecute(Component agent, IBlackboard bb)
+        {
+            EventManager.TriggerEvent(EVT_FINISH_DIALOG, new CharacterCard(null));
+
+            return base.OnExecute(agent, bb);
+        }
     }
 }

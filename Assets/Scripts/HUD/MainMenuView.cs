@@ -18,6 +18,7 @@ namespace TheWill
         {
             _startButton.onClick.AddListener(() => StartGame());
             SaveLoad.LoadSaves();
+            SaveLoad.LoadOptions();
             Utils.Localization.InitializeLangDictionaries(Utils.Lang.fr);
         }
         /*********************************************************/

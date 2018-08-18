@@ -18,12 +18,16 @@ namespace TheWill
         [SerializeField] Text _volumeValueText;
         [SerializeField] ParameterButtonsElement _languageElement;
         [SerializeField] ParameterButtonsElement _resolutionElement;
+        [SerializeField] Toggle _fullscreenToggle;
         [SerializeField] ParameterButtonsElement _fontSizeElement;
         [SerializeField] ParameterButtonsElement _readingSpeedElement;
 
         [SerializeField] CanvasGroup _confirmationPopupCG;
 
         Animator _animator;
+        Options _tempOptions;
+        public Options GetTempOptions() { return _tempOptions; }
+        bool _tempOptionsChanged;
 
 
         void Awake()
@@ -38,31 +42,29 @@ namespace TheWill
 
             _volumeValueText.text = _volumeSlider.value + " %";
 
-            List<string> languageOption = new List<string>();
+            List<string> languageOptions = new List<string>();
             foreach (string value in System.Enum.GetNames(typeof(Language)))
-                languageOption.Add(value);
-            _languageElement.Initialize(languageOption);
+                languageOptions.Add(value);
+            _languageElement.Initialize(languageOptions);
+            _languageElement.OnValueChanged += SetLanguage;
 
-            List<string> resolutionOption = new List<string>();
+            List<string> resolutionOptions = new List<string>();
             foreach (string value in System.Enum.GetNames(typeof(Resolution)))
-                resolutionOption.Add(value);
-            _resolutionElement.Initialize(resolutionOption);
+                resolutionOptions.Add(value);
+            _resolutionElement.Initialize(resolutionOptions);
+            _resolutionElement.OnValueChanged += SetResolution;
 
-            List<string> fontSizeOption = new List<string>();
+            List<string> fontSizeOptions = new List<string>();
             foreach (string value in System.Enum.GetNames(typeof(FontSize)))
-                fontSizeOption.Add(value);
-            _fontSizeElement.Initialize(fontSizeOption);
+                fontSizeOptions.Add(value);
+            _fontSizeElement.Initialize(fontSizeOptions);
+            _fontSizeElement.OnValueChanged += SetFontSize;
 
-            List<string> readingSpeedOption = new List<string>();
+            List<string> readingSpeedOptions = new List<string>();
             foreach (string value in System.Enum.GetNames(typeof(ReadingSpeed)))
-                readingSpeedOption.Add(value);
-            _readingSpeedElement.Initialize(readingSpeedOption);
-        }
-        /*********************************************************/
-
-        void Update()
-        {
-
+                readingSpeedOptions.Add(value);
+            _readingSpeedElement.Initialize(readingSpeedOptions);
+            _readingSpeedElement.OnValueChanged += SetReadingSpeed;
         }
         /*********************************************************/
 
@@ -74,15 +76,60 @@ namespace TheWill
         }
         /*********************************************************/
 
+        void Initialize()
+        {
+            _tempOptions = new Options();
+            _volumeSlider.value = _tempOptions.volume;
+            _languageElement.SetValue(_tempOptions.language.ToString());
+            _resolutionElement.SetValue(_tempOptions.resolution.ToString());
+            _fullscreenToggle.isOn = _tempOptions.isFullscreen;
+            _fontSizeElement.SetValue(_tempOptions.fontSize.ToString());
+            _readingSpeedElement.SetValue(_tempOptions.readingSpeed.ToString());
+            _tempOptionsChanged = false;
+        }
+        /*********************************************************/
+
+        void SetLanguage(int a_valueIndex)
+        {
+            _tempOptions.language = (Language)a_valueIndex;
+            _tempOptionsChanged = true;
+        }
+        /*********************************************************/
+
+        void SetResolution(int a_valueIndex)
+        {
+            _tempOptions.resolution = (Resolution)a_valueIndex;
+            _tempOptionsChanged = true;
+        }
+        /*********************************************************/
+
+        void SetFontSize(int a_valueIndex)
+        {
+            _tempOptions.fontSize = (FontSize)a_valueIndex;
+            _tempOptionsChanged = true;
+        }
+        /*********************************************************/
+
+        void SetReadingSpeed(int a_valueIndex)
+        {
+            _tempOptions.readingSpeed = (ReadingSpeed)a_valueIndex;
+            _tempOptionsChanged = true;
+        }
+        /*********************************************************/
+
         public void Btn_DisplayPanel()
         {
             _animator.SetBool("Show", true);
+            Initialize();
         }
         /*********************************************************/
 
         public void Btn_QuitPanel()
         {
-            DisplayPopup(true);
+            if (_tempOptionsChanged)
+                DisplayPopup(true);
+            else
+                Btn_HidePanel();
         }
         /*********************************************************/
 
@@ -99,9 +146,25 @@ namespace TheWill
         }
         /*********************************************************/
 
+        public void Btn_SaveOptions()
+        {
+            SaveLoad.SaveOptions(_tempOptions);
+        }
+        /*********************************************************/
+
         public void Btn_DisplayVolumeValue(float a_value)
         {
             _volumeValueText.text = _volumeSlider.value + " %";
+            _tempOptions.volume = a_value;
+            _tempOptionsChanged = true;
         }
+        /*********************************************************/
+
+        public void Btn_SetFullScreen(bool a_value)
+        {
+            _tempOptions.isFullscreen = a_value;
+            _tempOptionsChanged = true;
+        }
+        /*********************************************************/
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +15,9 @@ namespace TheWill
         [SerializeField] List<string> _options = new List<string>();
         int _currentIndex;
         public int GetCurrentIndex() { return _currentIndex; }
+        ParametersPanel _parametersPanel;
+
+        public Action<int> OnValueChanged;
 
         
     ///////////////////////////////////////////////////////////////
@@ -42,16 +46,18 @@ namespace TheWill
         {
             _currentIndex = _currentIndex % (_options.Count);
             _valueText.text = _options[_currentIndex];
+            if (OnValueChanged != null)
+                OnValueChanged(_currentIndex);
         }
         /*********************************************************/
 
-    ///////////////////////////////////////////////////////////////
-    /// PRIVATE FUNCTIONS /////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////
-    
-    ///////////////////////////////////////////////////////////////
-    /// PUBLIC FUNCTIONS /////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////
+        /// PRIVATE FUNCTIONS /////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////
+
+        ///////////////////////////////////////////////////////////////
+        /// PUBLIC FUNCTIONS /////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////
         public void Initialize(List<string> a_options)
         {
             _options.Clear();
@@ -59,6 +65,25 @@ namespace TheWill
                 _options.Add(option/*Localization.GetLocalized(option)*/);
             _currentIndex = 0;
             _valueText.text = _options[0];
+        }
+        /*********************************************************/
+
+        public void SetValue(string a_value)
+        {
+            if (_options.Contains(a_value) == false)
+            {
+                Debug.LogError("There is no value (" + a_value + ") in " + gameObject.name);
+                return;
+            }
+
+            for (int i = 0; i < _options.Count; i++)
+            {
+                if (_options[i] == a_value)
+                {
+                    _currentIndex = i;
+                    _valueText.text = _options[i];
+                }
+            }
         }
         /*********************************************************/
 

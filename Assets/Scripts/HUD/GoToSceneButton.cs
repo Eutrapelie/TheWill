@@ -4,23 +4,26 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GoToSceneButton : MonoBehaviour
+namespace TheWill
 {
-    [SerializeField] Room _room;
-
-
-    void Start()
+    public class GoToSceneButton : MonoBehaviour
     {
-        Button button = this.gameObject.GetComponent<Button>();
-        if (button)
+        [SerializeField] Room _room;
+
+
+        void Start()
         {
-            button.onClick.AddListener(() => GoToRoom(_room));
+            Button button = this.gameObject.GetComponent<Button>();
+            if (button)
+            {
+                button.onClick.AddListener(() => GoToRoom(_room));
+            }
         }
-    }
 
-    void GoToRoom(Room room)
-    {
-        Game.Current.SaveGameFromManager();
-        SceneManager.LoadScene(room.ToString());
+        void GoToRoom(Room room)
+        {
+            Game.Current.SaveGameFromManager();
+            SceneManager.LoadScene(room.ToString());
+        }
     }
 }

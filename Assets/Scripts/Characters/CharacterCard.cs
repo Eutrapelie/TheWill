@@ -6,137 +6,140 @@ using System;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class CharacterCard : InteractibleObject
+namespace TheWill
 {
-    [SerializeField]
-    private CharacterInfo _characterInfo;
-
-    [SerializeField]
-    private List<CharacterSprite> _characterSprites;
-
-    [SerializeField]
-    private SpriteRenderer _spriteRenderer;
-
-    [SerializeField]
-    private bool _isTalking;
-
-    public event System.Action<Character> OnClickCharacterValue;
-
-    public CharacterInfo CharacterInfo
+    public class CharacterCard : InteractibleObject
     {
-        get
+        [SerializeField]
+        private CharacterInfo _characterInfo;
+
+        [SerializeField]
+        private List<CharacterSprite> _characterSprites;
+
+        [SerializeField]
+        private SpriteRenderer _spriteRenderer;
+
+        [SerializeField]
+        private bool _isTalking;
+
+        public event System.Action<Character> OnClickCharacterValue;
+
+        public CharacterInfo CharacterInfo
         {
-            return _characterInfo;
+            get
+            {
+                return _characterInfo;
+            }
+
+            set
+            {
+                _characterInfo = value;
+            }
         }
 
-        set
+        public bool IsTalking
         {
-            _characterInfo = value;
-        }
-    }
+            get
+            {
+                return _isTalking;
+            }
 
-    public bool IsTalking
-    {
-        get
+            set
+            {
+                _isTalking = value;
+            }
+        }
+
+        public CharacterCard(CharacterInfo characterInfo)
         {
-            return _isTalking;
+            CharacterInfo = characterInfo;
         }
 
-        set
+        void Update()
         {
-            _isTalking = value;
+            /* if(Input.GetKeyUp(KeyCode.A))
+             {
+                 if (OnClickCharacterValue != null)
+                 {
+                     OnClickCharacterValue(_characterInfo.characterName);
+                 }
+             }*/
         }
-    }
 
-    public CharacterCard(CharacterInfo characterInfo)
-    {
-        CharacterInfo = characterInfo;
-    }
 
-    void Update()
-    {
-       /* if(Input.GetKeyUp(KeyCode.A))
+        void Awake()
+        {
+            Sprite = _spriteRenderer;
+
+            EventManager.StartListening(CharacterInfo.characterName.ToString() + "OnClick", OnClickObject);
+
+            OnClickCharacterValue += DoStuff;
+        }
+
+        private void OnClickObject(object value)
         {
             if (OnClickCharacterValue != null)
             {
-                OnClickCharacterValue(_characterInfo.characterName);
+                OnClickCharacterValue(CharacterInfo.characterName);
             }
-        }*/
-    }
-
-
-    void Awake()
-    {
-        Sprite = _spriteRenderer;
-
-        EventManager.StartListening(CharacterInfo.characterName.ToString() + "OnClick",  OnClickObject);
-
-        OnClickCharacterValue += DoStuff;
-    }
-
-    private void OnClickObject(object value)
-    {
-        if (OnClickCharacterValue != null)
-        {
-            OnClickCharacterValue(CharacterInfo.characterName);
         }
-    }
 
-    void DoStuff(Character name)
-    {
-        Debug.Log("[DoStuff] name is " + name);
-        Debug.Log("[DoStuff] GameManager.Instance.MyCharacterController " + GameManager.Instance.MyCharacterController);
-        //GameManager.Instance.MyCharacterController.toggleAllCharactersEvent.Invoke(false);
-    }
-
-    public void ChangeSprite()
-    {
-        string sprite = CharacterInfo.characterName.ToString() + CharacterInfo.currentEmotion.ToString() + (_isTalking ? "Talking" : "");
-
-        foreach (CharacterSprite item in _characterSprites)
+        void DoStuff(Character name)
         {
-            string spriteItem = CharacterInfo.characterName.ToString() + item.Emotion + (item.Talking ? "Talking" : "");
-            if(spriteItem.Equals(sprite))
+            Debug.Log("[DoStuff] name is " + name);
+            Debug.Log("[DoStuff] GameManager.Instance.MyCharacterController " + GameManager.Instance.MyCharacterController);
+            //GameManager.Instance.MyCharacterController.toggleAllCharactersEvent.Invoke(false);
+        }
+
+        public void ChangeSprite()
+        {
+            string sprite = CharacterInfo.characterName.ToString() + CharacterInfo.currentEmotion.ToString() + (_isTalking ? "Talking" : "");
+
+            foreach (CharacterSprite item in _characterSprites)
             {
-                _spriteRenderer.sprite = item.Sprite;
-                break;
+                string spriteItem = CharacterInfo.characterName.ToString() + item.Emotion + (item.Talking ? "Talking" : "");
+                if (spriteItem.Equals(sprite))
+                {
+                    _spriteRenderer.sprite = item.Sprite;
+                    break;
+                }
             }
+        }
+
+        public void ChangeCurrentEmotion(Emotion arg0)
+        {
+            CharacterInfo.currentEmotion = arg0;
+            ChangeSprite();
+        }
+
+        public void ToggleVisibility(bool visible)
+        {
+            gameObject.SetActive(visible);
+        }
+
+        public void ChangeRoom(Room newRoom)
+        {
+            CharacterInfo.currentRoom = newRoom;
+        }
+
+        public void ChangeRoomSpot(RoomSpot newSpot)
+        {
+            CharacterInfo.currentRoomSpot = newSpot;
+        }
+
+        public void SetGauge(int value)
+        {
+            CharacterInfo.valueGauge += value;
         }
     }
 
-    public void ChangeCurrentEmotion(Emotion arg0)
+    [System.Serializable]
+    public class CharacterSprite
     {
-        CharacterInfo.currentEmotion = arg0;
-        ChangeSprite();
+        public Emotion Emotion;
+
+        public bool Talking;
+
+        public Sprite Sprite;
     }
-
-    public void ToggleVisibility(bool visible)
-    {
-        gameObject.SetActive(visible);
-    }
-
-    public void ChangeRoom(Room newRoom)
-    {
-        CharacterInfo.currentRoom = newRoom;
-    }
-
-    public void ChangeRoomSpot(RoomSpot newSpot)
-    {
-        CharacterInfo.currentRoomSpot = newSpot;
-    }
-
-    public void SetGauge(int value)
-    {
-        CharacterInfo.valueGauge += value;
-    }
-}
-
-[System.Serializable]
-public class CharacterSprite
-{
-    public Emotion Emotion;
-
-    public bool Talking;
-
-    public Sprite Sprite;
 }

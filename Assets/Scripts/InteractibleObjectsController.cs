@@ -2,40 +2,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractibleObjectsController : MonoBehaviour
-{    
-    private InteractibleObject _selectedObject = null;
-
-    public InteractibleObject SelectedObject
+namespace TheWill
+{
+    public class InteractibleObjectsController : MonoBehaviour
     {
-        get
-        {
-            return _selectedObject;
-        }
+        private InteractibleObject _selectedObject = null;
 
-        set
+        public InteractibleObject SelectedObject
         {
-            _selectedObject = value;
-        }
-    }
-
-    // Update is called once per frame
-    void Update ()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector2 pos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-            RaycastHit2D hitInfo = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(pos), Vector2.zero);
-            // RaycastHit2D can be either true or null, but has an implicit conversion to bool, so we can use it like this
-            if (hitInfo)
+            get
             {
-                SelectedObject = hitInfo.transform.gameObject.GetComponent<InteractibleObject>();
+                return _selectedObject;
+            }
 
-                CharacterCard character = (CharacterCard)SelectedObject;
-                if (character)
+            set
+            {
+                _selectedObject = value;
+            }
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                Vector2 pos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+                RaycastHit2D hitInfo = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(pos), Vector2.zero);
+                // RaycastHit2D can be either true or null, but has an implicit conversion to bool, so we can use it like this
+                if (hitInfo)
                 {
-                    // Here you can check hitInfo to see which collider has been hit, and act appropriately.
-                    EventManager.TriggerEvent(character.CharacterInfo.characterName.ToString() + "OnClick", character);
+                    SelectedObject = hitInfo.transform.gameObject.GetComponent<InteractibleObject>();
+
+                    CharacterCard character = (CharacterCard)SelectedObject;
+                    if (character)
+                    {
+                        // Here you can check hitInfo to see which collider has been hit, and act appropriately.
+                        EventManager.TriggerEvent(character.CharacterInfo.characterName.ToString() + "OnClick", character);
+                    }
                 }
             }
         }

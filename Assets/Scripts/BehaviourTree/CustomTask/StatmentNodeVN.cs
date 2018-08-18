@@ -5,6 +5,7 @@ using NodeCanvas;
 using NodeCanvas.Framework;
 using System;
 using System.Linq;
+using TheWill;
 
 namespace VN.Dialog
 {
