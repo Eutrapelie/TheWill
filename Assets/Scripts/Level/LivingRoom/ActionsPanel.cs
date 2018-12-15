@@ -140,6 +140,7 @@ namespace TheWill
                     Game.Current.backpackElement = 3;
                     break;
             }
+            _backpack.GetComponent<Animator>().enabled = true;
         }
         /*********************************************************/
 
