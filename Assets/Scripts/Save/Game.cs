@@ -17,10 +17,10 @@ namespace TheWill
                 {
                     current = new Game();
                 }
-                if (current.player != null)
+                /*if (current.player != null)
                     Debug.Log("[Game] get Current - gender: " + current.player.genre);
                 else
-                    Debug.Log("[Game] get Current - not initialized");
+                    Debug.Log("[Game] get Current - not initialized");*/
                 return current;
             }
         }
@@ -35,26 +35,43 @@ namespace TheWill
         public int dayNumber = 1;
         public DateTime realDateTime;
         public DateTime gameDateTime;
+        public LevelControllerData levelControllerData;
 
         public void LoadStartLevel(int acte, int day)
         {
             // FOR TEST PURPOSE ONLY
             string level = "LevelAct" + acte + "Day" + day;
-            Debug.Log("[LevelController] Loading level : " + level);
-            LevelController levelController = ((LevelController)Resources.Load("Levels/" + level));
-            if (levelController == null)
+            //1/Debug.Log("[LevelController] Loading level : " + level);
+            Debug.Log("levelController exists: " + levelControllerData != null);
+            if (levelControllerData == null)
+            {
+                LevelController levelCtrl = ((LevelController)Resources.Load("Levels/CurrentLevel"));
+                levelCtrl = new LevelController(((LevelController)Resources.Load("Levels/" + level)));
+                levelControllerData = new LevelControllerData(levelCtrl.Data);
+            }
+            /*1/if (levelController == null)
             {
                 Debug.Log("[LevelController] Level load failed");
             }
             else
             {
                 Debug.Log("[LevelController] Level load succeed");
+            }*/
+            if (charactersInfos != null)
+                for (int i = 0; i < charactersInfos.Count; i++)
+                {
+                    if (charactersInfos[i].characterName == Character.Geoffroy)
+                        Debug.Log("// " + charactersInfos[i].characterName + ": " + charactersInfos[i].currentRoom);
+                }
+            charactersInfos = levelControllerData.Characters;
+            for (int i = 0; i < charactersInfos.Count; i++)
+            {
+                if (charactersInfos[i].characterName == Character.Geoffroy)
+                    Debug.Log("/// " + charactersInfos[i].characterName + ": " + charactersInfos[i].currentRoom);
             }
-
-            charactersInfos = levelController.Characters;
             if (player == null)
-                player = levelController.Kim;
-            currentRoom = levelController.StartRoom;
+                player = levelControllerData.Kim;
+            currentRoom = levelControllerData.StartRoom;
             acteNumber = acte;
             dayNumber = day;
             roomVisited = new List<Room>();

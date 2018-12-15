@@ -33,8 +33,8 @@ namespace TheWill
                 LoadSaves();
             }
 
-            Debug.Log("Load " + a_index + ": ");
-            Debug.Log("Load " + a_index + ": " + savedGames[a_index].DebugGameData());
+            //Debug.Log("Load " + a_index + ": ");
+            //Debug.Log("Load " + a_index + ": " + savedGames[a_index].DebugGameData());
             Game.Current.LoadGame(savedGames[a_index]);
         }
 
@@ -48,7 +48,7 @@ namespace TheWill
                 SaveLoad.savedGames = (Game[])bf.Deserialize(file);
                 file.Close();
                 _areSaveLoaded = true;
-                Debug.Log("LoadSaves");
+                //Debug.Log("LoadSaves");
             }
         }
 

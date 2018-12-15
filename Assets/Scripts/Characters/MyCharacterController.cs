@@ -200,10 +200,13 @@ namespace TheWill
             List<object> list = (List<object>)args;
             Character arg0 = (Character)list[0];
             Room arg1 = (Room)list[1];
+            Debug.Log("## " + arg0.ToString() + " -- " + arg1.ToString());
             foreach (CharacterCard item in Characters)
             {
+                Debug.Log("## " + item.name + "...");
                 if (item.CharacterInfo.characterName.Equals(arg0))
                 {
+                    Debug.Log("## CharacterName is equal to " + arg0);
                     item.ChangeRoom(arg1);
                     break;
                 }
@@ -234,7 +237,7 @@ namespace TheWill
         void CharacterChangeEmotion(object args)
         {
             List<object> list = (List<object>)args;
-            Debug.Log("[MyCharacterController] CharacterChangeEmotion -- args.Count: " + list.Count);
+            //Debug.Log("[MyCharacterController] CharacterChangeEmotion -- args.Count: " + list.Count);
             Character arg0 = (Character)list[0];
             Emotion arg1 = (Emotion)list[1];
             Debug.Log("\tCharacter: " + arg0.ToString() + " - Emotion: " + arg1);

@@ -121,12 +121,17 @@ namespace TheWill
 
         public void ChangeRoom(Room newRoom)
         {
+            Debug.Log("#### ChangeRoom to " + newRoom.ToString() + " for " + name);
+            Debug.Log("#### CharacterInfo.currentRoom: " + CharacterInfo.currentRoom.ToString() + " for " + CharacterInfo.characterName);
             CharacterInfo.currentRoom = newRoom;
+            Game.Current.levelControllerData.ChangeRoomOfCharacter(CharacterInfo.characterName, newRoom);
+            Debug.Log("#### CharacterInfo.currentRoom: " + CharacterInfo.currentRoom.ToString() + " for " + CharacterInfo.characterName);
         }
 
         public void ChangeRoomSpot(RoomSpot newSpot)
         {
             CharacterInfo.currentRoomSpot = newSpot;
+            Game.Current.levelControllerData.ChangeRoomSpotOfCharacter(CharacterInfo.characterName, newSpot);
         }
 
         public void SetGauge(int value)

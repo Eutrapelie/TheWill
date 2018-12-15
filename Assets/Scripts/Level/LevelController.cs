@@ -1,75 +1,88 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "LevelController", menuName = "InGameControllers/LevelController", order = 1)]
-public class LevelController : ScriptableObject
+namespace TheWill
 {
-    [SerializeField] int _acteNumber;
-    public int ActeNumber
+    [CreateAssetMenu(fileName = "LevelController", menuName = "InGameControllers/LevelController", order = 1)]
+    [Serializable]
+    public class LevelController : ScriptableObject
     {
-        get
+        [SerializeField] LevelControllerData _levelControllerData;
+        public LevelControllerData Data { get { return _levelControllerData; }
+        }
+        /*[SerializeField] int _acteNumber;
+        public int ActeNumber
         {
-            return _acteNumber;
+            get
+            {
+                return _acteNumber;
+            }
+
+            set
+            {
+                _acteNumber = value;
+            }
+        }
+        [SerializeField] int _dayNumber;
+        public int DayNumber
+        {
+            get
+            {
+                return _dayNumber;
+            }
+
+            set
+            {
+                _dayNumber = value;
+            }
         }
 
-        set
+        [SerializeField] Room _startRoom;
+        public Room StartRoom
         {
-            _acteNumber = value;
+            get
+            {
+                return _startRoom;
+            }
+
+            set
+            {
+                _startRoom = value;
+            }
         }
-    }
-    [SerializeField] int _dayNumber;
-    public int DayNumber
-    {
-        get
+        [SerializeField] Player _kim;
+        public Player Kim
         {
-            return _dayNumber;
+            get
+            {
+                return _kim;
+            }
+
+            set
+            {
+                _kim = value;
+            }
         }
 
-        set
+        [SerializeField] List<CharacterInfo> _characters;    
+        public List<CharacterInfo> Characters
         {
-            _dayNumber = value;
-        }
-    }
+            get
+            {
+                return _characters;
+            }
 
-    [SerializeField] Room _startRoom;
-    public Room StartRoom
-    {
-        get
-        {
-            return _startRoom;
-        }
+            set
+            {
+                _characters = value;
+            }
+        }*/
 
-        set
+        public LevelController(LevelController a_other)
         {
-            _startRoom = value;
+            //CreateInstance("newLevel");
+            _levelControllerData = new LevelControllerData(a_other.Data);
         }
-    }
-    [SerializeField] Player _kim;
-    public Player Kim
-    {
-        get
-        {
-            return _kim;
-        }
-
-        set
-        {
-            _kim = value;
-        }
-    }
-
-    [SerializeField] List<CharacterInfo> _characters;    
-    public List<CharacterInfo> Characters
-    {
-        get
-        {
-            return _characters;
-        }
-
-        set
-        {
-            _characters = value;
-        }
-    }
-}
+    } // Class
+} // Namespace

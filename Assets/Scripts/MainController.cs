@@ -12,35 +12,26 @@ namespace TheWill
     {
         public static string EVT_UPSPOT_CHARACTER = "MainController.EVT_UPSPOT_CHARACTER";
 
-        [SerializeField]
-        private int _acteNumber = 1;
+        [SerializeField] int _acteNumber = 1;
+        [SerializeField] int _dayNumber = 1;
+        [SerializeField] Room _room;
 
-        [SerializeField]
-        private int _dayNumber = 1;
+        [SerializeField] List<RoomSpotView> _characterSpotsGameObject;
+        [SerializeField] RoomSpotView _upSpot;
 
-        [SerializeField]
-        private Room _room;
+        [SerializeField] Blackboard _blackBoard;
+        [SerializeField] BehaviourTreeOwner _behaviourTree;
 
-        [SerializeField]
-        private List<RoomSpotView> _characterSpotsGameObject;
+        List<GameObject> _charactersInScene;
+        GameManager _gameManager;
 
-        [SerializeField]
-        private RoomSpotView _upSpot;
-
-        [SerializeField]
-        private Blackboard _blackBoard;
-
-        [SerializeField]
-        private BehaviourTreeOwner _behaviourTree;
-
-
-        private List<GameObject> _charactersInScene;
 
         void Awake()
         {
             SaveLoad.LoadSaves();
             Game.Current.LoadStartLevel(_acteNumber, _dayNumber);
             LoadBehaviourTree();
+            _gameManager = GameManager.Instance;
 
             EventManager.StartListening(EVT_UPSPOT_CHARACTER, UpdateUpspotWithCharacter);
             EventManager.StartListening(VNFinishNode.EVT_FINISH_DIALOG, UpdateUpspotWithCharacter);
@@ -57,6 +48,11 @@ namespace TheWill
 
             LoadCharactersObjectInvolved();
             LoadBlackBoard();
+        }
+
+        private void OnApplicationQuit()
+        {
+            
         }
 
         private void LoadBehaviourTree()
@@ -101,9 +97,10 @@ namespace TheWill
         public void LoadCharactersObjectInvolved()
         {
             int cptSpot = 0;
-            GameManager.Instance.MyCharacterController.Characters.Clear();
+            _gameManager.MyCharacterController.Characters.Clear();
             foreach (CharacterInfo info in Game.Current.charactersInfos)
             {
+                Debug.Log("-- " + info.characterName + ", " + info.currentRoom);
                 if (info.currentRoom == _room)
                 {
                     if (cptSpot >= _characterSpotsGameObject.Count)
@@ -115,15 +112,17 @@ namespace TheWill
                     RoomSpotView newSpot = GetRoomSpotForCharacter(info);
                     if (newSpot)
                     {
+                        Debug.Log("--- New spot !");
                         GameObject characterObject = ((GameObject)Instantiate(Resources.Load("Characters/" + info.characterName)));
                         if (characterObject)
                         {
+                            Debug.Log("--- " + characterObject.name);
                             _charactersInScene.Add(characterObject);
                             CharacterCard characterCard = characterObject.GetComponent<CharacterCard>();
                             characterCard.CharacterInfo = info;
 
-                            GameManager.Instance.MyCharacterController.Characters.Add(characterCard);
-                            GameManager.Instance.MyCharacterController.AddCharacterCardToGlobalBB(characterCard);
+                            _gameManager.MyCharacterController.Characters.Add(characterCard);
+                            _gameManager.MyCharacterController.AddCharacterCardToGlobalBB(characterCard);
                             characterObject.transform.parent = newSpot.gameObject.transform;
                             characterObject.transform.localPosition = Vector3.zero;
                             characterObject.transform.localScale = Vector3.one;
