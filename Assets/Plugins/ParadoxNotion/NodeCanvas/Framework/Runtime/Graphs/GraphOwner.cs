@@ -272,7 +272,7 @@ namespace NodeCanvas.Framework{
 					}
 
 					if (prefabType == PrefabType.PrefabInstance){
-						var parent = (GraphOwner)PrefabUtility.GetPrefabParent(this);
+						var parent = (GraphOwner)PrefabUtility.GetCorrespondingObjectFromSource(this);
 						return graph.hideFlags == HideFlags.HideInInspector || (AssetDatabase.IsSubAsset(graph) && AssetDatabase.GetAssetPath(graph) == AssetDatabase.GetAssetPath(parent));
 					}
 

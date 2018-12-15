@@ -76,6 +76,7 @@ namespace TheWill
             OnClickCharacterValue += DoStuff;
         }
 
+        public bool isClicked = false;
         private void OnClickObject(object value)
         {
             if (OnClickCharacterValue != null)
@@ -89,6 +90,7 @@ namespace TheWill
             Debug.Log("[DoStuff] name is " + name);
             Debug.Log("[DoStuff] GameManager.Instance.MyCharacterController " + GameManager.Instance.MyCharacterController);
             //GameManager.Instance.MyCharacterController.toggleAllCharactersEvent.Invoke(false);
+            isClicked = true;
         }
 
         public void ChangeSprite()

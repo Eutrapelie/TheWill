@@ -158,7 +158,7 @@ namespace TheWill
         public void UpdateUpspotWithCharacter(object value)
         {
             CharacterCard card = (CharacterCard)value;
-            if (card)
+            if (card && _upSpot)
             {
                 Debug.Log("[MainController] UpdateUpspotWithCharacter " + card.CharacterInfo.characterName.ToString());
                 SpriteRenderer renderer = _upSpot.GetComponentInChildren<SpriteRenderer>();

@@ -10,26 +10,27 @@ using System.Reflection;
 using UnityEngine;
 
 [Description("For click on character :\nWill subscribe to a public event of Action<Character> type and return true when the event is raised.")]
-public class CheckCharacterOnClickEvent<T> : ConditionTask {
+[EventReceiver("OnCustomEvent")]
+public class CheckCharacterOnClickEvent<T> : ConditionTask<GraphOwner> {
     [SerializeField]
     private System.Type targetType = null;
 
     [SerializeField]
-    private string eventName = null;
+    private BBParameter<string> eventName = null;
 
     [SerializeField]
     private BBParameter<T> checkValue = null;
     
-    public override Type agentType
+    /*public override Type agentType
     {
         get { return targetType ?? typeof(Transform); }
-    }
+    }*/
 
     protected override string info
     {
         get
         {
-            if (string.IsNullOrEmpty(eventName))
+            if (string.IsNullOrEmpty(eventName.value))
                 return "No Event Selected";
             return string.Format("'{0}' Raised", eventName);
         }
@@ -41,7 +42,7 @@ public class CheckCharacterOnClickEvent<T> : ConditionTask {
         if (eventName == null)
             return "No Event Selected";
 
-        var eventInfo = agentType.RTGetEvent(eventName);
+        var eventInfo = agentType.RTGetEvent(eventName.value);
         if (eventInfo == null)
         {
             return "Event was not found";
@@ -69,51 +70,51 @@ public class CheckCharacterOnClickEvent<T> : ConditionTask {
         return false;
     }
 
-    ////////////////////////////////////////
-    ///////////GUI AND EDITOR STUFF/////////
-    ////////////////////////////////////////
-#if UNITY_EDITOR
+    /*    ////////////////////////////////////////
+        ///////////GUI AND EDITOR STUFF/////////
+        ////////////////////////////////////////
+    #if UNITY_EDITOR
 
-    protected override void OnTaskInspectorGUI()
-    {
-
-        if (!Application.isPlaying && GUILayout.Button("Select Event"))
+        protected override void OnTaskInspectorGUI()
         {
-            Action<EventInfo> Selected = (e) => {
-                targetType = e.DeclaringType;
-                eventName = e.Name;
-            };
 
-            var menu = new UnityEditor.GenericMenu();
-            if (agent != null)
+            if (!Application.isPlaying && GUILayout.Button("Select Event"))
             {
-                foreach (var comp in agent.GetComponents(typeof(Component)).Where(c => c.hideFlags == 0))
+                Action<EventInfo> Selected = (e) => {
+                    targetType = e.DeclaringType;
+                    eventName = e.Name;
+                };
+
+                var menu = new UnityEditor.GenericMenu();
+                if (agent != null)
                 {
-                    menu = EditorUtils.GetEventSelectionMenu(comp.GetType(), typeof(T), Selected, menu);
+                    foreach (var comp in agent.GetComponents(typeof(Component)).Where(c => c.hideFlags == 0))
+                    {
+                        menu = EditorUtils.GetEventSelectionMenu(comp.GetType(), typeof(T), Selected, menu);
+                    }
+                    menu.AddSeparator("/");
                 }
-                menu.AddSeparator("/");
+                foreach (var t in UserTypePrefs.GetPreferedTypesList(typeof(Component)))
+                {
+                    menu = EditorUtils.GetEventSelectionMenu(t, typeof(T), Selected, menu);
+                }
+
+                if (NodeCanvas.Editor.NCPrefs.useBrowser) { menu.ShowAsBrowser("Select Event", this.GetType()); }
+                else { menu.ShowAsContext(); }
+                Event.current.Use();
             }
-            foreach (var t in UserTypePrefs.GetPreferedTypesList(typeof(Component)))
+
+            if (targetType != null)
             {
-                menu = EditorUtils.GetEventSelectionMenu(t, typeof(T), Selected, menu);
+                GUILayout.BeginVertical("box");
+                UnityEditor.EditorGUILayout.LabelField("Selected Type", agentType.FriendlyName());
+                UnityEditor.EditorGUILayout.LabelField("Selected Event", eventName);
+                GUILayout.EndVertical();
+
+                EditorUtils.BBParameterField("Check Value", checkValue);
             }
-
-            if (NodeCanvas.Editor.NCPrefs.useBrowser) { menu.ShowAsBrowser("Select Event", this.GetType()); }
-            else { menu.ShowAsContext(); }
-            Event.current.Use();
         }
 
-        if (targetType != null)
-        {
-            GUILayout.BeginVertical("box");
-            UnityEditor.EditorGUILayout.LabelField("Selected Type", agentType.FriendlyName());
-            UnityEditor.EditorGUILayout.LabelField("Selected Event", eventName);
-            GUILayout.EndVertical();
-
-            EditorUtils.BBParameterField("Check Value", checkValue);
-        }
-    }
-
-    #endif
-
+        #endif
+    */
 }

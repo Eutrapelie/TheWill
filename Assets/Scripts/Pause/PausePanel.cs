@@ -82,7 +82,7 @@ namespace TheWill
 
             foreach (Text text in _dialogueObject.GetComponentsInChildren<Text>(true))
             {
-                Debug.Log(text.name);
+                //Debug.Log(text.name);
                 text.fontSize = Options.Current.GetFontSizeInPixels();
                 if (text.name == "Name")
                     text.fontSize += 2;
