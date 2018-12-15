@@ -25,6 +25,7 @@ public enum CodeLine
     AbigailD1002,// idem - Choix 1 et 2
     AbigailD1003,// idem - Choix 3
     AbigailD1004,// idem - Choix 4
+    AbigailD1005,// Entrée dans le salon ; premier dialogue obligatoire 
 
 
     HippoD1000,//Première fois qu'on parle à Hippo - Jour 1
@@ -71,6 +72,7 @@ public enum CodeLine
     LeontineD1004,//
     LeontineD1005,//
     LeontineD1006,//
+    LeontineD1007,// Jour 1, sortie vers la chambre
 	
 	KimD2001,//Première entrée cuisine
 	
