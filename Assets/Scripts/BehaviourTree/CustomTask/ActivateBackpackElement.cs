@@ -8,24 +8,23 @@ using UnityEngine;
 namespace TheWill
 {
     [Category("♥ The Will")]
-    public class ChangeCharacterGender : ActionTask
+    public class ActivateBackpackElement : ActionTask
     {
-        public Genre genre;
+        public BackpackElement backpackElement;
 
 
         protected override string info
         {
             get
             {
-                return string.Format("Kim is now a {0}", genre);
+                return string.Format("Activate {0} in backpack.", backpackElement);
             }
         }
 
         protected override void OnExecute()
         {
-            Debug.Log("[ChangeCharacterGender] " + genre);
-            Game.Current.player.genre = genre;
-            GameManager.Instance.PlayerController.PlayerCard.Player.genre = genre;
+            Debug.Log("[ActivateBackpackElement] " + backpackElement);
+            ActionsPanel.Instance.ActivateBackpackElement(backpackElement);
             EndAction(true);
         }
     }

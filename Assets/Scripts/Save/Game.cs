@@ -36,6 +36,7 @@ namespace TheWill
         public DateTime realDateTime;
         public DateTime gameDateTime;
         public LevelControllerData levelControllerData;
+        public int backpackElement = 0;
 
         public void LoadStartLevel(int acte, int day)
         {
@@ -120,6 +121,8 @@ namespace TheWill
             if (current.roomVisited != null)
                 foreach (Room room in current.roomVisited)
                     roomVisited.Add(room);
+
+            backpackElement = current.backpackElement;
             //GameManager.Instance.PlayerController.PlayerChoices = current.player.codeLines;
             //GameManager.Instance.PlayerController.PlayerCard.Player.genre = current.player.genre;
 
