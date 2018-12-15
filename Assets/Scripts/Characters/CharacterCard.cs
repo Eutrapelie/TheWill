@@ -116,16 +116,15 @@ namespace TheWill
 
         public void ToggleVisibility(bool visible)
         {
+            Debug.Log("ToggleVisibility to " + visible);
             gameObject.SetActive(visible);
+            isClicked = false;
         }
 
         public void ChangeRoom(Room newRoom)
         {
-            Debug.Log("#### ChangeRoom to " + newRoom.ToString() + " for " + name);
-            Debug.Log("#### CharacterInfo.currentRoom: " + CharacterInfo.currentRoom.ToString() + " for " + CharacterInfo.characterName);
             CharacterInfo.currentRoom = newRoom;
             Game.Current.levelControllerData.ChangeRoomOfCharacter(CharacterInfo.characterName, newRoom);
-            Debug.Log("#### CharacterInfo.currentRoom: " + CharacterInfo.currentRoom.ToString() + " for " + CharacterInfo.characterName);
         }
 
         public void ChangeRoomSpot(RoomSpot newSpot)

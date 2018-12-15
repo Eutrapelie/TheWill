@@ -10,6 +10,9 @@ namespace TheWill
 {
     public class MainController : MonoBehaviour
     {
+        static MainController _instance;
+        public static MainController Instance { get { return _instance; } }
+
         public static string EVT_UPSPOT_CHARACTER = "MainController.EVT_UPSPOT_CHARACTER";
 
         [SerializeField] int _acteNumber = 1;
@@ -28,6 +31,7 @@ namespace TheWill
 
         void Awake()
         {
+            _instance = this;
             SaveLoad.LoadSaves();
             Game.Current.LoadStartLevel(_acteNumber, _dayNumber);
             LoadBehaviourTree();
@@ -50,12 +54,7 @@ namespace TheWill
             LoadBlackBoard();
         }
 
-        private void OnApplicationQuit()
-        {
-            
-        }
-
-        private void LoadBehaviourTree()
+        void LoadBehaviourTree()
         {
             string level = _room.ToString() + "Act" + Game.Current.acteNumber.ToString() + "Day" + Game.Current.dayNumber.ToString();
             Debug.Log("[MainController] Loading level : " + level);
@@ -71,7 +70,7 @@ namespace TheWill
             _behaviourTree.behaviour = tree;
         }
 
-        private void LoadBlackBoard()
+        void LoadBlackBoard()
         {
             foreach (GameObject go in _charactersInScene)
             {
@@ -152,6 +151,14 @@ namespace TheWill
                 }
             }
             return newSpot;
+        }
+
+        public void ActivateAllCharactersColliders(bool a_enabled)
+        {
+            for (int i = 0; i < _charactersInScene.Count; i++)
+            {
+                _charactersInScene[i].GetComponent<Collider2D>().enabled = a_enabled;
+            }
         }
 
         public void UpdateUpspotWithCharacter(object value)
