@@ -1,17 +1,23 @@
 ﻿using NodeCanvas.Framework;
+using ParadoxNotion.Design;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CodeLineNode : ActionTask
+namespace TheWill
 {
-    public BBParameter<CodeLine> code;
-
-    protected override string info
+    [Category("♥ The Will")]
+    public class CodeLineNode : ActionTask
     {
-        get
+        public BBParameter<CodeLine> code;
+
+
+        protected override string info
         {
-            return string.Format("{0}", code);
+            get
+            {
+                return string.Format("{0}", code);
+            }
         }
     }
 }

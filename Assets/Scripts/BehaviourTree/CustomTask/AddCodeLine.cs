@@ -4,29 +4,33 @@ using UnityEngine;
 using NodeCanvas.Framework;
 using ParadoxNotion.Design;
 
-public class AddCodeLine : ActionTask
+namespace TheWill
 {
-    public BBParameter<List<CodeLine>> playerList;
-    public CodeLine codeLine;
-
-    protected override string info
+    [Category("♥ The Will")]
+    public class AddCodeLine : ActionTask
     {
-        get
-        {
-            return string.Format("Add CodeLine {0} to player", codeLine);
-        }
-    }
+        public BBParameter<List<CodeLine>> playerList;
+        public CodeLine codeLine;
 
-    protected override void OnExecute()
-    {
-        if (playerList.value.Contains(codeLine))
+        protected override string info
         {
-            Debug.LogError("[AddCodeLine] Adding code line to Player that it already had : " + codeLine.ToString());
+            get
+            {
+                return string.Format("Add CodeLine {0} to player", codeLine);
+            }
         }
-        else
+
+        protected override void OnExecute()
         {
-            playerList.value.Add(codeLine);
+            if (playerList.value.Contains(codeLine))
+            {
+                Debug.LogError("[AddCodeLine] Adding code line to Player that it already had : " + codeLine.ToString());
+            }
+            else
+            {
+                playerList.value.Add(codeLine);
+            }
+            EndAction(true);
         }
-        EndAction(true);
     }
 }

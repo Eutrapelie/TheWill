@@ -1,29 +1,34 @@
 ﻿using NodeCanvas.Framework;
+using ParadoxNotion.Design;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeRoomForKim : ActionTask
+namespace TheWill
 {
-    public static string EVT_KIM_CHANGE_ROOM = "ChangeRoomForKim.EVT_KIM_CHANGE_ROOM";
-    public Room newRoom;
-
-    protected override string info
+    [Category("♥ The Will")]
+    public class ChangeRoomForKim : ActionTask
     {
-        get
+        public static string EVT_KIM_CHANGE_ROOM = "ChangeRoomForKim.EVT_KIM_CHANGE_ROOM";
+        public Room newRoom;
+
+        protected override string info
         {
-            return string.Format("Kim is leaving the room to go {0}", newRoom.ToString());
+            get
+            {
+                return string.Format("Kim is leaving the room to go {0}", newRoom.ToString());
+            }
         }
-    }
 
-    protected override void OnExecute()
-    {
-        object argRoom = new object();
-        argRoom = newRoom;
-        Debug.Log("<color=blue>[ChangeRoomForKim] OnExecute -- Room: " + newRoom + "</color>");
+        protected override void OnExecute()
+        {
+            object argRoom = new object();
+            argRoom = newRoom;
+            Debug.Log("<color=blue>[ChangeRoomForKim] OnExecute -- Room: " + newRoom + "</color>");
 
-        EventManager.TriggerEvent(EVT_KIM_CHANGE_ROOM, argRoom);
-        
-        EndAction(true);
+            EventManager.TriggerEvent(EVT_KIM_CHANGE_ROOM, argRoom);
+
+            EndAction(true);
+        }
     }
 }

@@ -2,28 +2,33 @@
 using ParadoxNotion.Design;
 using System.Collections.Generic;
 
-public class SetGauge : ActionTask
+namespace TheWill
 {
-    public static string EVT_CHARACTER_SET_GAUGE = "SetGauge.EVT_CHARACTER_SET_GAUGE";
-    public Gauge gauge;
-    public int value = 0;
-    public Character character;
-
-    protected override string info
+    [Category("♥ The Will")]
+    public class SetGauge : ActionTask
     {
-        get
+        public static string EVT_CHARACTER_SET_GAUGE = "SetGauge.EVT_CHARACTER_SET_GAUGE";
+        public Gauge gauge;
+        public int value = 0;
+        public Character character;
+
+
+        protected override string info
         {
-            return string.Format(" Change gauge value of {0} to character {1} by {2} points", value, character, value);
+            get
+            {
+                return string.Format(" Change gauge value of {0} to character {1} by {2} points", value, character, value);
+            }
         }
-    }
 
-    protected override void OnExecute()
-    {
-        List<object> args = new List<object>();
-        args.Add(character);
-        args.Add(value);
+        protected override void OnExecute()
+        {
+            List<object> args = new List<object>();
+            args.Add(character);
+            args.Add(value);
 
-        EventManager.TriggerEvent(EVT_CHARACTER_SET_GAUGE, args);
-        EndAction(true);
+            EventManager.TriggerEvent(EVT_CHARACTER_SET_GAUGE, args);
+            EndAction(true);
+        }
     }
 }
