@@ -9,5 +9,6 @@ public enum Room
     Hall,
     LivingRoom,
 	LivingRoomIntegration,
+    Blackroom,
     None
 }

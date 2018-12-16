@@ -15,7 +15,8 @@ namespace TheWill
         [SerializeField] Text _infoText;
 
         bool _isPanelShow;
-        DialogueUGUI _dialogueObject;
+        //1/DialogueUGUI _dialogueObject;
+        DialogueUGUILocalization _dialogueObject;
 
 
         void Awake()
@@ -40,7 +41,8 @@ namespace TheWill
             {
                 ChangeVisibility(!_isPanelShow);
                 if (_dialogueObject == null)
-                    _dialogueObject = FindObjectOfType<DialogueUGUI>();
+                    //1/_dialogueObject = FindObjectOfType<DialogueUGUI>();
+                    _dialogueObject = FindObjectOfType<DialogueUGUILocalization>();
                 _dialogueObject.isGamePaused = _isPanelShow;
             }
         }
@@ -66,15 +68,18 @@ namespace TheWill
 
         void SceneChanged(Scene a_s1, Scene a_s2)
         {
+            Debug.Log("SceneChanged");
             foreach(GameObject go in a_s2.GetRootGameObjects())
             {
                 if (go.tag == "DialogueUGUI")
                 {
-                    _dialogueObject = go.GetComponent<DialogueUGUI>();
+                    //1/_dialogueObject = go.GetComponent<DialogueUGUI>();
+                    _dialogueObject = go.GetComponent<DialogueUGUILocalization>();
                     break;
                 }
             }
 
+            _dialogueObject.SetLang(Options.Current.GetLang());
             _dialogueObject.subtitleDelays.characterDelay = Options.Current.GetCharacterDelay();
             _dialogueObject.subtitleDelays.sentenceDelay = Options.Current.GetSentenceDelay();
             _dialogueObject.subtitleDelays.commaDelay = Options.Current.GetCommaDelay();
@@ -93,7 +98,8 @@ namespace TheWill
         {
             ChangeVisibility(false);
             if (_dialogueObject == null)
-                _dialogueObject = FindObjectOfType<DialogueUGUI>();
+                //1/_dialogueObject = FindObjectOfType<DialogueUGUI>();
+                _dialogueObject = FindObjectOfType<DialogueUGUILocalization>();
             _dialogueObject.isGamePaused = _isPanelShow;
         }
 

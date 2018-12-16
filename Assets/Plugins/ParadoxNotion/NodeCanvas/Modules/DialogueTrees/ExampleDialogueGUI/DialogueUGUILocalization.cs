@@ -23,9 +23,14 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 		[Header("Input Options")]
 		public bool skipOnInput;
 		public bool waitForInput;
-        List<KeyCode> _keyToIgnored = new List<KeyCode>();
+        public bool isGamePaused;
+        List<KeyCode> _keysToIgnored = new List<KeyCode>();
         [SerializeField]
         Utils.Lang _lang;
+        public void SetLang(Utils.Lang a_lang) {
+            _lang = a_lang;
+            Utils.Localization.InitializeLangDictionaries(_lang);
+        }
 
 		//Group...
 		[Header("Subtitles")]
@@ -67,7 +72,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 		}
 
 		void Start(){
-			subtitlesGroup.gameObject.SetActive(false);
+            subtitlesGroup.gameObject.SetActive(false);
 			optionsGroup.gameObject.SetActive(false);
 			optionButton.gameObject.SetActive(false);
 			waitInputIndicator.gameObject.SetActive(false);
@@ -76,7 +81,8 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
             // test de localization
             Utils.Localization.InitializeLangDictionaries(_lang);
 
-            _keyToIgnored.Add(KeyCode.Escape);
+            Debug.Log("Start");
+            _keysToIgnored.Add(KeyCode.Escape);
         }
 
 		void OnDialogueStarted(DialogueTree dlg){
@@ -113,6 +119,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 		IEnumerator Internal_OnSubtitlesRequestInfo(SubtitlesRequestInfo info){
 
             var id = info.statement.meta;
+            Debug.Log(id);
 			var text = Utils.Localization.GetLocalized(id);
 			var audio = info.statement.audio;
 			var actor = info.actor;
@@ -136,8 +143,8 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 				while (timer < audio.length)
                 {
                     bool isKeyAllowed = false;
-                    isKeyAllowed = !Input.GetKeyDown(_keyToIgnored[0]);
-                    if (skipOnInput && Input.anyKeyDown && isKeyAllowed)
+                    isKeyAllowed = !Input.GetKeyDown(_keysToIgnored[0]);
+                    if (!isGamePaused && skipOnInput && Input.anyKeyDown && isKeyAllowed)
                     {
 						playSource.Stop();
 						break;
@@ -150,15 +157,16 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			if (audio == null){
 				var tempText = "";
 				var inputDown = false;
-				if (skipOnInput){
-					StartCoroutine(CheckInput( ()=>{ inputDown = true; } ));
-				}
+                if (!isGamePaused && skipOnInput)
+                {
+                    StartCoroutine(CheckInput(() => { inputDown = true; }));
+                }
 
                 bool isKeyAllowed = false;
-                isKeyAllowed = !Input.GetKeyDown(_keyToIgnored[0]);
+                isKeyAllowed = !Input.GetKeyDown(_keysToIgnored[0]);
                 for (int i= 0; i < text.Length; i++){
 
-					if (skipOnInput && inputDown && isKeyAllowed)
+					if (!isGamePaused && skipOnInput && inputDown && isKeyAllowed)
                     {
 						actorSpeech.text = text;
 						yield return null;
@@ -239,7 +247,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
                     }
 				}
 
-				if (!waitForInput)
+				if (!isGamePaused && !waitForInput)
                 {
 					yield return StartCoroutine(DelayPrint(subtitleDelays.finalDelay));
 				}
@@ -249,13 +257,18 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
             {
 				waitInputIndicator.gameObject.SetActive(true);
 
-                bool isKeyAllowed = false;
-                isKeyAllowed = !Input.GetKeyDown(_keyToIgnored[0]);
-				while(!Input.anyKeyDown && !isKeyAllowed)
+                bool isKeyAllowed = true;
+                foreach (KeyCode key in _keysToIgnored)
+                    isKeyAllowed &= !Input.GetKey(key);
+
+                while (isGamePaused || Input.anyKeyDown == false || isKeyAllowed == false)
                 {
-					yield return null;
-				}
-				waitInputIndicator.gameObject.SetActive(false);
+                    yield return null;
+                    isKeyAllowed = true;
+                    foreach (KeyCode key in _keysToIgnored)
+                        isKeyAllowed &= !Input.GetKey(key);
+                }
+                waitInputIndicator.gameObject.SetActive(false);
 			}
 
 			yield return null;

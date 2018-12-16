@@ -181,6 +181,7 @@ namespace TheWill
                     SceneManager.LoadScene("Entrance");
                     break;
                 case Room.LivingRoom:
+                case Room.LivingRoomIntegration:
                     SceneManager.LoadScene("LivingRoomIntegration");
                     break;
                 case Room.Garden:
@@ -188,6 +189,9 @@ namespace TheWill
                     break;
                 case Room.Hall:
                     SceneManager.LoadScene("Hall");
+                    break;
+                case Room.Blackroom:
+                    SceneManager.LoadScene("Blackroom");
                     break;
                 default:
                     Debug.LogError("Default case, add your scene here.");

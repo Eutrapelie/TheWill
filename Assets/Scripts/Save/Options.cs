@@ -147,5 +147,18 @@ namespace TheWill
             }
             return Constants.DIALOGUE_FINAL_DELAY_STANDARD;
         }
+
+        public Utils.Lang GetLang()
+        {
+            switch (language)
+            {
+                case Language.French:
+                    return Utils.Lang.fr;
+                case Language.English:
+                    return Utils.Lang.en;
+                default:
+                    return Utils.Lang.en;
+            }
+        }
     }
 }
