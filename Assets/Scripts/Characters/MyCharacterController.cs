@@ -9,13 +9,10 @@ namespace TheWill
 {
     public class MyCharacterController : MonoBehaviour
     {
-        [SerializeField]
-        private List<CharacterCard> _characters;
+        [SerializeField] List<CharacterCard> _characters;
+        [SerializeField] GlobalBlackboard _globalBlackboard;
 
-        [SerializeField]
-        private GlobalBlackboard _globalBlackboard;
-
-        private CharacterCard talkingCharacter;
+        CharacterCard talkingCharacter;
 
         public List<CharacterCard> Characters
         {
@@ -29,6 +26,7 @@ namespace TheWill
                 _characters = value;
             }
         }
+
 
         void Awake()
         {
@@ -48,6 +46,7 @@ namespace TheWill
             EventManager.StartListening(ChangeEmotionForCharacter.EVT_CHARACTER_CHANGE_EMOTION, CharacterChangeEmotion);
             EventManager.StartListening(SetGauge.EVT_CHARACTER_SET_GAUGE, CharacterSetGauge);
 
+            Debug.Log("<color=green>Start listening</color>");
             EventManager.StartListening(ChangeRoomForKim.EVT_KIM_CHANGE_ROOM, KimChangeRoom);
         }
 
@@ -66,6 +65,7 @@ namespace TheWill
             EventManager.StopListening(ChangeRoomForCharacter.EVT_CHARACTER_CHANGE_ROOM_SPOT, CharacterChangeRoomSpot);
             EventManager.StopListening(ChangeEmotionForCharacter.EVT_CHARACTER_CHANGE_EMOTION, CharacterChangeEmotion);
             EventManager.StopListening(SetGauge.EVT_CHARACTER_SET_GAUGE, CharacterSetGauge);
+            Debug.Log("<color=green>Stop listening</color>");
             EventManager.StopListening(ChangeRoomForKim.EVT_KIM_CHANGE_ROOM, KimChangeRoom);
         }
 
@@ -164,9 +164,15 @@ namespace TheWill
             }
         }
 
+        public void KimChangeRoom(Room a_room)
+        {
+            KimChangeRoom((object)a_room);
+        }
+
         void KimChangeRoom(object arg0)
         {
             Room newRoom = (Room)arg0;
+            Debug.Log(newRoom);
             switch (newRoom)
             {
                 case Room.None:
@@ -184,6 +190,7 @@ namespace TheWill
                     SceneManager.LoadScene("Hall");
                     break;
                 default:
+                    Debug.LogError("Default case, add your scene here.");
                     break;
             }
             SceneManager.LoadScene("InGameMenu", LoadSceneMode.Additive);
@@ -192,6 +199,7 @@ namespace TheWill
             {
                 Destroy(gameObject);
                 Game.Current.currentRoom = newRoom;
+                Debug.Log(Game.Current.currentRoom);
             }
         }
 

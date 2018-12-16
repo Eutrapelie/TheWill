@@ -85,7 +85,10 @@ namespace TheWill
         IEnumerator LaunchClosingAndChangeRoomCoroutine(string a_roomName)
         {
             yield return new WaitForSeconds(_closingAnim.length);
-            SceneManager.LoadScene(a_roomName);
+
+            GameManager.Instance.MyCharacterController.KimChangeRoom(Room.Hall);
+
+            /*SceneManager.LoadScene(a_roomName);
             SceneManager.LoadScene("InGameMenu", LoadSceneMode.Additive);
 
             switch (a_roomName)

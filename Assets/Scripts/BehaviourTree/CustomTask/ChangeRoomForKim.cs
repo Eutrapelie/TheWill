@@ -27,7 +27,7 @@ namespace TheWill
             Debug.Log("<color=blue>[ChangeRoomForKim] OnExecute -- Room: " + newRoom + "</color>");
 
             EventManager.TriggerEvent(EVT_KIM_CHANGE_ROOM, argRoom);
-
+            Debug.Log("<color=blue>EventCalled</color>");
             EndAction(true);
         }
     }
