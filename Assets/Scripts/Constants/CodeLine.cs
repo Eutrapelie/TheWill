@@ -8,6 +8,7 @@ public enum CodeLine
     GeoffroyD1001, // Second Choix
     GeoffroyD1002, // Troisième Choix
     GeoffroyD1003, // Troisième Choix - Contrat+
+    GeoffroyD1004, // Permet de pas boucler dans le hall
 	GeoffroyD2001, // Avoir son contrat
 	GeoffroyD2002,
 	GeoffroyD2003, //Suite quête après contrat
