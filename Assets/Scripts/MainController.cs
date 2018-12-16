@@ -18,6 +18,8 @@ namespace TheWill
         [SerializeField] int _acteNumber = 1;
         [SerializeField] int _dayNumber = 1;
         [SerializeField] Room _room;
+        [SerializeField] string _roomName;
+        public string RoomName { get { return _roomName; } }
 
         [SerializeField] List<RoomSpotView> _characterSpotsGameObject;
         [SerializeField] RoomSpotView _upSpot;

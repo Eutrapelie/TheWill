@@ -86,6 +86,19 @@ namespace TheWill
         {
             yield return new WaitForSeconds(_closingAnim.length);
             SceneManager.LoadScene(a_roomName);
+            SceneManager.LoadScene("InGameMenu", LoadSceneMode.Additive);
+
+            switch (a_roomName)
+            {
+                case "Hall":
+                    Game.Current.currentRoom = Room.Hall;
+                    break;
+            }
+            /*if ((Room)a_roomName != Room.None)
+            {
+                Destroy(gameObject);
+                Game.Current.currentRoom = newRoom;
+            }*/
         }
         /*********************************************************/
         

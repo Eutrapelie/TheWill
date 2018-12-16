@@ -13,10 +13,10 @@ namespace TheWill
 
         public void Ev_DisplayRoomName()
         {
-            Color tempColor = _roomTitleText.color;
+            /*Color tempColor = _roomTitleText.color;
             tempColor.a = 1f;
             _roomTitleText.color = tempColor;
-            _roomTitleText.text = SceneManager.GetActiveScene().name;
+            _roomTitleText.text = string.IsNullOrEmpty(MainController.Instance.RoomName) ? SceneManager.GetActiveScene().name : MainController.Instance.RoomName;
 
             foreach (Room roomVisited in Game.Current.roomVisited)
             {
@@ -26,7 +26,7 @@ namespace TheWill
                     _roomTitleText.color = tempColor;
                     break;
                 }
-            }
+            }*/
         }
     }
 }
