@@ -74,6 +74,7 @@ public enum CodeLine
     LeontineD1005,//
     LeontineD1006,//
     LeontineD1007,// Jour 1, sortie vers la chambre
+    LeontineD1008,// Jour 1, permet de pas boucler sur son intro
 	
 	KimD2001,//Première entrée cuisine
 	
