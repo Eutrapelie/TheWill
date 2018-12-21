@@ -119,7 +119,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 		IEnumerator Internal_OnSubtitlesRequestInfo(SubtitlesRequestInfo info){
 
             var id = info.statement.meta;
-            Debug.Log(id);
+            //Debug.Log(id);
 			var text = Utils.Localization.GetLocalized(id);
 			var audio = info.statement.audio;
 			var actor = info.actor;

@@ -1,5 +1,10 @@
 Notes de versions
 
+Version 0.0.8 (???)
+Corrections :
+ - Dans le salon, les zones de textes ne prenaient pas en compte les options.
+
+
 Version 0.0.6 (2018/05/01)
 Ajouts :
  - Possibilité de choisir son slot de sauvegarde
