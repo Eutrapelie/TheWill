@@ -28,7 +28,7 @@ namespace TheWill
         Game() { }
 
         public Player player;
-        public List<CharacterInfo> charactersInfos;
+        public List<CharacterInfo> charactersInfos = new List<CharacterInfo>();
         public Room currentRoom;
         public List<Room> roomVisited = new List<Room>();
         public int acteNumber = 1;
@@ -37,6 +37,7 @@ namespace TheWill
         public DateTime gameDateTime;
         public LevelControllerData levelControllerData;
         public int backpackElement = 0;
+
 
         public void LoadStartLevel(int acte, int day)
         {
@@ -72,6 +73,8 @@ namespace TheWill
             }
             if (player == null)
                 player = levelControllerData.Kim;
+            
+            Debug.Log(currentRoom + " -- " + levelControllerData.StartRoom);
             currentRoom = levelControllerData.StartRoom;
             acteNumber = acte;
             dayNumber = day;
@@ -86,6 +89,7 @@ namespace TheWill
             player.codeLines = GameManager.Instance.PlayerController.PlayerChoices;
             //player.genre = GameManager.Instance.PlayerController.PlayerCard.Player.genre;
 
+            Debug.Log(GameManager.Instance.PlayerController.CurrentRoom + " -- " + Game.Current.currentRoom);
             currentRoom = GameManager.Instance.PlayerController.CurrentRoom;
 
             acteNumber = GameManager.Instance.ActeNumber;
@@ -94,6 +98,7 @@ namespace TheWill
             charactersInfos = new List<CharacterInfo>();
             foreach (CharacterCard card in GameManager.Instance.MyCharacterController.Characters)
             {
+                Debug.Log(card.CharacterInfo);
                 charactersInfos.Add(card.CharacterInfo);
             }
         }
@@ -108,21 +113,28 @@ namespace TheWill
 
         public void LoadGame(Game a_game)
         {
-            current = a_game;
-            charactersInfos = current.charactersInfos;
-            player = current.player;
-            currentRoom = current.currentRoom;
-            acteNumber = current.acteNumber;
-            dayNumber = current.dayNumber;
-            realDateTime = current.realDateTime;
+            //charactersInfos = current.charactersInfos;
+            player = a_game.player;
+            Debug.Log(currentRoom + " -- " + a_game.currentRoom);
+            currentRoom = a_game.currentRoom;
+            acteNumber = a_game.acteNumber;
+            dayNumber = a_game.dayNumber;
+            realDateTime = a_game.realDateTime;
             Debug.Log(realDateTime.ToShortDateString() + " " + realDateTime.ToShortTimeString());
             Debug.Log("[Game] LoadGame: " + DebugGameData());
             roomVisited.Clear();
-            if (current.roomVisited != null)
-                foreach (Room room in current.roomVisited)
+            if (a_game.roomVisited != null)
+                foreach (Room room in a_game.roomVisited)
                     roomVisited.Add(room);
 
-            backpackElement = current.backpackElement;
+            charactersInfos.Clear();
+            for (int i = 0; i < a_game.charactersInfos.Count; i++)
+            {
+                Debug.Log(a_game.charactersInfos[i]);
+                charactersInfos.Add(a_game.charactersInfos[i]);
+            }
+
+            backpackElement = a_game.backpackElement;
             //GameManager.Instance.PlayerController.PlayerChoices = current.player.codeLines;
             //GameManager.Instance.PlayerController.PlayerCard.Player.genre = current.player.genre;
 

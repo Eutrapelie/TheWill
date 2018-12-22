@@ -1,9 +1,11 @@
 Notes de versions
 
+Dernière ligne : Rendre l'interface localisée
 Version 0.0.8 (???)
 Ajouts :
  - Prise en compte de la localisation pour les choix
  - Un numéro de version dans le menu principal
+ - L'interface du menu principal est à présent localisée en grande partie
 
 Modifications :
  - Les textes localisés peuvent maintenant utiliser des points-virgules mais plus de tabulation
@@ -12,7 +14,10 @@ Corrections :
  - Dans le salon, les zones de textes ne prenaient pas en compte les options.
  - Dans le salon, une fois que Abigail terminait son premier discours, les lettres étaient toutes doublées, l'une en gras, l'autre sans gras.
  - Les délais se font maintenant après les caractères de pause (virgule, point, etc)
- - Les options de genre sont bien prises en compte à présent, dans les dialogues
+ - Les options de genre sont bien prises en compte à présent, dans les dialogues et dans les options
+ - La salle courante est correctement enregistrée dans les sauvegardes à présent
+ - On ne peut plus cliquer sur les objets interagibles quand on est en pause
+ - Quand on sauvegarde, on peut directement reprendre le jeu sans avoir à repasser par le menu de pause
 /**********************************************/
 
 

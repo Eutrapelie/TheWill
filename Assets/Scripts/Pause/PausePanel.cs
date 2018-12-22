@@ -15,6 +15,7 @@ namespace TheWill
         [SerializeField] Text _infoText;
 
         bool _isPanelShow;
+        public bool IsPanelShow() { return _isPanelShow; }
         //1/DialogueUGUI _dialogueObject;
         DialogueUGUILocalization _dialogueObject;
 
@@ -26,24 +27,23 @@ namespace TheWill
 
         void Start()
         {
-            ChangeVisibility(false);
-
             Color colorTemp = _infoText.color;
             colorTemp.a = 0f;
             _infoText.color = colorTemp;
             SceneChanged(SceneManager.GetActiveScene(), SceneManager.GetActiveScene());
             SceneManager.activeSceneChanged += SceneChanged;
+
+            ChangeVisibility(false);
         }
         
         void Update()
         {
             if (Input.GetKeyUp(KeyCode.Escape))
             {
-                ChangeVisibility(!_isPanelShow);
                 if (_dialogueObject == null)
                     //1/_dialogueObject = FindObjectOfType<DialogueUGUI>();
                     _dialogueObject = FindObjectOfType<DialogueUGUILocalization>();
-                _dialogueObject.isGamePaused = _isPanelShow;
+                ChangeVisibility(!_isPanelShow);
             }
         }
 
@@ -53,6 +53,7 @@ namespace TheWill
             _canvasGroupParent.alpha = a_show ? 1 : 0;
             _canvasGroupParent.interactable = a_show;
             _canvasGroupParent.blocksRaycasts = a_show;
+            _dialogueObject.isGamePaused = _isPanelShow;
         }
 
         IEnumerator DisplayInfoMessage(string a_message)
@@ -96,11 +97,10 @@ namespace TheWill
 
         public void Btn_Continue()
         {
-            ChangeVisibility(false);
             if (_dialogueObject == null)
                 //1/_dialogueObject = FindObjectOfType<DialogueUGUI>();
                 _dialogueObject = FindObjectOfType<DialogueUGUILocalization>();
-            _dialogueObject.isGamePaused = _isPanelShow;
+            ChangeVisibility(false);
         }
 
         public void UpdateDisplayAfterSave()

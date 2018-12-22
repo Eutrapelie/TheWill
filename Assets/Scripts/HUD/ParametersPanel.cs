@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +15,9 @@ namespace TheWill
     [RequireComponent(typeof(Animator))]
     public class ParametersPanel : MonoBehaviour
     {
+        static ParametersPanel _instance;
+        public static ParametersPanel Instance { get { return _instance; } }
+
         [SerializeField] Slider _volumeSlider;
         [SerializeField] Text _volumeValueText;
         [SerializeField] ParameterButtonsElement _languageElement;
@@ -28,10 +32,12 @@ namespace TheWill
         Options _tempOptions;
         public Options GetTempOptions() { return _tempOptions; }
         bool _tempOptionsChanged;
+        public Action OnOptionsChanged;
 
 
         void Awake()
         {
+            _instance = this;
             DisplayPopup(false);
         }
         /*********************************************************/
@@ -149,6 +155,8 @@ namespace TheWill
         public void Btn_SaveOptions()
         {
             SaveLoad.SaveOptions(_tempOptions);
+            if (OnOptionsChanged != null)
+                OnOptionsChanged();
         }
         /*********************************************************/
 

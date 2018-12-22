@@ -27,6 +27,16 @@ namespace TheWill
             }
         }
 
+        public void ResetCharacters()
+        {
+            /*_characters.Clear();
+            LevelController levelCtrl = ((LevelController)Resources.Load("Levels/CurrentLevel"));
+            for (int i = 0; i < levelCtrl.Data.Characters.Count)
+            {
+                _characters.Add(levelCtrl.Data.Characters[i]);
+            }*/
+        }
+
 
         void Awake()
         {
@@ -203,7 +213,7 @@ namespace TheWill
             {
                 Destroy(gameObject);
                 Game.Current.currentRoom = newRoom;
-                Debug.Log(Game.Current.currentRoom);
+                Debug.Log("<color=blue> ##" + Game.Current.currentRoom + "</color>");
             }
         }
 

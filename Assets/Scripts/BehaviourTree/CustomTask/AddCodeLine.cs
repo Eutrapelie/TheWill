@@ -28,6 +28,9 @@ namespace TheWill
             }
             else
             {
+                Debug.Log("<color=blue>[AddCodeLine] Add code line to Player: " + codeLine.ToString() + "</color>");
+                for (int i = 0; i < playerList.value.Count; i++)
+                    Debug.Log("<color=blue>" + playerList.value[i].ToString() + "</color>");
                 playerList.value.Add(codeLine);
             }
             EndAction(true);

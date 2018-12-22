@@ -25,8 +25,13 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 		public bool waitForInput;
         public bool isGamePaused;
         List<KeyCode> _keysToIgnored = new List<KeyCode>();
-        [SerializeField]
-        Utils.Lang _lang;
+
+        [Header("Localization")]
+        /*[Range(0, 1)]
+        [SerializeField] int _minPathIndex;
+        [Range(0, 1)]
+        [SerializeField] int _maxPathIndex;*/
+        [SerializeField] Utils.Lang _lang;
         public void SetLang(Utils.Lang a_lang) {
             _lang = a_lang;
             Utils.Localization.InitializeLangDictionaries(_lang);
@@ -122,8 +127,8 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 
 
 
-		IEnumerator Internal_OnSubtitlesRequestInfo(SubtitlesRequestInfo info){
-            
+		IEnumerator Internal_OnSubtitlesRequestInfo(SubtitlesRequestInfo info)
+        {            
 			var text = info.statement.text;
             _isBold = false;
             _tempBoldText = string.Empty;
@@ -285,14 +290,16 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			info.Continue();
 		}
 
-		IEnumerator CheckInput(System.Action Do){
+		IEnumerator CheckInput(System.Action Do)
+        {
 			while(!Input.anyKeyDown){
 				yield return null;
 			}
 			Do();
 		}
 
-		IEnumerator DelayPrint(float time){
+		IEnumerator DelayPrint(float time)
+        {
 			var timer = 0f;
 			while (timer < time){
 				timer += Time.deltaTime;
@@ -300,11 +307,8 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			}
 		}
 
-
-
-
-		void OnMultipleChoiceRequest(MultipleChoiceRequestInfo info){
-
+		void OnMultipleChoiceRequest(MultipleChoiceRequestInfo info)
+        {
 			optionsGroup.gameObject.SetActive(true);
 			var buttonHeight = optionButton.GetComponent<RectTransform>().rect.height;
 			optionsGroup.sizeDelta = new Vector2(optionsGroup.sizeDelta.x, (info.options.Values.Count * buttonHeight) + 20);
@@ -312,14 +316,14 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			cachedButtons = new Dictionary<Button, int>();
 			int i = 0;
 
-			foreach (KeyValuePair<IStatement, int> pair in info.options){
+			foreach (KeyValuePair<IStatement, int> pair in info.options)
+            {
 				var btn = (Button)Instantiate(optionButton);
 				btn.gameObject.SetActive(true);
 				btn.transform.SetParent(optionsGroup.transform, false);
 				btn.transform.localPosition = (Vector2)optionButton.transform.localPosition - new Vector2(0, buttonHeight * i);
-
-                var id = pair.Key.meta;
-				btn.GetComponentInChildren<Text>().text = Utils.Localization.GetLocalized(id);
+                
+				btn.GetComponentInChildren<Text>().text = pair.Key.text;
 				cachedButtons.Add(btn, pair.Value);
 				btn.onClick.AddListener( ()=> { Finalize(info, cachedButtons[btn]);	});
 				i++;
@@ -336,7 +340,8 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			}
 		}
 
-		IEnumerator CountDown(MultipleChoiceRequestInfo info){
+		IEnumerator CountDown(MultipleChoiceRequestInfo info)
+        {
 			isWaitingChoice = true;
 			var timer = 0f;
 			while (timer < info.availableTime){
@@ -353,7 +358,8 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			}
 		}
 
-		void Finalize(MultipleChoiceRequestInfo info, int index){
+		void Finalize(MultipleChoiceRequestInfo info, int index)
+        {
 			isWaitingChoice = false;
 			SetMassAlpha(optionsGroup, 1f);
 			optionsGroup.gameObject.SetActive(false);
@@ -367,7 +373,8 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			info.SelectOption(index);
 		}
 
-		void SetMassAlpha(RectTransform root, float alpha){
+		void SetMassAlpha(RectTransform root, float alpha)
+        {
 			foreach(var graphic in root.GetComponentsInChildren<CanvasRenderer>()){
 				graphic.SetAlpha(alpha);
 			}

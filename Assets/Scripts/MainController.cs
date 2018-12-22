@@ -30,12 +30,16 @@ namespace TheWill
         List<GameObject> _charactersInScene;
         GameManager _gameManager;
 
+        /*1/bool _isNewLevel
+        public void SetNewLevel(bool a_bool) { _isNewLevel = a_bool; }*/
+
 
         void Awake()
         {
             _instance = this;
             SaveLoad.LoadSaves();
-            Game.Current.LoadStartLevel(_acteNumber, _dayNumber);
+            /*1/if (_isNewLevel)
+                Game.Current.LoadStartLevel(_acteNumber, _dayNumber);*/
             LoadBehaviourTree();
             _gameManager = GameManager.Instance;
 

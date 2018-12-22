@@ -56,10 +56,14 @@ namespace TheWill {
 			for (var i = 0; i < availableChoices.Count; i++)
             {
 				var condition = availableChoices[i].condition;
-				if (condition == null || condition.CheckCondition(finalActor.transform, bb))
+                var tempStatement = availableChoices[i].statement;
+                tempStatement.text = Utils.Localization.GetLocalized(tempStatement.meta);
+                tempStatement = GenreReplace(tempStatement);
+                availableChoices[i].statement = tempStatement;
+
+                if (condition == null || condition.CheckCondition(finalActor.transform, bb))
                 {
-					var tempStatement = availableChoices[i].statement.BlackboardReplace(bb);
-                    tempStatement = GenreReplace(tempStatement);
+					tempStatement = availableChoices[i].statement.BlackboardReplace(bb);
 					finalOptions[tempStatement] = i;					
 				}
 			}

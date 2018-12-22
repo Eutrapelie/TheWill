@@ -15,18 +15,7 @@ namespace Utils
         static Lang _currentLang;
         public static Lang CurrentLang { get { return _currentLang; } }
 
-        public static void InitializeLangDictionaries(Lang a_lang = Lang.fr /*, int a_pathIndex*/)
-        {
-            _paths.Clear();
-            _paths.Add(Application.streamingAssetsPath + "/TABLE_REFERENCE_LOCALISATION_00.csv");
-            _paths.Add(Application.streamingAssetsPath + "/TABLE_REFERENCE_LOCALISATION_01.csv");
-            //_paths.Add(Application.streamingAssetsPath + "/TABLE_REFERENCE_LOCALISATION_02.csv");
-            _globalLangDictionary.Clear();
-            ParseCSV();
-            _currentLang = a_lang;
-            _currentLangDictionary = _globalLangDictionary[a_lang];
-        }
-
+        
         static void ParseCSV()
         {
             Dictionary<string, string> frenchData = new Dictionary<string, string>();
@@ -34,7 +23,7 @@ namespace Utils
 
             for (int j = 0; j < _paths.Count; j++)
             {
-                Debug.Log("ParseCSV -- File exists? " + File.Exists(_paths[j]));
+                Debug.Log("ParseCSV -- " + _paths[j] +" exists? " + File.Exists(_paths[j]));
                 string fileData = File.ReadAllText(_paths[j]);
                 //Debug.Log(fileData);
                 //fileData = fileData.Replace(',', '.');
@@ -59,9 +48,26 @@ namespace Utils
                 }
             }
 
-            Debug.Log(frenchData.Count + " -- " + englishData.Count);
+            //Debug.Log(frenchData.Count + " -- " + englishData.Count);
             _globalLangDictionary.Add(Lang.fr, frenchData);
             _globalLangDictionary.Add(Lang.en, englishData);
+        }
+        /*********************************************************/
+
+        public static void InitializeLangDictionaries(Lang a_lang = Lang.fr /*, int a_minPathIndex = 0, int a_maxPathIndex = 0*/)
+        {
+            _paths.Clear();
+            /*for (int i = a_maxPathIndex; i <= a_maxPathIndex; i++)
+            {
+                _paths.Add(Application.streamingAssetsPath + "/TABLE_REFERENCE_LOCALISATION_" + i.ToString("D2") + ".csv");
+            }*/
+            _paths.Add(Application.streamingAssetsPath + "/TABLE_REFERENCE_LOCALISATION_Interface.csv");
+            _paths.Add(Application.streamingAssetsPath + "/TABLE_REFERENCE_LOCALISATION_00.csv");
+            _paths.Add(Application.streamingAssetsPath + "/TABLE_REFERENCE_LOCALISATION_01.csv");
+            _globalLangDictionary.Clear();
+            ParseCSV();
+            _currentLang = a_lang;
+            _currentLangDictionary = _globalLangDictionary[a_lang];
         }
         /*********************************************************/
 

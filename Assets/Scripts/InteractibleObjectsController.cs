@@ -6,25 +6,16 @@ namespace TheWill
 {
     public class InteractibleObjectsController : MonoBehaviour
     {
-        private InteractibleObject _selectedObject = null;
-
+        InteractibleObject _selectedObject = null;
         public InteractibleObject SelectedObject
         {
-            get
-            {
-                return _selectedObject;
-            }
-
-            set
-            {
-                _selectedObject = value;
-            }
+            get  { return _selectedObject; }
+            set {  _selectedObject = value; }
         }
-
-        // Update is called once per frame
+        
         void Update()
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && PausePanel.Instance.IsPanelShow() == false)
             {
                 Vector2 pos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
                 RaycastHit2D hitInfo = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(pos), Vector2.zero);

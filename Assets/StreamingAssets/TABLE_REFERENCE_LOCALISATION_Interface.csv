@@ -1,0 +1,19 @@
+LINE	NUM	ROOM	CHAR	Acte	TEXT_FR	TEXT_EN	Commentaires / Intégration métadonnées
+UI_MM_NewGame		Main Menu			NOUVELLE PARTIE	NEW GAME	
+UI_MM_Continue		Main Menu			REPRENDRE	CONTINUE	
+UI_MM_Load		Main Menu			CHARGER UNE PARTIE	LOAD A GAME	
+UI_MM_Parameters		Main Menu			PARAMÈTRES 	PARAMETERS	
+UI_MM_Credits		Main Menu			CRÉDITS	CREDITS	
+UI_MM_Quit		Main Menu			QUITTER	QUIT	
+UI_PARAM_VolumeTitle		Parameters Menu			Volume du jeu	Game's volume	
+UI_PARAM_LangTitle		Parameters Menu			Langue	Language	
+UI_PARAM_ResolutionTitle		Parameters Menu			Résolution	Resolution	
+UI_PARAM_Fullscreen		Parameters Menu			Plein écran	Fullscreen	
+UI_PARAM_FontSizeTitle		Parameters Menu			Taille de la police (Dialogue)	Font size (Dialogue)	
+UI_PARAM_FontSizeLittle		Parameters Menu			Petite	Little	
+UI_PARAM_FontSizeStandard		Parameters Menu			Standard	Standard	
+UI_PARAM_FontSizeBig		Parameters Menu			Grande	Big	
+UI_PARAM_SpeedTitle		Parameters Menu			Vitesse de lecture (Dialogue)	Reading speed (Dialogue)	
+UI_PARAM_SpeedSlow		Parameters Menu			Lente	Slow	
+UI_PARAM_SpeedStandard		Parameters Menu			Standard	Standard	
+UI_PARAM_SpeedFast		Parameters Menu			Rapide	Fast	

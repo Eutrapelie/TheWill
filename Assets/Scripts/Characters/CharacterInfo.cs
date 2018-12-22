@@ -46,4 +46,9 @@ public class CharacterInfo
         typeGauge = cI.typeGauge;
         valueGauge = cI.valueGauge;
     }
+
+    public override string ToString()
+    {
+        return characterName + " [" + currentEmotion + "] in " + currentRoom + " (" + currentRoomSpot + ")";
+    }
 }

@@ -93,6 +93,7 @@ namespace TheWill
         void LoadPlayerInfo()
         {
             Instance.PlayerController.PlayerChoices = Game.Current.player.codeLines;
+            Instance.PlayerController.CurrentRoom = Game.Current.currentRoom;
             if (Instance.PlayerController.PlayerCard != null)
             {
                 Debug.Log("[GameManager] LoadPlayerInfo: " + Game.Current.player.genre);
