@@ -66,7 +66,6 @@ namespace TheWill
              }*/
         }
 
-
         void Awake()
         {
             Sprite = _spriteRenderer;
@@ -77,7 +76,7 @@ namespace TheWill
         }
 
         public bool isClicked = false;
-        private void OnClickObject(object value)
+        void OnClickObject(object value)
         {
             if (OnClickCharacterValue != null)
             {

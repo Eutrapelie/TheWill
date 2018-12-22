@@ -1,310 +1,311 @@
-LINE;NUM;ROOM;CHAR;Acte;TEXT_FR;TEXT_EN;COMMENTAIRES / intégration métadonnées
-A01N01_NAR_LIV_00010;00010;LIVINGROOM;NARRATEUR ;A01N01; Abigail est en train d’écrire quelque chose… J’ai peur de la déranger.;Abigail is writing something… I don’t want to disturb her.;Done
-A01N01_NAR_LIV_00020;00020;LIVINGROOM;NARRATEUR ;A01N01; Mais...;But…;Done
-A01N01_NAR_LIV_00030;00030;LIVINGROOM;NARRATEUR ;A01N01; Après tout, c’est elle qui m’a dit qu’ils étaient à ma disposition pour répondre à mes questions…;Well, after all, she told me they were here for me if I had any question.;Done
-A01N01_NAR_LIV_00040;00040;LIVINGROOM;NARRATEUR ;A01N01; Peut-être était-ce par politesse, elle n’a pas l’air très encline à parler aux autres de manière générale.;Was it only per courtesy? She doesn’t seem inclined to speak with other people.;Done
-A01N01_NAR_LIV_00050;00050;LIVINGROOM;NARRATEUR ;A01N01; Ah, elle m’a remarqué#e||•e# !;Ah, she just noticed me!;Done
-A01N01_Abi_LIV_00060;00060;LIVINGROOM;Abigail ;A01N01; Que puis-je faire pour vous ?;What can I do for you?;Done
-A01N01_Kim_LIV_00070;00070;LIVINGROOM;Kim ;A01N01; Tu es la fille aînée, c’est ça ?;You’re the eldest child, right, Aby?;Done
-A01N01_Abi_LIV_00080;00080;LIVINGROOM;Abigail ;A01N01; En effet. Le Manoir me revient de droit. Je vous prierai par contre de bien vouloir me vouvoyer à l’avenir.;I am. The Manor is mine by right. That said, please do not call me Aby from now on.;Done
-A01N01_Kim_LIV_00090;00090;LIVINGROOM;Kim ;A01N01; D’accord, je n’oublierai plus.;Right, sorry.;Done
-A01N01_NAR_LIV_00100;00100;LIVINGROOM;NARRATEUR ;A01N01; Elle pense qu’elle mérite le Manoir simplement parce qu’elle est l’aînée ?;She thinks the Manor should be hers just because she’s the eldest?;Done
-A01N01_NAR_LIV_00101;00100;LIVINGROOM;NARRATEUR ;A01N01;Cela ne suffira pas pour moi, mais elle n’a pas l’air d’avoir très envie de parler.;It won’t be enough for me, but she doesn’t seem to want to speak more about it.;Done
-A01N01_NAR_LIV_00102;00100;LIVINGROOM;NARRATEUR ;A01N01;Il faut que j’en apprenne plus.;I need to learn more somehow.;Done
-A01N01_Abi_LIV_00110;00110;LIVINGROOM;Abigail ;A01N01; Quelle perspicacité. Ça vous arrive souvent, de poser des questions aussi inutiles ?;What brilliant insight! Do you often ask such useless questions?;Done
-A01N01_NAR_LIV_00120;00120;LIVINGROOM;NARRATEUR ;A01N01; Pas très amicale…;She’s so unfriendly…;Done
-A01N01_Abi_LIV_00130;00130;LIVINGROOM;Abigail ;A01N01; Au lieu de répéter des évidences, je vous prierai de bien vouloir me vouvoyer à l’avenir.;Instead of repeating such obvious facts, I urge you to please stop calling me Aby from now on.;Done
-A01N01_Kim_LIV_00140;00140;LIVINGROOM;Kim ;A01N01; Mais nous étions amis d’enfance !;But we were childhood friends!;Done
-A01N01_Abi_LIV_00150;00150;LIVINGROOM;Abigail ;A01N01; Cela fait bien longtemps que nous ne le sommes plus, #Mme|M.|Mx# Luong.;We haven’t been friends for a long time now, #Mrs.|Mr.|Mx.# Luong.;Done
-A01N01_NAR_LIV_00160;00160;LIVINGROOM;NARRATEUR ;A01N01; Elle est vraiment à cheval sur la politesse. J’aurai peut-être dû faire plus attention.;She is so uptight about courtesy… What’s so wrong about calling her Aby? I need to be more careful from now on.;Done
-A01N01_Kim_LIV_00170;00170;LIVINGROOM;Kim ;A01N01; Pouvez-vous m’en dire davantage sur vous, Abigail ?;Can you tell me more about yourself, Abigail?;Done
-A01N01_Abi_LIV_00180;00180;LIVINGROOM;Abigail ;A01N01; Je n’ai pas grand-chose à dire. J’ai toujours vécu ici, avec mon frère et mes parents.;I don’t have much to say. I’ve always lived here with my brother and my parents.;Done
-A01N01_Kim_LIV_00190;00190;LIVINGROOM;Kim ;A01N01; Pourquoi devrais-je vous choisir comme héritière, à votre avis ?;Why should I choose you as the heir, from your point of view?;Done
-A01N01_Abi_LIV_00200;00200;LIVINGROOM;Abigail ;A01N01; Je ne devrais même pas avoir à me justifier. Il est évident qu’en tant qu’aînée, c’est à moi qu’il doit revenir.;I shouldn’t have to explain myself. It’s obvious that as the eldest, I should take care of the Manor.;Done
-A01N01_Abi_LIV_00201;00200;LIVINGROOM;Abigail ;A01N01;Vous ne trouverez de toute façon personne qui le mérite ici.;Anyway, you will not find anyone worthy of it in these walls.;Done
-A01N01_Abi_LIV_00210;00210;LIVINGROOM;Abigail ;A01N01; <color=#9d4184ff>Je vous aiderai à le prouver.</color>;<color=#9d4184ff>I will help you to prove it.</color>;Done
-A01N01_Kim_LIV_00220;00220;LIVINGROOM;Kim ;A01N01; Qu’avez-vous à dire sur les autres, alors ?;What do you have to say about the others, then?;Done
-A01N01_Abi_LIV_00230;00230;LIVINGROOM;Abigail ;A01N01; Pour l’instant, rien.;For now, nothing.;Done
-A01N01_Abi_LIV_00231;00230;LIVINGROOM;Abigail ;A01N01;Je préfère que vous vous forgiez votre propre idée, que vous ne puissiez pas dire que je vous influence ou que je dis du mal des autres…;I would rather let you make your mind up by yourself, so you cannot say that I influenced you or that I badmouth others.;Done
-A01N01_Abi_LIV_00232;00230;LIVINGROOM;Abigail ;A01N01;Mais <color=#9d4184ff>si vous avez des questions plus précises, plus tard, je partagerai mon avis si vous me le demandez. </color>;That said, <color=#9d4184ff>if you have more precise questions later on, I will share my opinion if you ask. </color>;Done
-A01N01_Kim_LIV_00240;00240;LIVINGROOM;Kim ;A01N01; Merci.;Thank you.;Done
-A01N01_Abi_LIV_00250;00250;LIVINGROOM;Abigail ;A01N01; Rien. Forgez-vous votre propre idée.;Nothing. Please make your mind up by yourself.;Done
-A01N01_Abi_LIV_00251;00250;LIVINGROOM;Abigail ;A01N01;Vous ne pourrez pas dire que je vous influence ou que je dis du mal des autres.;I refuse to hear you say that I have influenced you or that I badmouth others.;Done
-A01N01_Kim_LIV_00260;00260;LIVINGROOM;Kim ;A01N01; Soit.;Alright.;Done
-A01N01_Kim_LIV_00270;00270;LIVINGROOM;Kim ;A01N01; Qui est Ophélie Beaumont ?;Who is Ophélie Beaumont?;Done
-A01N01_NAR_LIV_00280;00280;LIVINGROOM;NARRATEUR ;A01N01; Elle ne semble pas très heureuse que je soulève le sujet.;She doesn’t seem very happy that I raise the topic.;Done
-A01N01_Abi_LIV_00290;00290;LIVINGROOM;Abigail ;A01N01; Bonne question. Elle est arrivée peu avant vous, en vérité. Elle soutient être notre demi-sœur.;That is a good question. She arrived a short time before you, to tell the truth. She claims to be our half-sister.;Done
-A01N01_Kim_LIV_00300;00300;LIVINGROOM;Kim ;A01N01; Vous ne l’appréciez pas ?;Do you not like her?;Done
-A01N01_Abi_LIV_00310;00310;LIVINGROOM;Abigail ;A01N01; Je ne la connais pas.;I do not know her.;Done
-A01N01_Kim_LIV_00320;00320;LIVINGROOM;Kim ;A01N01; Et vous la croyez ?;And do you believe her?;Done
-A01N01_Abi_LIV_00330;00330;LIVINGROOM;Abigail ;A01N01; Je lui laisse le bénéfice du doute. En attendant que cette histoire soit démêlée, elle est bien sûr la bienvenue au Manoir.;I give her the benefit of the doubt. While we entangle this matter, she is of course welcome to the Manor.;Done
-A01N01_NAR_LIV_00340;00340;LIVINGROOM;NARRATEUR ;A01N01; Moins la bienvenue que d’autres, c’est assez clair.;Less welcome than others, though, that’s pretty clear.;Done
-A01N01_Kim_LIV_00350;00350;LIVINGROOM;Kim ;A01N01; Que faîtes-vous ?;What are you doing?;Done
-A01N01_Abi_LIV_00360;00360;LIVINGROOM;Abigail ;A01N01; J’écris un poème.;I am writing a poem.;Done
-A01N01_Kim_LIV_00370;00370;LIVINGROOM;Kim ;A01N01; M’autoriseriez-vous à le lire ?;Would you let me read it?;Done
-A01N01_Abi_LIV_00380;00380;LIVINGROOM;Abigail ;A01N01; Je peux vous le réciter.;I can recite it to you.;Done
-A01N01_NAR_LIV_00390;00390;LIVINGROOM;NARRATEUR ;A01N01; Elle prend une inspiration, relit vaguement avant de commencer à voix haute.;She takes a long breath, vaguely glances over it and starts.;Done
-A01N01_Abi_LIV_00400;00400;LIVINGROOM;Abigail ;A01N01; <color=#9d4184ff>Manoir.</color>;<color=#9d4184ff>Dear Manor</color>;Done
-A01N01_Abi_LIV_00410;00410;LIVINGROOM;Abigail_POEME ;A01N01; Je connais tellement chacun de tes couloirs,;I know so very well each of your corridors;AFFICHAGE POEME DIFFERENT ???
-A01N01_Abi_LIV_00420;00420;LIVINGROOM;Abigail_POEME ;A01N01; Ton labyrinthe obscur où les autres s’égarent,;"The labyrinth in which the rest will lose their way;";AFFICHAGE POEME DIFFERENT ???
-A01N01_Abi_LIV_00430;00430;LIVINGROOM;Abigail_POEME ;A01N01; Que lorsqu’ils se promènent avec leur air hagard;When they wander with their crazed looks and walk astray;AFFICHAGE POEME DIFFERENT ???
-A01N01_Abi_LIV_00440;00440;LIVINGROOM;Abigail_POEME ;A01N01; Je suis seule à savoir où se tient le parloir.;I am the only one who can find the parlors.;AFFICHAGE POEME DIFFERENT ???
-A01N01_Abi_LIV_00450;00450;LIVINGROOM;Abigail ;A01N01; …;…;Done
-A01N01_Abi_LIV_00460;00460;LIVINGROOM;Abigail ;A01N01; Excusez-moi, il n’y a que la première strophe qui ressemble à quelque chose, pour l’instant.;"Please forgive me; the first stanza is the only one that is close to finished for now.";Done
-A01N01_Abi_LIV_00461;00460;LIVINGROOM;Abigail ;A01N01;J’essaie de capturer l’essence de cet endroit. Il est tellement immense, j’ai tant de salles à décrire.;I am trying to capture the essence of this place. It is so huge, I have so many rooms to describe.;Done
-A01N01_Kim_LIV_00470;00470;LIVINGROOM;Kim ;A01N01; C’est magnifique. Merci de votre confiance.;It’s astounding. Thank you for your trust.;Done
-A01N01_Abi_LIV_00480;00480;LIVINGROOM;Abigail ;A01N01; C’est personnel.;It’s personal.;Done
-A01N01_Kim_LIV_00490;00490;LIVINGROOM;Kim ;A01N01; D’accord, excusez-moi.;Alright, sorry.;Done
-A01N01_Abi_LIV_00500;00500;LIVINGROOM;Abigail ;A01N01; J’ai bien peur que ça ne vous regarde pas.;I’m afraid it is none of your business.;Done
-A01N01_Kim_LIV_00510;00510;LIVINGROOM;Kim ;A01N01; Je ne veux pas déranger plus longtemps.;I don’t want to bother you any longer.;Done
-A01N01_NAR_LIV_00520;00520;LIVINGROOM;NARRATEUR ;A01N01; Elle a toujours l’air occupé… Elle lève la tête, c’est l’occasion.;She still looks busy… She’s raising her head, now is the moment.;Done
-A01N01_Abi_LIV_00530;00530;LIVINGROOM;Abigail ;A01N01; Que puis-je faire pour vous ?;What can I do for you?;Done
-A01N01_Hip_LIV_00540;00540;LIVINGROOM;Hippolyte ;A01N01; Bienvenue au Manoir ! La dernière fois qu’on s’est vus, tu avais 13 ans et moi 8… ça date !;Welcome to the Manor! Last time we saw each other, you were 13 and I was 8. It’s been a while!;Done
-A01N01_Hip_LIV_00550;00550;LIVINGROOM;Hippolyte ;A01N01; Tu te souviens quand on montait sur le toit ?;Do you remember when we went up the roof?;Done
-A01N01_Kim_LIV_00560;00560;LIVINGROOM;Kim ;A01N01; Oui ! Ça m’étonne que toi tu t’en souviennes.;Yes! I’m surprised you do too.;Done
-A01N01_Hip_LIV_00570;00570;LIVINGROOM;Hippolyte ;A01N01; Je me demande si tu es toujours aussi téméraire !;I wonder if you’re as audacious as before!;Done
-A01N01_Kim_LIV_00580;00580;LIVINGROOM;Kim ;A01N01; Va savoir… On s’est souvent mis dans des situations impossibles, en tout cas.;Who knows! We often ended up in impossible situations, anyway.;Done
-A01N01_Hip_LIV_00590;00590;LIVINGROOM;Hippolyte ;A01N01; J’aurais bientôt l’occasion de le découvrir, je suppose. Tu as besoin de savoir quelque chose ?;I’ll soon find out, I guess. Do you need to know something?;Done
-A01N01_Hip_LIV_00600;00600;LIVINGROOM;Hippolyte ;A01N01; Tu me criais dessus quand je tirais les cheveux d’Abigail… Et tu voulais toujours me suivre sur les toits, même quand je te disais non !;You always yelled on me when I pulled Abigail’s hair… And you always wanted to follow me on the roof, even when I said no!;Done
-A01N01_Kim_LIV_00610;00610;LIVINGROOM;Kim ;A01N01; Ah bon ?;Really?;Done
-A01N01_Hip_LIV_00620;00620;LIVINGROOM;Hippolyte ;A01N01; Je me demande si tu es toujours aussi protectrice.;I wonder if you are as protective as before.;Done
-A01N01_Kim_LIV_00630;00630;LIVINGROOM;Kim ;A01N01; Va savoir… Je suis toujours aussi loyale envers mes amis, en tout cas.;Who knows! I’m still as loyal to my friends, anyway.;Done
-A01N01_Hip_LIV_00640;00640;LIVINGROOM;Hippolyte ;A01N01; Je n’en doute pas. Tu as besoin de savoir quelque chose ?;I don’t doubt it. Do you need to know something?;Done
-A01N01_Kim_LIV_00650;00650;LIVINGROOM;Kim ;A01N01; A qui penses-tu que le Manoir devrait revenir ?;Whom do you think should get the Manor?;Done
-A01N01_Hip_LIV_00660;00660;LIVINGROOM;Hippolyte ;A01N01; Très sincèrement ? Il n’y a qu’Abigail et moi qui avons un vrai droit au Manoir.;Sincerely? Only Abigail and I have a true right to the Manor.;Done
-A01N01_Hip_LIV_00661;00660;LIVINGROOM;Hippolyte ;A01N01;Geoffroy a travaillé ici mais il ne fait pas parti de la famille, même s’il a l’air de penser que ça lui donne des droits sur l’endroit.;Geoffroy has worked here but he isn’t part of the family, even though he seems to think he has rights on the place.;Done
-A01N01_Hip_LIV_00662;00660;LIVINGROOM;Hippolyte ;A01N01;Ophélie arrive de nulle part et n’a pas grandi ici… Alors même si ce qu’elle raconte est vrai, elle n’a pas vraiment de raison d’hériter.;Ophélie comes from nowhere and didn’t grow up here… So even if what she says is true, she doesn’t really have any reason of inheriting.;Done
-A01N01_Kim_LIV_00670;00670;LIVINGROOM;Kim ;A01N01; Qu’est-ce qu’elle raconte ?;What does she say?;Done
-A01N01_Hip_LIV_00680;00680;LIVINGROOM;Hippolyte ;A01N01; Apparemment, notre mère aurait été avec un autre homme avant de s’installer ici avec Augustin.;Apparently, our mother was with another man before settling here with Augustin.;Done
-A01N01_Kim_LIV_00690;00690;LIVINGROOM;Kim ;A01N01; Augustin ?;Augustin?;Done
-A01N01_Hip_LIV_00700;00700;LIVINGROOM;Hippolyte ;A01N01; Notre père, à Abigail et moi. Ma mère nous aurait caché son passé et l’existence de sa fille, Ophélie donc.;Our father – Abigail’s and mine. Our mother would have hidden her past and her other daughter – that would be Ophélie – from us.;Done
-A01N01_Hip_LIV_00701;00701;LIVINGROOM;Hippolyte ;A01N01;Elle dit que son père a appris la mort de Célestia, et que maintenant qu’il ne risquait plus de mettre le bazar dans sa vie, il pouvait lui dire qui était sa mère…;She says her father learned of Célestia’s death, and now that he didn’t risk making a mess of her life, he told her who her mother was…;Done
-A01N01_Hip_LIV_00702;00702;LIVINGROOM;Hippolyte ;A01N01;Sauf qu’Ophélie a interprété ça comme une invitation à mettre le bazar dans nos vies à nous. Mais moi, j’y crois pas trop, à tout ça, c’est trop facile, d’apprendre qu’on est un enfant caché au moment où on parle d’héritage.;"Except that Ophélie took that as a reason to make a mess of our own lives! That said, I don’t really believe in all this; it’s too easy, to learn we are a hidden child at the exact moment an inheritance glimpses over.";Done
-A01N01_Hip_LIV_00703;00703;LIVINGROOM;Hippolyte ;A01N01;Mais moi, j’y crois pas trop, à tout ça, c’est trop facile, d’apprendre qu’on est un enfant caché au moment où on parle d’héritage.;"That said, I don’t really believe in all this; it’s too easy, to learn we are a hidden child at the exact moment an inheritance glimpses over.";Done
-A01N01_Hip_LIV_00710;00710;LIVINGROOM;Hippolyte ;A01N01; Et puis vous êtes toutes des menteuses.;Also you women are all liars.;Done
-A01N01_Hip_LIV_00720;00720;LIVINGROOM;Hippolyte ;A01N01; Et puis les femmes sont toutes des menteuses.;Also women are all liars.;Done
-A01N01_Kim_LIV_00730;00730;LIVINGROOM;Kim ;A01N01; Ça, c’est complètement gratuit.;That comment is completely inappropriate.;Done
-A01N01_Hip_LIV_00740;00740;LIVINGROOM;Hippolyte ;A01N01; Quelle importance ?;So what?;Done
-A01N01_Hip_LIV_00750;00750;LIVINGROOM;Hippolyte ;A01N01; En tout cas, pour en revenir à ta question…;Anyway, to come back to your question…;Done
-A01N01_Hip_LIV_00751;00750;LIVINGROOM;Hippolyte ;A01N01;Je ne sais pas trop pourquoi tu me la poses. Je vous connais, vous les filles, vous êtes toujours solidaires…;I don’t really know why you ask. I know you girls, you’ve so much solidarity for each other.;Done
-A01N01_Hip_LIV_00752;00750;LIVINGROOM;Hippolyte ;A01N01;C’est évident que tu vas donner le Manoir à ma sœur.;It’s obvious you’ll just hang over the Manor to my sister.;Done
-A01N01_NAR_LIV_00760;00760;LIVINGROOM;NARRATEUR ;A01N01; Décidément, il a un problème avec les femmes. Je ne pensais pas qu’il était devenu si sexiste avec les années… Je sens que nos échanges vont être compliqués.;He has a real problem with women. I didn’t think he’d become so sexist with time… I feel our exchanges are going to be complicated.;Done
-A01N01_Hip_LIV_00770;00770;LIVINGROOM;Hippolyte ;A01N01;Ma sœur ne mérite pas l’héritage. Elle a été extrêmement ingrate pour tout ce qu’elle a reçu…;My sister isn’t worthy of the inheritance. She’s been very ungrateful towards everything she’s had here.;Done
-A01N01_Hip_LIV_00771;00770;LIVINGROOM;Hippolyte ;A01N01;<color=#425d97ff>Si tu en veux la preuve, je suis sûr que tu trouveras des traces de ses méfaits dans la paperasse du Manoir</color>, il y en a eu tellement au fil des années.;<color=#425d97ff>If you want proof of her wrongdoings, I’m sure you can find it in the Manor’s paperwork, there were so many as years passed by. </color>;Done
-A01N01_Kim_LIV_00780;00780;LIVINGROOM;Kim ;A01N01; Je regarderai, merci pour le conseil.;I’ll look, thanks for the advice.;Done
-A01N01_Kim_LIV_00790;00790;LIVINGROOM;Kim ;A01N01; Comment Célestia est-elle morte ?;How did Célestia die?;Done
-A01N01_Hip_LIV_00800;00800;LIVINGROOM;Hippolyte ;A01N01; …;…;Done
-A01N01_Hip_LIV_00810;00810;LIVINGROOM;Hippolyte ;A01N01; C’était…;It was…;Done
-A01N01_Kim_LIV_00820;00820;LIVINGROOM;Kim ;A01N01; Pardon, ma question était un peu brusque.;Um, sorry, my question was a little blunt.;Done
-A01N01_Hip_LIV_00830;00830;LIVINGROOM;Hippolyte ;A01N01; Non, non, c’est normal que tu te poses la question… Mais ça n’avait rien d’extravagant.;No, don’t worry, it’s obvious you would ask… But it’s not anything weird or what.;Done
-A01N01_Hip_LIV_00831;00830;LIVINGROOM;Hippolyte ;A01N01;Elle est tombée de cheval lors d’une promenade autour du Manoir…;She fell off her horse during a stroll around the Manor.;Done
-A01N01_Hip_LIV_00832;00830;LIVINGROOM;Hippolyte ;A01N01;Elle allait sûrement au galop, elle adorait tellement la vitesse. C’est tellement… stupide.;I’m sure she was galloping, she loved speed so much. It’s so… stupid.;Done
-A01N01_Kim_LIV_00840;00840;LIVINGROOM;Kim ;A01N01; Je suis désolé#e||•e#.;I’m sorry.;Done
-A01N01_Hip_LIV_00850;00850;LIVINGROOM;Hippolyte ;A01N01; Pas la peine.;Don’t be.;Done
-A01N01_Kim_LIV_00860;00860;LIVINGROOM;Kim ;A01N01; A plus tard.;See you later.;Done
-A01N01_Hip_LIV_00870;00870;LIVINGROOM;Hippolyte ;A01N01; Alors, <color=#425d97ff>tu as trouvé quelque chose contre ma sœur ? Non ? Je suis sûr qu’il y a des indices quelque part.</color>;So, <color=#425d97ff>did you find anything against my sister? No? I’m sure there are hints somewhere.</color>;Done
-A01N01_Hip_LIV_00880;00880;LIVINGROOM;Hippolyte ;A01N01; Bienvenue au Manoir.;Welcome to the Manor.;Done
-A01N01_Geo_LIV_00890;00890;LIVINGROOM;Geoffroy ;A01N01; A votre service.;At your service.;Done
-A01N01_Kim_LIV_00900;00900;LIVINGROOM;Kim ;A01N01; Que pensez-vous d’Abigail ?;What do you think of Abigail?;Done
-A01N01_Geo_LIV_00910;00910;LIVINGROOM;Geoffroy ;A01N01; C’est une femme exemplaire… Je suis heureux de travailler à son service.;She is an exemplary woman. I am very happy to work for her.;Done
-A01N01_Geo_LIV_00911;00910;LIVINGROOM;Geoffroy ;A01N01; Si je puis vous donner un conseil, essayez de respecter au mieux l’étiquette en vigueur dans un lieu comme celui-ci, la vulgarité a tendance à l’agacer.;If I may give you some advice, please try to be as courteous as possible with her, any semblance of vulgarity tends to irritate her.;Done
-A01N01_Kim_LIV_00920;00920;LIVINGROOM;Kim ;A01N01; Que pensez-vous d’Hippolyte ?;What do you think of Hippolyte?;Done
-A01N01_Geo_LIV_00930;00930;LIVINGROOM;Geoffroy ;A01N01; Un jeune homme honorable… Je suis heureux de travailler à son service.;He is an honorable young man. I am very happy to work for him.;Done
-A01N01_Geo_LIV_00931;00930;LIVINGROOM;Geoffroy ;A01N01;Si je puis vous donner un conseil, ne lui parlez pas trop de sa sœur… Ils sont adorables, mais quelque peu rivaux.;If I may give you some advice, please do not talk too much about his sister with him… They are both wonderful, but they see each other as rivals.;Done
-A01N01_Kim_LIV_00940;00940;LIVINGROOM;Kim ;A01N01; Une préférence entre les héritiers ?;Do you have a preference between the heirs?;Done
-A01N01_Geo_LIV_00950;00950;LIVINGROOM;Geoffroy ;A01N01; Oh, je ne me permettrai pas !;Oh, I wouldn’t dare!;Done
-A01N01_Geo_LIV_00960;00960;LIVINGROOM;Geoffroy ;A01N01; Mais…;That said…;Done
-A01N01_Geo_LIV_00970;00970;LIVINGROOM;Geoffroy ;A01N01; En vérité…;To tell you the truth…;Done
-A01N01_Geo_LIV_00980;00980;LIVINGROOM;Geoffroy ;A01N01; J’ai été engagé tout jeune par les Castheran.;I’ve been appointed to the Castheran very young.;Done
-A01N01_Geo_LIV_00981;00980;LIVINGROOM;Geoffroy ;A01N01;J’ai depuis perdu <color=#787981ff>mon contrat</color> de travail, il doit être quelque part dans le Manoir, mais qui saurait dire où ?;Since then, I’ve lost my work <color=#787981ff>contract</color>. It must be somewhere in the Manor, but who could say where?;Done
-A01N01_Geo_LIV_00982;00980;LIVINGROOM;Geoffroy ;A01N01;En tout cas, les Castheran m’avaient promis, à l’époque, que pour récompenser mes bons et loyaux services, ils me remettraient le Manoir à leur mort.;In any case, the Castheran had promised me, back then, that to reward me for my loyal services, I would inherit the Manor.;Done
-A01N01_Geo_LIV_00983;00980;LIVINGROOM;Geoffroy ;A01N01;Si ce papier était retrouvé, la question d’à qui revient le Manoir ne se poserait plus…;If this contract was found again, the question of the Manor’s legacy would be definitely answered.;Done
-A01N01_Geo_LIV_00984;00980;LIVINGROOM;Geoffroy ;A01N01;Accepteriez-vous de m’aider ? J’ai tant fait pour cette famille.;Would you help me? I’ve done so much for this family.;Done
-A01N01_Kim_LIV_00990;00990;LIVINGROOM;Kim ;A01N01; Bien sûr ! Je ferai tout mon possible.;Of course! I’ll do everything I can;Done
-A01N01_Geo_LIV_01000;01000;LIVINGROOM;Geoffroy ;A01N01; Merci, c’est très gentil à vous.;Thank you, it is so nice of you.;Done
-A01N01_Kim_LIV_01010;01010;LIVINGROOM;Kim ;A01N01; On verra.;We’ll see.;Done
-A01N01_Geo_LIV_01020;01020;LIVINGROOM;Geoffroy ;A01N01; Si vous acceptez de considérer la possibilité que je puisse être héritier, j’en serai très honoré.;If you accept to even consider me as an heir, I would be honored.;Done
-A01N01_Kim_LIV_01030;01030;LIVINGROOM;Kim ;A01N01; Certainement pas.;Obviously not.;Done
-A01N01_Geo_LIV_01040;01040;LIVINGROOM;Geoffroy ;A01N01; Ah… Très bien…;Oh… Very well.;Done
-A01N01_Geo_LIV_01041;01040;LIVINGROOM;Geoffroy ;A01N01;Dans ce cas, n’hésitez pas à me demander si vous avez besoin d’aide pour choisir entre les autres candidats, je me tiens à votre disposition.;In that case, please do not hesitate to ask me for any help you may need in choosing between the other candidates. I am entirely at your disposal.;Done
-A01N01_Kim_LIV_01050;01050;LIVINGROOM;Kim ;A01N01; Merci, je n’ai besoin de rien pour le moment.;Thank you, I don’t need anything right now.;Done
-A01N01_Geo_LIV_01060;01060;LIVINGROOM;Geoffroy ;A01N01; Ah, Kim ! Avez-vous pris le temps de chercher mon <color=#787981ff>contrat</color> ?;Oh, Kim ! Did you take the time to look for my <color=#787981ff>contract</color>?;Done
-A01N01_Geo_LIV_01061;01060;LIVINGROOM;Geoffroy ;A01N01;Non ? Oh, ce n’est pas grave… C’est à moi de vous servir.;No? Oh, no matter, it’s my job to serve you and not the other way around.;Done
-A01N01_Geo_LIV_01062;01060;LIVINGROOM;Geoffroy ;A01N01;Que puis-je pour vous ?;What can I do for you?;Done
-A01N01_Geo_LIV_01070;01070;LIVINGROOM;Geoffroy ;A01N01; A votre service.;At your service.;Done
-A01N01_Ern_LIV_01080;01080;LIVINGROOM;Ernest ;A01N01; Enchanté. Je suis heureux de te retrouver !;Delighted. It’s nice to see you again!;Done
-A01N01_Kim_LIV_01090;01090;LIVINGROOM;Kim ;A01N01; Moi aussi.;Same here.;Done
-A01N01_NAR_LIV_01100;01100;LIVINGROOM;NARRATEUR ;A01N01; Je parlais beaucoup à Ernest, à l’époque. Mais quand mes parents ont déménagé, j’ai perdu contact avec tout le monde.;I talked a lot with Ernest, back then. When my parents moved away though, I lost contact with everyone. ;Done
-A01N01_NAR_LIV_01101;01100;LIVINGROOM;NARRATEUR ;A01N01;Je ne sais pas exactement pourquoi… Est-ce moi qui n’ai pas fait l’effort ?;I don’t really know why… Is it I who didn’t put the effort into it?;Done
-A01N01_NAR_LIV_01102;01100;LIVINGROOM;NARRATEUR ;A01N01;En tout cas, j’ai envie de savoir ce qu’ils sont devenus. Essayer de rattraper le temps perdu.;Anyway, I want to know what they all became.;Done
-A01N01_NAR_LIV_01103;01100;LIVINGROOM;NARRATEUR ;A01N01;Comprendre ce qu’il s’est passé, aussi, pour qu’on s’éloigne tous autant les uns des autres.;I’ll try to make up for lost time and to understand what happened that pulled us so far apart from each other.;Done
-A01N01_Ern_LIV_01110;01110;LIVINGROOM;Ernest ;A01N01; J’ai repris contact avec Abigail et Hippolyte seulement récemment, c’est amusant de voir toute notre petite bande du passé se réunir comme ça.;I contacted Abigail and Hippolyte again only recently, it’s so funny to see our whole little group from the past gathering in this way.;Done
-A01N01_Kim_LIV_01120;01120;LIVINGROOM;Kim ;A01N01; « Amusant » n’est pas vraiment le mot…;Funny isn’t really the word…;Done
-A01N01_Ern_LIV_01130;01130;LIVINGROOM;Ernest ;A01N01; Oui, c’est dommage que ce soit dans ces circonstances. Et il manque Tayla, aussi.;Yes, it’s too bad it’s under these circumstances. Tayla is missing, too.;Done
-A01N01_Kim_LIV_01140;01140;LIVINGROOM;Kim ;A01N01; C’est vrai.;That’s true.;Done
-A01N01_NAR_LIV_01150;01150;LIVINGROOM;NARRATEUR ;A01N01; A l’époque, on habitait tous au village, et Célestia nous invitait toujours jouer au Manoir.;Back then, we all lived in the village, and Célestia would invite us to play at the Manor.;Done
-A01N01_NAR_LIV_01151;01150;LIVINGROOM;NARRATEUR ;A01N01;Abigail et Tayla ont le même âge et étaient inséparables, Ernest et moi aussi, et Hippolyte, même s’il est plus jeune, avait aussi sa place avec nous.;Abigail and Tayla are the same age and were inseparable, Ernest and I too, and Hippolyte, even though he was younger, really had a place among us.;Done
-A01N01_Ern_LIV_01160;01160;LIVINGROOM;Ernest ;A01N01; Elle est venue à l’enterrement, mais elle a dû repartir pour des examens. En tout cas, moi, je reste, et je fais de mon mieux pour consoler mes amis.;She came to the funerals, but then she had to leave for exams. Anyway, I’m staying for now, and I’ll try my best to comfort my friends.;Done
-A01N01_Ern_LIV_01170;01170;LIVINGROOM;Ernest ;A01N01; Abigail ne le montre pas, mais elle est dévastée.;Abigail doesn’t show it, but she’s devastated.;Done
-A01N01_Ern_LIV_01180;01180;LIVINGROOM;Ernest ;A01N01; J’espère que te ne les blesseras pas.;I hope you won’t hurt them.;Done
-A01N01_Kim_LIV_01190;01190;LIVINGROOM;Kim ;A01N01; Tu t’entends toujours aussi bien avec Hippolyte?;Do you still get along with Hippolyte?;Done
-A01N01_Ern_LIV_01200;01200;LIVINGROOM;Ernest ;A01N01; Entre nous, il est resté très gamin dans sa tête, malgré ses grands airs.;Let’s keep this between us, but he’s still very childish. He tries to look mature but he’s too theatrical about it.;Done
-A01N01_Ern_LIV_01201;01200;LIVINGROOM;Ernest ;A01N01;Je ne pense pas qu’il soit capable de gérer un manoir, Abigail est beaucoup plus organisée.;I don’t think he could take care of the Manor, and Abigail is way more organized than he is.;Done
-A01N01_NAR_LIV_01210;01210;LIVINGROOM;NARRATEUR ;A01N01; Ce n’était pas trop la question…;That wasn’t really my question…;Done
-A01N01_Kim_LIV_01220;01220;LIVINGROOM;Kim ;A01N01; Que penses-tu d’Ophélie ?;What do you think of Ophélie?;Done
-A01N01_Ern_LIV_01230;01230;LIVINGROOM;Ernest ;A01N01; Aucune idée. Tu sais, elle vient à peine de débarquer. Elle dit qu’elle est la fille de Célestia.;No idea. You know, she just arrived here. She says she is Célestia’s daughter.;Done
-A01N01_Ern_LIV_01231;01230;LIVINGROOM;Ernest ;A01N01; Franchement, je ne comprends pas pourquoi elle est là.;Sincerely, I don’t understand what she’s doing here.;Done
-A01N01_Ern_LIV_01232;01230;LIVINGROOM;Ernest ;A01N01;Si elle n’a jamais eu de lien avec cette famille, ce n’est pas le moment de soudain réclamer ses droits.;If she never had any link to this family, it’s not exactly the right moment to suddenly claim rights.;Done
-A01N01_Ern_LIV_01233;01230;LIVINGROOM;Ernest ;A01N01;C’est obscène, ils sont en plein deuil.;It’s obscene, everyone is mourning.;Done
-A01N01_Kim_LIV_01240;01240;LIVINGROOM;Kim ;A01N01; Qu’est-ce que tu deviens ?;What have you been up to these past years?;Done
-A01N01_Ern_LIV_01250;01250;LIVINGROOM;Ernest ;A01N01; Et bien ça roule ! J’ai lancé ma propre boîte, « Wait&Watch », avec un petit jeu de mot sur « watch », qui veut dire à la fois observer et montre !;Well, everything is going great! I’ve launched my own company, “Wait&Watch”, with a word game on Watch, you know, watching your watch?;Done
-A01N01_Ern_LIV_01251;01250;LIVINGROOM;Ernest ;A01N01;Parce que oui, je vends des montres. Tu as vu la mienne ? Elles sont vraiment classes.;Because, yes, I sell watches. Did you see mine? They’re really awesome.;Done
-A01N01_Ern_LIV_01252;01250;LIVINGROOM;Ernest ;A01N01;Tu n’en as pas, tu veux peut-être m’en acheter une ?;I see you don’t have one, maybe you’d like to buy one?;Done
-A01N01_Kim_LIV_01260;01260;LIVINGROOM;Kim ;A01N01; On en reparle plus tard ?;Maybe later?;Done
-A01N01_Ern_LIV_01270;01270;LIVINGROOM;Ernest ;A01N01; Oui, je sais bien que ce n'est pas le moment, je plaisantais ! On en reparlera, je te montrerai le catalogue.;Yes, I know it's not really the right time, I was kidding! We can speak about it later, I’ll show you the catalogue, aha…;Done
-A01N01_Kim_LIV_01280;01280;LIVINGROOM;Kim ;A01N01; Tu rigoles ? Ce n’est pas le moment !;Are you kidding? It’s not the right moment!;Done
-A01N01_Kim_LIV_01290;01290;LIVINGROOM;Kim ;A01N01; Les Castheran sont en deuil, je dois régler une histoire d’héritage et tu me parles de montres ?;The Castheran are in mourning, I have to deal with the will, and you’re trying to sell me a watch?;Done
-A01N01_Ern_LIV_01300;01300;LIVINGROOM;Ernest ;A01N01; Pas la peine de t’en prendre à moi, je plaisantais ! C’était juste histoire de te donner des nouvelles. Je ne suis pas désespéré à ce point, aha.;Don’t get mad at me like that, I was only kidding! It was just a way of telling you about the latest news. I’m not so desperate, aha.;Done
-A01N01_Kim_LIV_01310;01310;LIVINGROOM;Kim ;A01N01; Au revoir.;Bye.;Done
-A01N01_Kim_LIV_01320;01320;LIVINGROOM;Kim ;A01N01; Que penses-tu d’Abigail ?;What do you think about Abigail?;Done
-A01N01_Ern_LIV_01330;01330;LIVINGROOM;Ernest ;A01N01; Elle irradiait déjà d’une aura incroyable quand nous étions enfants, mais maintenant, c’est encore plus marqué…;She was already beaming with an incredible aura when we were children, but now it’s even more obvious…;Done
-A01N01_Ern_LIV_01331;01330;LIVINGROOM;Ernest ;A01N01;Promets-moi de ne pas le lui répéter, mais j’étais déjà amoureux d’elle à l’époque.;Promise me not to tell her, but I already was in love with her back then.;Done
-A01N01_Kim_LIV_01340;01340;LIVINGROOM;Kim ;A01N01; Promis.;I promise.;Done
-A01N01_Ern_LIV_01350;01350;LIVINGROOM;Ernest ;A01N01; Je n’ai jamais eu la possibilité de le lui avouer.;I never had the opportunity to tell her.;Done
-A01N01_Ern_LIV_01351;01350;LIVINGROOM;Ernest ;A01N01;Aujourd’hui, tous mes sentiments reviennent au galop et prennent toute la place, je ne pense qu’à elle en permanence, c’est tellement difficile de la savoir si triste.;Today, all my feelings are coming back and are taking the whole space, I think about her all the time and it’s so hard to know she’s so sad.;Done
-A01N01_Ern_LIV_01352;01350;LIVINGROOM;Ernest ;A01N01;Je ne sais pas comment le lui dire, elle est si difficile à émouvoir. Peut-être pourrais-tu m’aider à trouver l’occasion ?;I don’t really know how to let her know, she’s so hard to move. Maybe you can help me find a way?;Done
-A01N01_Kim_LIV_01360;01360;LIVINGROOM;Kim ;A01N01; Bien sûr, tout pour un ancien ami !;Sure, anything for an old friend!;Done
-A01N01_Ern_LIV_01370;01370;LIVINGROOM;Ernest ;A01N01; Merci, je n’en attendais pas moins ! On en reparlera dans un lieu plus discret.;Thanks, I didn’t expect any less! Let’s talk about it again in a more private place.;Done
-A01N01_Kim_LIV_01380;01380;LIVINGROOM;Kim ;A01N01; Je ne sais pas, peut-être.;I don’t know, maybe.;Done
-A01N01_Ern_LIV_01390;01390;LIVINGROOM;Ernest ;A01N01; D’accord, je te redemanderai.;Okay, I’ll ask you again later.;Done
-A01N01_Kim_LIV_01400;01400;LIVINGROOM;Kim ;A01N01; Débrouille-toi tout seul, ce n’est pas mon problème.;Sort things out yourself, it’s not my problem.;Done
-A01N01_Kim_LIV_01410;01410;LIVINGROOM;Kim ;A01N01; Sincèrement, tu trouves que c’est le moment de penser à ta vie amoureuse ?;Do you seriously think it’s the right time to think of your love life?;Done
-A01N01_Ern_LIV_01420;01420;LIVINGROOM;Ernest ;A01N01; Je n’ai pas dit de m’aider tout de suite… Mais puisque tu le prends comme ça.;I didn’t say help me now… but if you take it this way, whatever.;Done
-A01N01_Ern_LIV_01430;01430;LIVINGROOM;Ernest ;A01N01; Oh… Si tu demandes pour l’héritage, je pense qu’elle saura très bien s’occuper du Manoir et qu’elle devrait l’avoir.;Well… If you’re asking because of the will, I think she’d take a good care of the Manor and that she should have it.;Done
-A01N01_Ern_LIV_01431;01430;LIVINGROOM;Ernest ;A01N01;Elle est très intègre. Mais sinon, à un niveau personnel…;She’s a very upright person. On a personal level though…;Done
-A01N01_Ern_LIV_01432;01430;LIVINGROOM;Ernest ;A01N01;Je ne te conseille pas d’essayer de la côtoyer. Ce n’est vraiment pas une personne appréciable.;I don’t advise you to try and be friend with her. She isn't very fun to be around.;Done
-A01N01_Ern_LIV_01433;01430;LIVINGROOM;Ernest ;A01N01;Elle m’a déjà dit qu’elle te méprisait.;She already told me she despises you.;Done
-A01N01_NAR_LIV_01440;01440;LIVINGROOM;NARRATEUR ;A01N01; Oh… C’est vrai qu’elle est froide, mais je ne pensais pas qu’elle me détestait déjà, juste qu’elle était distante avec tout le monde.;Oh… It’s true she is cold, but I didn’t think she already hated me, just that she was distant with everyone.;Done
-A01N01_NAR_LIV_01441;01440;LIVINGROOM;NARRATEUR ;A01N01; Est-ce que j’ai fait quelque chose ? Quand est-ce qu’elle a pu dire ça à Ernest, alors que je viens à peine d’arriver ?;Did I do something wrong? …And when did she tell Ernest that? I just arrived.;Done
-A01N01_Kim_LIV_01450;01450;LIVINGROOM;Kim ;A01N01; Merci pour le conseil.;Thank you for the advice.;Done
-A01N01_Ern_LIV_01460;01460;LIVINGROOM;Ernest ;A01N01; Enchanté.;Nice to see you.;Done
-A01N01_Kim_LIV_01470;01470;LIVINGROOM;Kim ;A01N01; Ophélie Beaumont, c’est bien ça ?;Ophélie Beaumont, isn’t it?;Done
-A01N01_Oph_LIV_01480;01480;LIVINGROOM;Ophélie ;A01N01; Ou-Oui, c’est moi.;Y-yes, it’s m-me.;Done
-A01N01_Kim_LIV_01490;01490;LIVINGROOM;Kim ;A01N01; Excusez-moi, je ne crois pas vous connaître. Est-ce que vous pouvez m’en dire plus sur vous ?;Forgive me, I don’t know anyone well here. Can you tell me more about yourself?;Done
-A01N01_Oph_LIV_01500;01500;LIVINGROOM;Ophélie ;A01N01; Bien sûr. Je… Comment dire, je… C’est…;O-of course. I… Well, I… It’s…;Done
-A01N01_NAR_LIV_01510;01510;LIVINGROOM;NARRATEUR ;A01N01; Elle rit nerveusement.;She laughs nervously.;Done
-A01N01_Oph_LIV_01520;01520;LIVINGROOM;Ophélie ;A01N01; C’est compliqué. J’ai grandi loin d’ici, chez mon p-père, en Normandie. Le v-voyage a été long. J-je n’ai jamais connu ma m-mère.;It’s c-c-complicated. I grew up far f-from here, with my f-father, in Normandy. The t-trip was long. I never knew m-my m-mother.;Done
-A01N01_NAR_LIV_01530;01530;LIVINGROOM;NARRATEUR ;A01N01; Elle est tellement stressée qu’on dirait qu’elle récite une présentation devant une classe…;She’s so stressed out she sounds like she’s reciting a presentation backward in front of a classroom…;Done
-A01N01_Oph_LIV_01540;01540;LIVINGROOM;Ophélie ;A01N01; Mon père m’a seulement donné son i-identité récemment…;M-my father only t-told me her ident-tity recently…;Done
-A01N01_Kim_LIV_01550;01550;LIVINGROOM;Kim ;A01N01; Qui est-ce ?;And who’s she?;Done
-A01N01_Oph_LIV_01560;01560;LIVINGROOM;Ophélie ;A01N01; P-pardon… Il m’a dit que c’était Cé-Célestia Castheran. Il suivait sa vie de loin, mais n’a ja-jamais voulu me dire qui elle était.;Oh, s-sorry… He s-said she was C-Célestia Castheran. He f-followed her life f-from a-a-afar, but he never accepted to t-tell me who she was.;Done
-A01N01_Oph_LIV_01561;01560;LIVINGROOM;Ophélie ;A01N01;Je-je comprends pourquoi, maintenant.;I understand why, n-now.;Done
-A01N01_NAR_LIV_01570;01570;LIVINGROOM;NARRATEUR ;A01N01; J’essaie de sourire, de la rassurer pour qu’elle continue.;I try to smile and to reassure her so she would continue.;Done
-A01N01_Oph_LIV_01580;01580;LIVINGROOM;Ophélie ;A01N01; J-je crois que ma mère n’a jamais parlé de moi et de mon père à sa nouvelle f-famille.;I think my m-mother never s-said a word about m-me and my dad to her new f-family.;Done
-A01N01_Oph_LIV_01581;01580;LIVINGROOM;Ophélie ;A01N01;Mon père ne voulait pas la dé-déranger… Il n’a jamais rien dit, jamais cherché à la recontacter…;My dad didn’t want to upset her… He never s-said anything, never t-tried to contact her again…;Done
-A01N01_Oph_LIV_01582;01580;LIVINGROOM;Ophélie ;A01N01;Mais… je voulais venir à son en-enterrement, savoir… savoir qui elle était… C’est pour ça que je suis ici.;B-b-but… I wanted to come to her f-funerals, to know… know who she was… That’s why I’m here.;Done
-A01N01_Kim_LIV_01590;01590;LIVINGROOM;Kim ;A01N01; Abigail n’a pas l’air de vous apprécier…;Abigail doesn’t seem to like you…;Done
-A01N01_Oph_LIV_01600;01600;LIVINGROOM;Ophélie ;A01N01; En effet… En même temps, j-je la comprends.;Indeed… B-but I understand her.;Done
-A01N01_Oph_LIV_01601;01600;LIVINGROOM;Ophélie ;A01N01;Que penseriez-vous, s-si quelqu’un arrivait de nulle part et vous annonçait être votre s-sœur ?;What would you think, if s-s-somebody arrived f-from who knows where and t-told you she was your s-s-sister?;Done
-A01N01_NAR_LIV_01610;01610;LIVINGROOM;NARRATEUR ;A01N01; Surtout au moment où celle qui pourrait le confirmer vient de mourir…;Especially when the only one who can confirm it just died…;Done
-A01N01_Kim_LIV_01620;01620;LIVINGROOM;Kim ;A01N01; Je me méfierais.;I would stay on my guards.;Done
-A01N01_Oph_LIV_01630;01630;LIVINGROOM;Ophélie ;A01N01; Exactement… Personne ne veut cr-croire que je suis la fille de Cé-Célestia.;Exactly. No one wants to b-believe I am C-Célestia’s daughter.;Done
-A01N01_Kim_LIV_01640;01640;LIVINGROOM;Kim ;A01N01; Je l’accueillerai à bras ouverts, c’est une chance !;I would welcome her with open arms;Done
-A01N01_Oph_LIV_01650;01650;LIVINGROOM;Ophélie ;A01N01; Oh ! C’est gentil. J’aurais aimé être de votre f-famille, pour avoir un tel accueil.;Oh! That’s s-so nice of you. I would have loved to b-be f-from your f-family, and b-be welcomed so.;Done
-A01N01_Oph_LIV_01651;01650;LIVINGROOM;Ophélie ;A01N01;Ici, personne ne veut croire que je suis la fille de Cé-Célestia. ;Here, no one wants to b-believe I am C-Célestia’s daughter.;Done
-A01N01_Kim_LIV_01660;01660;LIVINGROOM;Kim ;A01N01; A la mort de ma mère ? Je la mettrai à la porte.;At my mother’s funerals? I would kick her out.;Done
-A01N01_Oph_LIV_01670;01670;LIVINGROOM;Ophélie ;A01N01; Je… Oui, je comprends, A-Abigail a déjà été bien g-gentille de me laisser entrer.;I… Yes, I understand, Ab-b-bigail has been v-very nice to invite m-me in.;Done
-A01N01_Oph_LIV_01671;01670;LIVINGROOM;Ophélie ;A01N01;Je lui suis redevable. C’est normal que personne ne veuille croire que je suis la fille de Cé-Célestia.;I’m so grateful to her. It’s n-normal that no one wants to b-believe I am C-Célestia’s daughter.;Done
-A01N01_NAR_LIV_01680;01680;LIVINGROOM;NARRATEUR ;A01N01; Je n’aurais peut-être pas dû être aussi franc#he||•he#. Elle a l’air de prendre les choses très à cœur, je ne voudrais pas la blesser par inadvertance.;Maybe I shouldn’t have be so outspoken. She seems to take everything to heart. I wouldn’t want to hurt her without meaning to.;Done
-A01N01_Oph_LIV_01690;01690;LIVINGROOM;Ophélie ;A01N01; C’est pourtant vrai, j-je crois. J’espérais que quelqu’un en saurait davantage sur moi ici…;I really think it’s true, though. I hoped s-somebody would know more about m-me here…;Done
-A01N01_Oph_LIV_01691;01690;LIVINGROOM;Ophélie ;A01N01;Peut-être y-a-t-il <color=#e27941ff>une preuve quelque part, dans les affaires de ma m-mère ? </color>;Maybe <color=#e27941ff>there’s p-proof somewhere, in my m-mother’s stuff? </color>;Done
-A01N01_Oph_LIV_01692;01690;LIVINGROOM;Ophélie ;A01N01;Une photo de moi enfant, par exemple… J’ai p-peur d’espérer.;A p-picture of me as a child for example… I’m s-so afraid t-to hope.;Done
-A01N01_Oph_LIV_01700;01700;LIVINGROOM;Ophélie ;A01N01; …;…;Done
-A01N01_Oph_LIV_01710;01710;LIVINGROOM;Ophélie ;A01N01; Vous… Vous allez avoir le droit de regarder partout…;You… You may look everywhere in the M-Manor, right?;Done
-A01N01_Oph_LIV_01711;01710;LIVINGROOM;Ophélie ;A01N01;Est-ce-que, par hasard, vous-vous pourriez m’aider à p-prouver que je suis leur demi-sœur ?;C-could you, by any chance, help me p-prove to Abigail and Hippolyte that I’m their half-s-sister ?;Done
-A01N01_Oph_LIV_01712;01710;LIVINGROOM;Ophélie ;A01N01;Je n’ai pas le droit d’aller dans <b>la chambre de Célestia</b>.;They f-forbade me to enter <b>C-Célestia’s room</b>.;Done
-A01N01_NAR_LIV_01720;01720;LIVINGROOM;NARRATEUR ;A01N01; Ça ne me coûte rien… Et si ce qu’elle dit est vrai, elle peut elle aussi prétendre au Manoir.;On the one hand, it costs nothing for me to try… And if what she says is true, she could also ask for the Manor.;Done
-A01N01_NAR_LIV_01721;01720;LIVINGROOM;NARRATEUR ;A01N01;C’est important pour moi de découvrir la vérité.;It’s important for me to find the truth.;Done
-A01N01_NAR_LIV_01722;01720;LIVINGROOM;NARRATEUR ;A01N01; D’un autre côté, ça me complique la tâche, et elle se donne peut-être des airs faussement timides pour récupérer l’héritage…;On the other hand, it’s more work for me. Maybe she gives herself fake, timid looks just to get the inheritance…;Done
-A01N01_Kim_LIV_01730;01730;LIVINGROOM;Kim ;A01N01; Je ferai tout mon possible.;I’ll do whatever I can.;Done
-A01N01_Oph_LIV_01740;01740;LIVINGROOM;Ophélie ;A01N01; M-Merci beaucoup ! Je-Je suis vraiment touchée. Personne n’a l’air de vraiment vouloir m’aider, ici.;T-thank you so much! I’m v-very grateful. N-no one really wants to help me here.;Done
-A01N01_Kim_LIV_01750;01750;LIVINGROOM;Kim ;A01N01; Si je tombe sur quelque chose d’intéressant, je vous le dirai.;If I find something by chance, I’ll tell you;Done
-A01N01_Oph_LIV_01760;01760;LIVINGROOM;Ophélie ;A01N01; M-Merci. N’importe quoi qui puisse m’aider à savoir qui-qui je suis me ferait plaisir.;T-thank you. Anything that c-can help me know who I am would m-make m-me happy.;Done
-A01N01_Kim_LIV_01770;01770;LIVINGROOM;Kim ;A01N01; Je n’ai aucune raison d’avoir confiance en vos intentions.;I can’t trust you;Done
-A01N01_Oph_LIV_01780;01780;LIVINGROOM;Ophélie ;A01N01; J-Je comprends. J’espérais que… enfin, même si vous ne me c-croyez pas, vous êtes là pour trancher entre les héritiers.;I understand. I hoped that… Well, even if you d-don’t b-believe me, you’re here to choose an heir.;Done
-A01N01_Oph_LIV_01781;01780;LIVINGROOM;Ophélie ;A01N01;Alors je p-pensais que vous voudriez chercher la v-vérité, et que vous pourriez me dire…;So I thought you would want to know the t-t-truth, and that you could t-tell me…;Done
-A01N01_Oph_LIV_01782;01780;LIVINGROOM;Ophélie ;A01N01;Mais… C’est comme vous voulez. J-je comprends.;B-but… You d-decide. I understand.;Done
-A01N01_Kim_LIV_01790;01790;LIVINGROOM;Kim ;A01N01; Qu’est-ce que vous savez de Célestia ?;What do you know about Célestia?;Done
-A01N01_Oph_LIV_01800;01800;LIVINGROOM;Ophélie ;A01N01; M-Malheureusement pas grand-chose. J’ai appris récemment qu’elle était ma mère b-biologique. Mon père m’a uniquement parlé d’elle à cause de…;Unfortunately not much. I l-learned recently that she was my b-biological m-mother. My dad only t-told me about her because of…;Done
-A01N01_Oph_LIV_01810;01810;LIVINGROOM;Ophélie ;A01N01; De sa…;Of her…;Done
-A01N01_Oph_LIV_01820;01820;LIVINGROOM;Ophélie ;A01N01; De son décès.;Of her death.;Done
-A01N01_Oph_LIV_01830;01830;LIVINGROOM;Ophélie ;A01N01; Je sais juste qu’elle aimait la m-musique.;I just know she likes m-music.;Done
-A01N01_Oph_LIV_01840;01840;LIVINGROOM;Ophélie ;A01N01; …;…;Done
-A01N01_Oph_LIV_01850;01850;LIVINGROOM;Ophélie ;A01N01; Excusez-moi, je préfère ne pas en parler maintenant.;I’m sorry, I’d rather n-not talk ab-b-bout it n-now.;Done
-A01N01_Kim_LIV_01860;01860;LIVINGROOM;Kim ;A01N01; Je reviens plus tard.;I’ll come back later.;Done
-A01N01_Oph_LIV_01870;01870;LIVINGROOM;Ophélie ;A01N01; B-Bonsoir !;G-Good evening!;Done
-A01N01_Léo_HAL_01880;01880;HALL;Léontine ;A01N01; B’soir. Attention où vous mettez les pieds.;Ev’ning. Be car’ful where you walk.;Done
-A01N01_Kim_HAL_01890;01890;HALL;Kim ;A01N01; Bonsoir. Vous êtes ?;Good evening. You are?;Done
-A01N01_Léo_HAL_01900;01900;HALL;Léontine ;A01N01; Mm ? Léontine. La gouvernante.;Mm? Léontine. The housekeeper.;Done
-A01N01_Kim_HAL_01910;01910;HALL;Kim ;A01N01; Vous êtes ici depuis longtemps ?;Have you been here a long time?;Done
-A01N01_Léo_HAL_01920;01920;HALL;Léontine ;A01N01; Vingt ans et des poussières.;Twenty years and counting.;Done
-A01N01_Kim_HAL_01930;01930;HALL;Kim ;A01N01; Vous connaissez bien Hippolyte ?;You know Hippolyte well, don’t you?;Done
-A01N01_Léo_HAL_01940;01940;HALL;Léontine ;A01N01; C’est un vrai gamin. Honnête et sincère, d’accord, mais immature à souhait.;He’s a brat. Honest and sincere, right, but so childish.;Done
-A01N01_Kim_HAL_01950;01950;HALL;Kim ;A01N01; Que fait Ernest ici ?;What is Ernest doing here?;Done
-A01N01_Léo_HAL_01960;01960;HALL;Léontine ;A01N01; Oh, il est toujours dans mes pattes, lui… Tellement fou amoureux d’Abigail qu’il la suit partout comme un p’tit chien !;Oh, that one’s always under my feet… So head over heels in love with Abigail, he follows her around like a little dog!;Done
-A01N01_NAR_HAL_01970;01970;HALL;NARRATEUR ;A01N01; Tiens, bizarre, il m’a pourtant dit qu’il ne l’aimait pas à un niveau personnel.;That’s strange. Didn’t he tell me he didn’t like her on a personal level?;Done
-A01N01_Kim_HAL_01980;01980;HALL;Kim ;A01N01; Que pensez-vous de la situation ?;What do you think about the situation?;Done
-A01N01_Léo_HAL_01990;01990;HALL;Léontine ;A01N01; J’en pense rien, moi, suis là pour faire la poussière, pas pour réfléchir. Tout ce que je sais, c’est que…;I don’t think anything, me, I’m just here to take away the dust, not to think or anything. All I know is…;Done
-A01N01_Léo_HAL_02000;02000;HALL;Léontine ;A01N01; Abigail ne vous déteste pas. Je la connais, ma maîtresse, même si elle est pas très expressive.;Aby doesn’t hate you. I know my mistress, even if she ain’t very expressive.;Done
-A01N01_Léo_HAL_02010;02010;HALL;Léontine ;A01N01; Abigail vous a à dos. Je la connais, ma maîtresse, même si elle est pas très expressive.;Aby doesn’t hold you dear. I know my mistress, even if she ain’t very expressive.;Done
-A01N01_Léo_HAL_02020;02020;HALL;Léontine ;A01N01; Ophélie a l’air tristounette. On se demande pourquoi, c’est pas comme si elle connaissait sa mère…;Ophélie seems sad. I wonder why, it’s not like she knew her mom…;Done
-A01N01_Léo_HAL_02030;02030;HALL;Léontine ;A01N01; Ophélie est triste, ça crève les yeux. Elle pourrait au moins être discrète comme Abigail.;Ophélie is sad, it’s obvious. She could at least try to be discreet like Aby.;Done
-A01N01_Léo_HAL_02040;02040;HALL;Léontine ;A01N01; Ah, et Ernest est agacé. Je n’aime pas les gens agacés, ils ont tendance à faire passer leur colère sur les pauvres gens qui n’y sont pour rien.;Ernest is upset. I don’t like upset people. It’s always the poor people who don’t do nothing who got to be their scapegoat.;Done
-A01N01_Léo_HAL_02050;02050;HALL;Léontine ;A01N01; Ah, et Ernest est énervé, non ? J’ai peur qu’il ne sache pas contrôler ses émotions.;Ernest is upset, isn’t he? I’m afraid he ain’t really good at controlling his emotions.;Done
-A01N01_Kim_HAL_02060;02060;HALL;Kim ;A01N01; Je vous laisse à votre travail.;I’ll leave you to your work.;Done
-A01N01_Léo_HAL_02070;02070;HALL;Léontine ;A01N01; Oh, vous croyez que je travaille encore à cette heure-là ? Geoffroy va vous montrer votre chambre, vous aurez l’temps de découvrir le Manoir demain.;Oh, you think I’m still working at this hour? Geoffroy’ll show you your room. You can visit the Manor tomorrow.;Done
-A01N01_Kim_HAL_02080;02080;HALL;Kim ;A01N01; Finalement, j’ai encore une question…;Actually, I still have a question…;Done
-A01N01_NAR_HAL_02090;02090;HALL;NARRATEUR ;A01N01; Elle soupire, puis se force à sourire.;She sighs and forces a smile on her face.;Done
-A01N01_Léo_HAL_02100;02100;HALL;Léontine ;A01N01; J’vous écoute.;Shoot.;Done
-A01N01_Kim_HAL_02110;02110;HALL;Kim ;A01N01; Finalement, je vais rester encore un peu au salon.;Actually, I’d rather stay a bit longer in the sitting room.;Done
-A01N01_Léo_HAL_02120;02120;HALL;Léontine ;A01N01; Revenez me parler quand vous voulez dormir.;Come back to me when you want to go to sleep.;Done
-A01N01_Kim_HAL_02130;02130;HALL;Kim ;A01N01; Merci.;Thank you.;Done
-A01N01_Kim_HAL_02140;02140;HALL;Kim ;A01N01; Et Geoffroy, est-il digne de confiance ?;And Geoffroy, is he trustworthy?;Done
-A01N01_Léo_HAL_02150;02150;HALL;Léontine ;A01N01; Pas pour faire son travail, en tout cas, ce flemmard.;Not to do his work anyway, that lazybones.;Done
-A01N01_Kim_HAL_02160;02160;HALL;Kim ;A01N01; Vous savez qui est Ophélie ?;Do you know who is Ophélie?;Done
-A01N01_Léo_HAL_02170;02170;HALL;Léontine ;A01N01; Une gamine mythomane. Elle vient juste pour l’héritage… Je le saurai, moi, si Célestia avait eu un troisième enfant, je n’étais pas aveugle à l’époque.;A compulsive liar. The kid is only here for the inheritance. I’d know, me, if Célestia had a third child, I wasn’t blind back then!;Done
-A01N01_Kim_HAL_02180;02180;HALL;Kim ;A01N01; Que pensez-vous d’Abigail ?;What do you think about Abigail?;Done
-A01N01_Léo_HAL_02190;02190;HALL;Léontine ;A01N01; Hautaine et élitiste. Mais elle veut bien faire, c'est déjà ça.;Haughty and snobbish. The only thing she's got is good intentions.;Done
-A01N01_NAR_BLA_02200;02200;BLACK_SCREEN;NARRATEUR ;A01N01;" Geoffroy a eu la gentillesse de me montrer ma chambre, et de choisir celle dans laquelle je dormais, enfant, lorsque je restais chez les Castheran. Je m’en souviens mal ; le bruit du parquet sous mes pas, les motifs sur les couvertures, tout me rappelle quelque chose, mais aucune image claire de moi à cette époque ne me revient.";"Geoffroy was nice enough to show me to my room, and to choose the one I slept in, as a child, when I stayed over at the Castheran’s. I remember it badly; the sound of my steps on the wooden floor, the patterns on the bedcovers, everything reminds me of something, but no clear image of this period is coming back.";Done
-A01N01_NAR_BLA_02210;02210;BLACK_SCREEN;NARRATEUR ;A01N01; Avant de dormir, je décide d’aller me chercher un verre d’eau. Je ralentis en remarquant la lumière filtrer sous la porte. Quelqu’un s’y trouve vraisemblablement déjà.;Before going to sleep, I decide to go get a glass of water. I slow down when I notice light under the door. Someone’s already there.;Done
-A01N01_Kim_BLA_02220;02220;BLACK_SCREEN;Kim ;A01N01; Entrer dans la cuisine;Enter the kitchen;Done
-A01N01_NAR_KIT_02230;02230;KITCHEN;NARRATEUR ;A01N01; Je frappe doucement à la porte pour prévenir de ma présence, puis j’entre. Abigail et Ophélie sont assises à la table, une tasse – visiblement de tisane – entre les mains.;I softly knock on the door to make my presence known, and I enter. Abigail and Ophélie are sitting at the table, a cup – of herbal tea I’d say – in their hands.;Done
-A01N01_Abi_KIT_02240;02240;KITCHEN;Abigail ;A01N01; #Mme|M.|Mx# Luong.;#Mrs.|Mr.|Mx.# Luong.;Done
-A01N01_Kim_KIT_02250;02250;KITCHEN;Kim ;A01N01; Excusez-moi de vous déranger. Je voulais simplement prendre un verre d’eau.;Sorry to disturb you. I just wanted to get a glass of water.;Done
-A01N01_NAR_KIT_02260;02260;KITCHEN;NARRATEUR ;A01N01; Abigail se lève, va chercher la carafe, me sert.;Abigail stands up, takes the carafe and pours it in a glass for me.;Done
-A01N01_Kim_KIT_02270;02270;KITCHEN;Kim ;A01N01; Je ne reste pas. Bonne nuit à toutes les deux.;I won’t stay, good night to both of you.;Done
-A01N01_Oph_KIT_02280;02280;KITCHEN;Ophélie ;A01N01; M-Merci.;T-thank you. ;Done
-A01N01_Kim_BLA_02290;02290;BLACK_SCREEN;Kim ;A01N01; Ecouter pour savoir qui est là;Listen to know who’s there;Done
-A01N01_NAR_KIT_02300;02300;KITCHEN;NARRATEUR ;A01N01; La porte est restée entrouverte. J’écoute et reconnais bientôt deux voix féminines.;The door stayed ajar. I listen and recognize two high-pitched voices.;Done
-A01N01_Abi_KIT_02310;02310;KITCHEN;Abigail ;A01N01; Je ne peux pas savoir, Madame Beaumont.;I cannot know, Mrs. Beaumont.;Done
-A01N01_Abi_KIT_02311;02310;KITCHEN;Abigail ;A01N01;Vous êtes ici parce que je vous laisse le bénéfice du doute, et que mes parents, dans ma situation, n’auraient pas failli à leur devoir d’hospitalité.;You are here because I leave you the benefit of the doubt, and that my parents, in my situation, would never have failed their duty of hospitality.;Done
-A01N01_Abi_KIT_02312;02310;KITCHEN;Abigail ;A01N01;Mais ne me demandez pas plus que ce que je suis prête à donner.;That said, do not ask me for more than I am ready to give.;Done
-A01N01_Oph_KIT_02320;02320;KITCHEN;Ophélie ;A01N01; Je comprends. Je-Je n’ai pas de mauvaise intention. Je souhaite simplement mieux connaître ma fa-famille.;I understand. I d-don’t have any b-bad intention. I only wish to know my f-family better.;Done
-A01N01_Abi_KIT_02330;02330;KITCHEN;Abigail ;A01N01; Prétendue famille. Nous ne savons pas.;Alleged family. We don’t know.;Done
-A01N01_Oph_KIT_02340;02340;KITCHEN;Ophélie ;A01N01; Je-je ne pense pas que mon p-père m’aurait menti… Pourquoi m’aurait-il fait venir jusqu’ici ? Ce serait une bl-blague de bien mauvais goût.;I d-don’t think my f-father would have lied to me… Why would he s-send me here? If it’s a p-prank, it’s a v-very d-distasteful one.;Done
-A01N01_Abi_KIT_02350;02350;KITCHEN;Abigail ;A01N01; Je ne connais pas votre père.;Well, I don’t know your father.;Done
-A01N01_NAR_KIT_02360;02360;KITCHEN;NARRATEUR ;A01N01; Un temps, un silence, le bruit d’une tasse reposée sur la table.;Silence. I hear a cup being put down.;Done
-A01N01_Oph_KIT_02370;02370;KITCHEN;Ophélie ;A01N01; Je me demande comment ça aurait été, de g-grandir ici.;I wonder how it would have b-been, to g-g-grow up here.;Done
-A01N01_Abi_KIT_02380;02380;KITCHEN;Abigail ;A01N01; Je ne peux imaginer le contraire.;I can’t imagine growing anywhere else.;Done
-A01N01_Oph_KIT_02390;02390;KITCHEN;Ophélie ;A01N01; Vous êtes née ici ?;Were you b-born here?;Done
-A01N01_Abi_KIT_02400;02400;KITCHEN;Abigail ;A01N01; J’y ai passé toute ma vie.;I spent all my life here.;Done
-A01N01_Oph_KIT_02410;02410;KITCHEN;Ophélie ;A01N01; Et vous n’avez jamais voulu partir ?;And you n-never wanted to leave?;Done
-A01N01_Abi_KIT_02420;02420;KITCHEN;Abigail ;A01N01; Jamais. Pourquoi partir ?;Never. Why would I?;Done
-A01N01_Abi_KIT_02421;02420;KITCHEN;Abigail ;A01N01;Tout ce qui m’est cher est ici.;Everything I care about is here.;Done
-A01N01_Abi_KIT_02422;02420;KITCHEN;Abigail ;A01N01;J’aime la vue de ma fenêtre, j’aime le grincement du portail, j’aime l’écart des marches des escaliers, j’aime les tapisseries au mur, j’aime les énergies qui circulent, rendues plus fortes par des générations et des générations de Castheran…;I love the view from my window, I love the grinding noise of the gate, I love the exact size of the stairs’ steps, I love the tapestries. I love the flow of energy, stronger and stronger with each generation of Castheran…;Done
-A01N01_Abi_KIT_02423;02420;KITCHEN;Abigail ;A01N01;J’aime ce que tout cet endroit représente. Je me sens à ma place ici.;I love everything this place represents. I’m at home here.;Done
-A01N01_Kim_BLA_02430;02430;BLACK_SCREEN;Kim ;A01N01; Retourner dans la chambre;Go back to your room;Done
-A01N01_NAR_BLA_02440;02440;BLACK_SCREEN;NARRATEUR ;A01N01;" Je décide de ne pas les déranger ; tant pis pour le verre d’eau, je survivrai sans.";"I’d rather not disturb them; I’ll survive without water.";Done
-A01N01_NAR_BLA_02450;02450;BLACK_SCREEN;NARRATEUR ;A01N01; Une fois couché#e||•e#, je me sens immédiatement emmitouflé#e||•e# dans mon cocon, à l’abri, bienvenu#e||•e#. Mon arrivée s’est relativement bien passée. Certes, les circonstances ne sont pas des plus joyeuses, mais au lieu de ne retrouver qu’Abigail et Hippolyte, je retrouvais aussi Ernest, Léontine même si elle reste bougonne, et la mystérieuse Ophélie. Je ne sais pas encore quoi penser d’elle… mais c’est une question à laquelle je répondrai demain. Mieux vaut être bien reposé#e||•e# avant de devoir faire mon choix.;Once in bed, I immediately feel muffled in a warm, safe and welcoming cocoon. Everything is going relatively well. The circumstances aren’t the happiest, that’s true, but instead of seeing only Abigail and Hippolyte again, I also get to talk with Ernest, the grouchy Léontine, and the mysterious Ophélie. I don’t know what to think of her yet… but that’s a question I’ll answer tomorrow. I’d rather be well-rested before I have to take a choice.;Done
-A01N01_NAR_BLA_02460;02460;BLACK_SCREEN;NARRATEUR ;A01N01;" Au matin, je me réveille au son d’une vieille pendule qui sonne à chaque heure. Etrangement, je ne l’ai pas entendue de la nuit, mais à sept heures pétantes, c’est comme si chaque gong  se répercute deux fois plus fort dans mon crâne. Je ne peux pas l’ignorer ; c’est le Manoir lui-même qui me somme de me mettre à ma tâche. Je me prépare rapidement ; Geoffroy vient bientôt me demander ce que je souhaite pour le petit déjeuner. Une fois prêt#e||•e#, je descends dans le hall d’entrée.";"In the morning, I wake up at the sound of an old clock that strikes every hour. Weirdly, I haven’t heard it all night, but at seven o’clock, I feel like each gong resonates twice as strong in my head. I can’t ignore it; the Manor itself compels me to get on with my task. I get ready pretty fast; Geoffroy soon comes to ask me what I want to eat for breakfast and I go down to the main hall.";Done
-A01N01_NAR_BLA_02470;02470;BLACK_SCREEN;NARRATEUR ;A01N01; La journée allait être bien remplie…;It’s going to be a long day…;Done
+LINE	NUM	ROOM	CHAR	Acte	TEXT_FR	TEXT_EN	COMMENTAIRES / intégration métadonnées
+A01N01_NAR_LIV_00010	00010	LIVINGROOM	NARRATEUR 	A01N01	 Abigail est en train d’écrire quelque chose… J’ai peur de la déranger.	Abigail is writing something… I don’t want to disturb her.	Done
+A01N01_NAR_LIV_00020	00020	LIVINGROOM	NARRATEUR 	A01N01	 Mais...	But…	Done
+A01N01_NAR_LIV_00030	00030	LIVINGROOM	NARRATEUR 	A01N01	 Après tout, c’est elle qui m’a dit qu’ils étaient à ma disposition pour répondre à mes questions…	Well, after all, she told me they were here for me if I had any question.	Done
+A01N01_NAR_LIV_00040	00040	LIVINGROOM	NARRATEUR 	A01N01	 Peut-être était-ce par politesse, elle n’a pas l’air très encline à parler aux autres de manière générale.	Was it only per courtesy? She doesn’t seem inclined to speak with other people.	Done
+A01N01_NAR_LIV_00050	00050	LIVINGROOM	NARRATEUR 	A01N01	 Ah, elle m’a remarqué#e||•e# !	Ah, she just noticed me!	Done
+A01N01_Abi_LIV_00060	00060	LIVINGROOM	Abigail 	A01N01	 Que puis-je faire pour vous ?	What can I do for you?	Done
+A01N01_Kim_LIV_00070	00070	LIVINGROOM	Kim 	A01N01	 Tu es la fille aînée, c’est ça ?	You’re the eldest child, right, Aby?	Done
+A01N01_Abi_LIV_00080	00080	LIVINGROOM	Abigail 	A01N01	 En effet. Le Manoir me revient de droit. Je vous prierai par contre de bien vouloir me vouvoyer à l’avenir.	I am. The Manor is mine by right. That said, please do not call me Aby from now on.	Done
+A01N01_Kim_LIV_00090	00090	LIVINGROOM	Kim 	A01N01	 D’accord, je n’oublierai plus.	Right, sorry.	Done
+A01N01_NAR_LIV_00100	00100	LIVINGROOM	NARRATEUR 	A01N01	 Elle pense qu’elle mérite le Manoir simplement parce qu’elle est l’aînée ?	She thinks the Manor should be hers just because she’s the eldest?	Done
+A01N01_NAR_LIV_00101	00100	LIVINGROOM	NARRATEUR 	A01N01	Cela ne suffira pas pour moi, mais elle n’a pas l’air d’avoir très envie de parler.	It won’t be enough for me, but she doesn’t seem to want to speak more about it.	Done
+A01N01_NAR_LIV_00102	00100	LIVINGROOM	NARRATEUR 	A01N01	Il faut que j’en apprenne plus.	I need to learn more somehow.	Done
+A01N01_Abi_LIV_00110	00110	LIVINGROOM	Abigail 	A01N01	 Quelle perspicacité. Ça vous arrive souvent, de poser des questions aussi inutiles ?	What brilliant insight! Do you often ask such useless questions?	Done
+A01N01_NAR_LIV_00120	00120	LIVINGROOM	NARRATEUR 	A01N01	 Pas très amicale…	She’s so unfriendly…	Done
+A01N01_Abi_LIV_00130	00130	LIVINGROOM	Abigail 	A01N01	 Au lieu de répéter des évidences, je vous prierai de bien vouloir me vouvoyer à l’avenir.	Instead of repeating such obvious facts, I urge you to please stop calling me Aby from now on.	Done
+A01N01_Kim_LIV_00140	00140	LIVINGROOM	Kim 	A01N01	 Mais nous étions amis d’enfance !	But we were childhood friends!	Done
+A01N01_Abi_LIV_00150	00150	LIVINGROOM	Abigail 	A01N01	 Cela fait bien longtemps que nous ne le sommes plus, #Mme|M.|Mx# Luong.	We haven’t been friends for a long time now, #Mrs.|Mr.|Mx.# Luong.	Done
+A01N01_NAR_LIV_00160	00160	LIVINGROOM	NARRATEUR 	A01N01	 Elle est vraiment à cheval sur la politesse. J’aurai peut-être dû faire plus attention.	She is so uptight about courtesy… What’s so wrong about calling her Aby? I need to be more careful from now on.	Done
+A01N01_Kim_LIV_00170	00170	LIVINGROOM	Kim 	A01N01	 Pouvez-vous m’en dire davantage sur vous, Abigail ?	Can you tell me more about yourself, Abigail?	Done
+A01N01_Abi_LIV_00180	00180	LIVINGROOM	Abigail 	A01N01	 Je n’ai pas grand-chose à dire. J’ai toujours vécu ici, avec mon frère et mes parents.	I don’t have much to say. I’ve always lived here with my brother and my parents.	Done
+A01N01_Kim_LIV_00190	00190	LIVINGROOM	Kim 	A01N01	 Pourquoi devrais-je vous choisir comme héritière, à votre avis ?	Why should I choose you as the heir, from your point of view?	Done
+A01N01_Abi_LIV_00200	00200	LIVINGROOM	Abigail 	A01N01	 Je ne devrais même pas avoir à me justifier. Il est évident qu’en tant qu’aînée, c’est à moi qu’il doit revenir.	I shouldn’t have to explain myself. It’s obvious that as the eldest, I should take care of the Manor.	Done
+A01N01_Abi_LIV_00201	00200	LIVINGROOM	Abigail 	A01N01	Vous ne trouverez de toute façon personne qui le mérite ici.	Anyway, you will not find anyone worthy of it in these walls.	Done
+A01N01_Abi_LIV_00210	00210	LIVINGROOM	Abigail 	A01N01	 <color=#9d4184ff>Je vous aiderai à le prouver.</color>	<color=#9d4184ff>I will help you to prove it.</color>	Done
+A01N01_Kim_LIV_00220	00220	LIVINGROOM	Kim 	A01N01	 Qu’avez-vous à dire sur les autres, alors ?	What do you have to say about the others, then?	Done
+A01N01_Abi_LIV_00230	00230	LIVINGROOM	Abigail 	A01N01	 Pour l’instant, rien.	For now, nothing.	Done
+A01N01_Abi_LIV_00231	00230	LIVINGROOM	Abigail 	A01N01	Je préfère que vous vous forgiez votre propre idée, que vous ne puissiez pas dire que je vous influence ou que je dis du mal des autres…	I would rather let you make your mind up by yourself, so you cannot say that I influenced you or that I badmouth others.	Done
+A01N01_Abi_LIV_00232	00230	LIVINGROOM	Abigail 	A01N01	Mais <color=#9d4184ff>si vous avez des questions plus précises, plus tard, je partagerai mon avis si vous me le demandez. </color>	That said, <color=#9d4184ff>if you have more precise questions later on, I will share my opinion if you ask. </color>	Done
+A01N01_Kim_LIV_00240	00240	LIVINGROOM	Kim 	A01N01	 Merci.	Thank you.	Done
+A01N01_Abi_LIV_00250	00250	LIVINGROOM	Abigail 	A01N01	 Rien. Forgez-vous votre propre idée.	Nothing. Please make your mind up by yourself.	Done
+A01N01_Abi_LIV_00251	00250	LIVINGROOM	Abigail 	A01N01	Vous ne pourrez pas dire que je vous influence ou que je dis du mal des autres.	I refuse to hear you say that I have influenced you or that I badmouth others.	Done
+A01N01_Kim_LIV_00260	00260	LIVINGROOM	Kim 	A01N01	 Soit.	Alright.	Done
+A01N01_Kim_LIV_00270	00270	LIVINGROOM	Kim 	A01N01	 Qui est Ophélie Beaumont ?	Who is Ophélie Beaumont?	Done
+A01N01_NAR_LIV_00280	00280	LIVINGROOM	NARRATEUR 	A01N01	 Elle ne semble pas très heureuse que je soulève le sujet.	She doesn’t seem very happy that I raise the topic.	Done
+A01N01_Abi_LIV_00290	00290	LIVINGROOM	Abigail 	A01N01	 Bonne question. Elle est arrivée peu avant vous, en vérité. Elle soutient être notre demi-sœur.	That is a good question. She arrived a short time before you, to tell the truth. She claims to be our half-sister.	Done
+A01N01_Kim_LIV_00300	00300	LIVINGROOM	Kim 	A01N01	 Vous ne l’appréciez pas ?	Do you not like her?	Done
+A01N01_Abi_LIV_00310	00310	LIVINGROOM	Abigail 	A01N01	 Je ne la connais pas.	I do not know her.	Done
+A01N01_Kim_LIV_00320	00320	LIVINGROOM	Kim 	A01N01	 Et vous la croyez ?	And do you believe her?	Done
+A01N01_Abi_LIV_00330	00330	LIVINGROOM	Abigail 	A01N01	 Je lui laisse le bénéfice du doute. En attendant que cette histoire soit démêlée, elle est bien sûr la bienvenue au Manoir.	I give her the benefit of the doubt. While we entangle this matter, she is of course welcome to the Manor.	Done
+A01N01_NAR_LIV_00340	00340	LIVINGROOM	NARRATEUR 	A01N01	 Moins la bienvenue que d’autres, c’est assez clair.	Less welcome than others, though, that’s pretty clear.	Done
+A01N01_Kim_LIV_00350	00350	LIVINGROOM	Kim 	A01N01	 Que faîtes-vous ?	What are you doing?	Done
+A01N01_Abi_LIV_00360	00360	LIVINGROOM	Abigail 	A01N01	 J’écris un poème.	I am writing a poem.	Done
+A01N01_Kim_LIV_00370	00370	LIVINGROOM	Kim 	A01N01	 M’autoriseriez-vous à le lire ?	Would you let me read it?	Done
+A01N01_Abi_LIV_00380	00380	LIVINGROOM	Abigail 	A01N01	 Je peux vous le réciter.	I can recite it to you.	Done
+A01N01_NAR_LIV_00390	00390	LIVINGROOM	NARRATEUR 	A01N01	 Elle prend une inspiration, relit vaguement avant de commencer à voix haute.	She takes a long breath, vaguely glances over it and starts.	Done
+A01N01_Abi_LIV_00400	00400	LIVINGROOM	Abigail 	A01N01	 <color=#9d4184ff>Manoir.</color>	<color=#9d4184ff>Dear Manor</color>	Done
+A01N01_Abi_LIV_00410	00410	LIVINGROOM	Abigail_POEME 	A01N01	 Je connais tellement chacun de tes couloirs,	I know so very well each of your corridors	AFFICHAGE POEME DIFFERENT ???
+A01N01_Abi_LIV_00420	00420	LIVINGROOM	Abigail_POEME 	A01N01	 Ton labyrinthe obscur où les autres s’égarent,	The labyrinth in which the rest will lose their way;	AFFICHAGE POEME DIFFERENT ???
+A01N01_Abi_LIV_00430	00430	LIVINGROOM	Abigail_POEME 	A01N01	 Que lorsqu’ils se promènent avec leur air hagard	When they wander with their crazed looks and walk astray	AFFICHAGE POEME DIFFERENT ???
+A01N01_Abi_LIV_00440	00440	LIVINGROOM	Abigail_POEME 	A01N01	 Je suis seule à savoir où se tient le parloir.	I am the only one who can find the parlors.	AFFICHAGE POEME DIFFERENT ???
+A01N01_Abi_LIV_00450	00450	LIVINGROOM	Abigail 	A01N01	 …	…	Done
+A01N01_Abi_LIV_00460	00460	LIVINGROOM	Abigail 	A01N01	 Excusez-moi, il n’y a que la première strophe qui ressemble à quelque chose, pour l’instant.	Please forgive me; the first stanza is the only one that is close to finished for now.	Done
+A01N01_Abi_LIV_00461	00460	LIVINGROOM	Abigail 	A01N01	J’essaie de capturer l’essence de cet endroit. Il est tellement immense, j’ai tant de salles à décrire.	I am trying to capture the essence of this place. It is so huge, I have so many rooms to describe.	Done
+A01N01_Kim_LIV_00470	00470	LIVINGROOM	Kim 	A01N01	 C’est magnifique. Merci de votre confiance.	It’s astounding. Thank you for your trust.	Done
+A01N01_Abi_LIV_00480	00480	LIVINGROOM	Abigail 	A01N01	 C’est personnel.	It’s personal.	Done
+A01N01_Kim_LIV_00490	00490	LIVINGROOM	Kim 	A01N01	 D’accord, excusez-moi.	Alright, sorry.	Done
+A01N01_Abi_LIV_00500	00500	LIVINGROOM	Abigail 	A01N01	 J’ai bien peur que ça ne vous regarde pas.	I’m afraid it is none of your business.	Done
+A01N01_Kim_LIV_00510	00510	LIVINGROOM	Kim 	A01N01	 Je ne veux pas déranger plus longtemps.	I don’t want to bother you any longer.	Done
+A01N01_NAR_LIV_00520	00520	LIVINGROOM	NARRATEUR 	A01N01	 Elle a toujours l’air occupé… Elle lève la tête, c’est l’occasion.	She still looks busy… She’s raising her head, now is the moment.	Done
+A01N01_Abi_LIV_00530	00530	LIVINGROOM	Abigail 	A01N01	 Que puis-je faire pour vous ?	What can I do for you?	Done
+A01N01_Hip_LIV_00540	00540	LIVINGROOM	Hippolyte 	A01N01	 Bienvenue au Manoir ! La dernière fois qu’on s’est vus, tu avais 13 ans et moi 8… ça date !	Welcome to the Manor! Last time we saw each other, you were 13 and I was 8. It’s been a while!	Done
+A01N01_Hip_LIV_00550	00550	LIVINGROOM	Hippolyte 	A01N01	 Tu te souviens quand on montait sur le toit ?	Do you remember when we went up the roof?	Done
+A01N01_Kim_LIV_00560	00560	LIVINGROOM	Kim 	A01N01	 Oui ! Ça m’étonne que toi tu t’en souviennes.	Yes! I’m surprised you do too.	Done
+A01N01_Hip_LIV_00570	00570	LIVINGROOM	Hippolyte 	A01N01	 Je me demande si tu es toujours aussi téméraire !	I wonder if you’re as audacious as before!	Done
+A01N01_Kim_LIV_00580	00580	LIVINGROOM	Kim 	A01N01	 Va savoir… On s’est souvent mis dans des situations impossibles, en tout cas.	Who knows! We often ended up in impossible situations, anyway.	Done
+A01N01_Hip_LIV_00590	00590	LIVINGROOM	Hippolyte 	A01N01	 J’aurais bientôt l’occasion de le découvrir, je suppose. Tu as besoin de savoir quelque chose ?	I’ll soon find out, I guess. Do you need to know something?	Done
+A01N01_Hip_LIV_00600	00600	LIVINGROOM	Hippolyte 	A01N01	 Tu me criais dessus quand je tirais les cheveux d’Abigail… Et tu voulais toujours me suivre sur les toits, même quand je te disais non !	You always yelled on me when I pulled Abigail’s hair… And you always wanted to follow me on the roof, even when I said no!	Done
+A01N01_Kim_LIV_00610	00610	LIVINGROOM	Kim 	A01N01	 Ah bon ?	Really?	Done
+A01N01_Hip_LIV_00620	00620	LIVINGROOM	Hippolyte 	A01N01	 Je me demande si tu es toujours aussi protectrice.	I wonder if you are as protective as before.	Done
+A01N01_Kim_LIV_00630	00630	LIVINGROOM	Kim 	A01N01	 Va savoir… Je suis toujours aussi loyale envers mes amis, en tout cas.	Who knows! I’m still as loyal to my friends, anyway.	Done
+A01N01_Hip_LIV_00640	00640	LIVINGROOM	Hippolyte 	A01N01	 Je n’en doute pas. Tu as besoin de savoir quelque chose ?	I don’t doubt it. Do you need to know something?	Done
+A01N01_Kim_LIV_00650	00650	LIVINGROOM	Kim 	A01N01	 A qui penses-tu que le Manoir devrait revenir ?	Whom do you think should get the Manor?	Done
+A01N01_Hip_LIV_00660	00660	LIVINGROOM	Hippolyte 	A01N01	 Très sincèrement ? Il n’y a qu’Abigail et moi qui avons un vrai droit au Manoir.	Sincerely? Only Abigail and I have a true right to the Manor.	Done
+A01N01_Hip_LIV_00661	00660	LIVINGROOM	Hippolyte 	A01N01	Geoffroy a travaillé ici mais il ne fait pas parti de la famille, même s’il a l’air de penser que ça lui donne des droits sur l’endroit.	Geoffroy has worked here but he isn’t part of the family, even though he seems to think he has rights on the place.	Done
+A01N01_Hip_LIV_00662	00660	LIVINGROOM	Hippolyte 	A01N01	Ophélie arrive de nulle part et n’a pas grandi ici… Alors même si ce qu’elle raconte est vrai, elle n’a pas vraiment de raison d’hériter.	Ophélie comes from nowhere and didn’t grow up here… So even if what she says is true, she doesn’t really have any reason of inheriting.	Done
+A01N01_Kim_LIV_00670	00670	LIVINGROOM	Kim 	A01N01	 Qu’est-ce qu’elle raconte ?	What does she say?	Done
+A01N01_Hip_LIV_00680	00680	LIVINGROOM	Hippolyte 	A01N01	 Apparemment, notre mère aurait été avec un autre homme avant de s’installer ici avec Augustin.	Apparently, our mother was with another man before settling here with Augustin.	Done
+A01N01_Kim_LIV_00690	00690	LIVINGROOM	Kim 	A01N01	 Augustin ?	Augustin?	Done
+A01N01_Hip_LIV_00700	00700	LIVINGROOM	Hippolyte 	A01N01	 Notre père, à Abigail et moi. Ma mère nous aurait caché son passé et l’existence de sa fille, Ophélie donc.	Our father – Abigail’s and mine. Our mother would have hidden her past and her other daughter – that would be Ophélie – from us.	Done
+A01N01_Hip_LIV_00701	00701	LIVINGROOM	Hippolyte 	A01N01	Elle dit que son père a appris la mort de Célestia, et que maintenant qu’il ne risquait plus de mettre le bazar dans sa vie, il pouvait lui dire qui était sa mère…	She says her father learned of Célestia’s death, and now that he didn’t risk making a mess of her life, he told her who her mother was…	Done
+A01N01_Hip_LIV_00702	00702	LIVINGROOM	Hippolyte 	A01N01	Sauf qu’Ophélie a interprété ça comme une invitation à mettre le bazar dans nos vies à nous. Mais moi, j’y crois pas trop, à tout ça, c’est trop facile, d’apprendre qu’on est un enfant caché au moment où on parle d’héritage.	Except that Ophélie took that as a reason to make a mess of our own lives! That said, I don’t really believe in all this; it’s too easy, to learn we are a hidden child at the exact moment an inheritance glimpses over.	Done
+A01N01_Hip_LIV_00703	00703	LIVINGROOM	Hippolyte 	A01N01	Mais moi, j’y crois pas trop, à tout ça, c’est trop facile, d’apprendre qu’on est un enfant caché au moment où on parle d’héritage.	That said, I don’t really believe in all this; it’s too easy, to learn we are a hidden child at the exact moment an inheritance glimpses over.	Done
+A01N01_Hip_LIV_00710	00710	LIVINGROOM	Hippolyte 	A01N01	 Et puis vous êtes toutes des menteuses.	Also you women are all liars.	Done
+A01N01_Hip_LIV_00720	00720	LIVINGROOM	Hippolyte 	A01N01	 Et puis les femmes sont toutes des menteuses.	Also women are all liars.	Done
+A01N01_Kim_LIV_00730	00730	LIVINGROOM	Kim 	A01N01	 Ça, c’est complètement gratuit.	That comment is completely inappropriate.	Done
+A01N01_Hip_LIV_00740	00740	LIVINGROOM	Hippolyte 	A01N01	 Quelle importance ?	So what?	Done
+A01N01_Hip_LIV_00750	00750	LIVINGROOM	Hippolyte 	A01N01	 En tout cas, pour en revenir à ta question…	Anyway, to come back to your question…	Done
+A01N01_Hip_LIV_00751	00750	LIVINGROOM	Hippolyte 	A01N01	Je ne sais pas trop pourquoi tu me la poses. Je vous connais, vous les filles, vous êtes toujours solidaires…	I don’t really know why you ask. I know you girls, you’ve so much solidarity for each other.	Done
+A01N01_Hip_LIV_00752	00750	LIVINGROOM	Hippolyte 	A01N01	C’est évident que tu vas donner le Manoir à ma sœur.	It’s obvious you’ll just hang over the Manor to my sister.	Done
+A01N01_NAR_LIV_00760	00760	LIVINGROOM	NARRATEUR 	A01N01	 Décidément, il a un problème avec les femmes. Je ne pensais pas qu’il était devenu si sexiste avec les années… Je sens que nos échanges vont être compliqués.	He has a real problem with women. I didn’t think he’d become so sexist with time… I feel our exchanges are going to be complicated.	Done
+A01N01_Hip_LIV_00770	00770	LIVINGROOM	Hippolyte 	A01N01	Ma sœur ne mérite pas l’héritage. Elle a été extrêmement ingrate pour tout ce qu’elle a reçu…	My sister isn’t worthy of the inheritance. She’s been very ungrateful towards everything she’s had here.	Done
+A01N01_Hip_LIV_00771	00770	LIVINGROOM	Hippolyte 	A01N01	<color=#425d97ff>Si tu en veux la preuve, je suis sûr que tu trouveras des traces de ses méfaits dans la paperasse du Manoir</color>, il y en a eu tellement au fil des années.	<color=#425d97ff>If you want proof of her wrongdoings, I’m sure you can find it in the Manor’s paperwork, there were so many as years passed by. </color>	Done
+A01N01_Kim_LIV_00780	00780	LIVINGROOM	Kim 	A01N01	 Je regarderai, merci pour le conseil.	I’ll look, thanks for the advice.	Done
+A01N01_Kim_LIV_00790	00790	LIVINGROOM	Kim 	A01N01	 Comment Célestia est-elle morte ?	How did Célestia die?	Done
+A01N01_Hip_LIV_00800	00800	LIVINGROOM	Hippolyte 	A01N01	 …	…	Done
+A01N01_Hip_LIV_00810	00810	LIVINGROOM	Hippolyte 	A01N01	 C’était…	It was…	Done
+A01N01_Kim_LIV_00820	00820	LIVINGROOM	Kim 	A01N01	 Pardon, ma question était un peu brusque.	Um, sorry, my question was a little blunt.	Done
+A01N01_Hip_LIV_00830	00830	LIVINGROOM	Hippolyte 	A01N01	 Non, non, c’est normal que tu te poses la question… Mais ça n’avait rien d’extravagant.	No, don’t worry, it’s obvious you would ask… But it’s not anything weird or what.	Done
+A01N01_Hip_LIV_00831	00830	LIVINGROOM	Hippolyte 	A01N01	Elle est tombée de cheval lors d’une promenade autour du Manoir…	She fell off her horse during a stroll around the Manor.	Done
+A01N01_Hip_LIV_00832	00830	LIVINGROOM	Hippolyte 	A01N01	Elle allait sûrement au galop, elle adorait tellement la vitesse. C’est tellement… stupide.	I’m sure she was galloping, she loved speed so much. It’s so… stupid.	Done
+A01N01_Kim_LIV_00840	00840	LIVINGROOM	Kim 	A01N01	 Je suis désolé#e||•e#.	I’m sorry.	Done
+A01N01_Hip_LIV_00850	00850	LIVINGROOM	Hippolyte 	A01N01	 Pas la peine.	Don’t be.	Done
+A01N01_Kim_LIV_00860	00860	LIVINGROOM	Kim 	A01N01	 A plus tard.	See you later.	Done
+A01N01_Hip_LIV_00870	00870	LIVINGROOM	Hippolyte 	A01N01	 Alors, <color=#425d97ff>tu as trouvé quelque chose contre ma sœur ? Non ? Je suis sûr qu’il y a des indices quelque part.</color>	So, <color=#425d97ff>did you find anything against my sister? No? I’m sure there are hints somewhere.</color>	Done
+A01N01_Hip_LIV_00880	00880	LIVINGROOM	Hippolyte 	A01N01	 Bienvenue au Manoir.	Welcome to the Manor.	Done
+A01N01_Geo_LIV_00890	00890	LIVINGROOM	Geoffroy 	A01N01	 A votre service.	At your service.	Done
+A01N01_Kim_LIV_00900	00900	LIVINGROOM	Kim 	A01N01	 Que pensez-vous d’Abigail ?	What do you think of Abigail?	Done
+A01N01_Geo_LIV_00910	00910	LIVINGROOM	Geoffroy 	A01N01	 C’est une femme exemplaire… Je suis heureux de travailler à son service.	She is an exemplary woman. I am very happy to work for her.	Done
+A01N01_Geo_LIV_00911	00910	LIVINGROOM	Geoffroy 	A01N01	 Si je puis vous donner un conseil, essayez de respecter au mieux l’étiquette en vigueur dans un lieu comme celui-ci, la vulgarité a tendance à l’agacer.	If I may give you some advice, please try to be as courteous as possible with her, any semblance of vulgarity tends to irritate her.	Done
+A01N01_Kim_LIV_00920	00920	LIVINGROOM	Kim 	A01N01	 Que pensez-vous d’Hippolyte ?	What do you think of Hippolyte?	Done
+A01N01_Geo_LIV_00930	00930	LIVINGROOM	Geoffroy 	A01N01	 Un jeune homme honorable… Je suis heureux de travailler à son service.	He is an honorable young man. I am very happy to work for him.	Done
+A01N01_Geo_LIV_00931	00930	LIVINGROOM	Geoffroy 	A01N01	Si je puis vous donner un conseil, ne lui parlez pas trop de sa sœur… Ils sont adorables, mais quelque peu rivaux.	If I may give you some advice, please do not talk too much about his sister with him… They are both wonderful, but they see each other as rivals.	Done
+A01N01_Kim_LIV_00940	00940	LIVINGROOM	Kim 	A01N01	 Une préférence entre les héritiers ?	Do you have a preference between the heirs?	Done
+A01N01_Geo_LIV_00950	00950	LIVINGROOM	Geoffroy 	A01N01	 Oh, je ne me permettrai pas !	Oh, I wouldn’t dare!	Done
+A01N01_Geo_LIV_00960	00960	LIVINGROOM	Geoffroy 	A01N01	 Mais…	That said…	Done
+A01N01_Geo_LIV_00970	00970	LIVINGROOM	Geoffroy 	A01N01	 En vérité…	To tell you the truth…	Done
+A01N01_Geo_LIV_00980	00980	LIVINGROOM	Geoffroy 	A01N01	 J’ai été engagé tout jeune par les Castheran.	I’ve been appointed to the Castheran very young.	Done
+A01N01_Geo_LIV_00981	00980	LIVINGROOM	Geoffroy 	A01N01	J’ai depuis perdu <color=#787981ff>mon contrat</color> de travail, il doit être quelque part dans le Manoir, mais qui saurait dire où ?	Since then, I’ve lost my work <color=#787981ff>contract</color>. It must be somewhere in the Manor, but who could say where?	Done
+A01N01_Geo_LIV_00982	00980	LIVINGROOM	Geoffroy 	A01N01	En tout cas, les Castheran m’avaient promis, à l’époque, que pour récompenser mes bons et loyaux services, ils me remettraient le Manoir à leur mort.	In any case, the Castheran had promised me, back then, that to reward me for my loyal services, I would inherit the Manor.	Done
+A01N01_Geo_LIV_00983	00980	LIVINGROOM	Geoffroy 	A01N01	Si ce papier était retrouvé, la question d’à qui revient le Manoir ne se poserait plus…	If this contract was found again, the question of the Manor’s legacy would be definitely answered.	Done
+A01N01_Geo_LIV_00984	00980	LIVINGROOM	Geoffroy 	A01N01	Accepteriez-vous de m’aider ? J’ai tant fait pour cette famille.	Would you help me? I’ve done so much for this family.	Done
+A01N01_Kim_LIV_00990	00990	LIVINGROOM	Kim 	A01N01	 Bien sûr ! Je ferai tout mon possible.	Of course! I’ll do everything I can	Done
+A01N01_Geo_LIV_01000	01000	LIVINGROOM	Geoffroy 	A01N01	 Merci, c’est très gentil à vous.	Thank you, it is so nice of you.	Done
+A01N01_Kim_LIV_01010	01010	LIVINGROOM	Kim 	A01N01	 On verra.	We’ll see.	Done
+A01N01_Geo_LIV_01020	01020	LIVINGROOM	Geoffroy 	A01N01	 Si vous acceptez de considérer la possibilité que je puisse être héritier, j’en serai très honoré.	If you accept to even consider me as an heir, I would be honored.	Done
+A01N01_Kim_LIV_01030	01030	LIVINGROOM	Kim 	A01N01	 Certainement pas.	Obviously not.	Done
+A01N01_Geo_LIV_01040	01040	LIVINGROOM	Geoffroy 	A01N01	 Ah… Très bien…	Oh… Very well.	Done
+A01N01_Geo_LIV_01041	01040	LIVINGROOM	Geoffroy 	A01N01	Dans ce cas, n’hésitez pas à me demander si vous avez besoin d’aide pour choisir entre les autres candidats, je me tiens à votre disposition.	In that case, please do not hesitate to ask me for any help you may need in choosing between the other candidates. I am entirely at your disposal.	Done
+A01N01_Kim_LIV_01050	01050	LIVINGROOM	Kim 	A01N01	 Merci, je n’ai besoin de rien pour le moment.	Thank you, I don’t need anything right now.	Done
+A01N01_Geo_LIV_01060	01060	LIVINGROOM	Geoffroy 	A01N01	 Ah, Kim ! Avez-vous pris le temps de chercher mon <color=#787981ff>contrat</color> ?	Oh, Kim ! Did you take the time to look for my <color=#787981ff>contract</color>?	Done
+A01N01_Geo_LIV_01061	01060	LIVINGROOM	Geoffroy 	A01N01	Non ? Oh, ce n’est pas grave… C’est à moi de vous servir.	No? Oh, no matter, it’s my job to serve you and not the other way around.	Done
+A01N01_Geo_LIV_01062	01060	LIVINGROOM	Geoffroy 	A01N01	Que puis-je pour vous ?	What can I do for you?	Done
+A01N01_Geo_LIV_01070	01070	LIVINGROOM	Geoffroy 	A01N01	 A votre service.	At your service.	Done
+A01N01_Ern_LIV_01080	01080	LIVINGROOM	Ernest 	A01N01	 Enchanté. Je suis heureux de te retrouver !	Delighted. It’s nice to see you again!	Done
+A01N01_Kim_LIV_01090	01090	LIVINGROOM	Kim 	A01N01	 Moi aussi.	Same here.	Done
+A01N01_NAR_LIV_01100	01100	LIVINGROOM	NARRATEUR 	A01N01	 Je parlais beaucoup à Ernest, à l’époque. Mais quand mes parents ont déménagé, j’ai perdu contact avec tout le monde.	I talked a lot with Ernest, back then. When my parents moved away though, I lost contact with everyone. 	Done
+A01N01_NAR_LIV_01101	01100	LIVINGROOM	NARRATEUR 	A01N01	Je ne sais pas exactement pourquoi… Est-ce moi qui n’ai pas fait l’effort ?	I don’t really know why… Is it I who didn’t put the effort into it?	Done
+A01N01_NAR_LIV_01102	01100	LIVINGROOM	NARRATEUR 	A01N01	En tout cas, j’ai envie de savoir ce qu’ils sont devenus. Essayer de rattraper le temps perdu.	Anyway, I want to know what they all became.	Done
+A01N01_NAR_LIV_01103	01100	LIVINGROOM	NARRATEUR 	A01N01	Comprendre ce qu’il s’est passé, aussi, pour qu’on s’éloigne tous autant les uns des autres.	I’ll try to make up for lost time and to understand what happened that pulled us so far apart from each other.	Done
+A01N01_Ern_LIV_01110	01110	LIVINGROOM	Ernest 	A01N01	 J’ai repris contact avec Abigail et Hippolyte seulement récemment, c’est amusant de voir toute notre petite bande du passé se réunir comme ça.	I contacted Abigail and Hippolyte again only recently, it’s so funny to see our whole little group from the past gathering in this way.	Done
+A01N01_Kim_LIV_01120	01120	LIVINGROOM	Kim 	A01N01	 « Amusant » n’est pas vraiment le mot…	Funny isn’t really the word…	Done
+A01N01_Ern_LIV_01130	01130	LIVINGROOM	Ernest 	A01N01	 Oui, c’est dommage que ce soit dans ces circonstances. Et il manque Tayla, aussi.	Yes, it’s too bad it’s under these circumstances. Tayla is missing, too.	Done
+A01N01_Kim_LIV_01140	01140	LIVINGROOM	Kim 	A01N01	 C’est vrai.	That’s true.	Done
+A01N01_NAR_LIV_01150	01150	LIVINGROOM	NARRATEUR 	A01N01	 A l’époque, on habitait tous au village, et Célestia nous invitait toujours jouer au Manoir.	Back then, we all lived in the village, and Célestia would invite us to play at the Manor.	Done
+A01N01_NAR_LIV_01151	01150	LIVINGROOM	NARRATEUR 	A01N01	Abigail et Tayla ont le même âge et étaient inséparables, Ernest et moi aussi, et Hippolyte, même s’il est plus jeune, avait aussi sa place avec nous.	Abigail and Tayla are the same age and were inseparable, Ernest and I too, and Hippolyte, even though he was younger, really had a place among us.	Done
+A01N01_Ern_LIV_01160	01160	LIVINGROOM	Ernest 	A01N01	 Elle est venue à l’enterrement, mais elle a dû repartir pour des examens. En tout cas, moi, je reste, et je fais de mon mieux pour consoler mes amis.	She came to the funerals, but then she had to leave for exams. Anyway, I’m staying for now, and I’ll try my best to comfort my friends.	Done
+A01N01_Ern_LIV_01170	01170	LIVINGROOM	Ernest 	A01N01	 Abigail ne le montre pas, mais elle est dévastée.	Abigail doesn’t show it, but she’s devastated.	Done
+A01N01_Ern_LIV_01180	01180	LIVINGROOM	Ernest 	A01N01	 J’espère que te ne les blesseras pas.	I hope you won’t hurt them.	Done
+A01N01_Kim_LIV_01190	01190	LIVINGROOM	Kim 	A01N01	 Tu t’entends toujours aussi bien avec Hippolyte?	Do you still get along with Hippolyte?	Done
+A01N01_Ern_LIV_01200	01200	LIVINGROOM	Ernest 	A01N01	 Entre nous, il est resté très gamin dans sa tête, malgré ses grands airs.	Let’s keep this between us, but he’s still very childish. He tries to look mature but he’s too theatrical about it.	Done
+A01N01_Ern_LIV_01201	01200	LIVINGROOM	Ernest 	A01N01	Je ne pense pas qu’il soit capable de gérer un manoir, Abigail est beaucoup plus organisée.	I don’t think he could take care of the Manor, and Abigail is way more organized than he is.	Done
+A01N01_NAR_LIV_01210	01210	LIVINGROOM	NARRATEUR 	A01N01	 Ce n’était pas trop la question…	That wasn’t really my question…	Done
+A01N01_Kim_LIV_01220	01220	LIVINGROOM	Kim 	A01N01	 Que penses-tu d’Ophélie ?	What do you think of Ophélie?	Done
+A01N01_Ern_LIV_01230	01230	LIVINGROOM	Ernest 	A01N01	 Aucune idée. Tu sais, elle vient à peine de débarquer. Elle dit qu’elle est la fille de Célestia.	No idea. You know, she just arrived here. She says she is Célestia’s daughter.	Done
+A01N01_Ern_LIV_01231	01230	LIVINGROOM	Ernest 	A01N01	 Franchement, je ne comprends pas pourquoi elle est là.	Sincerely, I don’t understand what she’s doing here.	Done
+A01N01_Ern_LIV_01232	01230	LIVINGROOM	Ernest 	A01N01	Si elle n’a jamais eu de lien avec cette famille, ce n’est pas le moment de soudain réclamer ses droits.	If she never had any link to this family, it’s not exactly the right moment to suddenly claim rights.	Done
+A01N01_Ern_LIV_01233	01230	LIVINGROOM	Ernest 	A01N01	C’est obscène, ils sont en plein deuil.	It’s obscene, everyone is mourning.	Done
+A01N01_Kim_LIV_01240	01240	LIVINGROOM	Kim 	A01N01	 Qu’est-ce que tu deviens ?	What have you been up to these past years?	Done
+A01N01_Ern_LIV_01250	01250	LIVINGROOM	Ernest 	A01N01	 Et bien ça roule ! J’ai lancé ma propre boîte, « Wait&Watch », avec un petit jeu de mot sur « watch », qui veut dire à la fois observer et montre !	Well, everything is going great! I’ve launched my own company, “Wait&Watch”, with a word game on Watch, you know, watching your watch?	Done
+A01N01_Ern_LIV_01251	01250	LIVINGROOM	Ernest 	A01N01	Parce que oui, je vends des montres. Tu as vu la mienne ? Elles sont vraiment classes.	Because, yes, I sell watches. Did you see mine? They’re really awesome.	Done
+A01N01_Ern_LIV_01252	01250	LIVINGROOM	Ernest 	A01N01	Tu n’en as pas, tu veux peut-être m’en acheter une ?	I see you don’t have one, maybe you’d like to buy one?	Done
+A01N01_Kim_LIV_01260	01260	LIVINGROOM	Kim 	A01N01	 On en reparle plus tard ?	Maybe later?	Done
+A01N01_Ern_LIV_01270	01270	LIVINGROOM	Ernest 	A01N01	' Oui, je sais bien que ce n''est pas le moment, je plaisantais ! On en reparlera, je te montrerai le catalogue.'	'Yes, I know it''s not really the right time, I was kidding! We can speak about it later, I’ll show you the catalogue, aha…'	Done
+A01N01_Kim_LIV_01280	01280	LIVINGROOM	Kim 	A01N01	 Tu rigoles ? Ce n’est pas le moment !	Are you kidding? It’s not the right moment!	Done
+A01N01_Kim_LIV_01290	01290	LIVINGROOM	Kim 	A01N01	 Les Castheran sont en deuil, je dois régler une histoire d’héritage et tu me parles de montres ?	The Castheran are in mourning, I have to deal with the will, and you’re trying to sell me a watch?	Done
+A01N01_Ern_LIV_01300	01300	LIVINGROOM	Ernest 	A01N01	 Pas la peine de t’en prendre à moi, je plaisantais ! C’était juste histoire de te donner des nouvelles. Je ne suis pas désespéré à ce point, aha.	Don’t get mad at me like that, I was only kidding! It was just a way of telling you about the latest news. I’m not so desperate, aha.	Done
+A01N01_Kim_LIV_01310	01310	LIVINGROOM	Kim 	A01N01	 Au revoir.	Bye.	Done
+A01N01_Kim_LIV_01320	01320	LIVINGROOM	Kim 	A01N01	 Que penses-tu d’Abigail ?	What do you think about Abigail?	Done
+A01N01_Ern_LIV_01330	01330	LIVINGROOM	Ernest 	A01N01	 Elle irradiait déjà d’une aura incroyable quand nous étions enfants, mais maintenant, c’est encore plus marqué…	She was already beaming with an incredible aura when we were children, but now it’s even more obvious…	Done
+A01N01_Ern_LIV_01331	01330	LIVINGROOM	Ernest 	A01N01	Promets-moi de ne pas le lui répéter, mais j’étais déjà amoureux d’elle à l’époque.	Promise me not to tell her, but I already was in love with her back then.	Done
+A01N01_Kim_LIV_01340	01340	LIVINGROOM	Kim 	A01N01	 Promis.	I promise.	Done
+A01N01_Ern_LIV_01350	01350	LIVINGROOM	Ernest 	A01N01	 Je n’ai jamais eu la possibilité de le lui avouer.	I never had the opportunity to tell her.	Done
+A01N01_Ern_LIV_01351	01350	LIVINGROOM	Ernest 	A01N01	Aujourd’hui, tous mes sentiments reviennent au galop et prennent toute la place, je ne pense qu’à elle en permanence, c’est tellement difficile de la savoir si triste.	Today, all my feelings are coming back and are taking the whole space, I think about her all the time and it’s so hard to know she’s so sad.	Done
+A01N01_Ern_LIV_01352	01350	LIVINGROOM	Ernest 	A01N01	Je ne sais pas comment le lui dire, elle est si difficile à émouvoir. Peut-être pourrais-tu m’aider à trouver l’occasion ?	I don’t really know how to let her know, she’s so hard to move. Maybe you can help me find a way?	Done
+A01N01_Kim_LIV_01360	01360	LIVINGROOM	Kim 	A01N01	 Bien sûr, tout pour un ancien ami !	Sure, anything for an old friend!	Done
+A01N01_Ern_LIV_01370	01370	LIVINGROOM	Ernest 	A01N01	 Merci, je n’en attendais pas moins ! On en reparlera dans un lieu plus discret.	Thanks, I didn’t expect any less! Let’s talk about it again in a more private place.	Done
+A01N01_Kim_LIV_01380	01380	LIVINGROOM	Kim 	A01N01	 Je ne sais pas, peut-être.	I don’t know, maybe.	Done
+A01N01_Ern_LIV_01390	01390	LIVINGROOM	Ernest 	A01N01	 D’accord, je te redemanderai.	Okay, I’ll ask you again later.	Done
+A01N01_Kim_LIV_01400	01400	LIVINGROOM	Kim 	A01N01	 Débrouille-toi tout seul, ce n’est pas mon problème.	Sort things out yourself, it’s not my problem.	Done
+A01N01_Kim_LIV_01410	01410	LIVINGROOM	Kim 	A01N01	 Sincèrement, tu trouves que c’est le moment de penser à ta vie amoureuse ?	Do you seriously think it’s the right time to think of your love life?	Done
+A01N01_Ern_LIV_01420	01420	LIVINGROOM	Ernest 	A01N01	 Je n’ai pas dit de m’aider tout de suite… Mais puisque tu le prends comme ça.	I didn’t say help me now… but if you take it this way, whatever.	Done
+A01N01_Ern_LIV_01430	01430	LIVINGROOM	Ernest 	A01N01	 Oh… Si tu demandes pour l’héritage, je pense qu’elle saura très bien s’occuper du Manoir et qu’elle devrait l’avoir.	Well… If you’re asking because of the will, I think she’d take a good care of the Manor and that she should have it.	Done
+A01N01_Ern_LIV_01431	01430	LIVINGROOM	Ernest 	A01N01	Elle est très intègre. Mais sinon, à un niveau personnel…	She’s a very upright person. On a personal level though…	Done
+A01N01_Ern_LIV_01432	01430	LIVINGROOM	Ernest 	A01N01	Je ne te conseille pas d’essayer de la côtoyer. Ce n’est vraiment pas une personne appréciable.	'I don’t advise you to try and be friend with her. She isn''t very fun to be around.'	Done
+A01N01_Ern_LIV_01433	01430	LIVINGROOM	Ernest 	A01N01	Elle m’a déjà dit qu’elle te méprisait.	She already told me she despises you.	Done
+A01N01_NAR_LIV_01440	01440	LIVINGROOM	NARRATEUR 	A01N01	 Oh… C’est vrai qu’elle est froide, mais je ne pensais pas qu’elle me détestait déjà, juste qu’elle était distante avec tout le monde.	Oh… It’s true she is cold, but I didn’t think she already hated me, just that she was distant with everyone.	Done
+A01N01_NAR_LIV_01441	01440	LIVINGROOM	NARRATEUR 	A01N01	 Est-ce que j’ai fait quelque chose ? Quand est-ce qu’elle a pu dire ça à Ernest, alors que je viens à peine d’arriver ?	Did I do something wrong? …And when did she tell Ernest that? I just arrived.	Done
+A01N01_Kim_LIV_01450	01450	LIVINGROOM	Kim 	A01N01	 Merci pour le conseil.	Thank you for the advice.	Done
+A01N01_Ern_LIV_01460	01460	LIVINGROOM	Ernest 	A01N01	 Enchanté.	Nice to see you.	Done
+A01N01_Kim_LIV_01470	01470	LIVINGROOM	Kim 	A01N01	 Ophélie Beaumont, c’est bien ça ?	Ophélie Beaumont, isn’t it?	Done
+A01N01_Oph_LIV_01480	01480	LIVINGROOM	Ophélie 	A01N01	 Ou-Oui, c’est moi.	Y-yes, it’s m-me.	Done
+A01N01_Kim_LIV_01490	01490	LIVINGROOM	Kim 	A01N01	 Excusez-moi, je ne crois pas vous connaître. Est-ce que vous pouvez m’en dire plus sur vous ?	Forgive me, I don’t know anyone well here. Can you tell me more about yourself?	Done
+A01N01_Oph_LIV_01500	01500	LIVINGROOM	Ophélie 	A01N01	 Bien sûr. Je… Comment dire, je… C’est…	O-of course. I… Well, I… It’s…	Done
+A01N01_NAR_LIV_01510	01510	LIVINGROOM	NARRATEUR 	A01N01	 Elle rit nerveusement.	She laughs nervously.	Done
+A01N01_Oph_LIV_01520	01520	LIVINGROOM	Ophélie 	A01N01	 C’est compliqué. J’ai grandi loin d’ici, chez mon p-père, en Normandie. Le v-voyage a été long. J-je n’ai jamais connu ma m-mère.	It’s c-c-complicated. I grew up far f-from here, with my f-father, in Normandy. The t-trip was long. I never knew m-my m-mother.	Done
+A01N01_NAR_LIV_01530	01530	LIVINGROOM	NARRATEUR 	A01N01	 Elle est tellement stressée qu’on dirait qu’elle récite une présentation devant une classe…	She’s so stressed out she sounds like she’s reciting a presentation backward in front of a classroom…	Done
+A01N01_Oph_LIV_01540	01540	LIVINGROOM	Ophélie 	A01N01	 Mon père m’a seulement donné son i-identité récemment…	M-my father only t-told me her ident-tity recently…	Done
+A01N01_Kim_LIV_01550	01550	LIVINGROOM	Kim 	A01N01	 Qui est-ce ?	And who’s she?	Done
+A01N01_Oph_LIV_01560	01560	LIVINGROOM	Ophélie 	A01N01	 P-pardon… Il m’a dit que c’était Cé-Célestia Castheran. Il suivait sa vie de loin, mais n’a ja-jamais voulu me dire qui elle était.	Oh, s-sorry… He s-said she was C-Célestia Castheran. He f-followed her life f-from a-a-afar, but he never accepted to t-tell me who she was.	Done
+A01N01_Oph_LIV_01561	01560	LIVINGROOM	Ophélie 	A01N01	Je-je comprends pourquoi, maintenant.	I understand why, n-now.	Done
+A01N01_NAR_LIV_01570	01570	LIVINGROOM	NARRATEUR 	A01N01	 J’essaie de sourire, de la rassurer pour qu’elle continue.	I try to smile and to reassure her so she would continue.	Done
+A01N01_Oph_LIV_01580	01580	LIVINGROOM	Ophélie 	A01N01	 J-je crois que ma mère n’a jamais parlé de moi et de mon père à sa nouvelle f-famille.	I think my m-mother never s-said a word about m-me and my dad to her new f-family.	Done
+A01N01_Oph_LIV_01581	01580	LIVINGROOM	Ophélie 	A01N01	Mon père ne voulait pas la dé-déranger… Il n’a jamais rien dit, jamais cherché à la recontacter…	My dad didn’t want to upset her… He never s-said anything, never t-tried to contact her again…	Done
+A01N01_Oph_LIV_01582	01580	LIVINGROOM	Ophélie 	A01N01	Mais… je voulais venir à son en-enterrement, savoir… savoir qui elle était… C’est pour ça que je suis ici.	B-b-but… I wanted to come to her f-funerals, to know… know who she was… That’s why I’m here.	Done
+A01N01_Kim_LIV_01590	01590	LIVINGROOM	Kim 	A01N01	 Abigail n’a pas l’air de vous apprécier…	Abigail doesn’t seem to like you…	Done
+A01N01_Oph_LIV_01600	01600	LIVINGROOM	Ophélie 	A01N01	 En effet… En même temps, j-je la comprends.	Indeed… B-but I understand her.	Done
+A01N01_Oph_LIV_01601	01600	LIVINGROOM	Ophélie 	A01N01	Que penseriez-vous, s-si quelqu’un arrivait de nulle part et vous annonçait être votre s-sœur ?	What would you think, if s-s-somebody arrived f-from who knows where and t-told you she was your s-s-sister?	Done
+A01N01_NAR_LIV_01610	01610	LIVINGROOM	NARRATEUR 	A01N01	 Surtout au moment où celle qui pourrait le confirmer vient de mourir…	Especially when the only one who can confirm it just died…	Done
+A01N01_Kim_LIV_01620	01620	LIVINGROOM	Kim 	A01N01	 Je me méfierais.	I would stay on my guards.	Done
+A01N01_Oph_LIV_01630	01630	LIVINGROOM	Ophélie 	A01N01	 Exactement… Personne ne veut cr-croire que je suis la fille de Cé-Célestia.	Exactly. No one wants to b-believe I am C-Célestia’s daughter.	Done
+A01N01_Kim_LIV_01640	01640	LIVINGROOM	Kim 	A01N01	 Je l’accueillerai à bras ouverts, c’est une chance !	I would welcome her with open arms	Done
+A01N01_Oph_LIV_01650	01650	LIVINGROOM	Ophélie 	A01N01	 Oh ! C’est gentil. J’aurais aimé être de votre f-famille, pour avoir un tel accueil.	Oh! That’s s-so nice of you. I would have loved to b-be f-from your f-family, and b-be welcomed so.	Done
+A01N01_Oph_LIV_01651	01650	LIVINGROOM	Ophélie 	A01N01	Ici, personne ne veut croire que je suis la fille de Cé-Célestia. 	Here, no one wants to b-believe I am C-Célestia’s daughter.	Done
+A01N01_Kim_LIV_01660	01660	LIVINGROOM	Kim 	A01N01	 A la mort de ma mère ? Je la mettrai à la porte.	At my mother’s funerals? I would kick her out.	Done
+A01N01_Oph_LIV_01670	01670	LIVINGROOM	Ophélie 	A01N01	 Je… Oui, je comprends, A-Abigail a déjà été bien g-gentille de me laisser entrer.	I… Yes, I understand, Ab-b-bigail has been v-very nice to invite m-me in.	Done
+A01N01_Oph_LIV_01671	01670	LIVINGROOM	Ophélie 	A01N01	Je lui suis redevable. C’est normal que personne ne veuille croire que je suis la fille de Cé-Célestia.	I’m so grateful to her. It’s n-normal that no one wants to b-believe I am C-Célestia’s daughter.	Done
+A01N01_NAR_LIV_01680	01680	LIVINGROOM	NARRATEUR 	A01N01	 Je n’aurais peut-être pas dû être aussi franc#he||•he#. Elle a l’air de prendre les choses très à cœur, je ne voudrais pas la blesser par inadvertance.	Maybe I shouldn’t have be so outspoken. She seems to take everything to heart. I wouldn’t want to hurt her without meaning to.	Done
+A01N01_Oph_LIV_01690	01690	LIVINGROOM	Ophélie 	A01N01	 C’est pourtant vrai, j-je crois. J’espérais que quelqu’un en saurait davantage sur moi ici…	I really think it’s true, though. I hoped s-somebody would know more about m-me here…	Done
+A01N01_Oph_LIV_01691	01690	LIVINGROOM	Ophélie 	A01N01	Peut-être y-a-t-il <color=#e27941ff>une preuve quelque part, dans les affaires de ma m-mère ? </color>	Maybe <color=#e27941ff>there’s p-proof somewhere, in my m-mother’s stuff? </color>	Done
+A01N01_Oph_LIV_01692	01690	LIVINGROOM	Ophélie 	A01N01	Une photo de moi enfant, par exemple… J’ai p-peur d’espérer.	A p-picture of me as a child for example… I’m s-so afraid t-to hope.	Done
+A01N01_Oph_LIV_01700	01700	LIVINGROOM	Ophélie 	A01N01	 …	…	Done
+A01N01_Oph_LIV_01710	01710	LIVINGROOM	Ophélie 	A01N01	 Vous… Vous allez avoir le droit de regarder partout…	You… You may look everywhere in the M-Manor, right?	Done
+A01N01_Oph_LIV_01711	01710	LIVINGROOM	Ophélie 	A01N01	Est-ce-que, par hasard, vous-vous pourriez m’aider à p-prouver que je suis leur demi-sœur ?	C-could you, by any chance, help me p-prove to Abigail and Hippolyte that I’m their half-s-sister ?	Done
+A01N01_Oph_LIV_01712	01710	LIVINGROOM	Ophélie 	A01N01	Je n’ai pas le droit d’aller dans <b>la chambre de Célestia</b>.	They f-forbade me to enter <b>C-Célestia’s room</b>.	Done
+A01N01_NAR_LIV_01720	01720	LIVINGROOM	NARRATEUR 	A01N01	 Ça ne me coûte rien… Et si ce qu’elle dit est vrai, elle peut elle aussi prétendre au Manoir.	On the one hand, it costs nothing for me to try… And if what she says is true, she could also ask for the Manor.	Done
+A01N01_NAR_LIV_01721	01720	LIVINGROOM	NARRATEUR 	A01N01	C’est important pour moi de découvrir la vérité.	It’s important for me to find the truth.	Done
+A01N01_NAR_LIV_01722	01720	LIVINGROOM	NARRATEUR 	A01N01	 D’un autre côté, ça me complique la tâche, et elle se donne peut-être des airs faussement timides pour récupérer l’héritage…	On the other hand, it’s more work for me. Maybe she gives herself fake, timid looks just to get the inheritance…	Done
+A01N01_Kim_LIV_01730	01730	LIVINGROOM	Kim 	A01N01	 Je ferai tout mon possible.	I’ll do whatever I can.	Done
+A01N01_Oph_LIV_01740	01740	LIVINGROOM	Ophélie 	A01N01	 M-Merci beaucoup ! Je-Je suis vraiment touchée. Personne n’a l’air de vraiment vouloir m’aider, ici.	T-thank you so much! I’m v-very grateful. N-no one really wants to help me here.	Done
+A01N01_Kim_LIV_01750	01750	LIVINGROOM	Kim 	A01N01	 Si je tombe sur quelque chose d’intéressant, je vous le dirai.	If I find something by chance, I’ll tell you	Done
+A01N01_Oph_LIV_01760	01760	LIVINGROOM	Ophélie 	A01N01	 M-Merci. N’importe quoi qui puisse m’aider à savoir qui-qui je suis me ferait plaisir.	T-thank you. Anything that c-can help me know who I am would m-make m-me happy.	Done
+A01N01_Kim_LIV_01770	01770	LIVINGROOM	Kim 	A01N01	 Je n’ai aucune raison d’avoir confiance en vos intentions.	I can’t trust you	Done
+A01N01_Oph_LIV_01780	01780	LIVINGROOM	Ophélie 	A01N01	 J-Je comprends. J’espérais que… enfin, même si vous ne me c-croyez pas, vous êtes là pour trancher entre les héritiers.	I understand. I hoped that… Well, even if you d-don’t b-believe me, you’re here to choose an heir.	Done
+A01N01_Oph_LIV_01781	01780	LIVINGROOM	Ophélie 	A01N01	Alors je p-pensais que vous voudriez chercher la v-vérité, et que vous pourriez me dire…	So I thought you would want to know the t-t-truth, and that you could t-tell me…	Done
+A01N01_Oph_LIV_01782	01780	LIVINGROOM	Ophélie 	A01N01	Mais… C’est comme vous voulez. J-je comprends.	B-but… You d-decide. I understand.	Done
+A01N01_Kim_LIV_01790	01790	LIVINGROOM	Kim 	A01N01	 Qu’est-ce que vous savez de Célestia ?	What do you know about Célestia?	Done
+A01N01_Oph_LIV_01800	01800	LIVINGROOM	Ophélie 	A01N01	 M-Malheureusement pas grand-chose. J’ai appris récemment qu’elle était ma mère b-biologique. Mon père m’a uniquement parlé d’elle à cause de…	Unfortunately not much. I l-learned recently that she was my b-biological m-mother. My dad only t-told me about her because of…	Done
+A01N01_Oph_LIV_01810	01810	LIVINGROOM	Ophélie 	A01N01	 De sa…	Of her…	Done
+A01N01_Oph_LIV_01820	01820	LIVINGROOM	Ophélie 	A01N01	 De son décès.	Of her death.	Done
+A01N01_Oph_LIV_01830	01830	LIVINGROOM	Ophélie 	A01N01	 Je sais juste qu’elle aimait la m-musique.	I just know she likes m-music.	Done
+A01N01_Oph_LIV_01840	01840	LIVINGROOM	Ophélie 	A01N01	 …	…	Done
+A01N01_Oph_LIV_01850	01850	LIVINGROOM	Ophélie 	A01N01	 Excusez-moi, je préfère ne pas en parler maintenant.	I’m sorry, I’d rather n-not talk ab-b-bout it n-now.	Done
+A01N01_Kim_LIV_01860	01860	LIVINGROOM	Kim 	A01N01	 Je reviens plus tard.	I’ll come back later.	Done
+A01N01_Oph_LIV_01870	01870	LIVINGROOM	Ophélie 	A01N01	 B-Bonsoir !	G-Good evening!	Done
+A01N01_Léo_HAL_01880	01880	HALL	Léontine 	A01N01	 B’soir. Attention où vous mettez les pieds.	Ev’ning. Be car’ful where you walk.	Done
+A01N01_Kim_HAL_01890	01890	HALL	Kim 	A01N01	 Bonsoir. Vous êtes ?	Good evening. You are?	Done
+A01N01_Léo_HAL_01900	01900	HALL	Léontine 	A01N01	 Mm ? Léontine. La gouvernante.	Mm? Léontine. The housekeeper.	Done
+A01N01_Kim_HAL_01910	01910	HALL	Kim 	A01N01	 Vous êtes ici depuis longtemps ?	Have you been here a long time?	Done
+A01N01_Léo_HAL_01920	01920	HALL	Léontine 	A01N01	 Vingt ans et des poussières.	Twenty years and counting.	Done
+A01N01_Kim_HAL_01930	01930	HALL	Kim 	A01N01	 Vous connaissez bien Hippolyte ?	You know Hippolyte well, don’t you?	Done
+A01N01_Léo_HAL_01940	01940	HALL	Léontine 	A01N01	 C’est un vrai gamin. Honnête et sincère, d’accord, mais immature à souhait.	He’s a brat. Honest and sincere, right, but so childish.	Done
+A01N01_Kim_HAL_01950	01950	HALL	Kim 	A01N01	 Que fait Ernest ici ?	What is Ernest doing here?	Done
+A01N01_Léo_HAL_01960	01960	HALL	Léontine 	A01N01	 Oh, il est toujours dans mes pattes, lui… Tellement fou amoureux d’Abigail qu’il la suit partout comme un p’tit chien !	Oh, that one’s always under my feet… So head over heels in love with Abigail, he follows her around like a little dog!	Done
+A01N01_NAR_HAL_01970	01970	HALL	NARRATEUR 	A01N01	 Tiens, bizarre, il m’a pourtant dit qu’il ne l’aimait pas à un niveau personnel.	That’s strange. Didn’t he tell me he didn’t like her on a personal level?	Done
+A01N01_Kim_HAL_01980	01980	HALL	Kim 	A01N01	 Que pensez-vous de la situation ?	What do you think about the situation?	Done
+A01N01_Léo_HAL_01990	01990	HALL	Léontine 	A01N01	 J’en pense rien, moi, suis là pour faire la poussière, pas pour réfléchir. Tout ce que je sais, c’est que…	I don’t think anything, me, I’m just here to take away the dust, not to think or anything. All I know is…	Done
+A01N01_Léo_HAL_02000	02000	HALL	Léontine 	A01N01	 Abigail ne vous déteste pas. Je la connais, ma maîtresse, même si elle est pas très expressive.	Aby doesn’t hate you. I know my mistress, even if she ain’t very expressive.	Done
+A01N01_Léo_HAL_02010	02010	HALL	Léontine 	A01N01	 Abigail vous a à dos. Je la connais, ma maîtresse, même si elle est pas très expressive.	Aby doesn’t hold you dear. I know my mistress, even if she ain’t very expressive.	Done
+A01N01_Léo_HAL_02020	02020	HALL	Léontine 	A01N01	 Ophélie a l’air tristounette. On se demande pourquoi, c’est pas comme si elle connaissait sa mère…	Ophélie seems sad. I wonder why, it’s not like she knew her mom…	Done
+A01N01_Léo_HAL_02030	02030	HALL	Léontine 	A01N01	 Ophélie est triste, ça crève les yeux. Elle pourrait au moins être discrète comme Abigail.	Ophélie is sad, it’s obvious. She could at least try to be discreet like Aby.	Done
+A01N01_Léo_HAL_02040	02040	HALL	Léontine 	A01N01	 Ah, et Ernest est agacé. Je n’aime pas les gens agacés, ils ont tendance à faire passer leur colère sur les pauvres gens qui n’y sont pour rien.	Ernest is upset. I don’t like upset people. It’s always the poor people who don’t do nothing who got to be their scapegoat.	Done
+A01N01_Léo_HAL_02050	02050	HALL	Léontine 	A01N01	 Ah, et Ernest est énervé, non ? J’ai peur qu’il ne sache pas contrôler ses émotions.	Ernest is upset, isn’t he? I’m afraid he ain’t really good at controlling his emotions.	Done
+A01N01_Kim_HAL_02060	02060	HALL	Kim 	A01N01	 Je vous laisse à votre travail.	I’ll leave you to your work.	Done
+A01N01_Léo_HAL_02070	02070	HALL	Léontine 	A01N01	 Oh, vous croyez que je travaille encore à cette heure-là ? Geoffroy va vous montrer votre chambre, vous aurez l’temps de découvrir le Manoir demain.	Oh, you think I’m still working at this hour? Geoffroy’ll show you your room. You can visit the Manor tomorrow.	Done
+A01N01_Kim_HAL_02080	02080	HALL	Kim 	A01N01	 Finalement, j’ai encore une question…	Actually, I still have a question…	Done
+A01N01_NAR_HAL_02090	02090	HALL	NARRATEUR 	A01N01	 Elle soupire, puis se force à sourire.	She sighs and forces a smile on her face.	Done
+A01N01_Léo_HAL_02100	02100	HALL	Léontine 	A01N01	 J’vous écoute.	Shoot.	Done
+A01N01_Kim_HAL_02110	02110	HALL	Kim 	A01N01	 Finalement, je vais rester encore un peu au salon.	Actually, I’d rather stay a bit longer in the sitting room.	Done
+A01N01_Léo_HAL_02120	02120	HALL	Léontine 	A01N01	 Revenez me parler quand vous voulez dormir.	Come back to me when you want to go to sleep.	Done
+A01N01_Kim_HAL_02130	02130	HALL	Kim 	A01N01	 Merci.	Thank you.	Done
+A01N01_Kim_HAL_02140	02140	HALL	Kim 	A01N01	 Et Geoffroy, est-il digne de confiance ?	And Geoffroy, is he trustworthy?	Done
+A01N01_Léo_HAL_02150	02150	HALL	Léontine 	A01N01	 Pas pour faire son travail, en tout cas, ce flemmard.	Not to do his work anyway, that lazybones.	Done
+A01N01_Kim_HAL_02160	02160	HALL	Kim 	A01N01	 Vous savez qui est Ophélie ?	Do you know who is Ophélie?	Done
+A01N01_Léo_HAL_02170	02170	HALL	Léontine 	A01N01	 Une gamine mythomane. Elle vient juste pour l’héritage… Je le saurai, moi, si Célestia avait eu un troisième enfant, je n’étais pas aveugle à l’époque.	A compulsive liar. The kid is only here for the inheritance. I’d know, me, if Célestia had a third child, I wasn’t blind back then!	Done
+A01N01_Kim_HAL_02180	02180	HALL	Kim 	A01N01	 Que pensez-vous d’Abigail ?	What do you think about Abigail?	Done
+A01N01_Léo_HAL_02190	02190	HALL	Léontine 	A01N01	' Hautaine et élitiste. Mais elle veut bien faire, c''est déjà ça.'	'Haughty and snobbish. The only thing she''s got is good intentions.'	Done
+A01N01_Léo_HAL_02191	02190	HALL	Léontine 	A01N01	 Déjà de retour ?	Already Back ?	Done
+A01N01_NAR_BLA_02200	02200	BLACK_SCREEN	NARRATEUR 	A01N01	 Geoffroy a eu la gentillesse de me montrer ma chambre, et de choisir celle dans laquelle je dormais, enfant, lorsque je restais chez les Castheran. Je m’en souviens mal ; le bruit du parquet sous mes pas, les motifs sur les couvertures, tout me rappelle quelque chose, mais aucune image claire de moi à cette époque ne me revient.	Geoffroy was nice enough to show me to my room, and to choose the one I slept in, as a child, when I stayed over at the Castheran’s. I remember it badly; the sound of my steps on the wooden floor, the patterns on the bedcovers, everything reminds me of something, but no clear image of this period is coming back.	Done
+A01N01_NAR_BLA_02210	02210	BLACK_SCREEN	NARRATEUR 	A01N01	 Avant de dormir, je décide d’aller me chercher un verre d’eau. Je ralentis en remarquant la lumière filtrer sous la porte. Quelqu’un s’y trouve vraisemblablement déjà.	Before going to sleep, I decide to go get a glass of water. I slow down when I notice light under the door. Someone’s already there.	Done
+A01N01_Kim_BLA_02220	02220	BLACK_SCREEN	Kim 	A01N01	 Entrer dans la cuisine	Enter the kitchen	Done
+A01N01_NAR_KIT_02230	02230	KITCHEN	NARRATEUR 	A01N01	 Je frappe doucement à la porte pour prévenir de ma présence, puis j’entre. Abigail et Ophélie sont assises à la table, une tasse – visiblement de tisane – entre les mains.	I softly knock on the door to make my presence known, and I enter. Abigail and Ophélie are sitting at the table, a cup – of herbal tea I’d say – in their hands.	Done
+A01N01_Abi_KIT_02240	02240	KITCHEN	Abigail 	A01N01	 #Mme|M.|Mx# Luong.	#Mrs.|Mr.|Mx.# Luong.	Done
+A01N01_Kim_KIT_02250	02250	KITCHEN	Kim 	A01N01	 Excusez-moi de vous déranger. Je voulais simplement prendre un verre d’eau.	Sorry to disturb you. I just wanted to get a glass of water.	Done
+A01N01_NAR_KIT_02260	02260	KITCHEN	NARRATEUR 	A01N01	 Abigail se lève, va chercher la carafe, me sert.	Abigail stands up, takes the carafe and pours it in a glass for me.	Done
+A01N01_Kim_KIT_02270	02270	KITCHEN	Kim 	A01N01	 Je ne reste pas. Bonne nuit à toutes les deux.	I won’t stay, good night to both of you.	Done
+A01N01_Oph_KIT_02280	02280	KITCHEN	Ophélie 	A01N01	 M-Merci.	T-thank you. 	Done
+A01N01_Kim_BLA_02290	02290	BLACK_SCREEN	Kim 	A01N01	 Ecouter pour savoir qui est là	Listen to know who’s there	Done
+A01N01_NAR_KIT_02300	02300	KITCHEN	NARRATEUR 	A01N01	 La porte est restée entrouverte. J’écoute et reconnais bientôt deux voix féminines.	The door stayed ajar. I listen and recognize two high-pitched voices.	Done
+A01N01_Abi_KIT_02310	02310	KITCHEN	Abigail 	A01N01	 Je ne peux pas savoir, Madame Beaumont.	I cannot know, Mrs. Beaumont.	Done
+A01N01_Abi_KIT_02311	02310	KITCHEN	Abigail 	A01N01	Vous êtes ici parce que je vous laisse le bénéfice du doute, et que mes parents, dans ma situation, n’auraient pas failli à leur devoir d’hospitalité.	You are here because I leave you the benefit of the doubt, and that my parents, in my situation, would never have failed their duty of hospitality.	Done
+A01N01_Abi_KIT_02312	02310	KITCHEN	Abigail 	A01N01	Mais ne me demandez pas plus que ce que je suis prête à donner.	That said, do not ask me for more than I am ready to give.	Done
+A01N01_Oph_KIT_02320	02320	KITCHEN	Ophélie 	A01N01	 Je comprends. Je-Je n’ai pas de mauvaise intention. Je souhaite simplement mieux connaître ma fa-famille.	I understand. I d-don’t have any b-bad intention. I only wish to know my f-family better.	Done
+A01N01_Abi_KIT_02330	02330	KITCHEN	Abigail 	A01N01	 Prétendue famille. Nous ne savons pas.	Alleged family. We don’t know.	Done
+A01N01_Oph_KIT_02340	02340	KITCHEN	Ophélie 	A01N01	 Je-je ne pense pas que mon p-père m’aurait menti… Pourquoi m’aurait-il fait venir jusqu’ici ? Ce serait une bl-blague de bien mauvais goût.	I d-don’t think my f-father would have lied to me… Why would he s-send me here? If it’s a p-prank, it’s a v-very d-distasteful one.	Done
+A01N01_Abi_KIT_02350	02350	KITCHEN	Abigail 	A01N01	 Je ne connais pas votre père.	Well, I don’t know your father.	Done
+A01N01_NAR_KIT_02360	02360	KITCHEN	NARRATEUR 	A01N01	 Un temps, un silence, le bruit d’une tasse reposée sur la table.	Silence. I hear a cup being put down.	Done
+A01N01_Oph_KIT_02370	02370	KITCHEN	Ophélie 	A01N01	 Je me demande comment ça aurait été, de g-grandir ici.	I wonder how it would have b-been, to g-g-grow up here.	Done
+A01N01_Abi_KIT_02380	02380	KITCHEN	Abigail 	A01N01	 Je ne peux imaginer le contraire.	I can’t imagine growing anywhere else.	Done
+A01N01_Oph_KIT_02390	02390	KITCHEN	Ophélie 	A01N01	 Vous êtes née ici ?	Were you b-born here?	Done
+A01N01_Abi_KIT_02400	02400	KITCHEN	Abigail 	A01N01	 J’y ai passé toute ma vie.	I spent all my life here.	Done
+A01N01_Oph_KIT_02410	02410	KITCHEN	Ophélie 	A01N01	 Et vous n’avez jamais voulu partir ?	And you n-never wanted to leave?	Done
+A01N01_Abi_KIT_02420	02420	KITCHEN	Abigail 	A01N01	 Jamais. Pourquoi partir ?	Never. Why would I?	Done
+A01N01_Abi_KIT_02421	02420	KITCHEN	Abigail 	A01N01	Tout ce qui m’est cher est ici.	Everything I care about is here.	Done
+A01N01_Abi_KIT_02422	02420	KITCHEN	Abigail 	A01N01	J’aime la vue de ma fenêtre, j’aime le grincement du portail, j’aime l’écart des marches des escaliers, j’aime les tapisseries au mur, j’aime les énergies qui circulent, rendues plus fortes par des générations et des générations de Castheran…	I love the view from my window, I love the grinding noise of the gate, I love the exact size of the stairs’ steps, I love the tapestries. I love the flow of energy, stronger and stronger with each generation of Castheran…	Done
+A01N01_Abi_KIT_02423	02420	KITCHEN	Abigail 	A01N01	J’aime ce que tout cet endroit représente. Je me sens à ma place ici.	I love everything this place represents. I’m at home here.	Done
+A01N01_Kim_BLA_02430	02430	BLACK_SCREEN	Kim 	A01N01	 Retourner dans la chambre	Go back to your room	Done
+A01N01_NAR_BLA_02440	02440	BLACK_SCREEN	NARRATEUR 	A01N01	 Je décide de ne pas les déranger ; tant pis pour le verre d’eau, je survivrai sans.	I’d rather not disturb them; I’ll survive without water.	Done
+A01N01_NAR_BLA_02450	02450	BLACK_SCREEN	NARRATEUR 	A01N01	 Une fois couché#e||•e#, je me sens immédiatement emmitouflé#e||•e# dans mon cocon, à l’abri, bienvenu#e||•e#. Mon arrivée s’est relativement bien passée. Certes, les circonstances ne sont pas des plus joyeuses, mais au lieu de ne retrouver qu’Abigail et Hippolyte, je retrouvais aussi Ernest, Léontine même si elle reste bougonne, et la mystérieuse Ophélie. Je ne sais pas encore quoi penser d’elle… mais c’est une question à laquelle je répondrai demain. Mieux vaut être bien reposé#e||•e# avant de devoir faire mon choix.	Once in bed, I immediately feel muffled in a warm, safe and welcoming cocoon. Everything is going relatively well. The circumstances aren’t the happiest, that’s true, but instead of seeing only Abigail and Hippolyte again, I also get to talk with Ernest, the grouchy Léontine, and the mysterious Ophélie. I don’t know what to think of her yet… but that’s a question I’ll answer tomorrow. I’d rather be well-rested before I have to take a choice.	Done
+A01N01_NAR_BLA_02460	02460	BLACK_SCREEN	NARRATEUR 	A01N01	 Au matin, je me réveille au son d’une vieille pendule qui sonne à chaque heure. Etrangement, je ne l’ai pas entendue de la nuit, mais à sept heures pétantes, c’est comme si chaque gong  se répercute deux fois plus fort dans mon crâne. Je ne peux pas l’ignorer ; c’est le Manoir lui-même qui me somme de me mettre à ma tâche. Je me prépare rapidement ; Geoffroy vient bientôt me demander ce que je souhaite pour le petit déjeuner. Une fois prêt#e||•e#, je descends dans le hall d’entrée.	In the morning, I wake up at the sound of an old clock that strikes every hour. Weirdly, I haven’t heard it all night, but at seven o’clock, I feel like each gong resonates twice as strong in my head. I can’t ignore it; the Manor itself compels me to get on with my task. I get ready pretty fast; Geoffroy soon comes to ask me what I want to eat for breakfast and I go down to the main hall.	Done
+A01N01_NAR_BLA_02470	02470	BLACK_SCREEN	NARRATEUR 	A01N01	 La journée allait être bien remplie…	It’s going to be a long day…	Done

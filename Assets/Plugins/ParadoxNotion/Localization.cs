@@ -12,14 +12,18 @@ namespace Utils
         static List<string> _paths = new List<string>();
         static Dictionary<Lang, Dictionary<string, string>> _globalLangDictionary = new Dictionary<Lang, Dictionary<string, string>>();
         static Dictionary<string, string> _currentLangDictionary;
+        static Lang _currentLang;
+        public static Lang CurrentLang { get { return _currentLang; } }
 
-        public static void InitializeLangDictionaries(Lang a_lang = Lang.fr)
+        public static void InitializeLangDictionaries(Lang a_lang = Lang.fr /*, int a_pathIndex*/)
         {
             _paths.Clear();
             _paths.Add(Application.streamingAssetsPath + "/TABLE_REFERENCE_LOCALISATION_00.csv");
             _paths.Add(Application.streamingAssetsPath + "/TABLE_REFERENCE_LOCALISATION_01.csv");
+            //_paths.Add(Application.streamingAssetsPath + "/TABLE_REFERENCE_LOCALISATION_02.csv");
             _globalLangDictionary.Clear();
             ParseCSV();
+            _currentLang = a_lang;
             _currentLangDictionary = _globalLangDictionary[a_lang];
         }
 
@@ -40,7 +44,7 @@ namespace Utils
 
                 for (int i = 1; i < lines.Length; i++)
                 {
-                    string[] lineData = (lines[i]).Split(new char[] { ';' });
+                    string[] lineData = (lines[i]).Split(new char[] { '\t' });
 
                     if (lineData.Length > 6)
                     {

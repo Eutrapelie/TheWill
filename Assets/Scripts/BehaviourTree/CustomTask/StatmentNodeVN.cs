@@ -31,14 +31,17 @@ namespace VN.Dialog
                 if(charEnum != null)                    
                     EventManager.TriggerEvent(EVT_CHARACTER_TALKING, charEnum.Value);
             }
+            var id = statement.meta;
+            var text = Utils.Localization.GetLocalized(id);
+            statement.text = text;
             statement = GenreReplace(statement);
 
             return base.OnExecute(agent, bb);
         }
 
-        Statement GenreReplace(Statement text)
+        Statement GenreReplace(Statement a_text)
         {
-            var s = text.text;
+            var s = a_text.text;
             var i = 0;
             while ((i = s.IndexOf('#', i)) != -1)
             {
@@ -66,7 +69,7 @@ namespace VN.Dialog
                 i++;
             }
 
-            return new Statement(s, text.audio, text.meta);
+            return new Statement(s, a_text.audio, a_text.meta);
         }
     }
 }

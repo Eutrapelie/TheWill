@@ -9,6 +9,8 @@ namespace TheWill
     public class MainMenuView : MonoBehaviour
     {
         [SerializeField] Button _startButton;
+        [SerializeField] string _versionString;
+        [SerializeField] Text _versionText;
 
 
     ///////////////////////////////////////////////////////////////
@@ -20,6 +22,7 @@ namespace TheWill
             SaveLoad.LoadSaves();
             SaveLoad.LoadOptions();
             Utils.Localization.InitializeLangDictionaries(Utils.Lang.fr);
+            _versionText.text = _versionString;
         }
         /*********************************************************/
 

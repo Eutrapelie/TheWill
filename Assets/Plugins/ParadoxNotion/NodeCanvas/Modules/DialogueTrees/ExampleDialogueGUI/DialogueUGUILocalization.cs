@@ -81,20 +81,23 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
             // test de localization
             Utils.Localization.InitializeLangDictionaries(_lang);
 
-            Debug.Log("Start");
+            //Debug.Log("Start");
             _keysToIgnored.Add(KeyCode.Escape);
         }
 
-		void OnDialogueStarted(DialogueTree dlg){
+		void OnDialogueStarted(DialogueTree dlg)
+        {
 			//nothing special...
 		}
 
-		void OnDialoguePaused(DialogueTree dlg){
+		void OnDialoguePaused(DialogueTree dlg)
+        {
 			subtitlesGroup.gameObject.SetActive(false);
 			optionsGroup.gameObject.SetActive(false);
 		}
 
-		void OnDialogueFinished(DialogueTree dlg){
+		void OnDialogueFinished(DialogueTree dlg)
+        {
 			subtitlesGroup.gameObject.SetActive(false);
 			optionsGroup.gameObject.SetActive(false);
 			if (cachedButtons != null){
@@ -108,7 +111,8 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 		}
 
 
-		void OnSubtitlesRequest(SubtitlesRequestInfo info){
+		void OnSubtitlesRequest(SubtitlesRequestInfo info)
+        {
 			StartCoroutine(Internal_OnSubtitlesRequestInfo(info));
 		}
 
@@ -116,11 +120,14 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
         string _tempBoldText = string.Empty;
         bool _isBold = false;
 
-		IEnumerator Internal_OnSubtitlesRequestInfo(SubtitlesRequestInfo info){
 
-            var id = info.statement.meta;
-            //Debug.Log(id);
-			var text = Utils.Localization.GetLocalized(id);
+
+		IEnumerator Internal_OnSubtitlesRequestInfo(SubtitlesRequestInfo info){
+            
+			var text = info.statement.text;
+            _isBold = false;
+            _tempBoldText = string.Empty;
+            Debug.Log(text);
 			var audio = info.statement.audio;
 			var actor = info.actor;
 
@@ -133,7 +140,8 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			actorPortrait.gameObject.SetActive( actor.portraitSprite != null );
 			actorPortrait.sprite = actor.portraitSprite;
 
-			if (audio != null){
+			if (audio != null)
+            {
 				var actorSource = actor.transform != null? actor.transform.GetComponent<AudioSource>() : null;
 				var playSource = actorSource != null? actorSource : localSource;
 				playSource.clip = audio;
@@ -154,8 +162,9 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 				}
 			}
 
-			if (audio == null){
-				var tempText = "";
+			if (audio == null)
+            {
+				var tempText = string.Empty;
 				var inputDown = false;
                 if (!isGamePaused && skipOnInput)
                 {
@@ -177,7 +186,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 						yield break;
 					}
                     
-                    if (_isBold == false)
+                    if (_isBold == false) // Bold treatment
                     {
                         if (text[i] == '<' && text[i+1] == 'b' && text[i+2] == '>')
                         {
@@ -185,7 +194,8 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
                             _tempBoldText = "<b>";
                             i += 2;
                         }
-                    } else
+                    }
+                    else
                     {
                         _tempBoldText += text[i];
                         if (_tempBoldText.StartsWith("<b>") && _tempBoldText.Contains("</b>") == false)
@@ -202,7 +212,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
                         }
                     }
 
-                    if (string.IsNullOrEmpty(tempColorText))
+                    if (string.IsNullOrEmpty(tempColorText)) // Color treatment
                     {
                         if (text[i] == '<')
                         {
@@ -213,6 +223,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
                             tempText += text[i];
 
                             yield return StartCoroutine(DelayPrint(subtitleDelays.characterDelay));
+                            actorSpeech.text = tempText;
                             char c = text[i];
                             if (c == '.' || c == '!' || c == '?')
                             {
@@ -222,11 +233,9 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
                             {
                                 yield return StartCoroutine(DelayPrint(subtitleDelays.commaDelay));
                             }
-
-                            actorSpeech.text = tempText;
                         }
                     }
-                    else
+                    else 
                     {
                         tempColorText += text[i];
                         if (tempColorText.StartsWith("<color=") && tempColorText.Contains(">") && tempColorText.Contains("</") == false)
@@ -308,7 +317,9 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 				btn.gameObject.SetActive(true);
 				btn.transform.SetParent(optionsGroup.transform, false);
 				btn.transform.localPosition = (Vector2)optionButton.transform.localPosition - new Vector2(0, buttonHeight * i);
-				btn.GetComponentInChildren<Text>().text = pair.Key.text;
+
+                var id = pair.Key.meta;
+				btn.GetComponentInChildren<Text>().text = Utils.Localization.GetLocalized(id);
 				cachedButtons.Add(btn, pair.Value);
 				btn.onClick.AddListener( ()=> { Finalize(info, cachedButtons[btn]);	});
 				i++;
