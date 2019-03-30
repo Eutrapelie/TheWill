@@ -13,7 +13,7 @@ namespace TheWill
         void Start()
         {
             _text = GetComponent<Text>();
-            Debug.Log(_localizedId);
+            //Debug.Log(_localizedId);
             _text.text = Utils.Localization.GetLocalized(_localizedId);
 
             if (_hasToBeUpdated)

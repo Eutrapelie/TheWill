@@ -69,7 +69,7 @@ namespace TheWill
                 dayNumber = value;
             }
         }
-
+        
         static GameManager instance = null;
         public static GameManager Instance
         {
@@ -88,6 +88,28 @@ namespace TheWill
                 }
                 return instance;
             }
+        }
+
+        void Start()
+        {
+            Debug.Log("######### start");
+            if (MusicManager.Instance.gameObject.GetComponent<AudioSource>() == null)
+                MusicManager.Instance.PlayAudioSource(MusicManager.MAIN_MUSIC);
+        }
+
+        public static void StartNewGame()
+        {
+            Game.Current.LoadStartLevel(1, 1);
+        }
+
+        public static void DestroyInstance()
+        {
+            if (instance == null)
+                return;
+
+            Destroy(MusicManager.Instance.gameObject);
+            Destroy(instance.gameObject);
+            instance = null;
         }
 
         void LoadPlayerInfo()

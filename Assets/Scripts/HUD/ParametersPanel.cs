@@ -33,6 +33,7 @@ namespace TheWill
         public Options GetTempOptions() { return _tempOptions; }
         bool _tempOptionsChanged;
         public Action OnOptionsChanged;
+        public Action OnCancelOptions;
 
 
         void Awake()
@@ -149,6 +150,8 @@ namespace TheWill
         {
             _animator.SetBool("Show", false);
             DisplayPopup(false);
+            if (OnCancelOptions != null)
+                OnCancelOptions();
         }
         /*********************************************************/
 

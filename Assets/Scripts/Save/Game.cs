@@ -39,26 +39,19 @@ namespace TheWill
         public int backpackElement = 0;
 
 
-        public void LoadStartLevel(int acte, int day)
+        public void LoadStartLevel(int a_acte, int a_day)
         {
             // FOR TEST PURPOSE ONLY
-            string level = "LevelAct" + acte + "Day" + day;
+            string level = "LevelAct" + a_acte + "Day" + a_day;
             //1/Debug.Log("[LevelController] Loading level : " + level);
             Debug.Log("levelController exists: " + levelControllerData != null);
-            if (levelControllerData == null)
+            if (levelControllerData == null || levelControllerData.ActeNumber != a_acte || levelControllerData.DayNumber != a_day)
             {
                 LevelController levelCtrl = ((LevelController)Resources.Load("Levels/CurrentLevel"));
                 levelCtrl = new LevelController(((LevelController)Resources.Load("Levels/" + level)));
                 levelControllerData = new LevelControllerData(levelCtrl.Data);
             }
-            /*1/if (levelController == null)
-            {
-                Debug.Log("[LevelController] Level load failed");
-            }
-            else
-            {
-                Debug.Log("[LevelController] Level load succeed");
-            }*/
+
             if (charactersInfos != null)
                 for (int i = 0; i < charactersInfos.Count; i++)
                 {
@@ -71,13 +64,13 @@ namespace TheWill
                 if (charactersInfos[i].characterName == Character.Geoffroy)
                     Debug.Log("/// " + charactersInfos[i].characterName + ": " + charactersInfos[i].currentRoom);
             }
-            if (player == null)
-                player = levelControllerData.Kim;
-            
+
+            player = levelControllerData.Kim;
+
             Debug.Log(currentRoom + " -- " + levelControllerData.StartRoom);
             currentRoom = levelControllerData.StartRoom;
-            acteNumber = acte;
-            dayNumber = day;
+            acteNumber = a_acte;
+            dayNumber = a_day;
             roomVisited = new List<Room>();
 
             // FOR TEST PURPOSE ONLY
@@ -88,6 +81,7 @@ namespace TheWill
             realDateTime = DateTime.Now;
             player.codeLines = GameManager.Instance.PlayerController.PlayerChoices;
             //player.genre = GameManager.Instance.PlayerController.PlayerCard.Player.genre;
+            Debug.Log("levelController exists: " + levelControllerData != null);
 
             Debug.Log(GameManager.Instance.PlayerController.CurrentRoom + " -- " + Game.Current.currentRoom);
             currentRoom = GameManager.Instance.PlayerController.CurrentRoom;
@@ -119,6 +113,15 @@ namespace TheWill
             currentRoom = a_game.currentRoom;
             acteNumber = a_game.acteNumber;
             dayNumber = a_game.dayNumber;
+
+            /*if (levelControllerData == null)
+            {*/
+                string level = "LevelAct" + acteNumber + "Day" + dayNumber;
+                LevelController levelCtrl = ((LevelController)Resources.Load("Levels/CurrentLevel"));
+                levelCtrl = new LevelController(((LevelController)Resources.Load("Levels/" + level)));
+                levelControllerData = new LevelControllerData(levelCtrl.Data);
+            //}
+
             realDateTime = a_game.realDateTime;
             Debug.Log(realDateTime.ToShortDateString() + " " + realDateTime.ToShortTimeString());
             Debug.Log("[Game] LoadGame: " + DebugGameData());
@@ -128,10 +131,16 @@ namespace TheWill
                     roomVisited.Add(room);
 
             charactersInfos.Clear();
+            charactersInfos = levelControllerData.Characters;
             for (int i = 0; i < a_game.charactersInfos.Count; i++)
             {
-                Debug.Log(a_game.charactersInfos[i]);
-                charactersInfos.Add(a_game.charactersInfos[i]);
+                CharacterInfo charInfo = charactersInfos.Find(c => c.characterName == a_game.charactersInfos[i].characterName);
+                if (charInfo != null)
+                {
+                    Debug.Log(a_game.charactersInfos[i]);
+                    charactersInfos.Remove(charInfo);
+                    charactersInfos.Add(a_game.charactersInfos[i]);
+                }
             }
 
             backpackElement = a_game.backpackElement;

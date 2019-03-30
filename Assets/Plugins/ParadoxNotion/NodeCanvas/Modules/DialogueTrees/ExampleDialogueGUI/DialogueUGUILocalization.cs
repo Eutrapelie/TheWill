@@ -132,7 +132,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			var text = info.statement.text;
             _isBold = false;
             _tempBoldText = string.Empty;
-            Debug.Log(text);
+            //Debug.Log(text);
 			var audio = info.statement.audio;
 			var actor = info.actor;
 

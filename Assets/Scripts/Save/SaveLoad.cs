@@ -73,15 +73,15 @@ namespace TheWill
                 FileStream file = File.Open(Application.persistentDataPath + Constants.OPTIONS_SAVED_FILE, FileMode.Open);
                 SaveLoad.options = (Options)bf.Deserialize(file);
                 file.Close();
-                Debug.Log("Load Options");
+                //Debug.Log("Load Options");
                 Options.Current.SaveOption(options);
-                Debug.Log(Options.Current.DebugData());
+                //Debug.Log(Options.Current.DebugData());
             }
         }
 
-        public static void StartNewGame()
+        /*public static void StartNewGame()
         {
             Game.Current.LoadStartLevel(1, 1);
-        }
+        }*/
     }
 }

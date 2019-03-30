@@ -117,6 +117,8 @@ namespace TheWill
         public void Btn_Quit()
         {
             SceneManager.LoadScene("Menu");
+            GameManager.DestroyInstance();
+            //MusicManager.Instance.ResumeToMenu();
             //Application.Quit();
         }
     }

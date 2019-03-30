@@ -11,6 +11,7 @@ namespace TheWill
         [SerializeField] Button _startButton;
         [SerializeField] string _versionString;
         [SerializeField] Text _versionText;
+        [SerializeField] AudioSource _musicSource;
 
 
     ///////////////////////////////////////////////////////////////
@@ -23,12 +24,14 @@ namespace TheWill
             SaveLoad.LoadOptions();
             Utils.Localization.InitializeLangDictionaries(Options.Current.GetLang());
             _versionText.text = _versionString;
+            _musicSource.volume = Options.Current.volume / 100f;
         }
         /*********************************************************/
 
         void Start()
         {
             ParametersPanel.Instance.OnOptionsChanged += OnOptionsChanged;
+            ParametersPanel.Instance.OnCancelOptions += OnCancelOptions;
         }
         /*********************************************************/
 
@@ -37,15 +40,22 @@ namespace TheWill
     ///////////////////////////////////////////////////////////////
         void StartGame()
         {
-            SaveLoad.StartNewGame();
+            GameManager.StartNewGame();
             SceneManager.LoadScene(Game.Current.currentRoom.ToString());
             SceneManager.LoadScene("InGameMenu", LoadSceneMode.Additive);
+            //MusicManager.Instance.LaunchGame();
         }
         /*********************************************************/
 
         void OnOptionsChanged()
         {
             Utils.Localization.InitializeLangDictionaries(Options.Current.GetLang());
+        }
+        /*********************************************************/
+
+        void OnCancelOptions()
+        {
+            _musicSource.volume = Options.Current.volume / 100f;
         }
         /*********************************************************/
         
@@ -58,12 +68,19 @@ namespace TheWill
             SaveLoad.Load(0);
             SceneManager.LoadScene(Game.Current.currentRoom.ToString());
             SceneManager.LoadScene("InGameMenu", LoadSceneMode.Additive);
+            //MusicManager.Instance.LaunchGame();
         }
         /*********************************************************/
 
         public void Btn_QuitGame()
         {
             Application.Quit();
+        }
+        /*********************************************************/
+
+        public void Btn_UpdateVolume(float a_value)
+        {
+            _musicSource.volume = a_value / 100f;
         }
         /*********************************************************/
     }

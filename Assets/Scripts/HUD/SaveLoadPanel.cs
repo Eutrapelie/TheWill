@@ -121,6 +121,7 @@ namespace TheWill
         public void Btn_SelectLoadSlot(int a_slotIndex)
         {
             Debug.Log("SelectLoadSlot - " + a_slotIndex);
+            GameManager.DestroyInstance();
             SaveLoad.Load(a_slotIndex);
             SceneManager.LoadScene(Game.Current.currentRoom.ToString());
             SceneManager.LoadScene("InGameMenu", LoadSceneMode.Additive);
