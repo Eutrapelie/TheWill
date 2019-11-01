@@ -99,11 +99,11 @@ namespace TheWill
                 Debug.LogError("[MyCharacterController]Error from event to hide all characters");
                 return;
             }
-            else if (GameManager.Instance.allowClickOnObject == false)
+            /*else if (GameManager.Instance.allowClickOnObject == false)
             {
                 Debug.Log("[MyCharacterController] Click on object isn't allowed");
                 return;
-            }
+            }*/
 
             /*Character character = (Character)Enum.Parse(typeof(Character), ((string)characterName), true);
             CharacterCard talkingCard = GetCharacterCardGameObject(character);

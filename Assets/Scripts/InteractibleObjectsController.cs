@@ -13,9 +13,10 @@ namespace TheWill
             set {  _selectedObject = value; }
         }
         
+
         void Update()
         {
-            if (Input.GetMouseButtonDown(0) && PausePanel.Instance.IsPanelShow() == false)
+            if (Input.GetMouseButtonDown(0) && GameManager.Instance.allowClickOnObject /*PausePanel.Instance.IsPanelShow() == false*/)
             {
                 Vector2 pos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
                 RaycastHit2D hitInfo = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(pos), Vector2.zero);
@@ -24,14 +25,27 @@ namespace TheWill
                 {
                     SelectedObject = hitInfo.transform.gameObject.GetComponent<InteractibleObject>();
 
-                    CharacterCard character = (CharacterCard)SelectedObject;
-                    if (character)
+                    if (SelectedObject is CharacterCard)
                     {
-                        // Here you can check hitInfo to see which collider has been hit, and act appropriately.
-                        EventManager.TriggerEvent(character.CharacterInfo.characterName.ToString() + "OnClick", character);
+                        CharacterCard character = (CharacterCard)SelectedObject;
+                        if (character)
+                        {
+                            // Here you can check hitInfo to see which collider has been hit, and act appropriately.
+                            EventManager.TriggerEvent(character.CharacterInfo.characterName.ToString() + "OnClick", character);
+                            Debug.Log("InteractibleObjectsController onClick on character");
+                        }
+                    } else if (SelectedObject is ItemCard)
+                    {
+                        ItemCard currentObject = (ItemCard)SelectedObject;
+                        if (currentObject)
+                        {
+
+                            Debug.Log("InteractibleObjectsController onClick on object");
+                        }
                     }
                 }
             }
         }
+        /*********************************************************/
     }
 }

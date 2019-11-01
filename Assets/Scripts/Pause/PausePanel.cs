@@ -63,6 +63,7 @@ namespace TheWill
             _canvasGroupParent.interactable = a_show;
             _canvasGroupParent.blocksRaycasts = a_show;
             _dialogueObject.isGamePaused = _isPanelShow;
+            GameManager.Instance.allowClickOnObject = !a_show;
         }
         /*********************************************************/
 

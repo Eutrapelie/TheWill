@@ -1,22 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class InteractibleObject : MonoBehaviour {
-
-    [SerializeField]
-    private SpriteRenderer _sprite = null;
-
-    public SpriteRenderer Sprite
+namespace TheWill
+{
+    public class InteractibleObject : MonoBehaviour
     {
-        get
-        {
-            return _sprite;
-        }
+        [SerializeField] SpriteRenderer _sprite = null;
 
-        set
+        public SpriteRenderer Sprite
         {
-            _sprite = value;
+            get
+            {
+                return _sprite;
+            }
+
+            set
+            {
+                _sprite = value;
+            }
         }
     }
 }

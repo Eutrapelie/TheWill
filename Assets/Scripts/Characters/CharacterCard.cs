@@ -43,6 +43,8 @@ namespace TheWill
             }
         }
 
+        public bool isClicked = false;
+
         public CharacterCard(CharacterInfo a_characterInfo)
         {
             CharacterInfo = a_characterInfo;
@@ -68,19 +70,15 @@ namespace TheWill
             OnClickCharacterValue += DoStuff;
         }
 
-        public bool isClicked = false;
         void OnClickObject(object a_value)
         {
-            if (GameManager.Instance.allowClickOnObject == false)
-                return;
-
             if (OnClickCharacterValue != null)
                 OnClickCharacterValue(CharacterInfo.characterName);
         }
 
-        void DoStuff(Character name)
+        void DoStuff(Character a_name)
         {
-            Debug.Log("[DoStuff] name is " + name);
+            Debug.Log("[DoStuff] name is " + a_name);
             Debug.Log("[DoStuff] GameManager.Instance.MyCharacterController " + GameManager.Instance.MyCharacterController);
             //GameManager.Instance.MyCharacterController.toggleAllCharactersEvent.Invoke(false);
             isClicked = true;

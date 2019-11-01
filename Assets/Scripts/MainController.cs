@@ -27,6 +27,8 @@ namespace TheWill
         [SerializeField] Blackboard _blackBoard;
         [SerializeField] BehaviourTreeOwner _behaviourTree;
 
+        [SerializeField] ItemCard[] _itemCards;
+
         List<GameObject> _charactersInScene;
         GameManager _gameManager;
 
@@ -45,6 +47,11 @@ namespace TheWill
 
             EventManager.StartListening(EVT_UPSPOT_CHARACTER, UpdateUpspotWithCharacter);
             EventManager.StartListening(VNFinishNode.EVT_FINISH_DIALOG, UpdateUpspotWithCharacter);
+
+            for (int i = 0; i < _itemCards.Length; i++)
+            {
+                EventManager.StartListening(_itemCards[i].Info.name + "OnClick", SelectItem);
+            }
         }
 
         void Start()
@@ -58,6 +65,17 @@ namespace TheWill
 
             LoadCharactersObjectInvolved();
             LoadBlackBoard();
+        }
+
+        void OnDestroy()
+        {
+            EventManager.StopListening(EVT_UPSPOT_CHARACTER, UpdateUpspotWithCharacter);
+            EventManager.StopListening(VNFinishNode.EVT_FINISH_DIALOG, UpdateUpspotWithCharacter);
+
+            for (int i = 0; i < _itemCards.Length; i++)
+            {
+                EventManager.StopListening(_itemCards[i].Info.name + "OnClick", SelectItem);
+            }
         }
 
         void LoadBehaviourTree()
@@ -97,6 +115,18 @@ namespace TheWill
                     //_blackBoard.GetVariable<DialogueActor>(go.name + "Dialog").SetValue(dialog);
                 }
             }
+        }
+
+        void SelectItem(object a_value)
+        {
+            ItemCard card = (ItemCard)a_value;
+            if (!card)
+            {
+                Debug.LogError("[MyCharacterController]Error from event to selectItem");
+                return;
+            }
+
+            Debug.Log("SelectItem: " + card.name);
         }
 
         public void LoadCharactersObjectInvolved()
