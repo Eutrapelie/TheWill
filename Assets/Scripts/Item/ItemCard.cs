@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace TheWill
@@ -33,7 +31,10 @@ namespace TheWill
         public event Action<string> OnClickObjectValue;
         public bool isClicked = false;
 
-
+        
+    ///////////////////////////////////////////////////////////////
+    /// GENERAL FUNCTIONS /////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
         void Awake()
         {
             Sprite = _spriteRenderer;
@@ -42,19 +43,23 @@ namespace TheWill
 
             OnClickObjectValue += DoStuff;
         }
-
+        /*********************************************************/
+        
+    ///////////////////////////////////////////////////////////////
+    /// PRIVATE FUNCTIONS /////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
         void OnClickObject(object a_value)
         {
             if (OnClickObjectValue != null)
                 OnClickObjectValue(Info.name);
         }
+        /*********************************************************/
 
         void DoStuff(string a_name)
         {
             Debug.Log("[DoStuff] name is " + a_name);
-            Debug.Log("[DoStuff] GameManager.Instance.MyCharacterController " + GameManager.Instance.MyCharacterController);
-            //GameManager.Instance.MyCharacterController.toggleAllCharactersEvent.Invoke(false);
             isClicked = true;
         }
+        /*********************************************************/
     }
 }

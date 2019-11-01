@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace TheWill
 {
@@ -13,7 +11,10 @@ namespace TheWill
             set {  _selectedObject = value; }
         }
         
-
+        
+    ///////////////////////////////////////////////////////////////
+    /// GENERAL FUNCTIONS /////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
         void Update()
         {
             if (Input.GetMouseButtonDown(0) && GameManager.Instance.allowClickOnObject /*PausePanel.Instance.IsPanelShow() == false*/)

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using NodeCanvas.Framework;
 using NodeCanvas.BehaviourTrees;
@@ -35,7 +33,10 @@ namespace TheWill
         /*1/bool _isNewLevel
         public void SetNewLevel(bool a_bool) { _isNewLevel = a_bool; }*/
 
-
+            
+    ///////////////////////////////////////////////////////////////
+    /// GENERAL FUNCTIONS /////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
         void Awake()
         {
             _instance = this;
@@ -54,6 +55,7 @@ namespace TheWill
                     EventManager.StartListening(_itemCards[i].Info.name + "OnClick", SelectItem);
                 }
         }
+        /*********************************************************/
 
         void Start()
         {
@@ -67,6 +69,7 @@ namespace TheWill
             LoadCharactersObjectInvolved();
             LoadBlackBoard();
         }
+        /*********************************************************/
 
         void OnDestroy()
         {
@@ -78,7 +81,11 @@ namespace TheWill
                 EventManager.StopListening(_itemCards[i].Info.name + "OnClick", SelectItem);
             }
         }
-
+        /*********************************************************/
+        
+    ///////////////////////////////////////////////////////////////
+    /// GENERAL FUNCTIONS /////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
         void LoadBehaviourTree()
         {
             string level = _room.ToString() + "Act" + Game.Current.acteNumber.ToString() + "Day" + Game.Current.dayNumber.ToString();
@@ -94,6 +101,7 @@ namespace TheWill
             }
             _behaviourTree.behaviour = tree;
         }
+        /*********************************************************/
 
         void LoadBlackBoard()
         {
@@ -117,6 +125,7 @@ namespace TheWill
                 }
             }
         }
+        /*********************************************************/
 
         void SelectItem(object a_value)
         {
@@ -129,7 +138,11 @@ namespace TheWill
 
             Debug.Log("SelectItem: " + card.name);
         }
-
+        /*********************************************************/
+        
+    ///////////////////////////////////////////////////////////////
+    /// PUBLIC FUNCTIONS //////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
         public void LoadCharactersObjectInvolved()
         {
             int cptSpot = 0;
@@ -169,6 +182,7 @@ namespace TheWill
                 }
             }
         }
+        /*********************************************************/
 
         public RoomSpotView GetRoomSpotForCharacter(CharacterInfo info)
         {
@@ -189,6 +203,7 @@ namespace TheWill
             }
             return newSpot;
         }
+        /*********************************************************/
 
         public void ActivateAllCharactersColliders(bool a_enabled)
         {
@@ -197,10 +212,11 @@ namespace TheWill
                 _charactersInScene[i].GetComponent<Collider2D>().enabled = a_enabled;
             }
         }
+        /*********************************************************/
 
-        public void UpdateUpspotWithCharacter(object value)
+        public void UpdateUpspotWithCharacter(object a_value)
         {
-            CharacterCard card = (CharacterCard)value;
+            CharacterCard card = (CharacterCard)a_value;
             if (card && _upSpot)
             {
                 Debug.Log("[MainController] UpdateUpspotWithCharacter " + card.CharacterInfo.characterName.ToString());
@@ -221,5 +237,6 @@ namespace TheWill
                 }
             }
         }
+        /*********************************************************/
     }
 }
