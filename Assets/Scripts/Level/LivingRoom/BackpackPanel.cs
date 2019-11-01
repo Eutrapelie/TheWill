@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using NodeCanvas.DialogueTrees.UI.Examples;
 using UnityEngine;
 
 namespace TheWill
@@ -8,6 +7,9 @@ namespace TheWill
     public class BackpackPanel : MonoBehaviour
     {
         Animator _animator;
+
+        //1/DialogueUGUI _dialogueObject;
+        DialogueUGUILocalization _dialogueObject;
 
         
     ///////////////////////////////////////////////////////////////
@@ -18,12 +20,6 @@ namespace TheWill
             _animator = GetComponent<Animator>();
         }
         /*********************************************************/
-
-        void Start() { }
-        /*********************************************************/
-
-        void Update() { }
-        /*********************************************************/
         
     ///////////////////////////////////////////////////////////////
     /// PUBLIC FUNCTIONS //////////////////////////////////////////
@@ -31,6 +27,12 @@ namespace TheWill
         public void SetVisibility(bool a_show)
         {
             _animator.SetBool("Show", a_show);
+
+            if (_dialogueObject == null)
+                //1/_dialogueObject = FindObjectOfType<DialogueUGUI>();
+                _dialogueObject = FindObjectOfType<DialogueUGUILocalization>();
+            _dialogueObject.isGamePaused = a_show;
+            GameManager.Instance.allowClickOnObject = !a_show;
         }
         /*********************************************************/
     }

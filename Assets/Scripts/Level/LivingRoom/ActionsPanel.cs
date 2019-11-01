@@ -1,14 +1,13 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
-using System;
 using UnityEngine.UI;
 
 namespace TheWill
 {
     public enum BackpackElement { GoToHall, Book, Explore}
+
 
     [RequireComponent(typeof(Animator))]
     public class ActionsPanel : MonoBehaviour, IPointerExitHandler

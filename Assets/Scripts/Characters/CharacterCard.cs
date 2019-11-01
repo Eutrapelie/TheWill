@@ -10,19 +10,12 @@ namespace TheWill
 {
     public class CharacterCard : InteractibleObject
     {
-        [SerializeField]
-        private CharacterInfo _characterInfo;
+        [SerializeField] CharacterInfo _characterInfo;
+        [SerializeField] List<CharacterSprite> _characterSprites;
+        [SerializeField] SpriteRenderer _spriteRenderer;
+        [SerializeField] bool _isTalking;
 
-        [SerializeField]
-        private List<CharacterSprite> _characterSprites;
-
-        [SerializeField]
-        private SpriteRenderer _spriteRenderer;
-
-        [SerializeField]
-        private bool _isTalking;
-
-        public event System.Action<Character> OnClickCharacterValue;
+        public event Action<Character> OnClickCharacterValue;
 
         public CharacterInfo CharacterInfo
         {
@@ -50,9 +43,9 @@ namespace TheWill
             }
         }
 
-        public CharacterCard(CharacterInfo characterInfo)
+        public CharacterCard(CharacterInfo a_characterInfo)
         {
-            CharacterInfo = characterInfo;
+            CharacterInfo = a_characterInfo;
         }
 
         void Update()
@@ -76,12 +69,13 @@ namespace TheWill
         }
 
         public bool isClicked = false;
-        void OnClickObject(object value)
+        void OnClickObject(object a_value)
         {
+            if (GameManager.Instance.allowClickOnObject == false)
+                return;
+
             if (OnClickCharacterValue != null)
-            {
                 OnClickCharacterValue(CharacterInfo.characterName);
-            }
         }
 
         void DoStuff(Character name)

@@ -90,6 +90,9 @@ namespace TheWill
             }
         }
 
+        public bool allowClickOnObject;
+
+
         void Start()
         {
             Debug.Log("######### start");

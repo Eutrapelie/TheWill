@@ -19,11 +19,15 @@ namespace TheWill
         //1/DialogueUGUI _dialogueObject;
         DialogueUGUILocalization _dialogueObject;
 
-
+        
+    ///////////////////////////////////////////////////////////////
+    /// GENERAL FUNCTIONS /////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
         void Awake()
         {
             Instance = this;
         }
+        /*********************************************************/
 
         void Start()
         {
@@ -35,7 +39,8 @@ namespace TheWill
 
             ChangeVisibility(false);
         }
-        
+        /*********************************************************/
+
         void Update()
         {
             if (Input.GetKeyUp(KeyCode.Escape))
@@ -46,7 +51,11 @@ namespace TheWill
                 ChangeVisibility(!_isPanelShow);
             }
         }
-
+        /*********************************************************/
+        
+    ///////////////////////////////////////////////////////////////
+    /// PRIVATE FUNCTIONS /////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
         void ChangeVisibility(bool a_show)
         {
             _isPanelShow = a_show;
@@ -55,6 +64,7 @@ namespace TheWill
             _canvasGroupParent.blocksRaycasts = a_show;
             _dialogueObject.isGamePaused = _isPanelShow;
         }
+        /*********************************************************/
 
         IEnumerator DisplayInfoMessage(string a_message)
         {
@@ -66,6 +76,7 @@ namespace TheWill
             colorTemp.a = 0f;
             _infoText.color = colorTemp;
         }
+        /*********************************************************/
 
         void SceneChanged(Scene a_s1, Scene a_s2)
         {
@@ -94,7 +105,11 @@ namespace TheWill
                     text.fontSize += 2;
             }
         }
-
+        /*********************************************************/
+        
+    ///////////////////////////////////////////////////////////////
+    /// PUBLIC FUNCTIONS //////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
         public void Btn_Continue()
         {
             if (_dialogueObject == null)
@@ -102,17 +117,20 @@ namespace TheWill
                 _dialogueObject = FindObjectOfType<DialogueUGUILocalization>();
             ChangeVisibility(false);
         }
+        /*********************************************************/
 
         public void UpdateDisplayAfterSave()
         {
             ChangeVisibility(false);
             StartCoroutine(DisplayInfoMessage("Sauvegarde effectuée."));
         }
+        /*********************************************************/
 
         public void Btn_Load()
         {
 
         }
+        /*********************************************************/
 
         public void Btn_Quit()
         {
@@ -121,5 +139,6 @@ namespace TheWill
             //MusicManager.Instance.ResumeToMenu();
             //Application.Quit();
         }
+        /*********************************************************/
     }
 }

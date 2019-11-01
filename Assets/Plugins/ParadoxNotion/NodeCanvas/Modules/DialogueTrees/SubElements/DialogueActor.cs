@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 
-namespace NodeCanvas.DialogueTrees{
+namespace NodeCanvas.DialogueTrees {
 
 	/// <summary>
 	/// A DialogueActor Component.
@@ -9,26 +9,20 @@ namespace NodeCanvas.DialogueTrees{
     [AddComponentMenu("NodeCanvas/Dialogue Actor")]
     public class DialogueActor : MonoBehaviour, IDialogueActor {
 
-    	[SerializeField]
-    	protected string _name;
-    	[SerializeField]
-    	protected Texture2D _portrait;
-    	[SerializeField]
-    	protected Color _dialogueColor = Color.white;
-    	[SerializeField]
-    	protected Vector3 _dialogueOffset;
+    	[SerializeField] protected string _name;
+    	[SerializeField] protected Texture2D _portrait;
+    	[SerializeField] protected Color _dialogueColor = Color.white;
+    	[SerializeField] protected Vector3 _dialogueOffset;
 
-    	private Sprite _portraitSprite;
+    	Sprite _portraitSprite;
 
-		new public string name{
-			get {return _name;}
+		new public string name { get {return _name;} }
+
+		public Texture2D portrait {
+			get { return _portrait; }
 		}
 
-		public Texture2D portrait{
-			get {return _portrait;}
-		}
-
-		public Sprite portraitSprite{
+		public Sprite portraitSprite {
 			get
 			{
 				if (_portraitSprite == null && portrait != null)
@@ -53,11 +47,11 @@ namespace NodeCanvas.DialogueTrees{
 		////////////////////////////////////////
 		#if UNITY_EDITOR
 
-		void Reset(){
+		void Reset() {
 			_name = gameObject.name;
 		}
 			
-		void OnDrawGizmos(){
+		void OnDrawGizmos() {
 			Gizmos.DrawLine(transform.position, dialoguePosition);
 		}
 

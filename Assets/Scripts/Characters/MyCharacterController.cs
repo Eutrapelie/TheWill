@@ -91,12 +91,17 @@ namespace TheWill
             return null;
         }
 
-        public void HideAllCharacters(object value)
+        public void HideAllCharacters(object a_value)
         {
-            CharacterCard card = (CharacterCard)value;
+            CharacterCard card = (CharacterCard)a_value;
             if (!card)
             {
                 Debug.LogError("[MyCharacterController]Error from event to hide all characters");
+                return;
+            }
+            else if (GameManager.Instance.allowClickOnObject == false)
+            {
+                Debug.Log("[MyCharacterController] Click on object isn't allowed");
                 return;
             }
 
@@ -104,6 +109,8 @@ namespace TheWill
             CharacterCard talkingCard = GetCharacterCardGameObject(character);
             RoomSpot spot = (RoomSpot)Enum.Parse(typeof(RoomSpot), (talkingCard.CharacterInfo.currentRoom.ToString() + "UpSpot1"), true);
             GetCharacterToUpSpot(talkingCard, spot);*/
+
+            Debug.Log("HideAllCharacters: " + card.name);
 
             EventManager.TriggerEvent(MainController.EVT_UPSPOT_CHARACTER, card);
 
