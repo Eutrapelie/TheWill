@@ -48,10 +48,11 @@ namespace TheWill
             EventManager.StartListening(EVT_UPSPOT_CHARACTER, UpdateUpspotWithCharacter);
             EventManager.StartListening(VNFinishNode.EVT_FINISH_DIALOG, UpdateUpspotWithCharacter);
 
-            for (int i = 0; i < _itemCards.Length; i++)
-            {
-                EventManager.StartListening(_itemCards[i].Info.name + "OnClick", SelectItem);
-            }
+            if (_itemCards != null && _itemCards.Length > 0)
+                for (int i = 0; i < _itemCards.Length; i++)
+                {
+                    EventManager.StartListening(_itemCards[i].Info.name + "OnClick", SelectItem);
+                }
         }
 
         void Start()

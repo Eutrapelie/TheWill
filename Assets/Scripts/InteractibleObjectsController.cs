@@ -36,10 +36,10 @@ namespace TheWill
                         }
                     } else if (SelectedObject is ItemCard)
                     {
-                        ItemCard currentObject = (ItemCard)SelectedObject;
-                        if (currentObject)
+                        ItemCard item = (ItemCard)SelectedObject;
+                        if (item)
                         {
-
+                            EventManager.TriggerEvent(item.Info.name + "OnClick", item);
                             Debug.Log("InteractibleObjectsController onClick on object");
                         }
                     }
