@@ -84,4 +84,6 @@ public enum CodeLine
 	HippOpheD2001,//Enigme Succes
 	HippOpheD2002,//Enigme Echec
 	
+	
+	ItemLetterTuto0001,// la lettre a été cliquée
 }
