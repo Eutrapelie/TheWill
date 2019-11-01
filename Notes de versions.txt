@@ -10,7 +10,7 @@ Corrections :
 /**********************************************/
 
 
-Version 0.0.8 (2018/12)
+Version 0.0.8 (2018/12/22)
 Ajouts :
  - Prise en compte de la localisation pour les choix
  - Un numéro de version dans le menu principal
