@@ -76,10 +76,11 @@ namespace TheWill
             EventManager.StopListening(EVT_UPSPOT_CHARACTER, UpdateUpspotWithCharacter);
             EventManager.StopListening(VNFinishNode.EVT_FINISH_DIALOG, UpdateUpspotWithCharacter);
 
-            for (int i = 0; i < _itemCards.Length; i++)
-            {
-                EventManager.StopListening(_itemCards[i].Info.name + "OnClick", SelectItem);
-            }
+            if (_itemCards != null && _itemCards.Length > 0)
+                for (int i = 0; i < _itemCards.Length; i++)
+                {
+                    EventManager.StopListening(_itemCards[i].Info.name + "OnClick", SelectItem);
+                }
         }
         /*********************************************************/
         
@@ -193,7 +194,7 @@ namespace TheWill
                 {
                     if (spotControl.SpotAvailable == false)
                     {
-                        Debug.LogError("[MainController] Spot your aiming for " + info.characterName + " is already occupied.");
+                        Debug.LogError("[MainController] Spot (" + spotControl.RoomSpots + ") your aiming for " + info.characterName + " is already occupied.");
                         return null;
                     }
                     spotControl.SpotAvailable = false;

@@ -54,17 +54,19 @@ namespace Utils
         }
         /*********************************************************/
 
-        public static void InitializeLangDictionaries(Lang a_lang = Lang.fr /*, int a_minPathIndex = 0, int a_maxPathIndex = 0*/)
+        public static void InitializeLangDictionaries(Lang a_lang = Lang.fr , int a_minPathIndex = 0, int a_maxPathIndex = 1)
         {
             _paths.Clear();
-            /*for (int i = a_maxPathIndex; i <= a_maxPathIndex; i++)
+            
+            _paths.Add(Application.streamingAssetsPath + "/TABLE_REFERENCE_LOCALISATION_Interface.csv");
+            /*_paths.Add(Application.streamingAssetsPath + "/TABLE_REFERENCE_LOCALISATION_00.csv");
+            _paths.Add(Application.streamingAssetsPath + "/TABLE_REFERENCE_LOCALISATION_01.csv");*/
+            for (int i = a_minPathIndex; i <= a_maxPathIndex; i++)
             {
                 _paths.Add(Application.streamingAssetsPath + "/TABLE_REFERENCE_LOCALISATION_" + i.ToString("D2") + ".csv");
-            }*/
-            _paths.Add(Application.streamingAssetsPath + "/TABLE_REFERENCE_LOCALISATION_Interface.csv");
-            _paths.Add(Application.streamingAssetsPath + "/TABLE_REFERENCE_LOCALISATION_00.csv");
-            _paths.Add(Application.streamingAssetsPath + "/TABLE_REFERENCE_LOCALISATION_01.csv");
-            _globalLangDictionary.Clear();
+            }
+            
+           _globalLangDictionary.Clear();
             ParseCSV();
             _currentLang = a_lang;
             _currentLangDictionary = _globalLangDictionary[a_lang];

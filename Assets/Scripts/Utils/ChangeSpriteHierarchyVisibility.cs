@@ -7,8 +7,9 @@ namespace TheWill
     public class ChangeSpriteHierarchyVisibility : MonoBehaviour
     {
         SpriteRenderer[] _spritesRenderer;
-
         bool _enabled;
+
+
         public void SetSpritesVisibility(bool a_enabled)
         {
             _enabled = a_enabled;
@@ -18,18 +19,6 @@ namespace TheWill
                 sr.enabled = _enabled;
             }
         }
-        /*********************************************************/
-        
-        
-    ///////////////////////////////////////////////////////////////
-    /// GENERAL FUNCTIONS /////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////
-        void Start()
-        {
-        }
-        /*********************************************************/
-
-        void Update() { }
         /*********************************************************/
     }
 }

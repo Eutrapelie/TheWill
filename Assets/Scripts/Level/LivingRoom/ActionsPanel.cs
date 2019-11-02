@@ -117,9 +117,9 @@ namespace TheWill
         {
             _isExploreMode = a_show;
             _vnDialogCanvasGroup.alpha = _isExploreMode ? 0 : 1;
-            _vnDialogCanvasGroup.blocksRaycasts = _isExploreMode;
-            _vnDialogCanvasGroup.interactable = _isExploreMode;
-            _spriteHierarchyVisibility.SetSpritesVisibility(!_isExploreMode);
+            _vnDialogCanvasGroup.blocksRaycasts = !_isExploreMode;
+            _vnDialogCanvasGroup.interactable = !_isExploreMode;
+            _spriteHierarchyVisibility.SetSpritesVisibility(_isExploreMode);
             _exploreAnimator.SetBool("Show", _isExploreMode);
             _animator.SetBool("HideActions", _isExploreMode);
         }
