@@ -31,24 +31,22 @@ namespace TheWill
         
         protected override bool OnCheck() { return false; }
 
-        public void OnCustomEvent(EventData receivedEvent)
+        public void OnCustomEvent(EventData a_receivedEvent)
         {
-            Debug.Log(isActive);
-            Debug.Log(receivedEvent);
-            Debug.Log(eventName);
-            if (isActive && receivedEvent.name.ToUpper() == eventName.value.ToUpper())
+            Debug.Log(eventName + " (" + a_receivedEvent  + ") isActive :" + isActive);
+            if (isActive && a_receivedEvent.name.ToUpper() == eventName.value.ToUpper())
             {
-                if (receivedEvent.value is CharacterCard)
+                if (a_receivedEvent.value is CharacterCard)
                 {
                     Debug.Log("Bonne piste");
 
-                    if ((CharacterCard)receivedEvent.value == checkValue.value)
+                    if ((CharacterCard)a_receivedEvent.value == checkValue.value)
                     {
                         Debug.Log("Yeeeeeeeeeeep ! Value: " + checkValue.value.name);
 #if UNITY_EDITOR
                         if (NodeCanvas.Editor.NCPrefs.logEvents)
                         {
-                            Debug.Log(string.Format("Event '{0}' Received from '{1}'", receivedEvent.name, agent.gameObject.name), agent);
+                            Debug.Log(string.Format("Event '{0}' Received from '{1}'", a_receivedEvent.name, agent.gameObject.name), agent);
                         }
 #endif
 

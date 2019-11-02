@@ -21,6 +21,7 @@ namespace TheWill
             if (itemCard.value.isClicked)
             {
                 Debug.Log("<color=blue>Hey!</color>");
+                itemCard.value.isClicked = false;
                 return true;
             }
 
