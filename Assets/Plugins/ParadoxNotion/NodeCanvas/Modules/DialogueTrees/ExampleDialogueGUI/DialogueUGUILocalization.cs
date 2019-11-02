@@ -178,8 +178,9 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 
                 bool isKeyAllowed = false;
                 isKeyAllowed = !Input.GetKeyDown(_keysToIgnored[0]);
-                for (int i= 0; i < text.Length; i++){
-
+                for (int i= 0; i < text.Length; i++)
+                {
+                    //Debug.Log(i + "] " + text[i] + "] " + tempText + " -- isBold: " + _isBold + " (" + _tempBoldText + ")");
 					if (!isGamePaused && skipOnInput && inputDown && isKeyAllowed)
                     {
 						actorSpeech.text = text;
@@ -190,7 +191,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 					if (subtitlesGroup.gameObject.activeSelf == false){
 						yield break;
 					}
-                    
+
                     if (_isBold == false) // Bold treatment
                     {
                         if (text[i] == '<' && text[i+1] == 'b' && text[i+2] == '>')
@@ -198,23 +199,32 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
                             _isBold = true;
                             _tempBoldText = "<b>";
                             i += 2;
+                            continue;
                         }
                     }
                     else
                     {
                         _tempBoldText += text[i];
-                        if (_tempBoldText.StartsWith("<b>") && _tempBoldText.Contains("</b>") == false)
-                            {
-                                // Write tempColorText with color
-                            tempText += "<b>" + text[i].ToString() + "</b>";
-                            yield return StartCoroutine(DelayPrint(subtitleDelays.characterDelay));
-                            actorSpeech.text = tempText;
-                        }
-                        else if (_tempBoldText.StartsWith("<b>") && _tempBoldText.Contains("</b>"))
+                        if (_tempBoldText.StartsWith("<b>") && text[i] == '<' && text[i + 1] == '/' && text[i + 2] == 'b' && text[i + 3] == '>')
                         {
                             _tempBoldText = string.Empty;
                             _isBold = false;
+                            i += 3;
+                            continue;
                         }
+                        else if (_tempBoldText.StartsWith("<b>") && _tempBoldText.Contains("</b>") == false)
+                        {
+                            // Write tempColorText with color
+                            tempText += "<b>" + text[i].ToString() + "</b>";
+                            yield return StartCoroutine(DelayPrint(subtitleDelays.characterDelay));
+                            actorSpeech.text = tempText;
+                            continue;
+                        }
+                        /*else if (_tempBoldText.StartsWith("<b>") && _tempBoldText.Contains("</b>"))
+                        {
+                            _tempBoldText = string.Empty;
+                            _isBold = false;
+                        }*/
                     }
 
                     if (string.IsNullOrEmpty(tempColorText)) // Color treatment
