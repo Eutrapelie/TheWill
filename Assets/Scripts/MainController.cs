@@ -150,23 +150,23 @@ namespace TheWill
             _gameManager.MyCharacterController.Characters.Clear();
             foreach (CharacterInfo info in Game.Current.charactersInfos)
             {
-                Debug.Log("-- " + info.characterName + ", " + info.currentRoom);
+                Debug.Log("<color=blue>-- " + info.characterName + ", " + info.currentRoom +"</color>");
                 if (info.currentRoom == _room)
                 {
                     if (cptSpot >= _characterSpotsGameObject.Count)
                     {
-                        Debug.Log("[MainController] Not enough spots in the scene.");
+                        Debug.Log("<color=blue>[MainController] Not enough spots in the scene.</color>");
                         return;
                     }
 
                     RoomSpotView newSpot = GetRoomSpotForCharacter(info);
                     if (newSpot)
                     {
-                        Debug.Log("--- New spot !");
+                        Debug.Log("<color=blue>--- New spot !</color>");
                         GameObject characterObject = ((GameObject)Instantiate(Resources.Load("Characters/" + info.characterName)));
                         if (characterObject)
                         {
-                            Debug.Log("--- " + characterObject.name);
+                            Debug.Log("<color=blue>--- Add " + characterObject.name + "</color>");
                             _charactersInScene.Add(characterObject);
                             CharacterCard characterCard = characterObject.GetComponent<CharacterCard>();
                             characterCard.CharacterInfo = info;
@@ -178,7 +178,7 @@ namespace TheWill
                             characterObject.transform.localScale = Vector3.one;
                         }
                         cptSpot++;
-                        Debug.Log("[MainController] Character " + info.characterName + " is in the scene.");
+                        Debug.Log("<color=blue>[MainController] Character " + info.characterName + " is in the scene.</color>");
                     }
                 }
             }
@@ -190,6 +190,7 @@ namespace TheWill
             RoomSpotView newSpot = null;
             foreach (RoomSpotView spotControl in _characterSpotsGameObject)
             {
+                Debug.Log("<color=gray>GetRoomSpotForCharacter: " + info.characterName + " in " + spotControl.RoomSpots + " (info.currentRoomSpot: " + info.currentRoomSpot + ")</color>");
                 if (info.currentRoomSpot.Equals(spotControl.RoomSpots))
                 {
                     if (spotControl.SpotAvailable == false)

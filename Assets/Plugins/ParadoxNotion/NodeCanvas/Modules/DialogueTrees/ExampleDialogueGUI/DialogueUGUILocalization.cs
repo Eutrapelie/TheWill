@@ -84,7 +84,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			originalSubsPosition = subtitlesGroup.transform.position;
             
             // test de localization
-            Utils.Localization.InitializeLangDictionaries(_lang);
+            //Utils.Localization.InitializeLangDictionaries(_lang);
 
             //Debug.Log("Start");
             _keysToIgnored.Add(KeyCode.Escape);
@@ -137,7 +137,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			var actor = info.actor;
 
 			subtitlesGroup.gameObject.SetActive(true);
-			actorSpeech.text = "";
+			actorSpeech.text = string.Empty;
 			
 			actorName.text = actor.name;
 			actorSpeech.color = actor.dialogueColor;

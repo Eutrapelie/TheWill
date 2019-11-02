@@ -37,6 +37,9 @@ namespace TheWill
             SceneChanged(SceneManager.GetActiveScene(), SceneManager.GetActiveScene());
             SceneManager.activeSceneChanged += SceneChanged;
 
+            if (_dialogueObject == null)
+                //1/_dialogueObject = FindObjectOfType<DialogueUGUI>();
+                _dialogueObject = FindObjectOfType<DialogueUGUILocalization>();
             ChangeVisibility(false);
         }
         /*********************************************************/
@@ -92,18 +95,21 @@ namespace TheWill
                 }
             }
 
-            _dialogueObject.SetLang(Options.Current.GetLang());
-            _dialogueObject.subtitleDelays.characterDelay = Options.Current.GetCharacterDelay();
-            _dialogueObject.subtitleDelays.sentenceDelay = Options.Current.GetSentenceDelay();
-            _dialogueObject.subtitleDelays.commaDelay = Options.Current.GetCommaDelay();
-            _dialogueObject.subtitleDelays.finalDelay = Options.Current.GetFinalDelay();
-
-            foreach (Text text in _dialogueObject.GetComponentsInChildren<Text>(true))
+            //_dialogueObject.SetLang(Options.Current.GetLang());
+            if (_dialogueObject)
             {
-                //Debug.Log(text.name);
-                text.fontSize = Options.Current.GetFontSizeInPixels();
-                if (text.name == "Name")
-                    text.fontSize += 2;
+                _dialogueObject.subtitleDelays.characterDelay = Options.Current.GetCharacterDelay();
+                _dialogueObject.subtitleDelays.sentenceDelay = Options.Current.GetSentenceDelay();
+                _dialogueObject.subtitleDelays.commaDelay = Options.Current.GetCommaDelay();
+                _dialogueObject.subtitleDelays.finalDelay = Options.Current.GetFinalDelay();
+
+                foreach (Text text in _dialogueObject.GetComponentsInChildren<Text>(true))
+                {
+                    //Debug.Log(text.name);
+                    text.fontSize = Options.Current.GetFontSizeInPixels();
+                    if (text.name == "Name")
+                        text.fontSize += 2;
+                }
             }
         }
         /*********************************************************/

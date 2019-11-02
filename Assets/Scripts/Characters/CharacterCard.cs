@@ -79,7 +79,6 @@ namespace TheWill
         void DoStuff(Character a_name)
         {
             Debug.Log("[DoStuff] name is " + a_name);
-            Debug.Log("[DoStuff] GameManager.Instance.MyCharacterController " + GameManager.Instance.MyCharacterController);
             //GameManager.Instance.MyCharacterController.toggleAllCharactersEvent.Invoke(false);
             isClicked = true;
         }

@@ -56,13 +56,13 @@ namespace TheWill
                 for (int i = 0; i < charactersInfos.Count; i++)
                 {
                     if (charactersInfos[i].characterName == Character.Geoffroy)
-                        Debug.Log("// " + charactersInfos[i].characterName + ": " + charactersInfos[i].currentRoom);
+                        Debug.Log("<color=purple>// " + charactersInfos[i].characterName + ": " + charactersInfos[i].currentRoom + "</color>");
                 }
             charactersInfos = levelControllerData.Characters;
             for (int i = 0; i < charactersInfos.Count; i++)
             {
                 if (charactersInfos[i].characterName == Character.Geoffroy)
-                    Debug.Log("/// " + charactersInfos[i].characterName + ": " + charactersInfos[i].currentRoom);
+                    Debug.Log("<color=purple>/// " + charactersInfos[i].characterName + ": " + charactersInfos[i].currentRoom + "</color>");
             }
 
             player = levelControllerData.Kim;
@@ -75,6 +75,7 @@ namespace TheWill
 
             // FOR TEST PURPOSE ONLY
         }
+        /*********************************************************/
 
         public void SaveGameFromManager()
         {
@@ -92,10 +93,11 @@ namespace TheWill
             charactersInfos = new List<CharacterInfo>();
             foreach (CharacterCard card in GameManager.Instance.MyCharacterController.Characters)
             {
-                Debug.Log(card.CharacterInfo);
+                Debug.Log("<color=purple>" +card.CharacterInfo + "</color>");
                 charactersInfos.Add(card.CharacterInfo);
             }
         }
+        /*********************************************************/
 
         public string DebugGameData()
         {
@@ -104,6 +106,7 @@ namespace TheWill
                 "Room: " + currentRoom + " -- Acte: " + acteNumber + " -- Day: " + dayNumber + "}";
             return gameData;
         }
+        /*********************************************************/
 
         public void LoadGame(Game a_game)
         {
@@ -125,6 +128,9 @@ namespace TheWill
             realDateTime = a_game.realDateTime;
             Debug.Log(realDateTime.ToShortDateString() + " " + realDateTime.ToShortTimeString());
             Debug.Log("[Game] LoadGame: " + DebugGameData());
+
+            LoadLocalization();
+
             roomVisited.Clear();
             if (a_game.roomVisited != null)
                 foreach (Room room in a_game.roomVisited)
@@ -137,9 +143,9 @@ namespace TheWill
                 CharacterInfo charInfo = charactersInfos.Find(c => c.characterName == a_game.charactersInfos[i].characterName);
                 if (charInfo != null)
                 {
-                    Debug.Log(a_game.charactersInfos[i]);
+                    Debug.Log("<color=purple>"+a_game.charactersInfos[i]+"</color>");
                     charactersInfos.Remove(charInfo);
-                    charactersInfos.Add(a_game.charactersInfos[i]);
+                    charactersInfos.Insert(i, a_game.charactersInfos[i]);
                 }
             }
 
@@ -153,5 +159,18 @@ namespace TheWill
                 charactersInfos.Add(card.CharacterInfo);
             }*/
         }
+        /*********************************************************/
+
+        void LoadLocalization()
+        {
+            if (acteNumber == 1)
+            {
+                if (dayNumber == 1)
+                    Utils.Localization.InitializeLangDictionaries(Options.Current.GetLang(), 0, 1);
+                else if (dayNumber == 2)
+                    Utils.Localization.InitializeLangDictionaries(Options.Current.GetLang(), 2, 2);
+            }
+        }
+        /*********************************************************/
     }
 }

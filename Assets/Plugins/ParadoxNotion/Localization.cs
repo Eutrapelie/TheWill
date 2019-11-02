@@ -23,7 +23,7 @@ namespace Utils
 
             for (int j = 0; j < _paths.Count; j++)
             {
-                Debug.Log("ParseCSV -- " + _paths[j] +" exists? " + File.Exists(_paths[j]));
+                //Debug.Log("ParseCSV -- " + _paths[j] +" exists? " + File.Exists(_paths[j]));
                 string fileData = File.ReadAllText(_paths[j]);
                 //Debug.Log(fileData);
                 //fileData = fileData.Replace(',', '.');
@@ -75,7 +75,13 @@ namespace Utils
 
         public static string GetLocalized(string a_id)
         {
-            return _currentLangDictionary[a_id];
+            if (_currentLangDictionary.ContainsKey(a_id))
+                return _currentLangDictionary[a_id];
+            else
+            {
+                Debug.Log("Error: this id (" + a_id + ") isn't load.");
+                return "Error: this id (" + a_id + ") isn't load.";
+            }
         }
         /*********************************************************/
     }

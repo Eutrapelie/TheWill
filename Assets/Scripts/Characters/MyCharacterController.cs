@@ -229,13 +229,13 @@ namespace TheWill
             List<object> list = (List<object>)args;
             Character arg0 = (Character)list[0];
             Room arg1 = (Room)list[1];
-            Debug.Log("## " + arg0.ToString() + " -- " + arg1.ToString());
+            Debug.Log("<color=green>## CharacterChangeRoom" + arg0.ToString() + " to " + arg1.ToString() + "</color>");
             foreach (CharacterCard item in Characters)
             {
-                Debug.Log("## " + item.name + "...");
+                Debug.Log("<color=green>## " + item.name + "...</color>");
                 if (item.CharacterInfo.characterName.Equals(arg0))
                 {
-                    Debug.Log("## CharacterName is equal to " + arg0);
+                    Debug.Log("<color=green>## CharacterName is equal to " + arg0 + "</color>");
                     item.ChangeRoom(arg1);
                     break;
                 }
@@ -247,6 +247,8 @@ namespace TheWill
             List<object> list = (List<object>)args;
             Character arg0 = (Character)list[0];
             RoomSpot arg1 = (RoomSpot)list[1];
+
+            Debug.Log("<color=green> CharacterChangeRoomSpot: " + arg0.ToString() + " to " + arg1.ToString() + "</color>");
             //RoomSpot room = (RoomSpot)Enum.Parse(typeof(RoomSpot), arg1, true);
             CharacterChangeRoomSpot(arg0, arg1);
         }
