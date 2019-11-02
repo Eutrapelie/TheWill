@@ -28,6 +28,12 @@ public enum CodeLine
     AbigailD1003,// idem - Choix 3
     AbigailD1004,// idem - Choix 4
     AbigailD1005,// Entrée dans le salon ; premier dialogue obligatoire  - s'obtient dans le behavior après le premier dialogue (avant la lettre)
+    
+    AbigailD2000,//Première fois qu'on parle à Aby - Jour 2
+    AbigailD2001,//Autorisation Grenier
+    AbigailD2002,//Info Clé Armoire Céleste
+    AbigailD2003,//Info sur Mérite Geoffroy, mauvais comptable
+    AbigailD2004,//Info sur Mérite Geoffroy, bon majordome
 
 
     HippoD1000,//Première fois qu'on parle à Hippo - Jour 1
@@ -69,13 +75,14 @@ public enum CodeLine
 	
     LeontineD1000,//Choix Hippo
     LeontineD1001,//Choix Ernest
-    LeontineD1002,//
-    LeontineD1003,//
-    LeontineD1004,//
-    LeontineD1005,//
+    LeontineD1002,//Choix Geoffroy
+    LeontineD1003,//Choix Ophé
+    LeontineD1004,//Choix Abi
+    LeontineD1005,//Choix Situation
     LeontineD1006,//
     LeontineD1007,// Jour 1, sortie vers la chambre
     LeontineD1008,// Jour 1, permet de pas boucler sur son intro
+    LeontineD2000,// Jour 2, débloquage Map
 	
 	KimD2001,//Première entrée cuisine
 	
