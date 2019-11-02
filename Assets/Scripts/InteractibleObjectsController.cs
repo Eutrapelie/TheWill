@@ -32,7 +32,7 @@ namespace TheWill
                         if (character)
                         {
                             // Here you can check hitInfo to see which collider has been hit, and act appropriately.
-                            EventManager.TriggerEvent(character.CharacterInfo.characterName.ToString() + "OnClick", character.CharacterInfo.characterName);
+                            EventManager.TriggerEvent(character.CharacterInfo.characterName.ToString() + "OnClick", character);
                             Debug.Log("InteractibleObjectsController onClick on character");
                         }
                     } else if (SelectedObject is ItemCard)
