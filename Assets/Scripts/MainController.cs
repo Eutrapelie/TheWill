@@ -101,6 +101,8 @@ namespace TheWill
             {
                 Debug.Log("[MainController] Tree load succeed");
             }
+            if (_behaviourTree)
+                _behaviourTree.StopBehaviour();
             _behaviourTree.behaviour = tree;
         }
         /*********************************************************/

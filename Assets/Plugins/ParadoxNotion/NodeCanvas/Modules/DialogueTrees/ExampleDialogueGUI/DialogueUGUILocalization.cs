@@ -7,7 +7,9 @@ using NodeCanvas.DialogueTrees;
 
 namespace NodeCanvas.DialogueTrees.UI.Examples{
 
-	public class DialogueUGUILocalization : MonoBehaviour {
+	public class DialogueUGUILocalization : MonoBehaviour
+    {
+        const string NARRATOR_NAME = " ";
 
 		[System.Serializable]
 		public class SubtitleDelays
@@ -151,7 +153,10 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 				var playSource = actorSource != null? actorSource : localSource;
 				playSource.clip = audio;
 				playSource.Play();
-				actorSpeech.text = text;
+                if (actor.name == NARRATOR_NAME)
+                    actorSpeech.text = "<i>" + text + "</i>";
+                else
+                    actorSpeech.text = text;
 				var timer = 0f;
 				while (timer < audio.length)
                 {
@@ -178,12 +183,17 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 
                 bool isKeyAllowed = false;
                 isKeyAllowed = !Input.GetKeyDown(_keysToIgnored[0]);
+
+                Debug.Log(actor.name);
                 for (int i= 0; i < text.Length; i++)
                 {
                     //Debug.Log(i + "] " + text[i] + "] " + tempText + " -- isBold: " + _isBold + " (" + _tempBoldText + ")");
 					if (!isGamePaused && skipOnInput && inputDown && isKeyAllowed)
                     {
-						actorSpeech.text = text;
+                        if (actor.name == NARRATOR_NAME)
+                            actorSpeech.text = "<i>" + text + "</i>";
+                        else
+                            actorSpeech.text = text;
 						yield return null;
 						break;
 					}
@@ -217,7 +227,10 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
                             // Write tempColorText with color
                             tempText += "<b>" + text[i].ToString() + "</b>";
                             yield return StartCoroutine(DelayPrint(subtitleDelays.characterDelay));
-                            actorSpeech.text = tempText;
+                            if (actor.name == NARRATOR_NAME)
+                                actorSpeech.text = "<i>" + tempText + "</i>";
+                            else
+                                actorSpeech.text = tempText;
                             continue;
                         }
                         /*else if (_tempBoldText.StartsWith("<b>") && _tempBoldText.Contains("</b>"))
@@ -238,7 +251,10 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
                             tempText += text[i];
 
                             yield return StartCoroutine(DelayPrint(subtitleDelays.characterDelay));
-                            actorSpeech.text = tempText;
+                            if (actor.name == NARRATOR_NAME)
+                                actorSpeech.text = "<i>" + tempText + "</i>";
+                            else
+                                actorSpeech.text = tempText;
                             char c = text[i];
                             if (c == '.' || c == '!' || c == '?')
                             {
@@ -260,7 +276,10 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
                                 // Write tempColorText with color
                                 tempText += "<color=red>" + text[i].ToString() + "</color>";
                                 yield return StartCoroutine(DelayPrint(subtitleDelays.characterDelay));
-                                actorSpeech.text = tempText;
+                                if (actor.name == NARRATOR_NAME)
+                                    actorSpeech.text = "<i>" + tempText + "</i>";
+                                else
+                                    actorSpeech.text = tempText;
                             }
                         }
                         else if (tempColorText.StartsWith("<color=") && tempColorText.EndsWith("</color>"))
