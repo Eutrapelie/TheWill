@@ -4,11 +4,12 @@ using UnityEngine;
 
 public enum CodeLine
 {
-    GeoffroyD1000, //Première fois qu'on parle à Geoffroy - Jour 1 - Premier choix
-    GeoffroyD1001, // Second Choix
-    GeoffroyD1002, // Troisième Choix
-    GeoffroyD1003, // Troisième Choix - Contrat+
-    GeoffroyD1004, // Permet de pas boucler dans le hall
+    GeoffroyD1000, //Première fois qu'on parle à Geoffroy - Jour 1 - Premier choix - Genre
+    GeoffroyD1001, // Choix info Abi
+    GeoffroyD1002, // Choix info Hippo
+    GeoffroyD1003, // Choix info meilleur héritier
+    GeoffroyD1004, // Permet de pas boucler dans le hall au jour 1 - s'obtient au passage Hall > Salon du premier jour
+    GeoffroyD1005, // Si aide Contrat Acceptée
 	GeoffroyD2001, // Avoir son contrat
 	GeoffroyD2002,
 	GeoffroyD2003, //Suite quête après contrat
@@ -26,20 +27,20 @@ public enum CodeLine
     AbigailD1002,// idem - Choix 1 et 2
     AbigailD1003,// idem - Choix 3
     AbigailD1004,// idem - Choix 4
-    AbigailD1005,// Entrée dans le salon ; premier dialogue obligatoire 
+    AbigailD1005,// Entrée dans le salon ; premier dialogue obligatoire  - s'obtient dans le behavior après le premier dialogue (avant la lettre)
 
 
     HippoD1000,//Première fois qu'on parle à Hippo - Jour 1
-    HippoD1001,//
-    HippoD1002,//
+    HippoD1001,//Premier Choix (Succession manoir)
+    HippoD1002,//Second Choix (Mort Celestia)
 
 
 
     ErnestD1000,//Première fois qu'on parle à Ernest - Jour 1
-    ErnestD1001,//Choix 1
-    ErnestD1002,//Choix 2
-    ErnestD1003,//Choix 3
-    ErnestD1004,//Dial supp "Abi?"
+    ErnestD1001,//Choix 1 - Hippo
+    ErnestD1002,//Choix 2 - Ophé
+    ErnestD1003,//Choix 3 - Dial supp "Abi?"
+    ErnestD1004,//Choix 4 - Perso
     ErnestD1003a,//Choix 3 - Aide
     ErnestD1003b,//Choix 3 - Neutre
     ErnestD1003c,//Choix 3 - Refus
@@ -54,7 +55,7 @@ public enum CodeLine
 	ErnestD2009,//Incendie - Bras baissé
 	ErnestD2010,//Incendie - Incendie Évité
 
-    OphelieD1000,//Première fois qu'on parle à Ernest - Jour 1
+    OphelieD1000,//Première fois qu'on parle à Ophélie - Jour 1
     OphelieD1001,//Choix 1
     OphelieD1002,//Choix 2
     OphelieD1003,//Inutilisé
@@ -66,8 +67,8 @@ public enum CodeLine
 	OphelieD2005,//Ophelie part
 	
 	
-    LeontineD1000,//Première fois qu'on parle à Leontine - Jour 1
-    LeontineD1001,//
+    LeontineD1000,//Choix Hippo
+    LeontineD1001,//Choix Ernest
     LeontineD1002,//
     LeontineD1003,//
     LeontineD1004,//
@@ -86,4 +87,14 @@ public enum CodeLine
 	
 	
 	ItemLetterTuto0001,// la lettre a été cliquée
+	PreuveAttachement001,//
+	PreuveAttachement002,//Première Nuit, dialogue Cuisine
+	PreuveAttachement003,
+	PreuveAttachement004,
+	PreuveAttachement005,
+	PreuveAttachement006,
+	PreuveAttachement007,
+	PreuveAttachement008,
+	PreuveAttachement009,
+	PreuveAttachement010,
 }
