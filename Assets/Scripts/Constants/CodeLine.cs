@@ -33,7 +33,7 @@ public enum CodeLine
     AbigailD2001,//Autorisation Grenier
     AbigailD2002,//Info Clé Armoire Céleste
     AbigailD2003,//Info sur Mérite Geoffroy, mauvais comptable
-    AbigailD2004,//Info sur Mérite Geoffroy, bon majordome
+    AbigailD2004,//Info sur Mérite Geoffroy, bon majordome - Bloque fin Abigail
 
 
     HippoD1000,//Première fois qu'on parle à Hippo - Jour 1
