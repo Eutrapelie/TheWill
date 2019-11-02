@@ -43,13 +43,13 @@ namespace VN.Dialog
         {
             var s = a_text.text;
             var i = 0;
-            while ((i = s.IndexOf('#', i)) != -1)
+            while ((i = s.IndexOf('◘', i)) != -1)
             {
-                var end = s.Substring(i + 1).IndexOf('#');
+                var end = s.Substring(i + 1).IndexOf('◘');
                 var input = s.Substring(i + 1, end); //what's in the #
                 var output = s.Substring(i, end + 2); //what should be replaced (includes brackets)
 
-                string o = "";
+                string o = string.Empty;
                 string[] genres = input.Split('|');
                 if(Game.Current.player.genre.Equals(Genre.Woman))
                 {
