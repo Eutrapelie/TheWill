@@ -55,7 +55,13 @@ namespace TheWill
             }
         }
         /*********************************************************/
-        
+
+        void OnDestroy()
+        {
+            SceneManager.activeSceneChanged -= SceneChanged;
+        }
+        /*********************************************************/
+
     ///////////////////////////////////////////////////////////////
     /// PRIVATE FUNCTIONS /////////////////////////////////////////
     ///////////////////////////////////////////////////////////////
@@ -82,10 +88,10 @@ namespace TheWill
         }
         /*********************************************************/
 
-        void SceneChanged(Scene a_s1, Scene a_s2)
+        void SceneChanged(Scene a_oldActiveScene, Scene a_newActiveScene)
         {
             Debug.Log("SceneChanged");
-            foreach(GameObject go in a_s2.GetRootGameObjects())
+            foreach(GameObject go in a_newActiveScene.GetRootGameObjects())
             {
                 if (go.tag == "DialogueUGUI")
                 {

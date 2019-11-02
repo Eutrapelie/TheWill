@@ -44,7 +44,7 @@ namespace TheWill
 
             foreach (Character character in Enum.GetValues(typeof(Character)))
             {
-                EventManager.StartListening(character.ToString() + "OnClick", HideAllCharacters);
+                EventManager.StartListening(character.ToString() + "OnClick", HideOtherCharacters);
             }
 
             EventManager.StartListening(VNFinishNode.EVT_FINISH_DIALOG, ShowAllCharacters);
@@ -64,7 +64,7 @@ namespace TheWill
         {
             foreach (Character character in Enum.GetValues(typeof(Character)))
             {
-                EventManager.StopListening(character.ToString() + "OnClick", HideAllCharacters);
+                EventManager.StopListening(character.ToString() + "OnClick", HideOtherCharacters);
             }
 
             EventManager.StopListening(VNFinishNode.EVT_FINISH_DIALOG, ShowAllCharacters);
@@ -91,7 +91,7 @@ namespace TheWill
             return null;
         }
 
-        public void HideAllCharacters(object a_value)
+        public void HideOtherCharacters(object a_value)
         {
             CharacterCard card = (CharacterCard)a_value;
             if (!card)
@@ -110,25 +110,25 @@ namespace TheWill
             RoomSpot spot = (RoomSpot)Enum.Parse(typeof(RoomSpot), (talkingCard.CharacterInfo.currentRoom.ToString() + "UpSpot1"), true);
             GetCharacterToUpSpot(talkingCard, spot);*/
 
-            Debug.Log("HideAllCharacters: " + card.name);
+            Debug.Log("HideOtherCharacters: " + card.name);
 
             EventManager.TriggerEvent(MainController.EVT_UPSPOT_CHARACTER, card);
 
+            DisplayAllCharacters(false);
+        }
+
+        void DisplayAllCharacters(bool a_show)
+        {
             foreach (CharacterCard character in _characters)
             {
-                character.ToggleVisibility(false);
+                character.ToggleVisibility(a_show);
             }
-
         }
 
         public void ShowAllCharacters(object value)
         {
             Debug.Log("[MyCharacterController] ShowAllCharacters");
-            foreach (CharacterCard character in _characters)
-            {
-                character.ToggleVisibility(true);
-            }
-
+            DisplayAllCharacters(true);
         }
 
         public void AddCharacterCardToGlobalBB(CharacterCard card)

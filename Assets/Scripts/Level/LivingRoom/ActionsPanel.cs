@@ -3,17 +3,25 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using NodeCanvas.DialogueTrees.UI.Examples;
 
 namespace TheWill
 {
     public enum BackpackElement { GoToHall, Book, Explore}
 
 
+    public enum ActionMode { Classic, Explore }
+
+
     [RequireComponent(typeof(Animator))]
     public class ActionsPanel : MonoBehaviour, IPointerExitHandler
     {
+        public static string EVT_SWITCH_MODE = "ActionsPanel.EVT_SWITCH_MODE";
+
         static ActionsPanel _instance;
         public static ActionsPanel Instance { get { return _instance; } }
+
+        public ActionMode currentMode;
 
         Animator _animator;
         [Header("Backpack")]
@@ -31,9 +39,8 @@ namespace TheWill
         [SerializeField] RoomsChoice _roomsChoice;
 
         [Header("Explore")]
-        [SerializeField] CanvasGroup _vnDialogCanvasGroup;
-        [SerializeField] ChangeSpriteHierarchyVisibility _spriteHierarchyVisibility;
         [SerializeField] Animator _exploreAnimator;
+        Canvas _vnDialogCanvas;
         bool _isExploreMode;
 
         
@@ -56,8 +63,7 @@ namespace TheWill
             if (SceneManager.GetActiveScene().name == "Hall")
                 Debug.Assert(_roomsChoice != null, "_roomsChoice cannot be null.");
 
-            Debug.Assert(_vnDialogCanvasGroup != null, "_vnDialogCanvasGroup cannot be null.");
-            Debug.Assert(_spriteHierarchyVisibility != null, "_spriteHierarchyVisibility cannot be null.");
+            //Debug.Assert(_vnDialogCanvasGroup != null, "_vnDialogCanvasGroup cannot be null.");
             Debug.Assert(_exploreAnimator != null, "_exploreAnimator cannot be null.");
         }
         /*********************************************************/
@@ -69,12 +75,20 @@ namespace TheWill
             _goToHallButton.interactable = Game.Current.backpackElement > 0;
             _bookButton.interactable = Game.Current.backpackElement > 1;
             _exploreButton.interactable = Game.Current.backpackElement > 2;
+
+            EventManager.StartListening(EVT_SWITCH_MODE, SwitchExploreMode);
         }
         /*********************************************************/
-        
-    ///////////////////////////////////////////////////////////////
-    /// PRIVATE FUNCTIONS /////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////
+
+        void OnDestroy()
+        {
+            EventManager.StopListening(EVT_SWITCH_MODE, SwitchExploreMode);
+        }
+        /*********************************************************/
+
+        ///////////////////////////////////////////////////////////////
+        /// PRIVATE FUNCTIONS /////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////
         void OnMouseEnterBackpack()
         {
             _animator.SetBool("Show", true);
@@ -103,7 +117,14 @@ namespace TheWill
             }*/
         }
         /*********************************************************/
-        
+
+        void SwitchExploreMode(object a_value)
+        {
+            bool switchToExploreMode = (bool)a_value;
+            Btn_SetExploreMode(switchToExploreMode);
+        }
+        /*********************************************************/
+
     ///////////////////////////////////////////////////////////////
     /// PUBLIC FUNCTIONS //////////////////////////////////////////
     ///////////////////////////////////////////////////////////////
@@ -116,12 +137,10 @@ namespace TheWill
         public void Btn_SetExploreMode(bool a_show)
         {
             _isExploreMode = a_show;
-            _vnDialogCanvasGroup.alpha = _isExploreMode ? 0 : 1;
-            _vnDialogCanvasGroup.blocksRaycasts = !_isExploreMode;
-            _vnDialogCanvasGroup.interactable = !_isExploreMode;
-            _spriteHierarchyVisibility.SetSpritesVisibility(_isExploreMode);
+            MainController.Instance.ActivateExploreMode(a_show);
             _exploreAnimator.SetBool("Show", _isExploreMode);
             _animator.SetBool("HideActions", _isExploreMode);
+            currentMode = a_show ? ActionMode.Explore : ActionMode.Classic;
         }
         /*********************************************************/
 

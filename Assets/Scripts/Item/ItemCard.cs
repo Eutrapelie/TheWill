@@ -6,6 +6,7 @@ namespace TheWill
     public class ItemCard : InteractibleObject
     {
         [SerializeField] SpriteRenderer _spriteRenderer;
+        Collider2D _collider;
 
         [SerializeField] bool _isTalking;
         public bool IsTalking
@@ -38,6 +39,7 @@ namespace TheWill
         void Awake()
         {
             Sprite = _spriteRenderer;
+            _collider = GetComponent<Collider2D>();
 
             EventManager.StartListening(Info.name + "OnClick", OnClickObject);
 
@@ -59,6 +61,16 @@ namespace TheWill
         {
             Debug.Log("[DoStuff] name is " + a_name);
             isClicked = true;
+        }
+        /*********************************************************/
+        
+    ///////////////////////////////////////////////////////////////
+    /// PUBLIC FUNCTIONS //////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
+        public void ToggleInteractibilityAndVisibility(bool a_enable)
+        {
+            _collider.enabled = a_enable;
+            _spriteRenderer.enabled = a_enable;
         }
         /*********************************************************/
     }

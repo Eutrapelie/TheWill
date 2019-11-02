@@ -3,6 +3,7 @@ using UnityEngine;
 using NodeCanvas.Framework;
 using NodeCanvas.BehaviourTrees;
 using NodeCanvas.DialogueTrees;
+using NodeCanvas.DialogueTrees.UI.Examples;
 
 namespace TheWill
 {
@@ -27,7 +28,7 @@ namespace TheWill
 
         [SerializeField] ItemCard[] _itemCards;
 
-        List<GameObject> _charactersInScene;
+        List<CharacterCard> _charactersInScene;
         GameManager _gameManager;
 
         /*1/bool _isNewLevel
@@ -64,7 +65,7 @@ namespace TheWill
             // find level Controller corresponding to this level
             // END TODO
 
-            _charactersInScene = new List<GameObject>();
+            _charactersInScene = new List<CharacterCard>();
 
             LoadCharactersObjectInvolved();
             LoadBlackBoard();
@@ -87,11 +88,11 @@ namespace TheWill
     ///////////////////////////////////////////////////////////////
     /// GENERAL FUNCTIONS /////////////////////////////////////////
     ///////////////////////////////////////////////////////////////
-        void LoadBehaviourTree()
+        void LoadBehaviourTree(bool a_items = false)
         {
             string level = _room.ToString() + "Act" + Game.Current.acteNumber.ToString() + "Day" + Game.Current.dayNumber.ToString();
             Debug.Log("[MainController] Loading level : " + level);
-            BehaviourTree tree = ((BehaviourTree)Resources.Load("Tree/SallesBehavior/" + level));
+            BehaviourTree tree = ((BehaviourTree)Resources.Load("Tree/SallesBehavior/" + level + (a_items ? "Item" : string.Empty)));
             if (tree == null)
             {
                 Debug.Log("[MainController] Tree load failed");
@@ -106,20 +107,19 @@ namespace TheWill
 
         void LoadBlackBoard()
         {
-            foreach (GameObject go in _charactersInScene)
+            foreach (CharacterCard card in _charactersInScene)
             {
-                BoxCollider2D collider = go.GetComponent<BoxCollider2D>();
-                CharacterCard characterCard = go.GetComponent<CharacterCard>();
+                BoxCollider2D collider = card.GetComponent<BoxCollider2D>();
                 if (collider)
                 {
-                    Variable found = _blackBoard.GetVariable(characterCard.CharacterInfo.characterName + "Collider");
+                    Variable found = _blackBoard.GetVariable(card.CharacterInfo.characterName + "Collider");
                     if (found != null)
                     {
                         found.value = collider;
                     }
                 }
 
-                DialogueActor dialog = go.GetComponent<DialogueActor>();
+                DialogueActor dialog = card.GetComponent<DialogueActor>();
                 if (dialog)
                 {
                     //_blackBoard.GetVariable<DialogueActor>(go.name + "Dialog").SetValue(dialog);
@@ -167,7 +167,7 @@ namespace TheWill
                         if (characterObject)
                         {
                             Debug.Log("<color=blue>--- Add " + characterObject.name + "</color>");
-                            _charactersInScene.Add(characterObject);
+                            _charactersInScene.Add(characterObject.GetComponent<CharacterCard>());
                             CharacterCard characterCard = characterObject.GetComponent<CharacterCard>();
                             characterCard.CharacterInfo = info;
 
@@ -216,6 +216,24 @@ namespace TheWill
         }
         /*********************************************************/
 
+        public void DisplayAllCharacters(bool a_show)
+        {
+            foreach (CharacterCard character in _charactersInScene)
+            {
+                character.ToggleVisibility(a_show);
+            }
+        }
+        /*********************************************************/
+
+        public void DisplayAndActivateAllItems(bool a_show)
+        {
+            foreach (ItemCard item in _itemCards)
+            {
+                item.ToggleInteractibilityAndVisibility(a_show);
+            }
+        }
+        /*********************************************************/
+
         public void UpdateUpspotWithCharacter(object a_value)
         {
             CharacterCard card = (CharacterCard)a_value;
@@ -238,6 +256,16 @@ namespace TheWill
                     renderer.sprite = null;
                 }
             }
+        }
+        /*********************************************************/
+
+        public void ActivateExploreMode(bool a_activate)
+        {
+            DisplayAndActivateAllItems(a_activate);
+            DisplayAllCharacters(!a_activate);
+            ActivateAllCharactersColliders(!a_activate);
+            LoadBehaviourTree(a_activate);
+            _behaviourTree.StartBehaviour();
         }
         /*********************************************************/
     }
