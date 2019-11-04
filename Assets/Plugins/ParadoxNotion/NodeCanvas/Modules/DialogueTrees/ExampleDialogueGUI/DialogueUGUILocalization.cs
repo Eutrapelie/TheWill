@@ -129,14 +129,13 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 
 
 
-		IEnumerator Internal_OnSubtitlesRequestInfo(SubtitlesRequestInfo info)
+		IEnumerator Internal_OnSubtitlesRequestInfo(SubtitlesRequestInfo a_info)
         {            
-			var text = info.statement.text;
+			var text = a_info.statement.text;
             _isBold = false;
             _tempBoldText = string.Empty;
-            //Debug.Log(text);
-			var audio = info.statement.audio;
-			var actor = info.actor;
+			var audio = a_info.statement.audio;
+			var actor = a_info.actor;
 
 			subtitlesGroup.gameObject.SetActive(true);
 			actorSpeech.text = string.Empty;
@@ -184,7 +183,6 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
                 bool isKeyAllowed = false;
                 isKeyAllowed = !Input.GetKeyDown(_keysToIgnored[0]);
 
-                Debug.Log(actor.name);
                 for (int i= 0; i < text.Length; i++)
                 {
                     //Debug.Log(i + "] " + text[i] + "] " + tempText + " -- isBold: " + _isBold + " (" + _tempBoldText + ")");
@@ -316,7 +314,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 
 			yield return null;
 			subtitlesGroup.gameObject.SetActive(false);
-			info.Continue();
+			a_info.Continue();
 		}
 
 		IEnumerator CheckInput(System.Action Do)
