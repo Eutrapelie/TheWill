@@ -52,17 +52,19 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 		[Header("Multiple Choice")]
 		public RectTransform optionsGroup;
 		public Button optionButton;
-		private Dictionary<Button, int> cachedButtons;
-		private Vector2 originalSubsPosition;
-		private bool isWaitingChoice;
+		Dictionary<Button, int> cachedButtons;
+		Vector2 originalSubsPosition;
+		bool isWaitingChoice;
 
-		private AudioSource _localSource;
-		private AudioSource localSource{
+		AudioSource _localSource;
+		AudioSource localSource
+        {
 			get {return _localSource != null? _localSource : _localSource = gameObject.AddComponent<AudioSource>();}
 		}
 
 
-		void OnEnable(){
+		void OnEnable()
+        {
 			DialogueTree.OnDialogueStarted       += OnDialogueStarted;
 			DialogueTree.OnDialoguePaused        += OnDialoguePaused;
 			DialogueTree.OnDialogueFinished      += OnDialogueFinished;
@@ -70,7 +72,8 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			DialogueTree.OnMultipleChoiceRequest += OnMultipleChoiceRequest;
 		}
 
-		void OnDisable(){
+		void OnDisable()
+        {
 			DialogueTree.OnDialogueStarted       -= OnDialogueStarted;
 			DialogueTree.OnDialoguePaused        -= OnDialoguePaused;
 			DialogueTree.OnDialogueFinished      -= OnDialogueFinished;
@@ -141,7 +144,8 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			actorSpeech.text = string.Empty;
 			
 			actorName.text = actor.name;
-			actorSpeech.color = actor.dialogueColor;
+            actorName.color = actor.dialogueColor;
+			//actorSpeech.color = actor.dialogueColor;
 			
 			actorPortrait.gameObject.SetActive( actor.portraitSprite != null );
 			actorPortrait.sprite = actor.portraitSprite;
