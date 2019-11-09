@@ -1,6 +1,28 @@
 Notes de versions
 
-Dernière ligne : Rendre l'interface localisée
+Dernière ligne : [LOCALIZATION] Fix multiChoice gender's options
+Versions 0.0.10 (2019/11/09)
+Ajouts :
+ - Partie "objets à cliquer" implémentée
+ - Sprites de Léontine
+ - Implémentation du narrateur et de Célestia en tant qu'acteurs
+ - Les noms des personnages sont dans leurs couleurs respectives
+ - Avatar de Kim dans les discussions
+
+Modifications :
+ - Amélioration de la mise en évidence des mots importants
+ - Miniatures pour le chargement des parties sauvegardées
+ - Le chargement des fichiers de localisation a été revu
+
+Corrections :
+ - La poursuite du dialogue est bloquée lorsque l'inventaire est ouvert
+ - Corrections de plusieurs dialogues
+ - Les personnages sont correctement cliquables à présent
+ - Suppression de certains événements qui s'accumulaient à chaque rechargement de parties
+ - Corrections mineures diverses
+/**********************************************/
+
+
 Version 0.0.9 (2019/03/30)
 Ajouts :
  - Système basique de musique (prenant en compte le volume dans les paramètres)
