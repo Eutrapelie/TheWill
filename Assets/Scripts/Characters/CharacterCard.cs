@@ -15,7 +15,7 @@ namespace TheWill
         [SerializeField] SpriteRenderer _spriteRenderer;
         [SerializeField] bool _isTalking;
 
-        public event Action<Character> OnClickCharacterValue;
+        public event Action<string> OnClickCharacterValue;
 
         public CharacterInfo CharacterInfo
         {
@@ -73,10 +73,10 @@ namespace TheWill
         void OnClickObject(object a_value)
         {
             if (OnClickCharacterValue != null)
-                OnClickCharacterValue(CharacterInfo.characterName);
+                OnClickCharacterValue(CharacterInfo.characterName.ToString());
         }
 
-        void DoStuff(Character a_name)
+        void DoStuff(string a_name)
         {
             Debug.Log("[DoStuff] name is " + a_name);
             //GameManager.Instance.MyCharacterController.toggleAllCharactersEvent.Invoke(false);
