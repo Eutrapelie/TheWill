@@ -150,7 +150,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples
 			
 			actorName.text = actor.name;
             actorName.color = actor.dialogueColor;
-            Debug.Log(HexaColor(actorName.color));
+            //Debug.Log(HexaColor(actorName.color));
 			//actorSpeech.color = actor.dialogueColor;
 			
 			actorPortrait.gameObject.SetActive( actor.portraitSprite != null );
