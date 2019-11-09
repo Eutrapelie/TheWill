@@ -5,11 +5,12 @@ using System.Collections.Generic;
 using System.Linq;
 using NodeCanvas.DialogueTrees;
 
-namespace NodeCanvas.DialogueTrees.UI.Examples{
-
+namespace NodeCanvas.DialogueTrees.UI.Examples
+{
 	public class DialogueUGUILocalization : MonoBehaviour
     {
         const string NARRATOR_NAME = " ";
+
 
 		[System.Serializable]
 		public class SubtitleDelays
@@ -20,8 +21,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			public float finalDelay     = 1.2f;
 		}
 
-
-		//Options...
+        
 		[Header("Input Options")]
 		public bool skipOnInput;
 		public bool waitForInput;
@@ -38,8 +38,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
             _lang = a_lang;
             Utils.Localization.InitializeLangDictionaries(_lang);
         }
-
-		//Group...
+        
 		[Header("Subtitles")]
 		public RectTransform subtitlesGroup;
 		public Text actorSpeech;
@@ -47,8 +46,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 		public Image actorPortrait;
 		public RectTransform waitInputIndicator;
 		public SubtitleDelays subtitleDelays = new SubtitleDelays();
-
-		//Group...
+        
 		[Header("Multiple Choice")]
 		public RectTransform optionsGroup;
 		public Button optionButton;
@@ -60,53 +58,59 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 		AudioSource localSource
         {
 			get {return _localSource != null? _localSource : _localSource = gameObject.AddComponent<AudioSource>();}
-		}
+        }
+
+        string tempColorText = string.Empty;
+        string _tempBoldText = string.Empty;
+        bool _isBold = false;
 
 
-		void OnEnable()
+        void OnEnable()
         {
 			DialogueTree.OnDialogueStarted       += OnDialogueStarted;
 			DialogueTree.OnDialoguePaused        += OnDialoguePaused;
 			DialogueTree.OnDialogueFinished      += OnDialogueFinished;
 			DialogueTree.OnSubtitlesRequest      += OnSubtitlesRequest;
 			DialogueTree.OnMultipleChoiceRequest += OnMultipleChoiceRequest;
-		}
+        }
+        /*********************************************************/
 
-		void OnDisable()
+        void OnDisable()
         {
 			DialogueTree.OnDialogueStarted       -= OnDialogueStarted;
 			DialogueTree.OnDialoguePaused        -= OnDialoguePaused;
 			DialogueTree.OnDialogueFinished      -= OnDialogueFinished;
 			DialogueTree.OnSubtitlesRequest      -= OnSubtitlesRequest;
 			DialogueTree.OnMultipleChoiceRequest -= OnMultipleChoiceRequest;
-		}
+        }
+        /*********************************************************/
 
-		void Start(){
+        void Start()
+        {
             subtitlesGroup.gameObject.SetActive(false);
 			optionsGroup.gameObject.SetActive(false);
 			optionButton.gameObject.SetActive(false);
 			waitInputIndicator.gameObject.SetActive(false);
 			originalSubsPosition = subtitlesGroup.transform.position;
-            
-            // test de localization
-            //Utils.Localization.InitializeLangDictionaries(_lang);
 
-            //Debug.Log("Start");
             _keysToIgnored.Add(KeyCode.Escape);
         }
+        /*********************************************************/
 
-		void OnDialogueStarted(DialogueTree dlg)
+        void OnDialogueStarted(DialogueTree a_dlg)
         {
-			//nothing special...
-		}
+            //nothing special...
+        }
+        /*********************************************************/
 
-		void OnDialoguePaused(DialogueTree dlg)
+        void OnDialoguePaused(DialogueTree a_dlg)
         {
 			subtitlesGroup.gameObject.SetActive(false);
 			optionsGroup.gameObject.SetActive(false);
-		}
+        }
+        /*********************************************************/
 
-		void OnDialogueFinished(DialogueTree dlg)
+        void OnDialogueFinished(DialogueTree a_dlg)
         {
 			subtitlesGroup.gameObject.SetActive(false);
 			optionsGroup.gameObject.SetActive(false);
@@ -118,21 +122,22 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 				}
 				cachedButtons = null;
 			}
-		}
+        }
+        /*********************************************************/
 
-
-		void OnSubtitlesRequest(SubtitlesRequestInfo info)
+        void OnSubtitlesRequest(SubtitlesRequestInfo a_info)
         {
-			StartCoroutine(Internal_OnSubtitlesRequestInfo(info));
-		}
+			StartCoroutine(Internal_OnSubtitlesRequestInfo(a_info));
+        }
+        /*********************************************************/
 
-        string tempColorText = string.Empty;
-        string _tempBoldText = string.Empty;
-        bool _isBold = false;
+        string HexaColor(Color a_color)
+        {
+            return "#" + ColorUtility.ToHtmlStringRGBA(a_color);
+        }
+        /*********************************************************/
 
-
-
-		IEnumerator Internal_OnSubtitlesRequestInfo(SubtitlesRequestInfo a_info)
+        IEnumerator Internal_OnSubtitlesRequestInfo(SubtitlesRequestInfo a_info)
         {            
 			var text = a_info.statement.text;
             _isBold = false;
@@ -145,6 +150,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			
 			actorName.text = actor.name;
             actorName.color = actor.dialogueColor;
+            Debug.Log(HexaColor(actorName.color));
 			//actorSpeech.color = actor.dialogueColor;
 			
 			actorPortrait.gameObject.SetActive( actor.portraitSprite != null );
@@ -190,12 +196,12 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
                 for (int i= 0; i < text.Length; i++)
                 {
                     //Debug.Log(i + "] " + text[i] + "] " + tempText + " -- isBold: " + _isBold + " (" + _tempBoldText + ")");
-					if (!isGamePaused && skipOnInput && inputDown && isKeyAllowed)
+					if (!isGamePaused && skipOnInput && inputDown && isKeyAllowed) // Skip
                     {
                         if (actor.name == NARRATOR_NAME)
                             actorSpeech.text = "<i>" + text + "</i>";
                         else
-                            actorSpeech.text = text;
+                            actorSpeech.text = text.Replace("<b>", "<b><color=" +HexaColor(actorName.color) + ">").Replace("</b>", "</color></b>");
 						yield return null;
 						break;
 					}
@@ -209,7 +215,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
                         if (text[i] == '<' && text[i+1] == 'b' && text[i+2] == '>')
                         {
                             _isBold = true;
-                            _tempBoldText = "<b>";
+                            _tempBoldText = "<b><color=" + HexaColor(actorName.color) + ">";
                             i += 2;
                             continue;
                         }
@@ -227,7 +233,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
                         else if (_tempBoldText.StartsWith("<b>") && _tempBoldText.Contains("</b>") == false)
                         {
                             // Write tempColorText with color
-                            tempText += "<b>" + text[i].ToString() + "</b>";
+                            tempText += "<b><color=" + HexaColor(actorName.color) + ">" + text[i].ToString() + "</color></b>";
                             yield return StartCoroutine(DelayPrint(subtitleDelays.characterDelay));
                             if (actor.name == NARRATOR_NAME)
                                 actorSpeech.text = "<i>" + tempText + "</i>";
@@ -319,35 +325,40 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			yield return null;
 			subtitlesGroup.gameObject.SetActive(false);
 			a_info.Continue();
-		}
+        }
+        /*********************************************************/
 
-		IEnumerator CheckInput(System.Action Do)
+        IEnumerator CheckInput(System.Action a_action)
         {
-			while(!Input.anyKeyDown){
+			while(!Input.anyKeyDown)
+            {
 				yield return null;
 			}
-			Do();
-		}
+			a_action();
+        }
+        /*********************************************************/
 
-		IEnumerator DelayPrint(float time)
+        IEnumerator DelayPrint(float a_time)
         {
 			var timer = 0f;
-			while (timer < time){
+			while (timer < a_time)
+            {
 				timer += Time.deltaTime;
 				yield return null;
 			}
-		}
+        }
+        /*********************************************************/
 
-		void OnMultipleChoiceRequest(MultipleChoiceRequestInfo info)
+        void OnMultipleChoiceRequest(MultipleChoiceRequestInfo a_info)
         {
 			optionsGroup.gameObject.SetActive(true);
 			var buttonHeight = optionButton.GetComponent<RectTransform>().rect.height;
-			optionsGroup.sizeDelta = new Vector2(optionsGroup.sizeDelta.x, (info.options.Values.Count * buttonHeight) + 20);
+			optionsGroup.sizeDelta = new Vector2(optionsGroup.sizeDelta.x, (a_info.options.Values.Count * buttonHeight) + 20);
 
 			cachedButtons = new Dictionary<Button, int>();
 			int i = 0;
 
-			foreach (KeyValuePair<IStatement, int> pair in info.options)
+			foreach (KeyValuePair<IStatement, int> pair in a_info.options)
             {
 				var btn = (Button)Instantiate(optionButton);
 				btn.gameObject.SetActive(true);
@@ -356,59 +367,64 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
                 
 				btn.GetComponentInChildren<Text>().text = pair.Key.text;
 				cachedButtons.Add(btn, pair.Value);
-				btn.onClick.AddListener( ()=> { Finalize(info, cachedButtons[btn]);	});
+				btn.onClick.AddListener( ()=> { Finalize(a_info, cachedButtons[btn]);	});
 				i++;
 			}
 
-			if (info.showLastStatement){
+			if (a_info.showLastStatement){
 				subtitlesGroup.gameObject.SetActive(true);
 				var newY = optionsGroup.position.y + optionsGroup.sizeDelta.y + 1;
 				subtitlesGroup.position = new Vector2(subtitlesGroup.position.x, newY);
 			}
 
-			if (info.availableTime > 0){
-				StartCoroutine(CountDown(info));
+			if (a_info.availableTime > 0){
+				StartCoroutine(CountDown(a_info));
 			}
-		}
+        }
+        /*********************************************************/
 
-		IEnumerator CountDown(MultipleChoiceRequestInfo info)
+        IEnumerator CountDown(MultipleChoiceRequestInfo a_info)
         {
 			isWaitingChoice = true;
 			var timer = 0f;
-			while (timer < info.availableTime){
+			while (timer < a_info.availableTime){
 				if (isWaitingChoice == false){
 					yield break;
 				}
 				timer += Time.deltaTime;
-				SetMassAlpha(optionsGroup, Mathf.Lerp(1, 0, timer/info.availableTime));
+				SetMassAlpha(optionsGroup, Mathf.Lerp(1, 0, timer/a_info.availableTime));
 				yield return null;
 			}
 			
 			if (isWaitingChoice){
-				Finalize(info, info.options.Values.Last());
+				Finalize(a_info, a_info.options.Values.Last());
 			}
-		}
+        }
+        /*********************************************************/
 
-		void Finalize(MultipleChoiceRequestInfo info, int index)
+        void Finalize(MultipleChoiceRequestInfo a_info, int a_index)
         {
 			isWaitingChoice = false;
 			SetMassAlpha(optionsGroup, 1f);
 			optionsGroup.gameObject.SetActive(false);
-			if (info.showLastStatement){
+			if (a_info.showLastStatement){
 				subtitlesGroup.gameObject.SetActive(false);
 				subtitlesGroup.transform.position = originalSubsPosition;
 			}
 			foreach (var tempBtn in cachedButtons.Keys){
 				Destroy(tempBtn.gameObject);
 			}
-			info.SelectOption(index);
-		}
+			a_info.SelectOption(a_index);
+        }
+        /*********************************************************/
 
-		void SetMassAlpha(RectTransform root, float alpha)
+        void SetMassAlpha(RectTransform a_root, float a_alpha)
         {
-			foreach(var graphic in root.GetComponentsInChildren<CanvasRenderer>()){
-				graphic.SetAlpha(alpha);
+			foreach(var graphic in a_root.GetComponentsInChildren<CanvasRenderer>())
+            {
+				graphic.SetAlpha(a_alpha);
 			}
-		}
-	}
+        }
+        /*********************************************************/
+    }
 }
