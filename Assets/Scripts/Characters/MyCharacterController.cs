@@ -199,7 +199,7 @@ namespace TheWill
                     break;
                 case Room.LivingRoom:
                 case Room.LivingRoomIntegration:
-                    SceneManager.LoadScene("LivingRoomIntegration");
+                    SceneManager.LoadScene("LivingRoom");
                     break;
                 case Room.Garden:
                     SceneManager.LoadScene("Garden");
