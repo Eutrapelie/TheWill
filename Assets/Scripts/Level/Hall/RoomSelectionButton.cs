@@ -8,6 +8,7 @@ namespace TheWill
     public class RoomSelectionButton : MonoBehaviour
     {
         [SerializeField] Text _nameText;
+        [SerializeField] Room _room;
         Button _button;
         Sprite _roomSprite;
         Sprite _lockRoomSprite;
@@ -15,20 +16,23 @@ namespace TheWill
         bool _isRoomKnown;
         bool _isRoomAccessible;
 
+        const string UNKNOWN_ROOM_NAME = "???";
+
 
     ///////////////////////////////////////////////////////////////
     /// GENERAL FUNCTIONS /////////////////////////////////////////
     ///////////////////////////////////////////////////////////////
         void Start()
         {
-            _name = _nameText.text;
-            EventManager.StartListening(RoomsChoice.EVT_ISKNOWN_ROOM, SetIsRoomKnown);
+            EventManager.StartListening(RoomsChoice.EVT_ISKNOWN_ROOM, SetRoomKnown);
+            EventManager.StartListening(RoomsChoice.EVT_ISACCESSIBLE_ROOM, SetRoomAccessible);
         }
         /*********************************************************/
 
         void OnDestroy()
         {
-            EventManager.StopListening(RoomsChoice.EVT_ISKNOWN_ROOM, SetIsRoomKnown);
+            EventManager.StopListening(RoomsChoice.EVT_ISKNOWN_ROOM, SetRoomKnown);
+            EventManager.StopListening(RoomsChoice.EVT_ISACCESSIBLE_ROOM, SetRoomAccessible);
         }
         /*********************************************************/
 
@@ -38,6 +42,8 @@ namespace TheWill
         public void Init(Sprite a_lockRoomSprite)
         {
             _button = GetComponent<Button>();
+            _name = _nameText.text;
+            _roomSprite = _button.image.sprite;
             _lockRoomSprite = a_lockRoomSprite;
             Deactivate();
         }
@@ -46,33 +52,40 @@ namespace TheWill
         void Deactivate()
         {
             _button.image.sprite = _lockRoomSprite;
-            _nameText.text = "???";
+            _nameText.text = UNKNOWN_ROOM_NAME;
             _button.interactable = false;
             _isRoomAccessible = false;
             _isRoomKnown = false;
         }
         /*********************************************************/
 
-        /*public void SetIsRoomKnown(bool a_isKnown)
+        void SetRoomKnown(object a_args)
         {
-            _isRoomKnown = a_isKnown;
+            List<object> list = (List<object>)a_args;
+            Room arg0 = (Room)list[0];
+
+            if (_room.Equals(arg0))
+            {
+                _isRoomKnown = (bool)list[1];
+                Debug.Log("\tRoom: " + _room.ToString() + " - IsRoomKnown: " + _isRoomKnown);
+                _nameText.text = _isRoomKnown ? _name : UNKNOWN_ROOM_NAME;
+            }
         }
         /*********************************************************/
 
-        void SetIsRoomKnown(object args)
+        void SetRoomAccessible(object a_args)
         {
-            List<object> list = (List<object>)args;
+            List<object> list = (List<object>)a_args;
             Room arg0 = (Room)list[0];
-            bool arg1 = (bool)list[1];
-            Debug.Log("\tRoom: " + arg0.ToString() + " - IsRoomKnown: " + arg1);
-            /*foreach (CharacterCard item in Characters)
+
+            if (_room.Equals(arg0))
             {
-                if (item.CharacterInfo.characterName.Equals(arg0))
-                {
-                    item.ChangeCurrentEmotion(arg1);
-                    break;
-                }
-            }*/
+                _isRoomAccessible = (bool)list[1];
+                Debug.Log("\tRoom: " + _room.ToString() + " - IsRoomAccessible: " + _isRoomAccessible);
+                _nameText.text = _name; // Even if room is not accessible, its name cannot change to UNKNOWN_ROOM_NAME
+                _button.image.sprite = _isRoomAccessible ? _roomSprite : _lockRoomSprite;
+                _button.interactable = _isRoomAccessible;
+            }
         }
         /*********************************************************/
     }

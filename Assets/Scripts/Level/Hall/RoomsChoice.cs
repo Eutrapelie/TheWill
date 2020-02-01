@@ -9,6 +9,7 @@ namespace TheWill
     public class RoomsChoice : MonoBehaviour
     {
         public static string EVT_ISKNOWN_ROOM = "RoomsChoice.EVT_ISKNOWN_ROOM";
+        public static string EVT_ISACCESSIBLE_ROOM = "RoomsChoice.EVT_ISACCESSIBLE_ROOM";
 
         [SerializeField] Canvas _fadeCanvas;
         [SerializeField] AnimationClip _closingAnim;
