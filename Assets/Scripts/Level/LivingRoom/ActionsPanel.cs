@@ -10,7 +10,7 @@ namespace TheWill
     public enum BackpackElement { GoToHall, Book, Explore}
 
 
-    public enum ActionMode { Classic, Explore }
+    public enum ActionMode { Classic, Explore, Backpack, GridMovement }
 
 
     [RequireComponent(typeof(Animator))]
@@ -23,27 +23,30 @@ namespace TheWill
 
         public ActionMode currentMode;
 
-        Animator _animator;
         [Header("Backpack")]
         [SerializeField] Button _goToHallButton;
         [SerializeField] Button _bookButton;
         [SerializeField] Button _exploreButton;
         [SerializeField] Backpack _backpack;
+
+        [Header("Backpack panel")]
         [SerializeField] BackpackPanel _backpackPanel;
 
         [Header("Change of room")]
         [SerializeField] Canvas _fadeCanvas;
         [SerializeField] AnimationClip _closingAnim;
-        
         [Tooltip("Let 'None' if the current room isn't 'Hall'")]
-        [SerializeField] RoomsChoice _roomsChoice;
+            [SerializeField] RoomsChoice _roomsChoice;
+        DialogueUGUILocalization _dialogueObject;
 
         [Header("Explore")]
         [SerializeField] Animator _exploreAnimator;
         Canvas _vnDialogCanvas;
         bool _isExploreMode;
 
-        
+        Animator _animator;
+
+
     ///////////////////////////////////////////////////////////////
     /// GENERAL FUNCTIONS /////////////////////////////////////////
     ///////////////////////////////////////////////////////////////
@@ -77,21 +80,25 @@ namespace TheWill
             _exploreButton.interactable = Game.Current.backpackElement > 2;
 
             EventManager.StartListening(EVT_SWITCH_MODE, SwitchExploreMode);
+            SceneChanged(SceneManager.GetActiveScene(), SceneManager.GetActiveScene());
+            SceneManager.activeSceneChanged += SceneChanged;
         }
         /*********************************************************/
 
         void OnDestroy()
         {
             EventManager.StopListening(EVT_SWITCH_MODE, SwitchExploreMode);
+            SceneManager.activeSceneChanged -= SceneChanged;
         }
         /*********************************************************/
 
-        ///////////////////////////////////////////////////////////////
-        /// PRIVATE FUNCTIONS /////////////////////////////////////////
-        ///////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
+    /// PRIVATE FUNCTIONS /////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
         void OnMouseEnterBackpack()
         {
             _animator.SetBool("Show", true);
+            BlockInteractions(true);
         }
         /*********************************************************/
 
@@ -125,12 +132,53 @@ namespace TheWill
         }
         /*********************************************************/
 
+        void SceneChanged(Scene a_oldActiveScene, Scene a_newActiveScene)
+        {
+            Debug.Log("SceneChanged");
+            foreach(GameObject go in a_newActiveScene.GetRootGameObjects())
+            {
+                if (go.tag == "DialogueUGUI")
+                {
+                    _dialogueObject = go.GetComponent<DialogueUGUILocalization>();
+                    break;
+                }
+            }
+
+            //_dialogueObject.SetLang(Options.Current.GetLang());
+            if (_dialogueObject)
+            {
+                _dialogueObject.subtitleDelays.characterDelay = Options.Current.GetCharacterDelay();
+                _dialogueObject.subtitleDelays.sentenceDelay = Options.Current.GetSentenceDelay();
+                _dialogueObject.subtitleDelays.commaDelay = Options.Current.GetCommaDelay();
+                _dialogueObject.subtitleDelays.finalDelay = Options.Current.GetFinalDelay();
+
+                foreach (Text text in _dialogueObject.GetComponentsInChildren<Text>(true))
+                {
+                    //Debug.Log(text.name);
+                    text.fontSize = Options.Current.GetFontSizeInPixels();
+                    if (text.name == "Name")
+                        text.fontSize += 2;
+                }
+            }
+        }
+        /*********************************************************/
+
     ///////////////////////////////////////////////////////////////
     /// PUBLIC FUNCTIONS //////////////////////////////////////////
     ///////////////////////////////////////////////////////////////
         public void Btn_OpenBackpack()
         {
             _backpackPanel.SetVisibility(true);
+            currentMode = ActionMode.Backpack;
+        }
+        /*********************************************************/
+
+        public void BlockInteractions(bool a_block)
+        {
+            GameManager.Instance.allowClickOnObject = !a_block;
+            _dialogueObject.isGamePaused = a_block;
+            if (a_block == false)
+                currentMode = ActionMode.Classic;
         }
         /*********************************************************/
 
@@ -141,6 +189,19 @@ namespace TheWill
             _exploreAnimator.SetBool("Show", _isExploreMode);
             _animator.SetBool("HideActions", _isExploreMode);
             currentMode = a_show ? ActionMode.Explore : ActionMode.Classic;
+            if (_isExploreMode)
+            {
+                BlockInteractions(false);
+            }
+        }
+        /*********************************************************/
+
+        public void Btn_MovementButton()
+        {
+            if (GameManager.Instance.PlayerController.CurrentRoom == Room.Hall)
+                Btn_OpenRoomsChoice();
+            else
+                Btn_ChangeRoom("Hall");
         }
         /*********************************************************/
 
@@ -154,6 +215,7 @@ namespace TheWill
         public void Btn_OpenRoomsChoice()
         {
             _roomsChoice.SetVisibility(true);
+            currentMode = ActionMode.GridMovement;
         }
         /*********************************************************/
 
@@ -182,6 +244,9 @@ namespace TheWill
         public void OnPointerExit(PointerEventData a_eventData)
         {
             _animator.SetBool("Show", false);
+
+            if (currentMode == ActionMode.Classic)
+                BlockInteractions(false);
         }
         /*********************************************************/
         #endregion

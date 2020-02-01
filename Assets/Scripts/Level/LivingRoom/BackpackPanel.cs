@@ -27,12 +27,13 @@ namespace TheWill
         public void SetVisibility(bool a_show)
         {
             _animator.SetBool("Show", a_show);
+            ActionsPanel.Instance.BlockInteractions(a_show);
 
-            if (_dialogueObject == null)
+            /*if (_dialogueObject == null)
                 //1/_dialogueObject = FindObjectOfType<DialogueUGUI>();
                 _dialogueObject = FindObjectOfType<DialogueUGUILocalization>();
             _dialogueObject.isGamePaused = a_show;
-            GameManager.Instance.allowClickOnObject = !a_show;
+            GameManager.Instance.allowClickOnObject = !a_show;*/
         }
         /*********************************************************/
     }

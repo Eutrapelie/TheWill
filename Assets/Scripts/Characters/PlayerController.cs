@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField]
-    List<CodeLine> _playerChoices;
-
-    [SerializeField]
-    PlayerCard _playerCard;
-
-    [SerializeField]
-    Room _currentRoom;
+    [SerializeField] List<CodeLine> _playerChoices;
+    [SerializeField] PlayerCard _playerCard;
+    [SerializeField] Room _currentRoom;
 
     public List<CodeLine> PlayerChoices
     {

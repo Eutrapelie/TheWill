@@ -229,6 +229,9 @@ namespace TheWill
 
         public void DisplayAndActivateAllItems(bool a_show)
         {
+            if (_itemCards == null || _itemCards.Length == 0)
+                return;
+
             foreach (ItemCard item in _itemCards)
             {
                 item.ToggleInteractibilityAndVisibility(a_show);
