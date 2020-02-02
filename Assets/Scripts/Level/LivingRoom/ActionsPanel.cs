@@ -175,9 +175,10 @@ namespace TheWill
 
         public void BlockInteractions(bool a_block)
         {
+            Debug.Log("<color=orange>BlockInteractions (" + a_block + ")</color>");
             GameManager.Instance.allowClickOnObject = !a_block;
             _dialogueObject.isGamePaused = a_block;
-            if (a_block == false)
+            if (a_block == false && currentMode != ActionMode.Explore)
                 currentMode = ActionMode.Classic;
         }
         /*********************************************************/
@@ -189,10 +190,7 @@ namespace TheWill
             _exploreAnimator.SetBool("Show", _isExploreMode);
             _animator.SetBool("HideActions", _isExploreMode);
             currentMode = a_show ? ActionMode.Explore : ActionMode.Classic;
-            if (_isExploreMode)
-            {
-                BlockInteractions(false);
-            }
+            BlockInteractions(false);            
         }
         /*********************************************************/
 

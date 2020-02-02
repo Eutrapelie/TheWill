@@ -6,6 +6,8 @@ namespace TheWill
     [RequireComponent(typeof(Animator))]
     public class BackpackPanel : MonoBehaviour
     {
+        [SerializeField] RectTransform _inventoryObjectsParent;
+        InventoryObject[] _inventoryObjects;
         Animator _animator;
 
         //1/DialogueUGUI _dialogueObject;
@@ -18,6 +20,9 @@ namespace TheWill
         void Awake()
         {
             _animator = GetComponent<Animator>();
+            /*_inventoryObjects = new InventoryObject[_inventoryObjectsParent.childCount];
+            for (int i = 0; i < _inventoryObjects.Length; i++)
+                _inventoryObjects[i] = _inventoryObjectsParent.GetComponentsInChildren<InventoryObject>()[i];*/
         }
         /*********************************************************/
         
@@ -28,12 +33,8 @@ namespace TheWill
         {
             _animator.SetBool("Show", a_show);
             ActionsPanel.Instance.BlockInteractions(a_show);
-
-            /*if (_dialogueObject == null)
-                //1/_dialogueObject = FindObjectOfType<DialogueUGUI>();
-                _dialogueObject = FindObjectOfType<DialogueUGUILocalization>();
-            _dialogueObject.isGamePaused = a_show;
-            GameManager.Instance.allowClickOnObject = !a_show;*/
+            if (a_show)
+                Debug.Log("## " + GameManager.Instance.PlayerController.PlayerItems.Count);
         }
         /*********************************************************/
     }

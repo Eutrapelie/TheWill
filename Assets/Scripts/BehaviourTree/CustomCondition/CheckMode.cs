@@ -17,6 +17,7 @@ namespace TheWill
 
         protected override bool OnCheck()
         {
+            Debug.Log("<color=blue>Compare mode " + mode + " with " + ActionsPanel.Instance.currentMode + "</color>");
             if (ActionsPanel.Instance.currentMode == mode.value)
             {
                 Debug.Log("<color=blue>Current mode is " + mode + "</color>");
