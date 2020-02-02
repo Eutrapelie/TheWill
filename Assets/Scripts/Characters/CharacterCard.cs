@@ -106,7 +106,7 @@ namespace TheWill
 
         public void ToggleVisibility(bool visible)
         {
-            Debug.Log("ToggleVisibility to " + visible);
+            Debug.Log("ToggleVisibility of " + CharacterInfo.characterName +  " to " + visible);
             gameObject.SetActive(visible);
             isClicked = false;
         }

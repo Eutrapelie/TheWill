@@ -252,7 +252,7 @@ namespace TheWill
                     renderer.sprite = card.Sprite.sprite;
                 }
             }
-            else
+            else if (_upSpot)
             {
                 Debug.Log("[MainController] UpdateUpspotWithCharacter hide sprite upspot");
                 SpriteRenderer renderer = _upSpot.GetComponentInChildren<SpriteRenderer>();
