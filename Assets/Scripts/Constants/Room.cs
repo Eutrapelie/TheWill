@@ -4,15 +4,17 @@ using UnityEngine;
 
 public enum Room
 {
-	Abigailsroom,
-	Entrance,
-	Hall,
-	Hippolytesroom,
 	Garden,
-	Kitchen,
-	LivingRoom,
+    Entrance,
+    Hall,
+    LivingRoom,
 	LivingRoomIntegration,
+    Blackroom,
+    None,	
+    Abigailsroom,
+	Hippolytesroom,
+	Kitchen,
 	Toyroom,
-	Blackroom,
-	None
+	Attic,
+	Celestiasroom
 }
