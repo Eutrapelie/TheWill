@@ -12,6 +12,7 @@ namespace TheWill
         [SerializeField] string _versionString;
         [SerializeField] Text _versionText;
         [SerializeField] AudioSource _musicSource;
+        [SerializeField] LevelData _levelData_A1D1;
 
 
     ///////////////////////////////////////////////////////////////
@@ -40,7 +41,7 @@ namespace TheWill
     ///////////////////////////////////////////////////////////////
         void StartGame()
         {
-            GameManager.StartNewGame();
+            GameManager.StartNewGame(_levelData_A1D1);
             SceneManager.LoadScene(Game.Current.currentRoom.ToString());
             SceneManager.LoadScene("InGameMenu", LoadSceneMode.Additive);
             //MusicManager.Instance.LaunchGame();
