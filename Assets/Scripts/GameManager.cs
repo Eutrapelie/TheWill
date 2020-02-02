@@ -100,9 +100,9 @@ namespace TheWill
                 MusicManager.Instance.PlayAudioSource(MusicManager.MAIN_MUSIC);
         }
 
-        public static void StartNewGame()
+        public static void StartNewGame(LevelData a_levelData)
         {
-            Game.Current.LoadStartLevel(1, 1);
+            Game.Current.LoadStartLevel(a_levelData);
         }
 
         public static void DestroyInstance()
@@ -117,6 +117,7 @@ namespace TheWill
 
         void LoadPlayerInfo()
         {
+            Debug.Log("[GameManager] LoadPlayerInfo: " + Game.Current.player.codeLines.Count);
             Instance.PlayerController.PlayerChoices = Game.Current.player.codeLines;
             Instance.PlayerController.CurrentRoom = Game.Current.currentRoom;
             if (Instance.PlayerController.PlayerCard != null)

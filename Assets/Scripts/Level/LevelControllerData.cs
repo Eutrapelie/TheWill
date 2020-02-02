@@ -7,6 +7,13 @@ namespace TheWill
     [System.Serializable]
     public class LevelControllerData
     {
+        [SerializeField] string _name;
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+
         [SerializeField] int _acteNumber;
         public int ActeNumber
         {
@@ -14,7 +21,6 @@ namespace TheWill
             {
                 return _acteNumber;
             }
-
             set
             {
                 _acteNumber = value;
@@ -78,6 +84,7 @@ namespace TheWill
 
         public LevelControllerData(LevelControllerData a_other)
         {
+            _name = a_other.Name;
             _acteNumber = a_other.ActeNumber;
             _dayNumber = a_other.DayNumber;
             _characters = new List<CharacterInfo>();
@@ -87,6 +94,20 @@ namespace TheWill
             }
             _kim = a_other.Kim;
             _startRoom = a_other.StartRoom;
+        }
+
+        public LevelControllerData(LevelData a_data)
+        {
+            _name = a_data.name;
+            _acteNumber = a_data.acteNumber;
+            _dayNumber = a_data.dayNumber;
+            _characters = new List<CharacterInfo>();
+            for (int i = 0; i < a_data.characters.Count; i++)
+            {
+                _characters.Add(a_data.characters[i]);
+            }
+            _kim = a_data.kim;
+            _startRoom = a_data.startRoom;
         }
 
         public void ChangeRoomOfCharacter(Character a_character, Room a_room)
