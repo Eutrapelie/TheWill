@@ -7,7 +7,11 @@ UI_MM_Credits		Main Menu			CRÉDITS	CREDITS
 UI_MM_Quit		Main Menu			QUITTER	QUIT	
 UI_PARAM_VolumeTitle		Parameters Menu			Volume du jeu	Game's volume	
 UI_PARAM_LangTitle		Parameters Menu			Langue	Language	
+UI_PARAM_French		Parameters Menu			Français	French	
+UI_PARAM_English		Parameters Menu			Anglais	English	
 UI_PARAM_ResolutionTitle		Parameters Menu			Résolution	Resolution	
+UI_PARAM_1920_1080		Parameters Menu			1920_1080	1920_1080	
+UI_PARAM_1280_720		Parameters Menu			1280_720	1280_720	
 UI_PARAM_Fullscreen		Parameters Menu			Plein écran	Fullscreen	
 UI_PARAM_FontSizeTitle		Parameters Menu			Taille de la police (Dialogue)	Font size (Dialogue)	
 UI_PARAM_FontSizeLittle		Parameters Menu			Petite	Little	

@@ -9,20 +9,44 @@ namespace TheWill
         [SerializeField] string _localizedId;
         [SerializeField] bool _hasToBeUpdated;
         Text _text;
-        
-        void Start()
+
+
+    ///////////////////////////////////////////////////////////////
+    /// GENERAL FUNCTIONS /////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
+        void Awake()
         {
             _text = GetComponent<Text>();
-            //Debug.Log(_localizedId);
+        }
+        /*********************************************************/
+
+        void Start()
+        {
             _text.text = Utils.Localization.GetLocalized(_localizedId);
 
             if (_hasToBeUpdated)
                 ParametersPanel.Instance.OnOptionsChanged += OnOptionsChangedCallback;
         }
-
+        /*********************************************************/
+        
+    ///////////////////////////////////////////////////////////////
+    /// PRIVATE FUNCTIONS /////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
         void OnOptionsChangedCallback()
         {
             _text.text = Utils.Localization.GetLocalized(_localizedId);
         }
+        /*********************************************************/
+
+    ///////////////////////////////////////////////////////////////
+    /// PUBLIC FUNCTIONS //////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
+        public void SetIdLocalized(string a_idLocalized)
+        {
+            _localizedId = a_idLocalized;
+            //Debug.Log(_localizedId);
+            _text.text = Utils.Localization.GetLocalized(_localizedId);
+        }
+        /*********************************************************/
     }
 }

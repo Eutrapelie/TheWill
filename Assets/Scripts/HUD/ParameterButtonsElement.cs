@@ -10,6 +10,7 @@ namespace TheWill
     public class ParameterButtonsElement : MonoBehaviour
     {
         [SerializeField] Text _valueText;
+        LocalizedItem _localizedItem;
         [SerializeField] Button _previousButton;
         [SerializeField] Button _nextButton;
         [SerializeField] List<string> _options = new List<string>();
@@ -27,6 +28,7 @@ namespace TheWill
         {
             if (_valueText == null)
                 _valueText = GetComponentInChildren<Text>();
+            _localizedItem = _valueText.GetComponent<LocalizedItem>();
             if (_previousButton == null)
                 _previousButton = GetComponentsInChildren<Button>()[0];
             if (_nextButton == null)
@@ -41,49 +43,44 @@ namespace TheWill
             _currentIndex = 0;
         }
         /*********************************************************/
-
+        
+    ///////////////////////////////////////////////////////////////
+    /// PRIVATE FUNCTIONS /////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
         void UpdateValue()
         {
             _currentIndex = _currentIndex % (_options.Count);
-            _valueText.text = _options[_currentIndex];
+            _localizedItem.SetIdLocalized(_options[_currentIndex]);
             if (OnValueChanged != null)
                 OnValueChanged(_currentIndex);
         }
         /*********************************************************/
 
-        ///////////////////////////////////////////////////////////////
-        /// PRIVATE FUNCTIONS /////////////////////////////////////////
-        ///////////////////////////////////////////////////////////////
-
-        ///////////////////////////////////////////////////////////////
-        /// PUBLIC FUNCTIONS /////////////////////////////////////////
-        ///////////////////////////////////////////////////////////////
-        public void Initialize(List<string> a_options)
+    ///////////////////////////////////////////////////////////////
+    /// PUBLIC FUNCTIONS /////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
+        public void Initialize(List<string> a_options = null)
         {
-            _options.Clear();
-            foreach (string option in a_options)
-                _options.Add(option/*Localization.GetLocalized(option)*/);
+            if (a_options != null)
+            {
+                _options.Clear();
+                foreach (string option in a_options)
+                    _options.Add(option);
+            }
             _currentIndex = 0;
-            _valueText.text = _options[0];
+            _localizedItem.SetIdLocalized(_options[0]);
         }
         /*********************************************************/
 
-        public void SetValue(string a_value)
+        public void SetValue(int a_value)
         {
-            if (_options.Contains(a_value) == false)
+            if (_options.Count < a_value)
             {
                 Debug.LogError("There is no value (" + a_value + ") in " + gameObject.name);
                 return;
             }
-
-            for (int i = 0; i < _options.Count; i++)
-            {
-                if (_options[i] == a_value)
-                {
-                    _currentIndex = i;
-                    _valueText.text = _options[i];
-                }
-            }
+            _currentIndex = a_value;
+            _localizedItem.SetIdLocalized(_options[_currentIndex]);
         }
         /*********************************************************/
 

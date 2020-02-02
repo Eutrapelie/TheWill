@@ -35,7 +35,10 @@ namespace TheWill
         public Action OnOptionsChanged;
         public Action OnCancelOptions;
 
-
+        
+    ///////////////////////////////////////////////////////////////
+    /// GENERAL FUNCTIONS /////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
         void Awake()
         {
             _instance = this;
@@ -49,32 +52,23 @@ namespace TheWill
 
             _volumeValueText.text = _volumeSlider.value + " %";
 
-            List<string> languageOptions = new List<string>();
-            foreach (string value in System.Enum.GetNames(typeof(Language)))
-                languageOptions.Add(value);
-            _languageElement.Initialize(languageOptions);
+            _languageElement.Initialize();
             _languageElement.OnValueChanged += SetLanguage;
 
-            List<string> resolutionOptions = new List<string>();
-            foreach (string value in System.Enum.GetNames(typeof(Resolution)))
-                resolutionOptions.Add(value);
-            _resolutionElement.Initialize(resolutionOptions);
+            _resolutionElement.Initialize();
             _resolutionElement.OnValueChanged += SetResolution;
 
-            List<string> fontSizeOptions = new List<string>();
-            foreach (string value in System.Enum.GetNames(typeof(FontSize)))
-                fontSizeOptions.Add(value);
-            _fontSizeElement.Initialize(fontSizeOptions);
+            _fontSizeElement.Initialize();
             _fontSizeElement.OnValueChanged += SetFontSize;
 
-            List<string> readingSpeedOptions = new List<string>();
-            foreach (string value in System.Enum.GetNames(typeof(ReadingSpeed)))
-                readingSpeedOptions.Add(value);
-            _readingSpeedElement.Initialize(readingSpeedOptions);
+            _readingSpeedElement.Initialize();
             _readingSpeedElement.OnValueChanged += SetReadingSpeed;
         }
         /*********************************************************/
-
+        
+    ///////////////////////////////////////////////////////////////
+    /// PRIVATE FUNCTIONS /////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
         void DisplayPopup(bool a_show)
         {
             _confirmationPopupCG.alpha = a_show ? 1 : 0;
@@ -87,11 +81,11 @@ namespace TheWill
         {
             _tempOptions = new Options();
             _volumeSlider.value = _tempOptions.volume;
-            _languageElement.SetValue(_tempOptions.language.ToString());
-            _resolutionElement.SetValue(_tempOptions.resolution.ToString());
+            _languageElement.SetValue((int)_tempOptions.language);
+            _resolutionElement.SetValue((int)_tempOptions.resolution);
             _fullscreenToggle.isOn = _tempOptions.isFullscreen;
-            _fontSizeElement.SetValue(_tempOptions.fontSize.ToString());
-            _readingSpeedElement.SetValue(_tempOptions.readingSpeed.ToString());
+            _fontSizeElement.SetValue((int)_tempOptions.fontSize);
+            _readingSpeedElement.SetValue((int)_tempOptions.readingSpeed);
             _tempOptionsChanged = false;
         }
         /*********************************************************/
@@ -123,7 +117,10 @@ namespace TheWill
             _tempOptionsChanged = true;
         }
         /*********************************************************/
-
+        
+    ///////////////////////////////////////////////////////////////
+    /// PUBLIC FUNCTIONS //////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
         public void Btn_DisplayPanel()
         {
             _animator.SetBool("Show", true);
