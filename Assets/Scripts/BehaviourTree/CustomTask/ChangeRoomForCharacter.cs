@@ -32,6 +32,8 @@ namespace TheWill
             argsRoomSpot.Add(character);
             argsRoomSpot.Add(newSpot);
 
+            Debug.Log(info);
+
             EventManager.TriggerEvent(EVT_CHARACTER_CHANGE_ROOM, argsRoom);
             EventManager.TriggerEvent(EVT_CHARACTER_CHANGE_ROOM_SPOT, argsRoomSpot);
 

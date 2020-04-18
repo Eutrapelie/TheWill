@@ -152,7 +152,7 @@ namespace TheWill
             _gameManager.MyCharacterController.Characters.Clear();
             foreach (CharacterInfo info in Game.Current.charactersInfos)
             {
-                Debug.Log("<color=blue>-- " + info.characterName + ", " + info.currentRoom +"</color>");
+                Debug.Log("<color=blue>-- " + info.characterName + ", " + info.currentRoom + ", " + info.currentRoomSpot + "</color>");
                 if (info.currentRoom == _room)
                 {
                     if (cptSpot >= _characterSpotsGameObject.Count)

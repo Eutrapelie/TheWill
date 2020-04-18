@@ -140,6 +140,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples
         IEnumerator Internal_OnSubtitlesRequestInfo(SubtitlesRequestInfo a_info)
         {            
 			var text = a_info.statement.text;
+            //Debug.Log(text);
             _isBold = false;
             _tempBoldText = string.Empty;
 			var audio = a_info.statement.audio;

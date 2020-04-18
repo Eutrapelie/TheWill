@@ -148,7 +148,6 @@ namespace TheWill
 
         public void LoadGame(Game a_game)
         {
-            //charactersInfos = current.charactersInfos;
             player = a_game.player;
             Debug.Log("[LoadGame] " + currentRoom + "-- " + a_game.currentRoom);
             currentRoom = a_game.currentRoom;

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] List<CodeLine> _playerChoices;
+    [SerializeField] List<TheWill.ItemInfo> _playerItems;
     [SerializeField] PlayerCard _playerCard;
     [SerializeField] Room _currentRoom;
 
@@ -18,6 +19,19 @@ public class PlayerController : MonoBehaviour
         set
         {
             _playerChoices = value;
+        }
+    }
+
+    public List<TheWill.ItemInfo> PlayerItems
+    {
+        get
+        {
+            return _playerItems;
+        }
+
+        set
+        {
+            _playerItems = value;
         }
     }
 
@@ -49,3 +63,4 @@ public class PlayerController : MonoBehaviour
 
     // THIS INFO IS LOAD BY "GAME"
 }
+
